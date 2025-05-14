@@ -423,4 +423,4 @@ Implemente limpieza de memoria:
 
 ## Licenciamiento
 
-Este software es propiedad de la empresa (DESARROLLADO POR HAROLD CASTRO :: CONTACTO= hcastro@catalitico.com.co // Telegram :: +57 3003175758 ::: @Enrique_vivo), está disponible exclusivamente para uso interno. No está permitida su distribución, modificación o uso no autorizado.
+Este software es propiedad de la empresa (DESARROLLADO POR HAROLD CASTRO :: CONTACTO= hcastro@catalitico.com.co // Telegram :: +57 3003175758 ::: @Enrique_vivo), está disponible exclusivamente para uso interno XUMA. No está permitida su distribución, modificación o uso no autorizado.
