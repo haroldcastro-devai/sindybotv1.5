@@ -37,17 +37,17 @@ El sistema SindyBot está compuesto por varios módulos interconectados:
 
 ## Requisitos del Sistema
 
-### Hardware Recomendado
+### Hardware Recomendado Minimo
 
-- **CPU**: Intel i7/Ryzen 7 o superior (mínimo 4 núcleos)
+- **CPU**: 13th Gen Intel(R) Core(TM) i7-13700F
 - **RAM**: 64GB mínimo (128GB recomendado)
 - **Almacenamiento**: SSD 1TB mínimo
-- **GPU**: NVIDIA con mínimo 16GB VRAM SOPORTE CUDACORE (recomendado para procesamiento acelerado)
+- **GPU**: NVIDIA GeForce RTX 4080 (recomendado para procesamiento acelerado para whisperx, y modelo IA de Auditoria)
 
 ### Software Requerido
 
-- **Sistema Operativo**: Windows 10/11 o Linux (Ubuntu 20.04+)
-- **Python**: Versión 3.9.21+
+- **Sistema Operativo**: Linux (Linux Pop!_OS+)
+- **Python**: Versión 3.9.21+ (Compatible con Whisperx, pytorch, Torch)
 - **Anaconda/Miniconda**: Para gestión de entornos
 - **MySQL**: Versión 8.0.32+
 - **FFmpeg**: Para procesamiento de audio (versión 5.0+)
@@ -130,7 +130,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 systemctl start ollama
 
 # Descargar modelo Qwen2.5
-ollama pull qwen2.5:14b-instruct-q6_K
+ollama pull qwen2.5:14b-instruct-q6_K  --->  app optimizada para usar cualquier modelo ollama deacuerdo a compatibilidad con la VRAM
 ```
 
 ### 6. Creación de Usuario Administrador
@@ -414,14 +414,13 @@ Si experimenta problemas con la diarización:
 
 Si encuentra errores de memoria durante el procesamiento:
 
-1. Implemente limpieza de memoria:
+Implemente limpieza de memoria:
    ```python
    import gc
    gc.collect()
    ```
 
-2. Procese los archivos en lotes más pequeños
 
 ## Licenciamiento
 
-Este software es propiedad de la empresa y está disponible exclusivamente para uso interno. No está permitida su distribución, modificación o uso no autorizado.
+Este software es propiedad de la empresa (DESARROLLADO POR HAROLD CASTRO :: CONTACTO= hcastro@catalitico.com.co // Telegram :: +57 3003175758 ::: @Enrique_vivo), está disponible exclusivamente para uso interno. No está permitida su distribución, modificación o uso no autorizado.
