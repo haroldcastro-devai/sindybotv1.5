@@ -1,4 +1,4 @@
-# Módulo de Auditoría SINDYBOT - Documentación
+# Módulo MOD_BOT SINDYBOT - Documentación
 
 ## Descripción General
 
