@@ -1,0 +1,251 @@
+
+[SPEAKER_00]
+0:00:02.773000 - 0:00:03.114000:  ¿Aló?
+
+[SPEAKER_01]
+0:00:07.501000 - 0:00:08.122000: ¿Aló, buenas?
+
+[SPEAKER_01]
+0:00:10.425000 - 0:00:11.587000: Señor Edgar, por favor.
+
+[SPEAKER_01]
+0:00:11.607000 - 0:00:12.869000: ¿Cómo está?
+
+[SPEAKER_00]
+0:00:33.025000 - 0:00:34.445000:  Buenas tardes.
+
+[SPEAKER_01]
+0:00:34.465000 - 0:00:36.366000: Buenas tardes, señor Descartes, por favor.
+
+[SPEAKER_01]
+0:00:39.127000 - 0:00:45.468000: Hola, señor Descartes, mucho gusto, mi nombre es Jenny Patiño, soy ejecutiva comercial de Gasset Occidente, Alfibrilla, ¿cómo se encuentra?
+
+[SPEAKER_01]
+0:00:45.748000 - 0:00:46.828000: Muy bien, ¿de dónde?
+
+[SPEAKER_01]
+0:00:46.868000 - 0:00:51.210000: Gasset Occidente, Alfibrilla.
+
+[SPEAKER_00]
+0:00:52.510000 - 0:00:53.610000: Ah, ok.
+
+[SPEAKER_00]
+0:00:53.630000 - 0:00:54.450000: Muy bien, gracias.
+
+[SPEAKER_01]
+0:00:54.490000 - 0:00:55.831000: Qué bueno, me alegra escuchar eso.
+
+[SPEAKER_01]
+0:00:55.871000 - 0:01:00.712000: Antes que nada, quiero mencionarle que para efectos de calidad, esta llamada está siendo grabada y monitoreada.
+
+[SPEAKER_01]
+0:01:01.372000 - 0:01:10.318000:  Señor, ¿cree usted la persona responsable del crédito orilla realizado el día 7 de mayo, el día de ayer, y el pago de la factura en el gas natural?
+
+[SPEAKER_00]
+0:01:11.819000 - 0:01:13.460000: Sí, señora.
+
+[SPEAKER_01]
+0:01:13.540000 - 0:01:16.282000: Ok, ¿cómo le fue el momento general del crédito orilla?
+
+[SPEAKER_01]
+0:01:16.302000 - 0:01:17.442000: ¿El proceso fue rápido?
+
+[SPEAKER_01]
+0:01:17.462000 - 0:01:18.603000: ¿La atención fue buena?
+
+[SPEAKER_01]
+0:01:19.123000 - 0:01:20.324000: ¿O hay que mejorar en algo?
+
+[SPEAKER_00]
+0:01:21.905000 - 0:01:25.468000: No, todo fue muy bien, muy rápido.
+
+[SPEAKER_01]
+0:01:25.488000 - 0:01:27.389000: Qué bueno, me alegra escuchar eso, mi señor.
+
+[SPEAKER_01]
+0:01:27.449000 - 0:01:29.190000: De igual manera, queremos justificarle.
+
+[SPEAKER_01]
+0:01:29.587000 - 0:01:34.488000:  que pues día a día seguimos trabajando para garantizar un mejor servicio para que lo tenga en cuenta.
+
+[SPEAKER_01]
+0:01:34.548000 - 0:01:36.048000: ¿Listo?
+
+[SPEAKER_00]
+0:01:36.148000 - 0:01:37.389000: Ok.
+
+[SPEAKER_01]
+0:01:37.409000 - 0:01:53.912000: En esta ocasión, mi señor, permítame indicarle que por la adquisición de su crédito con BRILLA, al padecer de respaldarle en dado caso que usted llegase a presentar una incapacidad temporal mayor a 15 días, emitida por una entidad de salud reconocida, esa incapacidad la va a presentar en la oficina de BRILLA,
+
+[SPEAKER_01]
+0:01:54.439000 - 0:02:02.203000:  donde contará con un pago de cuatro cuotas de su crédito de máximo 218.560 pesos para un total de 874.240 pesos.
+
+[SPEAKER_01]
+0:02:02.723000 - 0:02:17.090000: Adicionalmente a esto también podrá contar con una indemnización de 2.185.600 pesos para sus beneficiarios de ley en caso de que Dios lo permita usted llegase a faltar a causa de un accidente.
+
+[Speaker]
+0:02:17.190000 - 0:02:17.230000: Ok.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:02:20.786000 - 0:02:21.366000:  Buenas, disculpe.
+
+[SPEAKER_01]
+0:02:21.386000 - 0:02:22.026000: ¿Se conoce la señora?
+
+[SPEAKER_00]
+0:02:22.106000 - 0:02:26.288000: Sí, la señora está por acá, suave.
+
+[SPEAKER_01]
+0:02:26.308000 - 0:02:26.348000: Ok.
+
+[SPEAKER_01]
+0:02:26.368000 - 0:02:38.694000: Le indicaba que adicionalmente a esto también podrá contar con una indemnización de 2.185.600 pesos para sus beneficiarios de ley en caso de que Dios no lo permita, usted llegase a faltar a causa de un accidente.
+
+[SPEAKER_01]
+0:02:39.694000 - 0:02:45.977000: Contará con teleconsulta con médico general para usted y teleconsulta pediátrica hasta 5 veces para cualquier menor de su grupo familiar.
+
+[SPEAKER_01]
+0:02:46.421000 - 0:02:57.546000:  solicitándolo a través del numeral 253, opción 2, y recibirá descuento del 10% en droguerías aliadas registrándose a través de la página www.lopido.com.
+
+[SPEAKER_01]
+0:02:57.586000 - 0:03:08.091000: El único requisito es ser menor de 75 años y la edad de permanencia es hasta los 77 años, 364 días, por lo cual este servicio estará activo durante toda la vigencia de su crédito.
+
+[SPEAKER_01]
+0:03:08.612000 - 0:03:13.534000: Una vez finalizado, contará con renovación automática anual con cobertura directamente al asegurado
+
+[SPEAKER_01]
+0:03:14.155000 - 0:03:16.316000:  siempre que se cumplan las políticas establecidas.
+
+[SPEAKER_01]
+0:03:17.356000 - 0:03:21.497000: Este servicio queda en vigencia pasados los 60 días a partir del día de la activación.
+
+[SPEAKER_01]
+0:03:22.317000 - 0:03:42.383000: De igual forma, por ser usted un usuario activo, adicionalmente a esto, Alfa le brinda la oportunidad de contar con un respaldo económico de $16.803.497, que será repartida de forma equitativa entre sus beneficiarios o las personas que destinen, en caso de que Dios no lo permita a usted llegar a asfaltar por cualquier tipo de causa.
+
+[SPEAKER_01]
+0:03:43.433000 - 0:03:46.735000:  Contarán con esta protección a partir de las 12 de la noche del día de hoy.
+
+[SPEAKER_01]
+0:03:47.255000 - 0:03:50.176000: El único requisito es ser menor de 66 años.
+
+[SPEAKER_01]
+0:03:50.977000 - 0:04:01.502000: Esta protección se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC que se expresa en calidad de usuario en la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:04:01.562000 - 0:04:02.882000: ¿Listo?
+
+[SPEAKER_00]
+0:04:02.942000 - 0:04:03.522000: Ajá.
+
+[SPEAKER_01]
+0:04:03.542000 - 0:04:06.764000: Nuestro sistema, señor Edgar, nos indica que su dirección con contrato 18... 18-8-16-81...
+
+[SPEAKER_01]
+0:04:12.368000 - 0:04:14.910000:  Es la carrera 11, calle 2540, torre 17, apartamento 504, en Triunfo, Valle del Cauca.
+
+[SPEAKER_01]
+0:04:14.930000 - 0:04:15.070000: Ajá.
+
+[SPEAKER_01]
+0:04:15.130000 - 0:04:21.414000: Su nombre es Edgar Arcesio, Arcesio, disculpe, Cárdenas Naranjo, con documento 1088-019-910 y su fecha de nacimiento 18 de septiembre de 1992.
+
+[SPEAKER_01]
+0:04:21.594000 - 0:04:21.914000: Ajá.
+
+[SPEAKER_01]
+0:04:22.054000 - 0:04:26.177000: Quiere decir, señor, que pues usted actualmente tiene 32 años.
+
+[SPEAKER_01]
+0:04:26.197000 - 0:04:26.297000: Ajá.
+
+[SPEAKER_01]
+0:04:41.602000 - 0:04:45.564000:  Me arroja un correo que es ecar-jonei.com.
+
+[SPEAKER_01]
+0:04:45.584000 - 0:04:46.624000: ¿Está correcto su correo?
+
+[SPEAKER_01]
+0:04:48.505000 - 0:04:48.565000: Sí.
+
+[SPEAKER_01]
+0:04:48.585000 - 0:04:57.289000: Declara que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:04:58.290000 - 0:04:58.850000: Sí, correcto.
+
+[SPEAKER_01]
+0:04:59.450000 - 0:05:04.693000: Ok, a continuación voy a proceder a leer la ley que protege sus datos personales, seguros alfa como responsables.
+
+[SPEAKER_01]
+0:05:05.353000 - 0:05:12.800000:  Anotar también toda esa información para fines legales y contractuales, en particular para el desarrollo y proceso de preventa, venta y posventa del contrato de seguro.
+
+[SPEAKER_01]
+0:05:13.621000 - 0:05:19.267000: Tiene que conocer, actualizar, rectificar la información y a los demás previsos en la ley 1581 de 2012.
+
+[SPEAKER_01]
+0:05:20.688000 - 0:05:26.814000: Normas complementarias y la política de tratamiento de información disponible en www.seguroalfa.com.co.
+
+[SPEAKER_01]
+0:05:26.874000 - 0:05:27.254000: Protección.
+
+[SPEAKER_01]
+0:05:29.720000 - 0:05:29.880000:  Correcto.
+
+[SPEAKER_01]
+0:05:29.900000 - 0:05:30.160000: Correcto.
+
+[SPEAKER_00]
+0:05:58.779000 - 0:05:59.939000:  Sí, correcto.
+
+[SPEAKER_01]
+0:06:00.019000 - 0:06:12.963000: Ok, también queremos informarle que conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actuales que tiene gasto excedente con usted, podrá realizarlo a través de la página www.gdo.com.co.
+
+[SPEAKER_01]
+0:06:13.383000 - 0:06:16.524000: Mientras el IE seguirá siendo contactado por los canales habituales.
+
+[SPEAKER_01]
+0:06:17.104000 - 0:06:22.406000: ¿Usted me recuerda que es la persona responsable del crédito brillo y del pago de la factura del gas natural, mi señor?
+
+[SPEAKER_00]
+0:06:22.426000 - 0:06:24.247000: Sí, señora.
+
+[SPEAKER_01]
+0:06:24.567000 - 0:06:25.427000: Ok, perfecto.
+
+[SPEAKER_01]
+0:06:26.183000 - 0:06:41.393000:  En este momento, mi señor, acepta los productos de autorización cargada de valor mensual en la factura de gas natural a favor de seguros alfa por 29.450 de su trato y seguro y 17.340 por su salva factura, los cuales se verán reflejados mensualmente a partir de su siguiente ciclo de facturación, ¿correcto?
+
+[SPEAKER_00]
+0:06:43.074000 - 0:06:43.875000: Ajá.
+
+[SPEAKER_01]
+0:06:43.895000 - 0:06:44.315000: ¿Correcto?
+
+[SPEAKER_00]
+0:06:45.136000 - 0:06:45.516000: Correcto.
+
+[SPEAKER_01]
+0:06:45.536000 - 0:06:48.658000: ¿Puedo tomar ese correcto como sí por calidad de la llamada?
+
+[Speaker]
+0:06:49.759000 - 0:06:49.799000: Sí.
+
+[SPEAKER_01]
+0:06:53.423000 - 0:07:06.953000:  electrónico llegará la documentación de la protección junto a las condiciones generales del servicio, para que tenga en cuenta que no fue posible enviar el código para la activación de su salud factura, por lo tanto contará con su protección de su gratis seguro a partir del día de hoy.
+
+[SPEAKER_01]
+0:07:06.973000 - 0:07:10.736000: De igual manera, muchas gracias por confiar en Alfa para la protección de ustedes y de todas sus familias.
+
+[SPEAKER_01]
+0:07:11.096000 - 0:07:13.558000: Que Dios me lo bendiga, señor Edgar, y que tenga buenas tardes.
+
+[SPEAKER_01]
+0:07:13.678000 - 0:07:14.218000: Hasta luego.
+
+[SPEAKER_00]
+0:07:14.278000 - 0:07:15.599000: Bueno, hasta luego.
+
+[SPEAKER_00]
+0:07:16 - 0:07:16.500000: Muchas gracias.

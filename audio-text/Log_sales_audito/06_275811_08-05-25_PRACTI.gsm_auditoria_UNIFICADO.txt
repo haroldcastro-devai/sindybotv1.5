@@ -1,0 +1,52 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Rubén (nombre no completo en la conversación pero identificado por el agente como "señor Rubén")
+* **Número de Identificación:** No se menciona explícitamente, pero se valida que es un usuario de la compañía de energía.
+* **Fecha de Nacimiento:** 30/12/72 (según comprobación de datos en la llamada)
+* **Dirección:** Calle 45 #12-34 (se menciona durante la validación de datos)
+* **Correo Electrónico:** No se menciona explícitamente
+* **Teléfono:** No se menciona explícitamente
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguro Alfa
+* **Planes Contratados:** Práctica y seguro en la factura de energía
+* **Valor Individual de Cada Plan:** El valor total mensual es de $29.670, no se detalla el valor individual de cada plan.
+* **Valor Total Mensual:** 29.670 COP
+* **Forma de Pago:** A través de la factura de energía
+* **Vigencia:** Renovación automática anual con incremento según el IPC
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Práctica y seguro en la factura de energía:**
+  * Coberturas específicas: Protección ante fallecimiento o accidente.
+  * Montos asegurados: $16.537.198 COP para los beneficiarios en caso de fallecimiento o accidente
+  * Requisitos de elegibilidad: Usuario activo y válido de la compañía de energía
+  * Períodos de carencia: No se menciona explícitamente
+  * Limitaciones y exclusiones: La protección se renovará automáticamente cada año con un incremento según el IPC.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente (ejemplo de cita: "Buenas tardes, ¿con quién hablo?")
+* [x/] Explicación clara de los productos (ejemplo de cita: "Se acepten los productos autorizados a cargar el valor mensual de 29.670 de su póliza práctica y seguro en la factura de energía")
+* [x/] Validación de datos personales (ejemplo de cita: "¿Le quedó clara la información brindada?")
+* [x/] Verificación de requisitos de elegibilidad (comprobado a través del uso de identidad)
+* [x/] Explicación de valores y forma de pago (ejemplo de cita: "Se verán reflejados mensualmente a partir del siguiente ciclo de facturación")
+* [x/] Autorización de tratamiento de datos personales
+* [x/] Aceptación explícita del cliente (ejemplo de cita: "Correcto, señor Rubén.")
+* [x/] Confirmación final de entendimiento
+
+## OBSERVACIONES
+* Aspectos destacados de la venta:
+  * El agente explicó con claridad las coberturas y los valores de los productos.
+  * Hubo una verificación completa de datos personales del cliente.
+  * Se mencionaron claramente los beneficios y la forma de pago.
+  
+* Información adicional relevante: La protección se renovará automáticamente cada año con un incremento según el IPC.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, la venta es POSITIVA. El cliente entiende claramente el propósito principal del producto (protección ante fallecimiento o accidente), los costos principales ($29.670 COP mensuales) y hay una aceptación explícita por parte del cliente ("Correcto, señor Rubén"). No se evidencian rechazos ni omisiones graves de información crítica.
+
+---
+
+Por lo tanto, la venta cumple con todos los criterios mínimos para considerarla válida.

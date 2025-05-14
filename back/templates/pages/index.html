@@ -1,0 +1,219 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <!-- order-card start -->
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-c-blue order-card">
+            <div class="card-body">
+                <h6 class="text-white">Ventas Analizadas</h6>
+                <h2 class="text-end text-white"><i class="feather icon-mic float-start"></i><span>{{ total_records }}</span></h2>
+                <p class="m-b-0">Archivos de Audio de ventas Analizados<span class="float-end"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-c-green order-card">
+            <div class="card-body">
+                <h6 class="text-white">Ventas Positivas</h6>
+                <h2 class="text-end text-white"><i class="feather icon-trending-up float-start"></i><span>{{ ventas_positivasaud }}</span></h2>
+                <p class="m-b-0">Ventas positivas registradas<span class="float-end"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-c-yellow order-card">
+            <div class="card-body">
+                <h6 class="text-white">Ventas Negativas</h6>
+                <h2 class="text-end text-white"><i class="feather icon-trending-down float-start"></i><span>{{ ventas_negativasaud }}</span></h2>
+                <p class="m-b-0">Ventas negativas registradas<span class="float-end"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-c-red order-card">
+            <div class="card-body">
+                <h6 class="text-white">Archivos de Audio Rechazados</h6>
+                <h2 class="text-end text-white"><i class="feather icon-thumbs-down float-start"></i><span>0</span></h2>
+                <p class="m-b-0">Audios de venta rechazados por errores<span class="float-end"></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- order-card end -->
+
+    <!-- social stadistic start -->
+    <div class="col-md-12">
+        <div id="chartdiv" style="width: 100%; height: 500px;"></div>
+    </div>
+    <!-- social stadistic end -->
+
+    <!-- customer overview start -->
+    <div class="col-md-12">
+        <div class="card table-card">
+            <!--Aplicacion de style css file-->
+
+            <div class="card-header">
+                <h5>Estado de Procesos</h5>
+                <div class="card-header-right">
+                    <div class="btn-group card-option">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="feather icon-more-horizontal"></i>
+                        </button>
+                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-end">
+                            <li class="dropdown-item reload-card">
+                                <a href="{% url 'descargar_reporte' %}" class="download-button">
+                                    <span class="download-button">
+                                        <svg class="feather" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                                        </svg>
+                                        Reporte Gerencial
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav nav-pills nav-fill mt-3 border-bottom pb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <i class="feather icon-layers m-r-5"></i> Registro de Ventas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Feedback-tab" data-bs-toggle="pill" href="#pills-Feedback" role="tab" aria-controls="pills-Feedback" aria-selected="false">
+                            <i class="feather icon-layers m-r-5"></i> Feedback
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body p-0">
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Registro de Ventas Tab -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="table-container">
+                            <table class="table table-hover m-b-0">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha Auditoría <a class="help" data-toggle="popover" title="Fecha de realización de auditoría" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Nombre Gasera</th>
+                                        <th>N. Contrato <a class="help" data-toggle="popover" title="Numero del contrato de venta" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Fecha de Venta <a class="help" data-toggle="popover" title="Fecha de la venta realizada" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Tipo de Seguro(1) <a class="help" data-toggle="popover" title="Tipo de Seguro(1)" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Tipo de Seguro(2) <a class="help" data-toggle="popover" title="Tipo de Seguro(2)" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Estado Venta <a class="help" data-toggle="popover" title="Estado final de la venta" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Observación</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="salesTableBody">
+                                    {% regroup tbRegAudio by reg_fecha as fecha_list %}
+                                    {% for fecha in fecha_list %}
+                                    <tr class="date-row" data-date="{{ fecha.grouper|date:'Y-m-d' }}" onclick="toggleRows(this)">
+                                        <td colspan="8">
+                                            <span class="chevron">▶</span>
+                                            {{ fecha.grouper|date:'d \d\e F, Y' }}
+                                            <span class="record-count">{{ fecha.list|length }} registros</span>
+                                            <span class="download-count" onclick="descargarRegistros('{{ fecha.grouper|date:'Y-m-d' }}', event)">
+                                                <i class="feather icon-download"></i> Descargar
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    {% for registro in fecha.list %}
+                                    <tr class="child-row" data-parent="{{ fecha.grouper|date:'Y-m-d' }}">
+                                        <td>{{ registro.reg_fecha }}</td>
+                                        <td>{{ registro.reg_n_gasera }}</td>
+                                        <td>{{ registro.reg_contrato }}</td>
+                                        <td>{{ registro.reg_fechontrat }}</td>
+                                        <td>{{ registro.reg_tseguro1 }}</td>
+                                        <td>
+                                            {% if registro.reg_tseguro2 == "Parte A del audio" %}
+                                                None
+                                            {% else %}
+                                                {{ registro.reg_tseguro2 }}
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            {% if registro.reg_estado_venta == "POSITIVA" %}
+                                                <i class="material-icons" style="color: green;">check_circle</i>
+                                            {% elif registro.reg_estado_venta == "NEGATIVA" %}
+                                                <i class="material-icons" style="color: red;">cancel</i>
+                                            {% else %}
+                                                {{ registro.reg_estado_venta }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="fixed-width" title="{{ registro.reg_observ_audio }}">{{ registro.reg_observ_audio }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Tab -->
+                    <div class="tab-pane fade" id="pills-Feedback" role="tabpanel" aria-labelledby="pills-Feedback-tab">
+                        <div class="table-container">
+                            <table class="table table-hover m-b-0">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha Auditoría <a class="help" data-toggle="popover" title="Fecha de realización de auditoría" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Nombre Gasera</th>
+                                        <th>N. Contrato <a class="help" data-toggle="popover" title="Numero del contrato de venta" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Fecha de Venta <a class="help" data-toggle="popover" title="Fecha de la venta realizada" data-content=""><i class="feather icon-help-circle f-16"></i></a></th>
+                                        <th>Observación</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="feedbackTableBody">
+                                    {% regroup tbRegAudio by reg_fecha as fecha_list %}
+                                    {% for fecha in fecha_list %}
+                                    <tr class="date-row" data-date="{{ fecha.grouper|date:'Y-m-d' }}-feedback" onclick="toggleRows(this)">
+                                        <td colspan="5">
+                                            <span class="chevron">▶</span>
+                                            {{ fecha.grouper|date:'d \d\e F, Y' }}
+                                            <span class="record-count">{{ fecha.list|length }} registros</span>
+                                            <span class="download-count" onclick="descargarRegistros('{{ fecha.grouper|date:'Y-m-d' }}-feedback', event)">
+                                                <i class="feather icon-download"></i> Descargar
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    {% for registro in fecha.list %}
+                                    <tr class="child-row" data-parent="{{ fecha.grouper|date:'Y-m-d' }}-feedback">
+                                        <td>{{ registro.reg_fecha }}</td>
+                                        <td>{{ registro.reg_n_gasera }}</td>
+                                        <td>{{ registro.reg_contrato }}</td>
+                                        <td>{{ registro.reg_fechontrat }}</td>
+                                        <td class="fixed-width" title="{{ registro.reg_observ_audio }}">{{ registro.reg_observ_audio }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extrajs %}
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <!-- Incluir Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- custom-chart js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- apex chart -->
+  <script src="{% static 'assets/js/plugins/apexcharts.min.js' %}"></script>
+  <script src="{% static 'assets/js/pages/dashboard-main.js' %}"></script>
+  
+  <!-- AmCharts -->
+  <script src="{% static 'assets/js/chart/index.js' %}"></script>
+  <script src="{% static 'assets/js/chart/xy.js' %}"></script>
+  <script src="{% static 'assets/js/chart/Animated.js' %}"></script>
+  <script src="{% static 'assets/js/chart/chart.js' %}"></script>
+  <!-- Scripts actualización de la tabla -->
+  <script src="{% static 'assets/js/scripts-lp.js' %}"></script>
+{% endblock extrajs %}

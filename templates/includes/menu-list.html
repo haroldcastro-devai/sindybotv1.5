@@ -1,0 +1,47 @@
+{% load i18n static %}
+<ul class="nav pcoded-inner-navbar ">
+  <!-- Sección Dashboard - Para todos los usuarios -->
+  <li class="nav-item pcoded-menu-caption">
+    <label></label>
+  </li>
+  <li class="nav-item">
+    <a href="{% url 'index' %}" class="nav-link "><span class="pcoded-micon"><i
+          class="feather icon-home" data-feather="home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+  </li>
+ 
+  <!-- Sección para usuarios Staff/Admin -->
+  {% if user.is_staff %}
+  <li class="nav-item pcoded-menu-caption">
+    <label>Administración</label>
+  </li>
+  <li class="nav-item">
+    <a href="{% url 'admin:auth_user_changelist' %}" class="nav-link"><span class="pcoded-micon"><i
+          class="feather icon-users" data-feather="users"></i></span><span class="pcoded-mtext">Usuarios</span></a>
+  </li>
+  {% endif %}
+
+  <!-- Sección GESTIÓN - Para todos los usuarios -->
+  <li class="nav-item pcoded-menu-caption">
+    <label style="text-transform: uppercase;">GESTIÓN</label>
+  </li>
+  <li class="nav-item">
+    <a href="{% url 'config' %}" class="nav-link "><span class="pcoded-micon"><i
+          class="feather icon-box" data-feather="box"></i></span><span class="pcoded-mtext">Auditoria</span></a>
+  </li>
+   
+  <!-- Sección Especial para el usuario 'admin' -->
+  {% if user.username == 'admin' and not user.is_superuser %}
+  <li class="nav-item pcoded-menu-caption">
+    <label>Pages</label>
+  </li>
+  
+  <li class="nav-item pcoded-hasmenu">
+    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span
+        class="pcoded-mtext">Usuarios</span></a>
+    <ul class="pcoded-submenu">
+      {% comment %} <li><a href="{% url 'auth_signup' %}" target="_blank">Sign up</a></li> {% endcomment %}
+      <li><a href="{% url 'auth_signin' %}" target="_blank">Ingresar</a></li>
+    </ul>
+  </li>
+  {% endif %}
+</ul>

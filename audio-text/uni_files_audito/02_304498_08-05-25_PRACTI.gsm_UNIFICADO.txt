@@ -1,0 +1,296 @@
+
+[SPEAKER_01]
+0:00:00.757000 - 0:00:04.280000:  Hola, buenas tardes, pues habla señora Carmen.
+
+[SPEAKER_00]
+0:00:05.081000 - 0:00:06.082000: Sí, señora, a la orden.
+
+[SPEAKER_01]
+0:00:06.883000 - 0:00:12.508000: Mucho gusto, señora Carmen, mi nombre es Madeleine Pinto, asesora comercial de Aljur Piga, Servicio Gas Natural.
+
+[SPEAKER_01]
+0:00:13.208000 - 0:00:15.911000: ¿Cómo se encuentra, cómo la ha ido con el servicio del gas al momento?
+
+[SPEAKER_00]
+0:00:16.972000 - 0:00:19.314000: Bien, gracias, adiós.
+
+[SPEAKER_01]
+0:00:20.094000 - 0:00:25.539000: Me alegro, también estamos validando, disculpe, señora Carmen, usted es la responsable de los pagos de las facturas del gas, ¿correcto?
+
+[SPEAKER_01]
+0:00:25.940000 - 0:00:26.660000: Sí, señora.
+
+[SPEAKER_01]
+0:00:29.346000 - 0:00:43.731000:  Listo, queremos informarle en este momento, señora Carmen, que por ser usted usada activa de su actividad, a ella le brinda la oportunidad de contarle un saldo económico por el valor de 16.803.497 pesos, en caso Dios no lo permita.
+
+[SPEAKER_01]
+0:00:44.391000 - 0:00:49.633000: Usted ya saldrá por cualquier tipo de causa con Sara, con esta protección a partir de las 2 de la noche el día de hoy.
+
+[SPEAKER_01]
+0:00:50.133000 - 0:00:52.334000: ¿Queda clara la información hasta el momento, señora?
+
+[SPEAKER_00]
+0:00:52.454000 - 0:00:55.495000: Es que no la escucho bien.
+
+[SPEAKER_01]
+0:00:57.600000 - 0:01:08.123000:  que le estaba indicando, que por ser visor y activo de Surpigal, Salva le brinda la oportunidad de contar con un respaldo económico que es de 16.803.497 pesos.
+
+[SPEAKER_01]
+0:01:08.243000 - 0:01:18.405000: En caso de que Dios no lo quiera, usted ya salga por cualquier tipo de causa, mi señora, contará con esta protección a partir de donde se la nace el día de hoy.
+
+[SPEAKER_01]
+0:01:19.125000 - 0:01:23.346000: El único remiso a la persona sea menor de 60 y 6 años.
+
+[SPEAKER_01]
+0:01:23.787000 - 0:01:25.567000: ¿Queda clara la información hasta el momento?
+
+[SPEAKER_00]
+0:01:26.399000 - 0:01:32.108000:  Doña, qué pena, pero es que no lo escucho bien, no sé qué pasa, pero se escucha como un ruido, no lo escucho bien.
+
+[SPEAKER_00]
+0:01:32.148000 - 0:01:33.910000: Señora, cada vez no me escuchan.
+
+[SPEAKER_01]
+0:01:35.713000 - 0:01:38.797000: Permítame, yo le voy a marcar nuevamente, permítame un segundo.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:01:41.444000 - 0:01:41.964000:  Hola, buenas tardes.
+
+[SPEAKER_00]
+0:01:41.984000 - 0:01:44.066000: Señora Carmen, ¿les puedo escuchar a él?
+
+[SPEAKER_01]
+0:01:44.086000 - 0:01:48.148000: Sí, le estoy escuchando ahora, sí.
+
+[SPEAKER_00]
+0:01:48.989000 - 0:01:49.229000: Ok.
+
+[SPEAKER_00]
+0:01:49.409000 - 0:02:04.479000: En este momento, mi señora, nos estamos comunicando con usted para informarle que por ser usted usuario activo de surtidas, Alfa le brinda la oportunidad de contar con un respaldo económico que es por el valor de 16.803.497 pesos.
+
+[SPEAKER_00]
+0:02:04.759000 - 0:02:09.282000: En caso Dios no lo quiera, usted va a faltar por cualquier tipo de causa, contará.
+
+[SPEAKER_00]
+0:02:09.878000 - 0:02:13.140000:  con esta protección a partir de las 12 de la noche el día de hoy.
+
+[SPEAKER_00]
+0:02:13.900000 - 0:02:18.322000: El único requisito, mi señora, es que la persona sea menor de 60 y 6 años.
+
+[SPEAKER_00]
+0:02:19.803000 - 0:02:22.444000: ¿Ya queda más clara la información hasta aquí, mi señora?
+
+[SPEAKER_01]
+0:02:22.464000 - 0:02:26.246000: Dios mío, no lo entiendo.
+
+[SPEAKER_01]
+0:02:26.286000 - 0:02:28.867000: Qué pena, pero no lo entiendo.
+
+[SPEAKER_01]
+0:02:28.887000 - 0:02:29.808000: No lo logro entender.
+
+[SPEAKER_00]
+0:02:29.828000 - 0:02:32.749000: Mi señora, le estaba indicando, usted es usuario activo de su utilidad.
+
+[SPEAKER_00]
+0:02:32.869000 - 0:02:38.532000: Entonces, por ese motivo, Alfa le brinda la oportunidad a usted de contar con un respaldo económico.
+
+[SPEAKER_00]
+0:02:39.535000 - 0:02:42.876000:  El respaldo es de 16.803.497 pesos.
+
+[SPEAKER_00]
+0:02:43.136000 - 0:02:52.319000: En caso Dios no lo quiera, usted ya faltar por cualquier tipo de causa contará con esta protección a partir de las 12 de la noche el día de hoy.
+
+[SPEAKER_00]
+0:02:52.399000 - 0:02:56.880000: El único requisito, señora Carmen, es que usted sea menor de 66 años.
+
+[SPEAKER_00]
+0:02:58.321000 - 0:03:00.902000: ¿Queda más clara la información hasta aquí, señora Carmen?
+
+[SPEAKER_01]
+0:03:01.022000 - 0:03:01.742000: Sí, sí, sí, sí.
+
+[SPEAKER_00]
+0:03:02.282000 - 0:03:05.443000: Igual recuerde, señora Carmen, que todas las llamadas son grabadas y son monitoreadas.
+
+[SPEAKER_00]
+0:03:05.503000 - 0:03:05.823000: Dígame.
+
+[SPEAKER_00]
+0:03:05.843000 - 0:03:06.663000: ¿Cómo es que...?
+
+[SPEAKER_01]
+0:03:09.649000 - 0:03:10.770000:  ¿Y eso a qué se debe?
+
+[SPEAKER_01]
+0:03:10.850000 - 0:03:11.970000: O sea, ¿para qué?
+
+[SPEAKER_01]
+0:03:12.010000 - 0:03:14.572000: ¿Qué lo podría utilizar?
+
+[SPEAKER_00]
+0:03:14.592000 - 0:03:20.296000: Mi señora, esto como yo le indico, es en caso que Dios no lo quiera, usted va a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:03:20.996000 - 0:03:25.039000: Sus beneficiarios de ley quedarían totalmente indemnizados.
+
+[SPEAKER_00]
+0:03:25.259000 - 0:03:27.720000: Ellos quedarían indemnizados automáticamente.
+
+[SPEAKER_01]
+0:03:27.740000 - 0:03:29.221000: Ah, ya entiendo.
+
+[SPEAKER_00]
+0:03:29.261000 - 0:03:29.521000: ¿Ya?
+
+[SPEAKER_01]
+0:03:29.541000 - 0:03:30.682000: Como un seguro de vida.
+
+[SPEAKER_00]
+0:03:30.742000 - 0:03:34.244000: Exactamente, sí, mi señora, es una protección de vida que le están brindando.
+
+[SPEAKER_01]
+0:03:34.705000 - 0:03:35.025000: Exacto.
+
+[SPEAKER_00]
+0:03:36.340000 - 0:03:40.003000:  El único requisito acá que solicitamos es que la persona sea menor de 66 años.
+
+[SPEAKER_00]
+0:03:40.023000 - 0:03:43.265000: ¿Y hay que pagar algo?
+
+[SPEAKER_00]
+0:03:43.445000 - 0:03:45.666000: Sí, mi señora.
+
+[SPEAKER_00]
+0:03:45.826000 - 0:03:48.548000: El respaldo económico tiene un aporte mensual de $26,460.
+
+[SPEAKER_00]
+0:03:48.748000 - 0:03:53.131000: Usted tiene derecho a respaldar a 8 personas de su núcleo familiar.
+
+[SPEAKER_00]
+0:03:53.711000 - 0:04:02.657000: Por ser usuario activo de surtidas, usted no se le generaría ningún tipo de cobre en el momento, mi señora, hasta su próximo ciclo de facturación, porque la idea es evitar cualquier tipo de eventualidad, ¿ya?
+
+[SPEAKER_00]
+0:04:02.757000 - 0:04:02.817000: Sí.
+
+[SPEAKER_00]
+0:04:04.607000 - 0:04:07.449000:  Ok, igual recuerde que toda la llamada es a una base monitoreada.
+
+[SPEAKER_00]
+0:04:07.489000 - 0:04:09.911000: Su nombre es Carmen Alicia Torosorio con cédula 45505957.
+
+[SPEAKER_00]
+0:04:12.453000 - 0:04:23.081000: Y la dirección donde le están llegando las facturas del gas normalmente, mi señora, donde le están llegando las facturas normalmente es la carrera 8 calle 360.
+
+[SPEAKER_00]
+0:04:23.121000 - 0:04:27.185000: En este caso, mi señora, usted tiene 58 años, nació el 29 de julio de 1966.
+
+[SPEAKER_00]
+0:04:32.877000 - 0:04:38.901000:  Y me registra que usted sacó un crédito a 36 cuotas, un ventilador Samurai.
+
+[SPEAKER_01]
+0:04:39.482000 - 0:04:40.202000: Sí.
+
+[SPEAKER_00]
+0:04:40.282000 - 0:04:45.586000: Y el correo que dejó registrado, señora Carmen, es torocarmen829.com.
+
+[SPEAKER_00]
+0:04:45.606000 - 0:04:46.546000: Sí, así es.
+
+[SPEAKER_00]
+0:04:48.267000 - 0:04:57.873000: En este caso, señora Carmen declara que los datos anteriormente suministrados son reales y que las actividades a las que se dedica mi señora son normales y se encuentran dentro de los marcos legales, ¿es correcto?
+
+[SPEAKER_01]
+0:04:57.933000 - 0:04:58.614000: Sí, señora.
+
+[SPEAKER_00]
+0:04:59.015000 - 0:05:01.216000:  Ok, a continuación le voy a leer la Ley A.B.
+
+[SPEAKER_00]
+0:05:01.256000 - 0:05:04.856000: Andata, mi señora, que es la que respalda y protege los datos personales de usted.
+
+[SPEAKER_00]
+0:05:04.896000 - 0:05:14.558000: En este caso, señora Garmel, seguro salva como responsable el andatamiento de su formación para fines legales contactuales, en particular en desarrollo de procesos de prevenida, venda, convenida, contacto.
+
+[SPEAKER_00]
+0:05:14.598000 - 0:05:19.420000: El seguro tiene derecho también a conocer, actualizar, rectificar su formación y a lo demás previsto en la Ley 1581 del 2012.
+
+[SPEAKER_00]
+0:05:22.014000 - 0:05:33.880000:  Normas complementares, la política de tratamiento y formación también disponible en www.segurusalva.com.co en la protección de datos y es voluntario responder preguntas sobre información sensible de menores de edad.
+
+[SPEAKER_00]
+0:05:34.400000 - 0:05:36.982000: Al continuar en la llamada, mi señora, pues otorga su autorización.
+
+[SPEAKER_00]
+0:05:37.002000 - 0:05:43.125000: Declaro usted que ha sido informado que nuestras políticas de tratamiento y las condiciones generales de Producto Patria y Seguro puedan ser consultadas.
+
+[SPEAKER_00]
+0:05:44.527000 - 0:05:54.330000:  En www.segurosalva.com.co también la puede solicitar a través del correo que es Servicio al Cliente, a nova.segurosalva.com.co y a través del teléfono 601-307-7032.
+
+[SPEAKER_00]
+0:05:54.350000 - 0:05:59.691000: Y manejamos la línea nacional que es la 018-1215-32.
+
+[SPEAKER_00]
+0:06:00.071000 - 0:06:09.193000: De igual manera, si usted desea comunicarse con nosotros, mi señora, ahí en las facturas va a encontrar todas las líneas de atención para que usted lo pueda hacer sin ningún problema.
+
+[SPEAKER_00]
+0:06:09.933000 - 0:06:13.154000: Ha quedado clara la línea de atención y su protección de áticos, ¿correcto, mi señora?
+
+[SPEAKER_01]
+0:06:14.110000 - 0:06:20.113000:  Sí, pero yo le hago una pregunta, ¿eso es obligatorio o tengo, o sea, si yo lo quiero coger, lo cojo y si no, no?
+
+[SPEAKER_00]
+0:06:21.173000 - 0:06:30.778000: No, mi señora, igual esto es una protección que le brindan y que le ponen a su disposición, como le digo, para evitar cualquier deuda o cualquier eventualidad que se pueda presentar con usted, mi señora.
+
+[SPEAKER_01]
+0:06:30.878000 - 0:06:33.079000: Ah, bueno, listo.
+
+[SPEAKER_00]
+0:06:33.819000 - 0:06:37.581000: De igual manera, yo le mando la información al correo y mi señora, pues como le digo,
+
+[SPEAKER_00]
+0:06:38.626000 - 0:06:44.571000:  Esto es para que usted y sus beneficiarios de ley puedan quedar amparados, puedan quedar respaldados.
+
+[SPEAKER_00]
+0:06:45.912000 - 0:06:50.075000: En este caso, mi señora, ya para finalizar, hacerle llegar esta información al correo electrónico.
+
+[SPEAKER_00]
+0:06:50.436000 - 0:07:07.049000: Mi señora acepta los productos, autoriza a cargar valor mensal 26.460, por su pórtica patria y segura en la factura de la línea natural, a favor de seguridad salvaje, bienal, empleado mensualmente a partir del siguiente siglo de facturación, y se renueva automáticamente, pasada la vigencia de los 12 meses, o incrementa el valor asegurado, acuerdo al IPC,
+
+[SPEAKER_00]
+0:07:07.589000 - 0:07:10.833000:  Hasta que emplece en calidad de usuario la decisión de retirar ese programa, ¿correcto, mi señora?
+
+[SPEAKER_01]
+0:07:11.514000 - 0:07:11.914000: Bueno, sí.
+
+[SPEAKER_00]
+0:07:12.415000 - 0:07:12.835000: ¿Es correcto?
+
+[SPEAKER_01]
+0:07:13.676000 - 0:07:14.137000: Sí, señora.
+
+[SPEAKER_00]
+0:07:14.397000 - 0:07:14.838000: Ok.
+
+[SPEAKER_00]
+0:07:14.898000 - 0:07:22.567000: Le recuerdo, mi señora, que sus beneficiarios montarán con una indemnización por el valor de 16.803.497 pesos en caso, señora Carmen.
+
+[SPEAKER_00]
+0:07:22.587000 - 0:07:26.071000: Dios no lo permita, Dios no lo quiera, usted va a faltar y su protección se cuelga activa.
+
+[SPEAKER_00]
+0:07:26.091000 - 0:07:28.534000: Gracias por confiar en Alfa para la protección de ustedes y su familia.
+
+[SPEAKER_00]
+0:07:28.554000 - 0:07:29.395000: Dios me la bendiga.
+
+[SPEAKER_00]
+0:07:29.836000 - 0:07:30.757000: Hasta luego, mi señora.
+
+[SPEAKER_01]
+0:07:31.017000 - 0:07:31.798000: Hasta luego.
+
+[SPEAKER_01]
+0:07:32.058000 - 0:07:32.459000: Muchas gracias.

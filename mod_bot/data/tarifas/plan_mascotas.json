@@ -1,0 +1,43 @@
+{
+    "nombre": "Plan Mascotas",
+    "descripcion": "Asistencia veterinaria integral para perros y gatos",
+    "coberturas": {
+        "consultas_veterinarias": "3 consultas anuales",
+        "vacunas": ["Rabia", "Distemper", "Parvovirus", "Triple felina"],
+        "desparasitacion": "2 sesiones anuales",
+        "urgencias": "Atención 24/7"
+    },
+    "tarifas": [
+        {
+            "plan": "Individual",
+            "precio_mensual": 11950,
+            "mascotas_cubiertas": 1,
+            "edad_minima": 3,
+            "edad_maxima": 10,
+            "beneficios_adicionales": ["Descuento en alimentos", "Baño y peluquería"]
+        },
+        {
+            "plan": "Familiar",
+            "precio_mensual": 16950,
+            "mascotas_cubiertas": 2,
+            "edad_minima": 3,
+            "edad_maxima": 10,
+            "beneficios_adicionales": ["Descuento en alimentos", "Baño y peluquería", "Orientación telefónica 24/7"]
+        }
+    ],
+    "requisitos": {
+        "tipo_mascota": ["Perros", "Gatos"],
+        "vacunacion": "Esquema básico al día",
+        "permanencia": "No tiene período de permanencia"
+    },
+    "exclusiones": [
+        "Enfermedades preexistentes",
+        "Cirugías estéticas",
+        "Tratamientos de comportamiento",
+        "Enfermedades hereditarias"
+    ],
+    "red_veterinaria": {
+        "cobertura_ciudades": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena"],
+        "clinicas_afiliadas": 120
+    }
+}

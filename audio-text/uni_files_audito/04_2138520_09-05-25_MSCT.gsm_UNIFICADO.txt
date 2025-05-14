@@ -1,0 +1,1024 @@
+
+[SPEAKER_01]
+0:00:00.436000 - 0:00:02.638000:  Hola, buenos días.
+
+[SPEAKER_01]
+0:00:02.718000 - 0:00:04.180000: Tengo el gusto con la señora Ana.
+
+[SPEAKER_01]
+0:00:04.961000 - 0:00:05.481000: Sí, con ella.
+
+[SPEAKER_01]
+0:00:06.462000 - 0:00:07.503000: Buen día, señora Ana.
+
+[SPEAKER_01]
+0:00:07.543000 - 0:00:13.950000: Le habla nuevamente Yanuri Piña de Seguros Alfa y Gases de Occidente para la información del seguro de la mascota.
+
+[SPEAKER_00]
+0:00:15.492000 - 0:00:17.454000: Sí, hagámoslo.
+
+[SPEAKER_00]
+0:00:17.754000 - 0:00:21.558000: Hagámoslo que se me cruzan unas semanitas, pero está bien.
+
+[SPEAKER_01]
+0:00:22.423000 - 0:00:23.624000:  Ok, sí, señora.
+
+[SPEAKER_01]
+0:00:23.644000 - 0:00:33.971000: De igual forma, señora Ana, pues recordándole que en el mismo momento de la afiliación no se le estaría cobrando nada, sino a partir de su siguiente ciclo de postulación, dando tiempo a que se organice, ¿correcto?
+
+[SPEAKER_00]
+0:00:34.932000 - 0:00:35.812000: Correcto.
+
+[SPEAKER_01]
+0:00:35.932000 - 0:00:36.793000: Listo, sí, señora.
+
+[SPEAKER_01]
+0:00:36.813000 - 0:00:50.162000: Haciéndole un recorderio de las asistencias, señora Ana, queremos indicarle que la MAFOTA contaría con respaldo de asistencias en salud, como gastos veterinarios por accidentes o enfermedades, auxilio de gastos de quequeas y eutanasia,
+
+[SPEAKER_01]
+0:00:50.928000 - 0:01:15.852000:  traslado de mascota por emergencia, guardería en caso de hospitalización o viaje del dueño, informes de vacuna para la mascota, asistencia legal de daño tercero, esterilización de mascota, pipeta antipulgas, urgencia dental para mascota, orientación nutricional veterinaria, orientación psicológica al dueño por fallecimiento de mascota, refuerzo antirrábico anual, refuerzo de esquema extravalente anual y referencia y coordinación del servicio de la mascota.
+
+[SPEAKER_01]
+0:01:16.312000 - 0:01:19.993000: Y su mascota, señora Ana, podrá hacer uso de las asistencias pasados los siguientes 30 días.
+
+[SPEAKER_01]
+0:01:21.406000 - 0:01:35.654000:  Usted como dueño, señora Ana, contaría con un respaldo de 2.630.000 pesos en caso de enfermedad o accidente, que le incapacite de manera total o permanente por un periodo continuo no menor a 150 días, generándole incapacidad laboral igual o superior al 50%.
+
+[SPEAKER_01]
+0:01:37.235000 - 0:01:45.760000: Y si usted llegase a faltar a causa de algún accidente, contaría con una indemnización de 5.260.000 pesos para sus beneficiarios o las personas que usted designe.
+
+[SPEAKER_01]
+0:01:46.394000 - 0:01:51.116000:  Dicha indemnización podría reclamarse hasta después de 180 días de haber ocurrido el accidente.
+
+[SPEAKER_01]
+0:01:51.136000 - 0:02:00.081000: Y finalmente se le otorga un bono de $526,000 a sus beneficiarios para cualquier tipo de gastos en caso de fallecimiento e incapacidad total o permanente.
+
+[SPEAKER_01]
+0:02:00.861000 - 0:02:13.528000: El único requisito, señora Ana, es ser menor de 76 años y el valor de la protección sería cargado en su factura de gas por $16,780 a partir del siguiente ciclo de facturación del gas natural, ¿correcto?
+
+[SPEAKER_00]
+0:02:14.447000 - 0:02:18.668000:  Eh, tú me has dicho ayer 15,000.
+
+[SPEAKER_01]
+0:02:19.008000 - 0:02:19.368000: ¿Tú entiendes?
+
+[SPEAKER_01]
+0:02:19.408000 - 0:02:21.929000: Disculpe, ¿en qué ciudad se encuentra, señora Ana?
+
+[SPEAKER_00]
+0:02:22.169000 - 0:02:22.589000: En Cali.
+
+[SPEAKER_01]
+0:02:23.289000 - 0:02:24.949000: Cali, no, para Cali corresponde 16,780 pesos.
+
+[SPEAKER_01]
+0:02:25.249000 - 0:02:26.209000: Sí, señora.
+
+[SPEAKER_00]
+0:02:26.390000 - 0:02:26.570000: Ok.
+
+[SPEAKER_00]
+0:02:26.610000 - 0:02:30.570000: Por cada mascota.
+
+[SPEAKER_01]
+0:02:30.610000 - 0:02:32.051000: Por cada mascota, sí, señora.
+
+[SPEAKER_01]
+0:02:32.471000 - 0:02:37.292000: Señora Ana, me confirmaba usted que es la persona responsable del pago de la factura del gas natural, ¿correcto?
+
+[SPEAKER_00]
+0:02:37.312000 - 0:02:38.752000: Eh, sí, así es.
+
+[SPEAKER_00]
+0:02:38.912000 - 0:02:42.953000: ¿Me puedes ampliar esa parte de referencia de mascota?
+
+[SPEAKER_01]
+0:02:46.219000 - 0:02:50.440000:  La última asistencia, esa es la que es ilimitada, referencia y coordinación de servicios para la mascota.
+
+[SPEAKER_01]
+0:02:51.260000 - 0:03:07.305000: Todas las asistencias, sí señora, esa le incluye todas las asistencias anteriormente mencionadas, porque le incluye las consultas, cirugía, consulta por refuerzo, consulta por vacuna, o incluso señora Ana, por alguna urgencia que usted tenga con la mascota,
+
+[SPEAKER_01]
+0:03:07.824000 - 0:03:16.027000:  Usted puede comunicar nuestras líneas de atención nacional que se las dejaríamos al correo electrónico para que asistan a la mascota en el momento que usted lo necesite.
+
+[SPEAKER_00]
+0:03:16.047000 - 0:03:16.387000: Vale.
+
+[SPEAKER_00]
+0:03:16.507000 - 0:03:22.989000: ¿Y tú me puedes anexar o tendría acceso a la red de prestadores que ustedes tienen?
+
+[SPEAKER_00]
+0:03:23.549000 - 0:03:26.870000: Para yo poder como visitar, conocer y... Disculpe.
+
+[SPEAKER_00]
+0:03:27.070000 - 0:03:27.370000: Pues para...
+
+[SPEAKER_00]
+0:03:28.066000 - 0:03:29.286000:  ¿Tú tienes un listado de la red de prestadores?
+
+[SPEAKER_00]
+0:03:29.346000 - 0:03:36.169000: ¿Te acuerdas que ayer te preguntaba que si era por reembolso o que si debía ir a la red que ustedes tenían?
+
+[SPEAKER_01]
+0:03:36.209000 - 0:03:45.652000: Claro, sí señora, me faltó esa información señora Ana, que Alfa ofrece acceso a una amplia red de veterinarias a nivel nacional, brindando la atención médica de calidad en su ciudad o municipio.
+
+[SPEAKER_01]
+0:03:45.772000 - 0:03:54.555000: Según su ubicación en Cali y asistencia requerida en el momento, la aseguradora se encarga de informarle vía correo electrónico sobre la lista de las clínicas veterinarias cercanas una vez tomada la póliza,
+
+[SPEAKER_01]
+0:03:55.085000 - 0:04:15.205000:  y nuestras líneas de atención nacional para que usted tenga amplia información, incluso una constancia física de la póliza, ya que esta protección también es abierta y la manejamos por reembolso, lo que le permite a usted llevarla a nuestra red de clínicas veterinarias o seguirla llevando a su médico particular de confianza para que le pueda realizar el reembolso de acuerdo a la asistencia, por ejemplo.
+
+[SPEAKER_01]
+0:04:15.745000 - 0:04:18.568000: En el reembolso, lo que le voy a indicar a continuación,
+
+[SPEAKER_01]
+0:04:19.087000 - 0:04:21.149000:  Es el monto por reembolso por cada asistencia.
+
+[SPEAKER_01]
+0:04:21.389000 - 0:04:26.433000: Entre gastos veterinarias y accidentes por enfermedad, le cubre hasta $300,000 por cada evento.
+
+[SPEAKER_01]
+0:04:26.953000 - 0:04:30.576000: Auxilio de gastos de exequias y eutanasia, $150,000 por evento.
+
+[SPEAKER_01]
+0:04:30.616000 - 0:04:32.417000: Pero eso en dado caso que usted lo haga por fuera.
+
+[SPEAKER_01]
+0:04:33.338000 - 0:04:35.620000: Guardería, en caso de... En el caso de que lo haga por fuera.
+
+[SPEAKER_01]
+0:04:35.660000 - 0:04:36.861000: Exactamente, sí, señora.
+
+[SPEAKER_01]
+0:04:37.341000 - 0:04:43.146000: En el caso de la guardería por hospitalización o viaje del dueño, son hasta $80,000 por evento.
+
+[SPEAKER_01]
+0:04:43.526000 - 0:04:46.128000: Son dos eventos al año que se le cubren por guardería, es decir...
+
+[SPEAKER_01]
+0:04:47.086000 - 0:05:10.535000:  dos reembolsos de 80 mil pesos cada uno, esterilización de mascotas 150 mil pesos, pipeta antipulgas 70 mil pesos, urgencia dental para la mascota 200 mil pesos, baño para la mascota 70 mil pesos, entrega de medicamentos a domicilio 50 mil pesos, refuerzo antirrábico anual 80 mil pesos, refuerzo de esquema hexavalente anual 80 mil pesos,
+
+[SPEAKER_01]
+0:05:11.754000 - 0:05:13.835000:  Y Paseo Canino, 150 mil pesos.
+
+[SPEAKER_01]
+0:05:14.135000 - 0:05:23.758000: Recordándole que todas las asistencias y este reembolso y todas las coberturas que tiene que le acabo de mencionar, se la enviaremos al correo electrónico dejándole la constancia de la póliza, ¿correcto?
+
+[SPEAKER_00]
+0:05:24.538000 - 0:05:26.219000: Sí, correcto.
+
+[SPEAKER_00]
+0:05:26.939000 - 0:05:29.240000: Y una pregunta más, qué pena.
+
+[SPEAKER_00]
+0:05:29.280000 - 0:05:32.341000: Tú me hablas todo de enfermedad y de urgencia, ¿cierto?
+
+[SPEAKER_00]
+0:05:32.581000 - 0:05:36.102000: Pero el chequeo médico que se les hace anual, ¿también está cubierto o no?
+
+[SPEAKER_01]
+0:05:36.518000 - 0:05:37.018000:  Sí, claro.
+
+[SPEAKER_01]
+0:05:37.138000 - 0:05:40.759000: Ese entra por medio de la referencia y coordinación de servicios para la mascota.
+
+[SPEAKER_00]
+0:05:40.779000 - 0:05:41.699000: Ah, excelente.
+
+[SPEAKER_01]
+0:05:42.239000 - 0:05:42.599000: Sí, señora.
+
+[SPEAKER_00]
+0:05:42.619000 - 0:05:44.120000: ¿Y eso también aplica con reembolso?
+
+[SPEAKER_00]
+0:05:44.160000 - 0:05:45.860000: Si yo lo hago, por ejemplo, con mi veterinario.
+
+[SPEAKER_00]
+0:05:46.380000 - 0:05:48.401000: O bueno, que sería buena idea empezarlo con la red.
+
+[SPEAKER_00]
+0:05:48.541000 - 0:05:52.701000: Así los conocen y yo voy a... Porque ellos apenas tienen un añito.
+
+[SPEAKER_01]
+0:05:52.761000 - 0:05:53.542000: Claro, sí, señora.
+
+[SPEAKER_01]
+0:05:53.662000 - 0:06:03.064000: Incluso, señora Ana, usted por allí puede solicitar consulta y el médico determina si necesita de examenes médicos, si necesita de refuerzo de vacunas o una vacuna nueva.
+
+[SPEAKER_01]
+0:06:03.484000 - 0:06:04.584000: Todo lo que usted solicite...
+
+[SPEAKER_01]
+0:06:05.074000 - 0:06:11.597000:  Eso lo coordina el médico veterinario en cuanto al estado de salud de la mascota.
+
+[SPEAKER_00]
+0:06:11.657000 - 0:06:12.418000: Sí, excelente.
+
+[SPEAKER_00]
+0:06:13.438000 - 0:06:14.579000: Sí, sí, sí, abrámoslo entonces.
+
+[SPEAKER_01]
+0:06:15.639000 - 0:06:16.059000: Ok.
+
+[SPEAKER_01]
+0:06:16.279000 - 0:06:22.663000: Señora Ana, me indica, por favor, para tenerlo en cuenta acá en el sistema, el correo electrónico, por favor.
+
+[SPEAKER_01]
+0:06:24.463000 - 0:06:26.845000: Ana Varela Pozo.
+
+[SPEAKER_00]
+0:06:26.865000 - 0:06:31.267000: Pozo con doble S. Pozo con doble S. Ana Varela Pozo.
+
+[SPEAKER_01]
+0:06:31.287000 - 0:06:31.387000: Ok.
+
+[SPEAKER_00]
+0:06:31.487000 - 0:06:33.468000: Arroba...
+
+[SPEAKER_00]
+0:06:35.178000 - 0:06:36.439000:  Gmail.com.
+
+[SPEAKER_01]
+0:06:36.519000 - 0:06:38.559000: Arroba Gmail.com.
+
+[SPEAKER_01]
+0:06:38.839000 - 0:06:39.680000: Ok.
+
+[SPEAKER_01]
+0:06:39.720000 - 0:06:43.841000: ¿El nombre de la primera mascota filial, señora Ana?
+
+[SPEAKER_01]
+0:06:43.981000 - 0:06:44.581000: Bruno.
+
+[SPEAKER_01]
+0:06:44.601000 - 0:06:45.062000: Bruno.
+
+[SPEAKER_00]
+0:06:45.322000 - 0:06:49.323000: ¿Qué edad tiene Bruno?
+
+[SPEAKER_01]
+0:06:49.483000 - 0:06:50.363000: Un año, un mes.
+
+[SPEAKER_01]
+0:06:50.463000 - 0:06:50.643000: Ok.
+
+[SPEAKER_01]
+0:06:51.044000 - 0:06:52.304000: Un año, un mes.
+
+[SPEAKER_01]
+0:06:52.844000 - 0:06:54.065000: Señora.
+
+[SPEAKER_01]
+0:06:54.085000 - 0:06:56.325000: ¿Qué raza es Bruno, señora Ana?
+
+[SPEAKER_00]
+0:06:56.365000 - 0:06:57.766000: Mesizo.
+
+[SPEAKER_01]
+0:06:58.486000 - 0:06:58.846000: Ok.
+
+[SPEAKER_01]
+0:06:59.266000 - 0:07:01.087000: Es mesizo.
+
+[SPEAKER_01]
+0:07:01.387000 - 0:07:02.908000: Es macho, ¿correcto?
+
+[Speaker]
+0:07:03.368000 - 0:07:03.548000: Macho.
+
+[SPEAKER_01]
+0:07:04.854000 - 0:07:05.134000:  ¿Macho?
+
+[SPEAKER_01]
+0:07:05.314000 - 0:07:06.895000: ¿Es un perrito, señora Ana, o un gato?
+
+[SPEAKER_00]
+0:07:07.576000 - 0:07:08.656000: Es un perro.
+
+[SPEAKER_00]
+0:07:08.716000 - 0:07:09.937000: Son tres perros.
+
+[SPEAKER_01]
+0:07:10.077000 - 0:07:10.257000: Ok.
+
+[SPEAKER_01]
+0:07:10.317000 - 0:07:10.917000: Sí, señora.
+
+[SPEAKER_01]
+0:07:10.997000 - 0:07:15.480000: Permítame un momento, por favor.
+
+[SPEAKER_01]
+0:07:16.880000 - 0:07:19.202000: Me indica, por favor, su nombre de documento, señora Ana.
+
+[SPEAKER_00]
+0:07:19.222000 - 0:07:20.462000: Seis seis.
+
+[SPEAKER_00]
+0:07:22.043000 - 0:07:23.404000: Sí.
+
+[SPEAKER_00]
+0:07:23.424000 - 0:07:24.184000: Nueve cinco cuatro.
+
+[SPEAKER_01]
+0:07:24.924000 - 0:07:25.505000: Sí, señora.
+
+[SPEAKER_00]
+0:07:27.046000 - 0:07:29.047000: Siete siete nueve.
+
+[SPEAKER_01]
+0:07:29.207000 - 0:07:30.067000: Siete siete nueve.
+
+[SPEAKER_01]
+0:07:30.507000 - 0:07:30.868000: Ok.
+
+[SPEAKER_01]
+0:07:31.048000 - 0:07:33.309000: Su fecha de nacimiento, señora Ana, por favor.
+
+[SPEAKER_01]
+0:07:33.329000 - 0:07:33.409000: Sí.
+
+[SPEAKER_00]
+0:07:34.087000 - 0:07:37.909000:  Febrero 12, 1975.
+
+[SPEAKER_01]
+0:07:39.050000 - 0:07:41.711000: Ok, cumple usted 50 años de edad, ¿correcto?
+
+[SPEAKER_00]
+0:07:42.412000 - 0:07:43.672000: Correcto.
+
+[SPEAKER_01]
+0:07:43.792000 - 0:07:44.653000: Ok, sí, señora.
+
+[SPEAKER_01]
+0:07:45.373000 - 0:07:48.275000: Señora Ana, ¿a nombre de quién está la factura del gas natural?
+
+[SPEAKER_00]
+0:07:49.456000 - 0:07:51.817000: Ana María Parela Pozo.
+
+[SPEAKER_00]
+0:07:51.857000 - 0:07:52.777000: Vamos a usar dos, ¿no?
+
+[SPEAKER_00]
+0:07:52.837000 - 0:07:54.458000: Porque son tres más cosas.
+
+[SPEAKER_01]
+0:07:54.538000 - 0:07:55.719000: Exactamente, sí, señora.
+
+[SPEAKER_01]
+0:07:55.839000 - 0:08:02.383000: Para los primeros dos sería... De casualidad, ¿tiene el número del contrato...
+
+[SPEAKER_00]
+0:08:03.365000 - 0:08:03.425000:  Sí, 21, 31, 38, 520.
+
+[SPEAKER_00]
+0:08:03.585000 - 0:08:09.971000: Carrera 66, calle 13B, 64, BL, apartamento 405, en Santiago de Cali.
+
+[SPEAKER_01]
+0:08:10.071000 - 0:08:10.271000: Exacto.
+
+[SPEAKER_01]
+0:08:29.128000 - 0:08:30.089000:  Ok, sí señora.
+
+[SPEAKER_01]
+0:08:30.249000 - 0:08:33.951000: ¿Bruno cuenta con el esquema de vacunación al día hasta donde le corresponde, señora Ana?
+
+[SPEAKER_00]
+0:08:33.971000 - 0:08:39.033000: Así es, incluyendo todos de las PRF.
+
+[SPEAKER_01]
+0:08:39.093000 - 0:08:40.154000: Ok, sí señora.
+
+[SPEAKER_01]
+0:08:40.614000 - 0:08:45.456000: Y usted es la persona responsable del pago de la factura del gas natural, ¿correcto?
+
+[SPEAKER_01]
+0:08:45.516000 - 0:08:45.737000: Así es.
+
+[SPEAKER_01]
+0:08:45.757000 - 0:08:56.222000: Entonces declara usted, señora Ana, que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:08:56.402000 - 0:08:57.403000: Es correcto.
+
+[SPEAKER_01]
+0:08:57.423000 - 0:08:58.203000: ¿Correcto, señora Ana?
+
+[SPEAKER_00]
+0:08:59.069000 - 0:09:00.309000:  Sí, es correcto.
+
+[SPEAKER_01]
+0:09:00.389000 - 0:09:00.810000: Ok.
+
+[SPEAKER_01]
+0:09:01.450000 - 0:09:06.192000: Voy a proceder a leer la ley que protege sus datos personales para que sus datos no sean transferidos a terceros.
+
+[SPEAKER_01]
+0:09:06.792000 - 0:09:14.534000: Seguro alfa como responsable hará tratamiento de su información para fines legales contractuales en particular para el desarrollo de procesos de preventa.
+
+[SPEAKER_01]
+0:09:15.175000 - 0:09:21.737000: Venta y conventa del contrato de seguro tiene derecho a conocer, acusar y rectificar su información y a los demás previstos de la ley.
+
+[SPEAKER_01]
+0:09:21.757000 - 0:09:22.077000: 1581 de 2012.
+
+[SPEAKER_01]
+0:09:24.865000 - 0:09:32.190000:  Normas complementarias y la política de tratamiento de información disponible en www.segurosalva.com en la protección de datos.
+
+[SPEAKER_01]
+0:09:32.210000 - 0:09:44.758000: Es voluntario responder preguntas de información sensible de menores de edad y al continuar en la llamada, otorga su autorización y declara que usted ha sido informada de nuestras políticas de tratamiento y las condiciones generales del producto mascota.
+
+[SPEAKER_01]
+0:09:45.199000 - 0:09:54.485000: Pueden ser consultadas en la página www.segurosalva.com y también pueden ser solicitadas al correo electrónico servicioalcliente.segurosalva.com o al teléfono
+
+[SPEAKER_01]
+0:09:55.325000 - 0:10:00.489000:  601-307-7032 o a la línea nacional gratuita 018000-1225-32.
+
+[SPEAKER_01]
+0:10:00.549000 - 0:10:06.333000: ¿Está usted de acuerdo, señora Ana, con la protección de sus datos y nuestras líneas de atención nacional?
+
+[SPEAKER_01]
+0:10:06.433000 - 0:10:07.794000: ¿Correcto?
+
+[SPEAKER_01]
+0:10:07.894000 - 0:10:08.934000: Correcto.
+
+[SPEAKER_01]
+0:10:08.954000 - 0:10:10.555000: ¿Correcto, señora Ana?
+
+[SPEAKER_01]
+0:10:10.575000 - 0:10:11.196000: Sí, correcto.
+
+[SPEAKER_00]
+0:10:11.796000 - 0:10:12.176000: Ok.
+
+[SPEAKER_01]
+0:10:12.617000 - 0:10:15.719000: Recuerde las asistencias que le menciona, las cuales tendrá acceso su mascote.
+
+[SPEAKER_01]
+0:10:15.799000 - 0:10:20.162000: Recuerde que sus beneficiarios recibirán 5.260.000 pesos en caso de que usted llegue a faltar y usted
+
+[SPEAKER_01]
+0:10:23.118000 - 0:10:30.662000:  2.630.000 pesos en caso de ser calificado con incapacidad total o permanente y su protección se encuentra activa o cobrándose por medio de gases de occidente.
+
+[SPEAKER_01]
+0:10:31.123000 - 0:10:47.632000: Queremos informarle que conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actual que tiene con gases de occidente, usted podrá realizarlo a través de la página www.gdo.com.co y mientras elige será siendo contactado por los canales habituales.
+
+[SPEAKER_01]
+0:10:48.232000 - 0:10:49.873000: Ya para finalizar, señora Ana.
+
+[SPEAKER_01]
+0:10:50.874000 - 0:11:14.473000:  Acepta usted el producto y autoriza cargar el valor mensual de $16,780 por su póliza de mascotas en la factura del gas natural a favor de seguros alfa que se vería reflejado mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento del valor asegurado de acuerdo al IPC hasta que usted exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:11:14.513000 - 0:11:14.933000: ¿De acuerdo?
+
+[SPEAKER_00]
+0:11:15.894000 - 0:11:16.254000: De acuerdo.
+
+[SPEAKER_01]
+0:11:16.274000 - 0:11:19.116000: ¿De acuerdo, señora Ana?
+
+[SPEAKER_00]
+0:11:19.136000 - 0:11:19.537000: Sí, de acuerdo.
+
+[SPEAKER_00]
+0:11:19.557000 - 0:11:19.737000: Gracias.
+
+[SPEAKER_01]
+0:11:20.227000 - 0:11:20.728000:  Ok.
+
+[SPEAKER_01]
+0:11:21.108000 - 0:11:25.012000: Señora Ana, muchas gracias por confiar en Seguros Alfa para la protección de usted y la de Bruno.
+
+[SPEAKER_01]
+0:11:25.393000 - 0:11:34.603000: En unos minutos le estaré comunicando para la afiliación de la segunda mascota, ya que es una llamada por cada mascota para que no haya cruce de información, ¿correcto?
+
+[SPEAKER_00]
+0:11:34.663000 - 0:11:35.344000: Excelente.
+
+[SPEAKER_00]
+0:11:35.364000 - 0:11:35.824000: Sí, correcto.
+
+[SPEAKER_01]
+0:11:35.844000 - 0:11:36.265000: Sí, señora.
+
+[SPEAKER_01]
+0:11:36.425000 - 0:11:37.206000: Bueno, muy amable.
+
+[SPEAKER_01]
+0:11:37.226000 - 0:11:38.247000: Hasta luego, señora Ana.
+
+[SPEAKER_00]
+0:11:38.267000 - 0:11:39.909000: Gracias.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:11:41.746000 - 0:11:43.888000:  Sí, buenos días.
+
+[SPEAKER_00]
+0:11:44.328000 - 0:11:45.329000: Buenos días, señora Ana.
+
+[SPEAKER_00]
+0:11:45.989000 - 0:11:51.033000: Le habla nuevamente Yanurí Piña, de Gases de Occidente y Seguros Alfa.
+
+[SPEAKER_01]
+0:11:51.073000 - 0:11:51.374000: Gracias.
+
+[SPEAKER_00]
+0:11:51.774000 - 0:11:52.374000: Sí, señora.
+
+[SPEAKER_00]
+0:11:52.575000 - 0:12:06.986000: Señora Ana, para la filación de su segunda mascota, con la cual, señora Ana, contaría con múltiples asistencias pensadas para el bienestar de la mascota, entre las cuales se incluyen gastos veterinarios por accidentes de enfermedad, auxilios de gastos de exequias y eutanasia,
+
+[SPEAKER_00]
+0:12:07.603000 - 0:12:31.601000:  traslado de mascota por emergencia, guardería en caso de hospitalización o viaje del dueño, informes de vacuna para la mascota, asistencia legal de daño a terceros, esterilización de mascota, pipeta, antipulgas, urgencia dental para la mascota, orientación nutricional veterinaria, orientación psicológica al dueño por fallecimiento de mascota, refuerzo antirrábico anual, refuerzo de esquema exavalente anual y referencia y coordinación de servicios para la mascota.
+
+[SPEAKER_00]
+0:12:31.621000 - 0:12:35.683000: Y su mascota, señora Ana, podrá hacer uso de las asistencias pasados los siguientes 30 días.
+
+[SPEAKER_00]
+0:12:36.919000 - 0:12:51.168000:  Les recuerdo, señora Ana, que usted como dueño contaría con un respaldo de $2.630.000 en caso de enfermedad o accidente que le incapacite de manera total o permanente por un periodo continuo no menor a 150 días, generando la incapacidad laboral igual o superior al 50%.
+
+[SPEAKER_00]
+0:12:51.248000 - 0:13:02.575000: Si usted llegase a faltar a causa de algún accidente, contarían con $5.260.000 que sería repartida de forma equitativa entre sus beneficiarios de ley y las personas que usted designe.
+
+[SPEAKER_00]
+0:13:02.835000 - 0:13:03.716000: Dicha indemnización...
+
+[SPEAKER_00]
+0:13:04.320000 - 0:13:07.763000:  podría reclamarse hasta después de 180 días de haber ocurrido el accidente.
+
+[SPEAKER_00]
+0:13:07.783000 - 0:13:16.230000: Y finalmente, se le otorga el bono de $526,000 para sus beneficiarios en caso de fallecimiento de incapacidad total o permanente.
+
+[SPEAKER_00]
+0:13:16.791000 - 0:13:31.944000: El requisito es que usted sea menor de 76 años de edad y el valor de la protección sería cargado a su factura de gas por $16,780 a partir del siguiente ciclo de facturación del gas natural, en donde usted le corrige, señora Ana, a la persona responsable de pagos
+
+[SPEAKER_00]
+0:13:32.340000 - 0:13:34.041000:  Carrera 66, calle 13B64, VLA, apartamento 405, en Santiago de Cali.
+
+[SPEAKER_00]
+0:13:34.061000 - 0:13:34.401000: Es correcto.
+
+[SPEAKER_00]
+0:13:34.421000 - 0:13:34.461000: Ok.
+
+[SPEAKER_00]
+0:13:34.481000 - 0:13:38.903000: A nombre de la señora Ana Varela Pozo, con número de identificación 66954779, con fecha de nacimiento el 12 de febrero de 1975.
+
+[SPEAKER_00]
+0:13:39.123000 - 0:13:40.464000: Cuenta usted con 50 años.
+
+[SPEAKER_00]
+0:13:40.484000 - 0:13:45.426000: Donde le estaríamos enviando la información al correo a anavarelapozo, con doble S, arroba gmail, punto com.
+
+[SPEAKER_01]
+0:14:02.927000 - 0:14:03.287000:  Así es.
+
+[SPEAKER_00]
+0:14:03.928000 - 0:14:04.769000: Listo, sí, señora.
+
+[SPEAKER_00]
+0:14:04.869000 - 0:14:07.411000: Me indica, por favor, el nombre de la segunda mascota, señora Ana.
+
+[SPEAKER_01]
+0:14:07.471000 - 0:14:12.695000: Simba, con S-M-B larga.
+
+[SPEAKER_01]
+0:14:12.755000 - 0:14:13.215000: Simba.
+
+[SPEAKER_00]
+0:14:13.695000 - 0:14:14.176000: Simba.
+
+[SPEAKER_00]
+0:14:14.736000 - 0:14:16.157000: Ok, ¿qué edad tiene Simba?
+
+[SPEAKER_01]
+0:14:17.078000 - 0:14:17.739000: Un año y un mes.
+
+[SPEAKER_00]
+0:14:19.080000 - 0:14:20.401000: Ok, sí, señora.
+
+[SPEAKER_00]
+0:14:21.782000 - 0:14:24.124000: ¿Qué raza es Simba, señora Ana?
+
+[SPEAKER_01]
+0:14:24.144000 - 0:14:24.504000: Mestiza.
+
+[SPEAKER_00]
+0:14:25.264000 - 0:14:27.446000: Ok, ¿es un perrito hembra o macho?
+
+[SPEAKER_01]
+0:14:28.247000 - 0:14:28.427000: Macho.
+
+[SPEAKER_00]
+0:14:29.162000 - 0:14:29.702000:  Macho.
+
+[SPEAKER_00]
+0:14:29.942000 - 0:14:30.422000: Ok.
+
+[SPEAKER_00]
+0:14:30.522000 - 0:14:33.883000: Señora Simba, ¿cuenta con el esquema de vacunación al día?
+
+[SPEAKER_01]
+0:14:33.963000 - 0:14:35.124000: Así es.
+
+[SPEAKER_00]
+0:14:35.244000 - 0:14:35.784000: Ok.
+
+[SPEAKER_00]
+0:14:36.264000 - 0:14:47.047000: Señora Ana, ¿declara usted que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, correcto?
+
+[SPEAKER_01]
+0:14:47.107000 - 0:14:48.348000: Es correcto.
+
+[SPEAKER_00]
+0:14:48.368000 - 0:14:49.288000: ¿Correcto, señora Ana?
+
+[SPEAKER_01]
+0:14:49.968000 - 0:14:51.269000: Es correcto.
+
+[SPEAKER_00]
+0:14:51.409000 - 0:14:51.629000: Ok.
+
+[SPEAKER_00]
+0:14:51.709000 - 0:14:56.090000: Señora Ana, recuerde que por motivos de calidad de la llamada que está siendo grabada y monitoreada,
+
+[SPEAKER_00]
+0:14:56.632000 - 0:14:59.694000:  El sistema únicamente me recibe respuestas cerradas, ¿sí o no?
+
+[SPEAKER_00]
+0:15:00.054000 - 0:15:03.216000: ¿Está usted de acuerdo, señora Ana?
+
+[SPEAKER_00]
+0:15:03.296000 - 0:15:03.456000: Sí.
+
+[SPEAKER_00]
+0:15:03.596000 - 0:15:03.676000: Ok.
+
+[SPEAKER_00]
+0:15:04.057000 - 0:15:08.639000: Voy a proceder a leer la ley que protege sus datos personales para que sus datos no sean transferidos a terceros.
+
+[SPEAKER_00]
+0:15:09.280000 - 0:15:16.584000: Seguros alfa como responsables harán tratamiento de su información para fines legales contractuales y en particular para el desarrollo del proceso de preventa.
+
+[SPEAKER_00]
+0:15:17.364000 - 0:15:23.468000: Venta y posventa del contrato de seguro tiene derecho a conocer, actualizar y rectificar su información y a los demás previstos de la ley 1581 de 2012.
+
+[SPEAKER_00]
+0:15:25.633000 - 0:15:32.735000:  Normas complementarias y la política de tratamiento de información disponible en www.segurosalfa.com slash protección de datos.
+
+[SPEAKER_00]
+0:15:32.755000 - 0:15:36.676000: Es voluntario responder preguntas de información sensible de menores de edad.
+
+[SPEAKER_00]
+0:15:36.696000 - 0:15:44.618000: Y al continuar en la llamada, otorga su autorización y declara que usted ha sido informada de nuestras políticas de tratamiento y las condiciones generales del producto Mascotas.
+
+[SPEAKER_00]
+0:15:44.698000 - 0:15:49.519000: Pueden ser consultadas en la página www.segurosalfa.com o al teléfono 601.
+
+[SPEAKER_00]
+0:15:52.115000 - 0:16:00.199000:  307-7032 a nuestro correo electrónico servicioalcliente arroba segurosalva.com o a la línea nacional gratuita 018-1215-32.
+
+[SPEAKER_00]
+0:16:00.219000 - 0:16:04.821000: ¿Está usted de acuerdo, señora Ana, con la protección de sus datos y nuestras líneas de atención nacional?
+
+[SPEAKER_00]
+0:16:04.921000 - 0:16:05.322000: ¿Correcto?
+
+[SPEAKER_01]
+0:16:06.242000 - 0:16:07.603000: Correcto.
+
+[SPEAKER_00]
+0:16:07.623000 - 0:16:10.404000: ¿Correcto, señora Ana?
+
+[SPEAKER_00]
+0:16:10.444000 - 0:16:10.564000: Sí.
+
+[SPEAKER_00]
+0:16:10.705000 - 0:16:10.805000: Ok.
+
+[SPEAKER_00]
+0:16:11.265000 - 0:16:14.166000: Recuerde las asistencias que le menciono, de las cuales tendrá acceso Simba.
+
+[SPEAKER_00]
+0:16:14.326000 - 0:16:16.988000: Igualmente recuerde que sus beneficiarios recibirán $5.260.000 pesos
+
+[SPEAKER_00]
+0:16:19.359000 - 0:16:32.285000:  en caso de que usted llegue a faltar y usted 2.630.000 pesos en caso de ser calificado con incapacidad total o permanente y su protección se encuentra activa y cobrándose por medio de gases de occidente.
+
+[SPEAKER_00]
+0:16:32.625000 - 0:16:46.992000: Ya finalizando, acepta usted el producto y autoriza cargar el valor mensual de 16.780 pesos por su póliza de mascotas en la factura del gas natural a favor de seguros alfa que se vería reflejado mensualmente a partir del siguiente ciclo de facturación
+
+[SPEAKER_00]
+0:16:47.570000 - 0:16:57.197000:  Y se renovará automáticamente, pasada la vigencia de 12 meses, un incremento del valor asegurado al ITC, hasta que usted exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:16:57.237000 - 0:16:57.658000: ¿De acuerdo?
+
+[SPEAKER_01]
+0:16:58.498000 - 0:16:59.039000: De acuerdo.
+
+[SPEAKER_01]
+0:16:59.279000 - 0:17:02.621000: Eso último que tú me dices, sí.
+
+[SPEAKER_01]
+0:17:02.742000 - 0:17:05.964000: Eso último que tú me dices es que no hay un periodo como de permanencia.
+
+[SPEAKER_01]
+0:17:06.124000 - 0:17:10.147000: O sea, en cualquier momento yo puedo... Exactamente, sí, señora.
+
+[Speaker]
+0:17:10.467000 - 0:17:11.088000: Sí, sí.
+
+[SPEAKER_00]
+0:17:11.854000 - 0:17:12.495000:  Sí, señora.
+
+[SPEAKER_00]
+0:17:12.895000 - 0:17:23.984000: Bueno, señora Ana, acepta usted el cobro del producto por $16,780 por la Policía de Salud para la Mascota, con las condiciones anteriormente mencionadas, ¿de acuerdo?
+
+[SPEAKER_00]
+0:17:24.064000 - 0:17:24.224000: Sí.
+
+[SPEAKER_00]
+0:17:24.284000 - 0:17:29.028000: Ok, bueno, señora Ana, muchas gracias por confiar en Seguros Alfa para la protección de usted y la de Simba.
+
+[SPEAKER_00]
+0:17:29.408000 - 0:17:34.532000: En unos minutos estará contactándola para la otra mascota, ¿correcto?
+
+[SPEAKER_00]
+0:17:34.592000 - 0:17:34.872000: Vale, correcto.
+
+[SPEAKER_00]
+0:17:34.932000 - 0:17:35.312000: Gracias.
+
+[SPEAKER_00]
+0:17:36.533000 - 0:17:36.854000: Muchas gracias.
+
+[SPEAKER_00]
+0:17:36.874000 - 0:17:37.114000: Gracias.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:29:18.053000 - 0:29:18.273000:  Hola.
+
+[SPEAKER_00]
+0:29:19.414000 - 0:29:19.974000: Hola, sí.
+
+[SPEAKER_00]
+0:29:20.574000 - 0:29:21.795000: Señora Ana.
+
+[SPEAKER_02]
+0:29:21.875000 - 0:29:22.035000: Hola.
+
+[SPEAKER_00]
+0:29:22.135000 - 0:29:22.975000: Sí.
+
+[SPEAKER_00]
+0:29:22.995000 - 0:29:23.956000: Buen día, señora Ana.
+
+[SPEAKER_00]
+0:29:23.976000 - 0:29:28.818000: Le habla nuevamente Yanurit Piña, Ejecutivo Comercial de Seguros Alfa en Alianza con Gaseo de Occidente.
+
+[SPEAKER_00]
+0:29:29.358000 - 0:29:47.306000: La contactábamos, señora Ana, para brindarle la información acerca del respaldo de su última mascota, la cual contaría con una serie de asistencias, como gastos veterinarios por accidente o enfermedad, auxilio de gastos de exequias y eutanasia, traslado de mascota por emergencia, guardería en caso de hospitalización o viaje del dueño,
+
+[SPEAKER_00]
+0:29:48 - 0:30:07.491000:  informes de vacuna para la mascota, asistencia legal de daño a terceros, esterilización de mascota, pipetas, antipulgas, urgencia dental para la mascota, orientación nutricional veterinaria, orientación psicológica al dueño por fallecimiento de mascota, refuerzo antirrábico anual, refuerzo de esquema extravalente anual y referencia y coordinación de servicios para la mascota.
+
+[SPEAKER_00]
+0:30:08.012000 - 0:30:12.194000: Y su mascota, señora Ana, podrá hacer uso de las asistencias pasados los siguientes 30 días.
+
+[SPEAKER_00]
+0:30:13.154000 - 0:30:13.895000: ¿Usted como dueño?
+
+[SPEAKER_00]
+0:30:14.555000 - 0:30:29.164000:  contaría con el respaldo de 2.630.000 pesos en caso de enfermedad o accidente que le incapacite de manera total o permanente por un periodo continuo no menor a 150 días y esté certificada por una entidad de salud reconocida generándole pérdida de capacidad laboral igual o superior al 50%.
+
+[SPEAKER_00]
+0:30:29.224000 - 0:30:42.473000: Si usted llegase a faltar a causa de algún accidente, recibirían 5.260.000 pesos en caso de que usted falte por algún accidente para sus beneficiarios o las personas que usted designe.
+
+[SPEAKER_00]
+0:30:42.965000 - 0:30:47.786000:  dicha indemnización podría reclamarse hasta después de 180 días de haber ocurrido el accidente.
+
+[SPEAKER_00]
+0:30:48.346000 - 0:30:56.488000: Y finalmente, se le otorga el bono de $526,000 a sus beneficiarios para cualquier tipo de gasto en caso de fallecimiento e incapacidad total o permanente.
+
+[SPEAKER_00]
+0:30:57.268000 - 0:31:06.350000: El único requisito, señora Ana, es ser menor de 76 años de edad y el valor de la protección sería cargado a su factura de gas a partir del siguiente ciclo de facturación por $16,780, ¿correcto?
+
+[SPEAKER_00]
+0:31:06.410000 - 0:31:06.850000: Correcto, sí.
+
+[SPEAKER_00]
+0:31:10.403000 - 0:31:15.424000:  Sí, señora, a nombre de la señora Ana Varela Pozo, con nombre de documento... Varela.
+
+[SPEAKER_00]
+0:31:15.484000 - 0:31:16.384000: Varela, sí, señora.
+
+[SPEAKER_00]
+0:31:16.544000 - 0:31:20.946000: Ana Varela Pozo, con nombre de documento 66954779, con 50 años de edad, por su fecha de nacimiento el 12 de febrero de 1975.
+
+[SPEAKER_00]
+0:31:20.986000 - 0:31:25.347000: Y el correo electrónico donde le enviaremos la información del respaldo, anavarelapozo, con doble S, arroba gmail.com.
+
+[SPEAKER_00]
+0:31:37.421000 - 0:31:53.234000:  Señora, ¿me indica por favor el número del contrato del recibo del gas natural, señora Ana?
+
+[Speaker]
+0:31:53.254000 - 0:31:53.234000: 85001.
+
+[SPEAKER_00]
+0:31:53.434000 - 0:31:53.534000: Ok.
+
+[SPEAKER_00]
+0:31:53.554000 - 0:31:55.055000: Calle 52A, carrera 1F, 94, piso 1.
+
+[SPEAKER_00]
+0:31:55.095000 - 0:31:55.756000: Así es, sí.
+
+[SPEAKER_00]
+0:31:55.996000 - 0:31:59.539000: Ok.
+
+[SPEAKER_00]
+0:31:59.599000 - 0:32:03.362000: Donde usted participa activamente con la toma de decisiones del hogar, ¿correcto?
+
+[SPEAKER_01]
+0:32:04.123000 - 0:32:05.284000: Correcto.
+
+[SPEAKER_00]
+0:32:05.424000 - 0:32:05.544000: Ok.
+
+[SPEAKER_00]
+0:32:06.197000 - 0:32:09.520000:  Señora Ana, me indica por favor el nombre de la mascota, por favor.
+
+[SPEAKER_01]
+0:32:10.601000 - 0:32:10.941000: Nala.
+
+[SPEAKER_00]
+0:32:12.062000 - 0:32:12.442000: Nala.
+
+[SPEAKER_00]
+0:32:12.662000 - 0:32:13.703000: ¿Nala es una hembra?
+
+[SPEAKER_01]
+0:32:14.464000 - 0:32:14.804000: Hembra.
+
+[SPEAKER_00]
+0:32:15.524000 - 0:32:16.865000: Ok, una perrita, ¿correcto?
+
+[SPEAKER_02]
+0:32:17.606000 - 0:32:18.587000: Correcto.
+
+[SPEAKER_00]
+0:32:18.627000 - 0:32:22.330000: ¿Qué edad tiene Nala, señora Ana?
+
+[SPEAKER_02]
+0:32:23.050000 - 0:32:23.791000: Un año, un mes.
+
+[SPEAKER_00]
+0:32:24.772000 - 0:32:26.473000: Ok, ¿y la raza de Nala?
+
+[SPEAKER_02]
+0:32:27.313000 - 0:32:28.795000: Mestiza.
+
+[SPEAKER_00]
+0:32:28.835000 - 0:32:29.895000: Listo, sí, señora.
+
+[SPEAKER_00]
+0:32:30.576000 - 0:32:33.018000: Nala cuenta con el esquema de vacunación al día, ¿correcto?
+
+[SPEAKER_00]
+0:32:35.165000 - 0:32:35.685000:  Ok.
+
+[SPEAKER_00]
+0:32:35.705000 - 0:32:44.588000: Declara usted, señora Ana, que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:32:45.689000 - 0:32:46.729000: Correcto, sí.
+
+[SPEAKER_00]
+0:32:46.749000 - 0:32:50.611000: ¿Correcto, señora Ana?
+
+[SPEAKER_00]
+0:32:50.671000 - 0:32:50.791000: Sí.
+
+[SPEAKER_00]
+0:32:50.891000 - 0:32:50.991000: Ok.
+
+[SPEAKER_00]
+0:32:51.411000 - 0:32:54.472000: Señora Ana, voy a proceder a leer la ley que protege sus datos personales.
+
+[SPEAKER_00]
+0:32:54.492000 - 0:33:02.375000: Seguros Alfa como responsables harán tratamiento de su información para fines legales contractuales y en particular para el desarrollo del proceso de preventa.
+
+[SPEAKER_00]
+0:33:03.348000 - 0:33:19.841000:  Venta y posventa del contrato de sueño no tiene derecho a conocer, actualizar y certificar su información y a los demás previstos de la ley 1581 de 2012, normas complementarias y la política de tratamiento de información disponible en www.segurosalva.com slash protección de datos.
+
+[SPEAKER_00]
+0:33:19.861000 - 0:33:26.346000: Es voluntario responder preguntas de información sensible a menores de edad y al continuar en la llamada otorga su autorización.
+
+[SPEAKER_00]
+0:33:27.966000 - 0:33:45.454000:  y declara que usted ha sido informada de nuestras políticas de tratamiento y las condiciones generales del producto Mascotas, pueden ser consultadas en la página www.segurosarfa.com y también pueden ser felicitadas al correo electrónico servicioalcliente arroba segurosarfa.com a nuestro número de teléfono 601-307-7032 o a la línea nacional gratuita 018000-122532.
+
+[SPEAKER_00]
+0:33:45.474000 - 0:33:45.774000: ¿De acuerdo?
+
+[SPEAKER_00]
+0:33:45.794000 - 0:33:45.834000: Sí.
+
+[SPEAKER_00]
+0:33:45.854000 - 0:33:45.894000: Ok.
+
+[SPEAKER_00]
+0:33:45.914000 - 0:33:47.335000: Señora Ana, ya para finalizar, recuerde
+
+[SPEAKER_00]
+0:33:57.331000 - 0:34:15.039000:  las asistencias que les mencioné, las cuales tendrá acceso NALA, y recuerden que sus beneficiarios recibirán 5.260.000 pesos en caso de que se llegue a faltar, y usted 2.630.000 pesos en caso de ser calificado con una incapacidad total o permanente, y su protección se encuentra activa y cobrándose por medio de gases de Occidente.
+
+[SPEAKER_00]
+0:34:15.800000 - 0:34:26.925000: Ya para antes de finalizar, queremos informarles que conforma la ley 2300, si en algún momento usted desea modificar los canales de comunicación actual que tiene con gases de Occidente, usted podrá realizarlo a través de la página
+
+[SPEAKER_00]
+0:34:27.868000 - 0:34:32.770000:  www.gdo.com.co y mientras elige será siendo contactado por los canales habituales.
+
+[SPEAKER_00]
+0:34:33.390000 - 0:34:53.717000: Ya finalizando, señora Ana, acepta usted el producto y autoriza cargar el valor mensual de $16,780 por su póliza de mascotas en la factura del gas natural a favor de seguros alfa que se vería reflejado mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento de valor asegurado de acuerdo al IPC
+
+[SPEAKER_00]
+0:34:54.313000 - 0:34:58.214000:  hasta que usted exprese en calidad de usuario la decisión de retirarse del programa, ¿de acuerdo?
+
+[SPEAKER_01]
+0:34:59.255000 - 0:35:00.115000: Sí.
+
+[SPEAKER_00]
+0:35:00.355000 - 0:35:00.415000: Ok.
+
+[SPEAKER_00]
+0:35:00.475000 - 0:35:02.336000: Bueno, señora Ana.
+
+[SPEAKER_01]
+0:35:02.496000 - 0:35:03.416000: Tengo una pregunta.
+
+[SPEAKER_00]
+0:35:03.917000 - 0:35:04.717000: Dígame, sí, señora.
+
+[SPEAKER_01]
+0:35:04.897000 - 0:35:07.798000: Y perdón que lo haga al final, sino que me está resumiendo en la cabeza.
+
+[SPEAKER_01]
+0:35:08.198000 - 0:35:11.199000: Tú me dices que la cobertura, sí, qué pena.
+
+[SPEAKER_01]
+0:35:11.500000 - 0:35:14.401000: Tú has sido demasiado paciente y de verdad que se lo agradezco mucho.
+
+[SPEAKER_01]
+0:35:15.581000 - 0:35:23.304000: Cuando tú me dices que empieza a partir de 30 días, ¿es a partir de 30 días contados hoy o 30 días desde que yo pague la factura en la próxima facturación?
+
+[SPEAKER_00]
+0:35:24.445000 - 0:35:26.327000:  30 días a partir del día de la activación.
+
+[SPEAKER_00]
+0:35:26.347000 - 0:35:28.008000: O sea, a partir de hoy.
+
+[SPEAKER_00]
+0:35:28.528000 - 0:35:29.149000: Exactamente.
+
+[SPEAKER_00]
+0:35:29.169000 - 0:35:35.254000: Y el cobro igualmente 30 días pasados después del día de la activación a partir del siguiente ciclo de facturación.
+
+[SPEAKER_01]
+0:35:35.354000 - 0:35:36.815000: Ah, bueno, excelente.
+
+[SPEAKER_01]
+0:35:36.835000 - 0:35:40.338000: O sea, que a partir del 9 de junio yo ya podría usar la policía.
+
+[SPEAKER_01]
+0:35:40.398000 - 0:35:42.559000: Sí, me da con la otra.
+
+[SPEAKER_00]
+0:35:42.579000 - 0:35:43.520000: Exactamente, pasados los 30 días.
+
+[SPEAKER_00]
+0:35:43.560000 - 0:35:46.122000: Para que no se me queden sin seguro.
+
+[SPEAKER_00]
+0:35:46.142000 - 0:35:46.302000: Listo.
+
+[SPEAKER_00]
+0:35:46.322000 - 0:35:51.907000: Bueno, señora Ana, hacemos el cobro del producto con las condiciones anteriormente mencionadas, ¿correcto?
+
+[SPEAKER_00]
+0:35:53.810000 - 0:35:54.131000:  Listo.
+
+[SPEAKER_00]
+0:35:54.171000 - 0:35:56.558000: Bueno, muy amable, señora Ana, que tenga un excelente día.
+
+[SPEAKER_00]
+0:35:56.578000 - 0:35:57.119000: Hasta luego.
+
+[SPEAKER_01]
+0:35:57.902000 - 0:35:58.263000: Hasta luego.

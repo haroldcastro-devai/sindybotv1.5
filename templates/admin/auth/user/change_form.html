@@ -1,0 +1,129 @@
+{% extends "admin/change_form.html" %}
+{% load static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/admin-user-edit.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% static 'assets/js/admin-user-edit.js' %}"></script>
+{% endblock %}
+
+{% block object-tools %}
+  {{ block.super }}
+  <script>
+    // Mejorar los botones de objeto con íconos
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('.object-tools a');
+      buttons.forEach(function(button) {
+        let icon = '';
+        
+        if (button.classList.contains('historylink')) {
+          icon = '<i class="feather icon-clock mr-1"></i>';
+        } else if (button.classList.contains('viewsitelink')) {
+          icon = '<i class="feather icon-external-link mr-1"></i>';
+        } else if (button.textContent.includes('password')) {
+          icon = '<i class="feather icon-lock mr-1"></i>';
+        }
+        
+        if (icon) {
+          button.innerHTML = icon + button.textContent;
+        }
+      });
+    });
+  </script>
+{% endblock %}
+
+{% block after_field_sets %}
+  {{ block.super }}
+  <script>
+    // Script para mejorar la experiencia en el formulario de usuario
+    document.addEventListener('DOMContentLoaded', function() {
+      // Añadir la clase user-edit-form al formulario principal para que el CSS específico se aplique
+      const userForm = document.getElementById('{{ opts.model_name }}_form');
+      if (userForm) {
+        userForm.classList.add('user-edit-form');
+      }
+      
+      // Añadir clases específicas para campos importantes
+      const fields = {
+        username: document.querySelector('#id_username'),
+        email: document.querySelector('#id_email'),
+        password1: document.querySelector('#id_password1'),
+        password2: document.querySelector('#id_password2'),
+        is_active: document.querySelector('#id_is_active'),
+        is_staff: document.querySelector('#id_is_staff'),
+        is_superuser: document.querySelector('#id_is_superuser')
+      };
+      
+      // Añadir clases para estilos específicos
+      if (fields.username && fields.username.parentNode) {
+        fields.username.parentNode.closest('.form-row').classList.add('field-username', 'username-field');
+      }
+      
+      if (fields.email && fields.email.parentNode) {
+        fields.email.parentNode.closest('.form-row').classList.add('field-email', 'email-field');
+      }
+      
+      if (fields.password1 && fields.password1.parentNode) {
+        fields.password1.parentNode.closest('.form-row').classList.add('field-password', 'password-field');
+      }
+      
+      if (fields.password2 && fields.password2.parentNode) {
+        fields.password2.parentNode.closest('.form-row').classList.add('field-password', 'password-field');
+      }
+      
+      // Añadir placeholders a los campos
+      if (fields.username) {
+        fields.username.setAttribute('placeholder', 'Nombre de usuario');
+      }
+      
+      if (fields.email) {
+        fields.email.setAttribute('placeholder', 'correo@ejemplo.com');
+      }
+      
+      if (fields.password1) {
+        fields.password1.setAttribute('placeholder', 'Contraseña segura');
+      }
+      
+      if (fields.password2) {
+        fields.password2.setAttribute('placeholder', 'Confirmar contraseña');
+      }
+      
+      // Mejorar la interacción con focus
+      document.querySelectorAll('.form-row input, .form-row select, .form-row textarea').forEach(function(input) {
+        input.addEventListener('focus', function() {
+          if (this.closest('.form-row')) {
+            this.closest('.form-row').classList.add('focused');
+          }
+        });
+        
+        input.addEventListener('blur', function() {
+          if (this.closest('.form-row')) {
+            this.closest('.form-row').classList.remove('focused');
+          }
+        });
+      });
+      
+      // Mejorar los checkboxes
+      document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+        if (checkbox.parentNode && !checkbox.parentNode.classList.contains('checkbox-row')) {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'checkbox-row';
+          checkbox.parentNode.insertBefore(wrapper, checkbox);
+          wrapper.appendChild(checkbox);
+          // Si hay una etiqueta inmediatamente después del checkbox, incluirla también
+          if (checkbox.nextSibling && checkbox.nextSibling.nodeName === 'LABEL') {
+            wrapper.appendChild(checkbox.nextSibling);
+          }
+        }
+      });
+    });
+  </script>
+{% endblock %}
+
+{% comment %}
+No sobrescribimos el bloque submit_buttons_bottom para no tener problemas con los filtros
+{% endcomment %}

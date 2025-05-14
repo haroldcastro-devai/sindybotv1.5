@@ -1,0 +1,34 @@
+{
+    "nombre": "Practiseguro",
+    "descripcion": "Servicio de asistencia médica para toda la familia",
+    "cobertura": {
+        "teleconsulta": "Ilimitada las 24 horas",
+        "medico_domicilio": "Hasta 3 consultas anuales",
+        "descuentos_medicamentos": "30% en red de farmacias",
+        "orientacion_nutricional": "Ilimitada"
+    },
+    "tarifas": [
+        {
+            "plan": "Básico",
+            "precio_mensual": 9950,
+            "cobertura_familiar": true,
+            "edad_maxima": 85,
+            "permanencia": "No tiene período de permanencia",
+            "beneficiarios": "Hasta 5 personas"
+        },
+        {
+            "plan": "Plus",
+            "precio_mensual": 14950,
+            "cobertura_familiar": true,
+            "edad_maxima": 85,
+            "permanencia": "No tiene período de permanencia",
+            "beneficiarios": "Hasta 8 personas"
+        }
+    ],
+    "exclusiones": [
+        "Enfermedades preexistentes graves",
+        "Procedimientos estéticos",
+        "Urgencias que requieran hospitalización",
+        "Medicamentos no incluidos en el vademécum"
+    ]
+}

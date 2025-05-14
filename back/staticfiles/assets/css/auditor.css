@@ -1,0 +1,132 @@
+/* Estilos para los iconos y texto */
+.icon-text-container {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    font-size: 40px;
+    margin-right: 10px;
+    color: #2ED8B6;
+}
+.text {
+    font-size: 20px;
+    color: #008000; /* Color verde para el texto */
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none;
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; /* Bordes redondeados */
+    transition-duration: 0.4s; /* Duración de la transición */
+    box-sizing: border-box; /* Tamaño total incluyendo el borde */
+    width: 45%; /* Ancho del botón */
+}
+
+/* Estilo cuando se pasa el mouse sobre el botón */
+.boton:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Sobre todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Centro vertical y horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Ancho del modal */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón de cancelar en el modal */
+.cancelar {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 45%; /* Ancho del botón */
+    box-sizing: border-box; /* Tamaño total incluyendo el borde */
+}
+
+.cancelar:hover {
+    background-color: #d32f2f; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el botón "Enviar" */
+#send_button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    transition-duration: 0.4s; /* Duración de la transición */
+    width: 45%; /* Ancho del botón */
+    box-sizing: border-box; /* Tamaño total incluyendo el borde */
+}
+
+/* Estilos cuando se pasa el mouse sobre el botón "Enviar" */
+#send_button:hover {
+    background-color: #0056b3; /* Cambio del color de fondo al pasar el mouse */
+}
+
+/* Estilos para la tabla */
+.table-container {
+    height: 362px;
+    overflow-y: auto;
+    position: relative;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+th, td {
+    padding: 8px;
+    border: none;
+}
+th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+tbody tr:hover {
+    background-color: #f1f3f5;
+}

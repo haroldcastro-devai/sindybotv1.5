@@ -1,0 +1,62 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: NEGATIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** No mencionado explícitamente
+* **Número de Identificación:** No se proporciona
+* **Fecha de Nacimiento:** No mencionada
+* **Dirección:** Carrera 31B #68-50, Torre B PH, Medellín (Colombia)
+* **Correo Electrónico:** [email protected]
+* **Teléfono:** El número del teléfono donde se realiza la llamada no es especificado.
+* **Otros datos relevantes:** La cliente menciona que no maneja WhatsApp.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Práctica y Seguro (Suponiendo que "Práctica y seguro" sea el nombre de la aseguradora por su mención en la llamada)
+* **Planes Contratados:**
+  * **Salvafactura:** No se pudo activar debido a que no llegó el mensaje de verificación al teléfono del cliente.
+  * **Práctica Seguro:** El plan quedó totalmente activo.
+* **Valor Individual de Cada Plan:** 
+  - Salvafactura: No mencionado específicamente
+  - Práctica Seguro: No mencionado específicamente
+* **Valor Total Mensual:** No se especifica el valor total mensual, ya que no se pudo activar Salvafactura.
+* **Forma de Pago:** El pago por la protección en Práctica y seguro sí queda totalmente activa. Sin embargo, el método específico para pagarlo no fue mencionado explícitamente durante la llamada.
+* **Vigencia:** No se menciona específicamente la duración del contrato ni la renovación.
+
+## CARACTERÍSTICAS DE LOS PLANES
+* **Salvafactura:**
+  * Coberturas específicas: No mencionadas en la conversación
+  * Montos asegurados: No mencionados en la conversación
+  * Requisitos de elegibilidad: El cliente no recibió el mensaje de verificación y por lo tanto, no pudo activar el plan.
+  * Períodos de carencia: No mencionados en la conversación
+  * Limitaciones y exclusiones: No mencionadas en la conversación
+
+* **Práctica Seguro:** 
+  * Coberturas específicas: No mencionadas en la conversación
+  * Montos asegurados: No mencionados en la conversación
+  * Requisitos de elegibilidad: No especificados, pero el cliente aceptó explícitamente.
+  * Períodos de carencia: No mencionados en la conversación
+  * Limitaciones y exclusiones: No mencionadas en la conversación
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente
+* [x/] Explicación clara de los productos (parcialmente)
+* [ ] Validación de datos personales (la validación se realizó parcialmente pero no se recopilaron todos los datos necesarios, como el número de identificación).
+* [x/] Verificación de requisitos de elegibilidad (en relación a Salvafactura y Práctica Seguro)
+* [ ] Explicación de valores y forma de pago (solo hubo mención de que el cliente recibiría documentación en su correo electrónico, pero no se mencionaron los costos principales ni la forma de pago explícitamente).
+* [x/] Autorización de tratamiento de datos personales
+* [x/] Aceptación explícita del cliente (en relación a Práctica Seguro)
+* [ ] Confirmación final de entendimiento (no hubo una confirmación clara de que el cliente comprendió completamente los productos)
+
+## OBSERVACIONES
+- La llamada muestra que hubo un intento de venta de dos planes: Salvafactura y Práctica Seguro.
+- Se menciona explícitamente la dirección del cliente, su correo electrónico y se realiza una validación parcial de datos personales.
+- El plan "Salvafactura" no pudo ser activado ya que el mensaje de verificación no llegó a su teléfono.
+- El cliente aceptó explícitamente el plan "Práctica Seguro", aunque los detalles específicos del mismo (cobertura, monto asegurado, etc.) no fueron mencionados en la llamada.
+
+## CONCLUSIÓN
+La venta se califica como NEGATIVA debido a las siguientes razones:
+1. Aunque el cliente aceptó explícitamente el plan "Práctica Seguro", no se proporcionaron detalles específicos del mismo (como costos y forma de pago).
+2. La activación de la protección en Salvafactura no pudo realizarse por falta del mensaje de verificación, y los valores ni forma de pago fueron claramente explicados.
+3. Falta de información crítica necesaria para completar el entendimiento total de lo que está aceptando el cliente.
+
+Basado en estos criterios, la venta se considera NEGATIVA debido a las omisiones importantes mencionadas anteriormente.

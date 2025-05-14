@@ -1,0 +1,70 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Edgar [Apellido no mencionado]
+* **Número de Identificación:** No se menciona explícitamente en la transcripción
+* **Fecha de Nacimiento:** 26 de julio de 1983 (infiriendo desde los datos proporcionados)
+* **Dirección:** No está completamente detallada, pero es en la ciudad donde reside el titular del servicio de gas natural.
+* **Correo Electrónico:** ecardona@tigo.com.co
+* **Teléfono:** No mencionado explícitamente
+* **Otros datos relevantes:**
+  - Responsable del crédito Brillo y pago de la factura del gas natural.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:**
+  - Plan Salva Factura (Gastos Médicos)
+  - Trato y Seguro (Salud Factura)
+* **Valor Individual de Cada Plan:**
+  - Salva Factura: $17,340 COP mensual
+  - Trato y Seguro: $29,450 COP mensual
+* **Valor Total Mensual:** $46,790 COP
+* **Forma de Pago:** Cargo en la factura del gas natural
+* **Vigencia:** Se reflejarán a partir de su siguiente ciclo de facturación
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Trato y Seguro:**
+  * Coberturas específicas: No detalladas en la llamada, pero es un seguro de salud.
+  * Montos asegurados: No mencionados explícitamente, se infiere que hay cobertura para gastos médicos.
+  * Requisitos de elegibilidad:
+    - Ser titular del servicio de gas natural.
+  * Períodos de carencia: No mencionados explícitamente.
+  * Limitaciones y exclusiones: No mencionadas.
+
+* **Salva Factura (Gastos Médicos):**
+  * Coberturas específicas: Protección por gastos médicos
+  * Montos asegurados:
+    - $17,340 COP mensualmente
+  * Requisitos de elegibilidad:
+    - Ser titular del servicio de gas natural.
+  * Períodos de carencia: No mencionados explícitamente.
+  * Limitaciones y exclusiones: No mencionadas.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Buenas tardes, soy Eliana Sánchez de Gás Natural Certificado"
+* [x/] Explicación clara de los productos:
+  - Trato y Seguro: $29,450 COP mensual.
+  - Salva Factura (Gastos Médicos): $17,340 COP mensual.
+* [x/] Validación de datos personales: "Edgar Cardona", confirmado como titular del servicio de gas natural.
+* [x/] Verificación de requisitos de elegibilidad: Ser el responsable del crédito Brillo y pago de la factura del gas natural.
+* [x/] Explicación de valores y forma de pago:
+  - $29,450 COP mensual para Trato y Seguro
+  - $17,340 COP mensual para Salva Factura (Gastos Médicos)
+  - Pago a través del cargo en la factura de gas natural.
+* [x/] Autorización de tratamiento de datos personales: "Según la ley 2300"
+* [x/] Aceptación explícita del cliente:
+  - Cliente aceptó los productos con un "correcto" y confirmó que era el responsable del crédito Brillo.
+* [x/] Confirmación final de entendimiento: La agente confirmó el correcto entendimiento.
+
+## OBSERVACIONES
+- El cliente confirma ser la persona responsable del pago de la factura de gas natural.
+- La transcripción indica que las coberturas y los montos fueron explicados claramente, aunque no se detallaron completamente en la llamada.
+- No hubo mención explícita sobre los períodos de carencia o exclusiones específicas.
+- El cliente fue proporcionado con información adicional sobre cómo modificar canales de comunicación si es necesario.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta se considera **POSITIVA**. La agente explicó claramente los productos y valores principales a pagar mensualmente, el cliente comprendió sus responsabilidades y aceptó explícitamente los planes contratados. Aunque no se detallaron completamente las exclusiones o períodos de carencia, estos no fueron mencionados como un factor crítico en la decisión del cliente.
+
+Por lo tanto, se cumple con todos los criterios mínimos para una venta válida y el cliente parece satisfecho con la explicación recibida.

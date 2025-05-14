@@ -1,0 +1,284 @@
+
+[SPEAKER_00]
+0:00:01.467000 - 0:00:01.827000:  Aló.
+
+[SPEAKER_00]
+0:00:02.268000 - 0:00:02.988000: Aló, buenos días.
+
+[SPEAKER_00]
+0:00:03.008000 - 0:00:05.090000: Sí.
+
+[SPEAKER_00]
+0:00:05.110000 - 0:00:06.992000: Con la señora Carmen Peña Fiel.
+
+[SPEAKER_00]
+0:00:08.393000 - 0:00:08.673000: Sí.
+
+[SPEAKER_00]
+0:00:09.234000 - 0:00:12.256000: Señora Carmen, le habla Eudimar González de Alfa y Surtigas.
+
+[SPEAKER_00]
+0:00:12.336000 - 0:00:13.237000: ¿Cómo se encuentra?
+
+[SPEAKER_00]
+0:00:15.799000 - 0:00:16.159000: ¿Cómo?
+
+[SPEAKER_00]
+0:00:16.640000 - 0:00:19.382000: Le habla Eudimar González de Alfa y Surtigas.
+
+[SPEAKER_00]
+0:00:19.462000 - 0:00:20.403000: ¿Cómo se encuentra?
+
+[SPEAKER_00]
+0:00:23.946000 - 0:00:24.687000: ¿De dónde?
+
+[SPEAKER_00]
+0:00:25.187000 - 0:00:26.048000: De Surtigas.
+
+[SPEAKER_01]
+0:00:27.956000 - 0:00:28.797000:  Ajá, cuéntenos.
+
+[SPEAKER_00]
+0:00:28.817000 - 0:00:33.800000: Sí, queremos, como le indiqué, le habla Eudimar González de Alfa y Surtigas.
+
+[SPEAKER_00]
+0:00:34.201000 - 0:00:41.766000: Queremos validar cómo le ha funcionado su servicio del gas en la carrera 16, oeste, calle 24, 7, apartamento 1.
+
+[SPEAKER_01]
+0:00:41.906000 - 0:00:49.391000: Este, el gas aquí funciona bien.
+
+[SPEAKER_01]
+0:00:50.411000 - 0:00:51.492000: Qué bueno.
+
+[SPEAKER_00]
+0:00:51.552000 - 0:00:55.315000: ¿Usted es la responsable del pago de las facturas del gas natural en esa dirección?
+
+[SPEAKER_01]
+0:00:56.636000 - 0:00:56.716000: Sí.
+
+[SPEAKER_01]
+0:00:56.796000 - 0:00:56.936000: Sí.
+
+[SPEAKER_00]
+0:00:57.538000 - 0:00:57.818000:  Ok.
+
+[SPEAKER_00]
+0:00:57.878000 - 0:00:59.700000: ¿Usted cuántos años tiene, señora Carmen?
+
+[Speaker]
+0:01:04.824000 - 0:00:59.700000: 58.
+
+[SPEAKER_00]
+0:01:04.904000 - 0:01:05.305000: Ok.
+
+[SPEAKER_00]
+0:01:05.765000 - 0:01:23.419000: En esta oportunidad, señora Carmen, queremos indicarle que debido a que usted es un usuario activo de Surtidas, alfalebrina un respaldo económico de $16,803,497, que serán repartidos de manera equitativa entre sus beneficiarios de ley o las personas que usted decida.
+
+[SPEAKER_00]
+0:01:23.600000 - 0:01:26.382000: En dado caso, usted llega a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:01:26.788000 - 0:01:36.755000:  El único requisito será usted menor de 66 años en la que usted quedará protegida a partir de las 12 y un minuto de la noche.
+
+[SPEAKER_00]
+0:01:36.795000 - 0:01:42.859000: Le indico, señora Carmen, que toda nuestra llamada es grabada y monitoreada para garantizarle la calidad de nuestros servicios.
+
+[SPEAKER_00]
+0:01:42.879000 - 0:01:47.782000: Quisiera validar que me comunico con la titular responsable de sus servicios del gas natural.
+
+[SPEAKER_00]
+0:01:47.802000 - 0:01:47.842000: Sí.
+
+[SPEAKER_00]
+0:01:49.003000 - 0:01:51.505000: Ok, la señora Carmen Peña Fiel Polo.
+
+[SPEAKER_00]
+0:01:52.225000 - 0:01:53.246000: Su número de documento, 5893193.
+
+[SPEAKER_00]
+0:01:56.435000 - 0:02:02.656000:  Su dirección, calle 16, oeste, calle 24, 7, apartamento 1, en Montería, Córdoba.
+
+[SPEAKER_00]
+0:02:02.836000 - 0:02:03.476000: ¿Es correcto?
+
+[SPEAKER_00]
+0:02:05.757000 - 0:02:05.877000: Sí.
+
+[SPEAKER_00]
+0:02:05.937000 - 0:02:06.437000: ¿Es correcto?
+
+[SPEAKER_00]
+0:02:06.817000 - 0:02:07.817000: Ok, señora Carmen.
+
+[SPEAKER_01]
+0:02:07.837000 - 0:02:08.538000: Correcto.
+
+[SPEAKER_00]
+0:02:08.698000 - 0:02:13.439000: Ok, me confirma, por favor, su fecha de nacimiento para validar que la edad que usted me indica es la correcta.
+
+[SPEAKER_01]
+0:02:13.459000 - 0:02:20.860000: 15 de enero.
+
+[SPEAKER_01]
+0:02:21.900000 - 0:02:22.160000: Sí.
+
+[SPEAKER_01]
+0:02:23.541000 - 0:02:23.621000: De...
+
+[SPEAKER_00]
+0:02:28.090000 - 0:02:29.391000:  1966.
+
+[SPEAKER_00]
+0:02:28.650000 - 0:02:29.391000: De 1966, ok.
+
+[SPEAKER_00]
+0:02:29.491000 - 0:02:37.677000: Es decir, que usted actualmente tiene 59 años, señora Carmen, ¿cierto?
+
+[SPEAKER_01]
+0:02:37.717000 - 0:02:38.418000: Sí, señora.
+
+[SPEAKER_00]
+0:02:38.798000 - 0:02:48.826000: Así mismo, declara usted que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_01]
+0:02:48.886000 - 0:02:52.689000: Correcto, señora Carmen.
+
+[SPEAKER_00]
+0:02:53.029000 - 0:02:53.630000: Bueno.
+
+[SPEAKER_00]
+0:02:54.720000 - 0:02:59.322000:  Ok, sus datos son reales y sus actividades se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:03:00.603000 - 0:03:01.944000: Bueno, gracias.
+
+[SPEAKER_00]
+0:03:01.984000 - 0:03:03.605000: Señora Carmen, vuelvo y le pregunto.
+
+[SPEAKER_00]
+0:03:04.285000 - 0:03:10.648000: Asimismo, les recuerdo que toda nuestra llamada es grabada y monitoreada para garantizarle a usted la calidad de nuestros servicios.
+
+[SPEAKER_00]
+0:03:10.668000 - 0:03:21.294000: Es diferente a sus datos personales, sus datos son reales y las actividades a las que usted se dedica son normales y están dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_01]
+0:03:22.554000 - 0:03:23.375000: Bien.
+
+[SPEAKER_00]
+0:03:23.395000 - 0:03:23.575000: Ok.
+
+[SPEAKER_00]
+0:03:24.217000 - 0:03:35.768000:  La siguiente información que le voy a indicar, señora Carmen, es la ley que protege sus datos personales y nuestras líneas de atención al cliente donde usted se pueda comunicar en dado caso usted presente cualquier duda e inquietud.
+
+[SPEAKER_00]
+0:03:41.053000 - 0:03:47.780000: Asimismo, autorizos de seguros de alfa como responsables harán tratamiento de desinformación para fines legales, contractuales,
+
+[SPEAKER_00]
+0:03:48.333000 - 0:03:51.538000:  en particular para el desarrollo de procesos de preventa, venta y postventa.
+
+[SPEAKER_00]
+0:03:51.578000 - 0:03:55.304000: ¿El contrato de venta tiene derecho a actualizar?
+
+[SPEAKER_01]
+0:03:56.446000 - 0:03:58.669000: Yo no lo escucho bien.
+
+[SPEAKER_00]
+0:03:59.531000 - 0:04:00.873000: Ahí me logra escuchar mejor.
+
+[SPEAKER_01]
+0:04:01.814000 - 0:04:02.155000: Sí.
+
+[SPEAKER_00]
+0:04:02.675000 - 0:04:03.076000: Ok.
+
+[SPEAKER_00]
+0:04:03.557000 - 0:04:04.979000: ¿Cómo le indicaba la información?
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:04:09.275000 - 0:04:27.171000:  La información que le voy a indicar es la ley que protege sus datos personales y nuestras líneas de atención al cliente donde usted se pueda comunicar en dado caso usted presente cualquier duda e inquietud.
+
+[SPEAKER_00]
+0:04:29.954000 - 0:04:31.114000:  ¿Cómo le indica?
+
+[SPEAKER_00]
+0:04:31.194000 - 0:04:31.615000: Ok.
+
+[SPEAKER_00]
+0:04:31.975000 - 0:04:42.177000: Asimismo, pues, actualiza usted seguros alfa como responsables al tratamiento de desinformación para fines legales contractuales, en particular para el desarrollo de procesos de preventa, venta y posventa.
+
+[SPEAKER_00]
+0:04:42.217000 - 0:04:55.900000: El contrato de seguro usted tiene derecho a conocer, actualizar, rectificar su información y a los demás créditos en la ley X-81 del 2012, normas complementarias y las políticas de tratamiento de información disponibles en www.seguroalfa.com.com, protección de datos,
+
+[SPEAKER_00]
+0:04:58.880000 - 0:05:02.862000:  Es voluntario responder preguntas sobre su información sensible o de menores de edad.
+
+[SPEAKER_00]
+0:05:03.222000 - 0:05:15.187000: Al continuar en la llamada, otorga su autorización y declara usted que ha sido informada que nuestras políticas de tratamiento y las condiciones generales del producto en práctica de seguro pueden ser consultadas en www.seguralfa.com.co.
+
+[SPEAKER_00]
+0:05:15.647000 - 0:05:22.169000: También pueden ser solicitadas a través del correo electrónico servicioasiliente.seguralfa.com.co o el teléfono 601-377032 o a la línea nacional gratuita
+
+[SPEAKER_00]
+0:05:26.924000 - 0:05:29.867000:  018-012-2532, correcto.
+
+[SPEAKER_00]
+0:05:34.010000 - 0:05:39.875000: ¿Está de acuerdo que sus datos queden protegidos y nuestras líneas de atención al cliente donde usted se puede comunicar, correcto?
+
+[SPEAKER_00]
+0:05:40.375000 - 0:05:41.656000: Bien, sí señor.
+
+[SPEAKER_00]
+0:05:42.117000 - 0:05:48.862000: Ok, les recuerdo que toda nuestra llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios.
+
+[SPEAKER_00]
+0:05:49.703000 - 0:05:50.704000: A mí me logra escuchar.
+
+[SPEAKER_00]
+0:05:51.881000 - 0:05:58.302000:  Ok, como le indico, toda nuestra llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios.
+
+[SPEAKER_00]
+0:05:58.342000 - 0:06:05.764000: Asimismo, pues el servicio de los productos autoriza a cargar el valor mensual de $26,460 por su póliza práctica y segura en la factura del gas natural.
+
+[SPEAKER_00]
+0:06:05.784000 - 0:06:20.307000: La oferta de seguros alfa que se verán reflejados mensualmente a partir de su siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con incremento en el valor asegurado de acuerdo con el IPC hasta que usted exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:06:20.487000 - 0:06:20.947000: Correcto.
+
+[SPEAKER_00]
+0:06:23.236000 - 0:06:24.357000:  Bueno, yo pienso que... ¿Cómo?
+
+[SPEAKER_00]
+0:06:24.377000 - 0:06:24.857000: No, no, está bien.
+
+[SPEAKER_00]
+0:06:24.937000 - 0:06:26.338000: Ok, ¿correcto?
+
+[SPEAKER_00]
+0:06:26.358000 - 0:06:29.060000: Sí, correcto.
+
+[SPEAKER_00]
+0:06:29.120000 - 0:06:34.443000: Ok, le recuerdo que sus beneficiarios de ley recibirán una indemnización de $16.803.497.
+
+[SPEAKER_00]
+0:06:34.503000 - 0:06:39.506000: Le recuerdo que sus beneficiarios de ley recibirán una indemnización de $16.803.497 en dado caso si se llega a faltar y su protección se encuentra activa.
+
+[SPEAKER_00]
+0:06:51.703000 - 0:06:54.455000:  Muchísimas gracias, señora Carmen, por confiar en Alfa y Surtigas.
+
+[SPEAKER_00]
+0:06:54.515000 - 0:06:56.061000: Que tenga un feliz y bendecido día.
+
+[SPEAKER_00]
+0:06:56.121000 - 0:06:56.824000: Que esté muy bien.
+
+[SPEAKER_00]
+0:06:57.889000 - 0:07:00.901000: Muy bien.
+
+[SPEAKER_00]
+0:07:01.122000 - 0:07:02.347000: Gracias, igualmente.
+
+[SPEAKER_00]
+0:07:02.367000 - 0:07:02.748000: A usted, gracias.

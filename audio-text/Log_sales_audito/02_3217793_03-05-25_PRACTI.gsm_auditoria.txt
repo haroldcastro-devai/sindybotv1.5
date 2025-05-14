@@ -1,0 +1,56 @@
+**REPORTE DE VENTA**
+
+- **Calificación final:** VENTA [NEGATIVA]
+- **Resumen de la llamada e interacción asesor-cliente:**
+  El asesor intentó vender un plan a una cliente, pero el proceso se complicó debido a que la cliente no sabía manejar su teléfono y por ende, no pudo recibir ni verificar el código OTP. A pesar de las explicaciones del asesor, la venta finalmente no se concretó.
+  
+- **Valores y montos mencionados:**
+  - Práctiseguro: $108 pesos mensuales
+  - Salvafactura: $937 pesos anuales
+
+- **Nombre de la gasera:** No especificada en el diálogo.
+
+- **Registro cronológico de objeciones y resoluciones:**
+
+  - Objeción: La cliente indicó que no sabía manejar su teléfono muy bien.
+    - Resolución: El asesor explicó que aunque no recibiera el código OTP, solamente quedará activo el Práctiseguro.
+
+- **Aceptaciones y rechazos detectados:**
+  - Aceptación de Práctiseguro.
+  - Rechazo del Salvafactura debido a la incapacidad para recibir y verificar el código OTP.
+
+- **Respuestas del cliente sobre datos personales, términos, habeas data, cobro y aceptación:**
+  - La clienta no pudo confirmar explícitamente las condiciones del plan de salvafactura.
+  
+- **Cumplimiento de puntos críticos:**
+  - El asesor intentó cumplir con la entrega de información completa.
+  - No se logró completar el registro debido a que la cliente no pudo recibir y verificar el código OTP.
+
+- **Envío del código OTP por medio de mensaje de texto SMS o WhatsApp al usuario:** 
+  - El asesor envió el código OTP.
+  
+- **Recepción del código OTP por medio de mensaje de texto SMS o WhatsApp al usuario:**
+  - La cliente no pudo recibir ni verificar el código OTP.
+
+- **Tipo de mascota y edad de la mascota:**
+  - No aplica para este plan.
+
+- **Validación específica de aceptación final post-objeciones:**
+  - Posterior a las objeciones, la clienta aceptó el Práctiseguro pero no pudo confirmar explícitamente el Salvafactura debido a que no recibió ni verificó el código OTP.
+
+- **Confirmación explícita de permanencia en línea para planes practiseguro/salvafactura:**
+  - La clienta aceptó la permanencia del Práctiseguro pero no confirmó explícitamente su permanencia con el plan de salvafactura.
+
+- **Registro de interacciones bilaterales asesor-usuario:**
+  - La clienta manifestó que no sabía manejar bien su teléfono, por lo que no pudo recibir ni verificar el código OTP.
+  - El asesor explicó las alternativas disponibles a pesar de la falta de verificación del OTP.
+
+- **Verificación de "sí" explícito final al cobro:**
+  - No se logró una confirmación explícita del cobro debido a que no pudo recibir ni verificar el código OTP.
+
+- **Justificación de calificación:**
+  La interacción finalizó con la aceptación del Práctiseguro, pero sin poder concretar la aceptación y activación del plan de salvafactura por falta de recepción y verificación del código OTP. Esto impide considerarlo una venta exitosa.
+
+- **Observaciones adicionales:**
+  - La clienta indicó que no sabía manejar su teléfono muy bien, lo cual resultó en la incapacidad para completar el proceso.
+  - El asesor explicó detalladamente las alternativas disponibles a pesar de la situación, pero no se pudo concretar la venta.

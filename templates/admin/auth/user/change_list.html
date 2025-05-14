@@ -1,0 +1,139 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <style>
+    /* Estilos específicos para la lista de usuarios */
+    #changelist {
+      background-color: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    
+    #changelist-form {
+      padding: 0;
+    }
+    
+    #changelist table {
+      margin-top: 0;
+    }
+    
+    #changelist table thead th {
+      font-weight: 500;
+    }
+    
+    /* Columna de username */
+    #changelist table tbody td:nth-child(2) a {
+      font-weight: 500;
+      color: #3498db;
+      text-decoration: none;
+    }
+    
+    #changelist table tbody td:nth-child(2) a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Iconos de estado */
+    .field-is_active .true,
+    .field-is_staff .true,
+    .field-is_superuser .true {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #2ecc71;
+      position: relative;
+    }
+    
+    .field-is_active .false,
+    .field-is_staff .false,
+    .field-is_superuser .false {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #e74c3c;
+      position: relative;
+    }
+    
+    /* Marca de verificación */
+    .field-is_active .true::after,
+    .field-is_staff .true::after,
+    .field-is_superuser .true::after {
+      content: "✓";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 12px;
+    }
+    
+    /* Marca de cruz */
+    .field-is_active .false::after,
+    .field-is_staff .false::after,
+    .field-is_superuser .false::after {
+      content: "×";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    /* Tooltip para explicar los campos */
+    .column-username,
+    .column-is_active,
+    .column-is_staff,
+    .column-is_superuser {
+      position: relative;
+    }
+    
+    .column-is_active::after,
+    .column-is_staff::after,
+    .column-is_superuser::after {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .column-is_active:hover::after,
+    .column-is_staff:hover::after,
+    .column-is_superuser:hover::after {
+      opacity: 1;
+      visibility: visible;
+      bottom: -25px;
+    }
+    
+    .column-is_active::after {
+      content: "Usuario activo";
+    }
+    
+    .column-is_staff::after {
+      content: "Acceso al admin";
+    }
+    
+    .column-is_superuser::after {
+      content: "Superusuario";
+    }
+  </style>
+{% endblock %}
+
+{% block object-tools-items %}
+  {{ block.super }}
+{% endblock %}

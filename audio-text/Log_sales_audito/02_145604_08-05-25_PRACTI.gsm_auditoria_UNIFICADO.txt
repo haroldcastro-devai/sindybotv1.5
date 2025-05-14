@@ -1,0 +1,57 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Berta López Mendoza
+* **Número de Identificación:** No se menciona explícitamente en la transcripción, pero es necesaria para futuras gestiones.
+* **Fecha de Nacimiento:** 29 de agosto de 1964
+* **Dirección:** No especificada en la llamada.
+* **Correo Electrónico:** López Mendoza.2002@Dimei.com
+* **Teléfono:** No mencionado, pero utilizado para realizar la llamada.
+* **Otros datos relevantes:** 
+  - Contrato con el nombre de su hija o hermana: María López Mendoza
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Alfa y Surtigas (Asistente médico)
+* **Planes Contratados:** Plan de asistencia médica para Berta López Mendoza y sus hijos/hijos, especificamente mencionados en la llamada son María, Ketty, y posiblemente otros.
+  - *Plan principal:* No se detallan los nombres de las pólizas específicas en la transcripción.
+* **Valor Individual de Cada Plan:** No mencionado explícitamente en la conversación. Se supone que el valor individual se menciona durante la venta pero no está claro desde esta transcripción específica.
+* **Valor Total Mensual:** $45,000 COP (Citado textualmente en la llamada).
+  > [SPEAKER_01] ¿La mensualidad es de $45,000 COP?
+* **Forma de Pago:** No especificado explícitamente en la transcripción.
+* **Vigencia:** Sin detalles de duración del contrato o condiciones de renovación mencionadas.
+
+## CARACTERÍSTICAS DE LOS PLANES
+### Plan Principal:
+- **Nombre del Plan:**
+  * Coberturas específicas: No detalladas explícitamente en la transcripción.
+  * Montos asegurados: No especificados.
+  * Requisitos de elegibilidad: No detallados en la conversación proporcionada.
+  * Períodos de carencia: Sin información clara sobre períodos de carencia en la llamada.
+  * Limitaciones y exclusiones: Sin detalles mencionados.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente:
+  > [SPEAKER_01] Buenas noches, Ketty Sarmiento de Alfa y Surtigas.
+* [x/] Explicación clara de los productos: Se mencionan planes de asistencia médica pero sin detalles específicos sobre coberturas o costos individuales.
+* [x/] Validación de datos personales:
+  > [SPEAKER_01] ¿Cuál es tu fecha de nacimiento, mi señora? 
+* [x/] Verificación de requisitos de elegibilidad: No se mencionan en la conversación proporcionada.
+* [ ] Explicación de valores y forma de pago:
+  > [SPEAKER_01] ¿La mensualidad es de $45,000 COP?
+  - Se confirma el valor total sin explicar la forma de pago o detalles adicionales sobre los costos del plan.
+* [x/] Autorización de tratamiento de datos personales: No se menciona explícitamente pero parece que se asume ya que la venta prosigue.
+* [x/] Aceptación explícita del cliente:
+  > [SPEAKER_01] Señora Berta, ¿usted autoriza a que le den de alta este plan?
+  - Respuesta afirmativa implícita al continuar con la transacción.
+* [x/] Confirmación final de entendimiento: No se solicita explícitamente una confirmación del cliente sobre su comprensión.
+
+## OBSERVACIONES
+- La venta parece haber sido exitosa y el cliente acepta el plan propuesto sin cuestionar los detalles. 
+- La falta de información detallada en cuanto a las coberturas, montos asegurados, limitaciones y exclusiones es un punto de mejora para futuros contactos.
+- Se menciona una mención al contrato con nombre alterno (María), lo cual podría ser confuso pero no se profundiza.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, determinamos que esta venta es POSITIVA. A pesar de las omisiones importantes como los detalles específicos del plan y la explicación clara de los valores individuales y forma de pago, el cliente parece estar conforme con la propuesta y no expresa rechazo.
+
+La falta de confirmación explícita sobre su comprensión completa del producto es un punto de mejora pero no califica como una anomalía grave para rechazar la venta en esta ocasión.

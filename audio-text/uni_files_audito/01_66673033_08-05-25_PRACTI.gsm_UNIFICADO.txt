@@ -1,0 +1,308 @@
+
+[SPEAKER_01]
+0:00:02.900000 - 0:00:03.060000:  Hola.
+
+[SPEAKER_00]
+0:00:03.080000 - 0:00:07.162000: Buenas tardes, el señor Germán Romero.
+
+[SPEAKER_01]
+0:00:08.263000 - 0:00:10.204000: Sí, de parte.
+
+[SPEAKER_00]
+0:00:10.224000 - 0:00:11.104000: Buenas, mi señor.
+
+[SPEAKER_00]
+0:00:11.204000 - 0:00:13.045000: Les saluda Geraldine Jaramillo.
+
+[SPEAKER_00]
+0:00:13.065000 - 0:00:17.427000: Soy representante de Alcén Alianza con Gases del Caribe.
+
+[SPEAKER_00]
+0:00:17.507000 - 0:00:19.408000: ¿Cómo se encuentra usted en el día de hoy?
+
+[SPEAKER_01]
+0:00:20.209000 - 0:00:21.189000: Bien, gracias a Dios.
+
+[SPEAKER_00]
+0:00:21.710000 - 0:00:23.110000: Me alegra mucho escucharlo.
+
+[SPEAKER_00]
+0:00:23.170000 - 0:00:28.353000: Pues antes que nada, es usted la persona encargada del pago de la factura del gas natural.
+
+[SPEAKER_00]
+0:00:28.413000 - 0:00:28.453000: Sí.
+
+[SPEAKER_01]
+0:00:33.517000 - 0:00:35.118000:  Yo solo pagué la factura.
+
+[SPEAKER_00]
+0:00:35.638000 - 0:00:36.639000: No, no, tranquilo.
+
+[SPEAKER_00]
+0:00:36.679000 - 0:00:38.280000: Yo no le estoy indicando que la debe.
+
+[SPEAKER_00]
+0:00:38.320000 - 0:00:41.482000: Le estoy preguntando que si es usted la persona encargada.
+
+[SPEAKER_01]
+0:00:42.763000 - 0:00:44.124000: Claro, claro.
+
+[SPEAKER_00]
+0:00:44.564000 - 0:00:47.546000: Dime cómo me dejó al momento de realizar la compra con Brilla.
+
+[SPEAKER_00]
+0:00:47.586000 - 0:00:48.727000: ¿Lo atendieron bien?
+
+[SPEAKER_00]
+0:00:48.787000 - 0:00:49.447000: ¿Le gustó?
+
+[SPEAKER_01]
+0:00:49.867000 - 0:00:51.068000: Claro, sí.
+
+[SPEAKER_01]
+0:00:51.088000 - 0:00:55.671000: Yo quería trabajar con ustedes, pero como a veces la gente habla demasiado.
+
+[SPEAKER_01]
+0:00:55.971000 - 0:00:58.853000: Voy a meterme para probar, si no... Ya...
+
+[SPEAKER_01]
+0:00:59.477000 - 0:01:01.358000:  Pero todo fue rápido, sí.
+
+[SPEAKER_00]
+0:01:02.199000 - 0:01:12.426000: Ay, qué bueno, mi señor, la verdad que nos alegra escucharlo, ya que... Estoy esperando el primer recibo para pagarlo ya.
+
+[SPEAKER_01]
+0:01:12.466000 - 0:01:18.830000: Sí, porque hay que quedar bien, y uno quedando bien es dueño de lo ajeno.
+
+[SPEAKER_00]
+0:01:19.691000 - 0:01:22.673000: Sí, señor, y tiene las puestas abiertas para que...
+
+[SPEAKER_00]
+0:01:23.203000 - 0:01:25.325000:  Pueda seguir haciendo uso de su cupo.
+
+[SPEAKER_01]
+0:01:25.485000 - 0:01:27.066000: Amor, una preguntita.
+
+[SPEAKER_01]
+0:01:27.086000 - 0:01:32.369000: Si yo puedo pagar dos meses, me tocaría ir al gas del Caribe y allá me dan una constancia, ¿verdad?
+
+[SPEAKER_00]
+0:01:32.650000 - 0:01:33.170000: Sí, claro.
+
+[SPEAKER_00]
+0:01:33.230000 - 0:01:35.912000: Ya es directamente en la oficina, mi señor.
+
+[SPEAKER_00]
+0:01:37.693000 - 0:01:42.436000: Para que ellos puedan hacer el descuento y pues todo quede ya pactado.
+
+[SPEAKER_00]
+0:01:43.137000 - 0:01:49.241000: Entonces, uno se alegra que le esté yendo muy bien, ya que siempre estaremos trabajando.
+
+[SPEAKER_00]
+0:01:49.765000 - 0:01:53.328000:  para brindarle tanto a usted como a su familia el mejor de los servicios.
+
+[SPEAKER_00]
+0:01:53.408000 - 0:02:13.943000: Queríamos contarle que por ser usted usuario activo de la compañía, pues Alfa le brinda la oportunidad de contar con un respaldo económico de $17.200.873, dinero que sería repartido de forma equitativa entre sus beneficiarios de ley o las personas que usted designe,
+
+[SPEAKER_00]
+0:02:14.599000 - 0:02:18.362000:  En caso de que Dios no lo permita, usted llegase a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:02:18.422000 - 0:02:21.444000: Contaría con la protección a partir de hoy a las 12 de la noche.
+
+[SPEAKER_00]
+0:02:21.464000 - 0:02:25.247000: Y el único requisito es que usted sea menor de 66 años.
+
+[SPEAKER_00]
+0:02:25.327000 - 0:02:33.414000: Para su mayor tranquilidad, la llamada está siendo totalmente grabada y monitoreada para garantizarle la calidad de nuestros servicios, ¿correcto?
+
+[SPEAKER_01]
+0:02:34.635000 - 0:02:35.435000: Sí.
+
+[SPEAKER_00]
+0:02:35.475000 - 0:02:37.497000: Bueno, mi señor, rápidamente confirmo.
+
+[SPEAKER_00]
+0:02:38.017000 - 0:02:44.980000:  Que el servicio de edad se le brinda en la carrera 4, calle 4-3 en Astrea y su nombre es Germán Enrique Romero Barrios, ¿correcto?
+
+[SPEAKER_01]
+0:02:45.640000 - 0:02:46.421000: Sí.
+
+[SPEAKER_00]
+0:02:46.441000 - 0:02:49.002000: Su cédula es 77 millones 1-42, 2-42 y cumple el 10 de abril y nació en 1962, ¿correcto?
+
+[SPEAKER_00]
+0:02:49.022000 - 0:02:49.082000: Sí.
+
+[SPEAKER_00]
+0:02:49.102000 - 0:02:51.063000: Es decir, que usted actualmente tiene 62 añitos.
+
+[SPEAKER_01]
+0:03:00.053000 - 0:03:01.094000:  Claro, sí señora.
+
+[SPEAKER_00]
+0:03:01.634000 - 0:03:12.140000: Bueno, mi señor, usted declara que los datos anteriormente mencionados son reales y las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_01]
+0:03:13.320000 - 0:03:14.141000: Sí.
+
+[SPEAKER_00]
+0:03:14.161000 - 0:03:18.043000: Bueno, mi señor, rápidamente le voy a leer la ley que le protege estos datos.
+
+[SPEAKER_00]
+0:03:18.503000 - 0:03:24.747000: Seguros Alfa como responsable hará tratamiento de desinformación para fines legales, contractuales en particular.
+
+[SPEAKER_00]
+0:03:25.197000 - 0:03:45.648000:  Para el desarrollo del proceso de pre-venta, venta y post-venta del contrato de seguro, tiene derecho a conocer, actualizar, ratificar información y los demás previstos en la Ley 1581 del 2002, normas complementarias y las políticas de tratamiento de información disponibles en www.segurosalto.com en la protección de datos.
+
+[SPEAKER_00]
+0:03:46.285000 - 0:03:53.071000:  Es voluntario responder preguntas sobre información sensible de menor de edad y al continuar en la llamada otorga la autorización.
+
+[SPEAKER_00]
+0:03:53.111000 - 0:03:58.597000: Usted declara que ha sido informada de las políticas de tratamiento y las condiciones generales del producto.
+
+[SPEAKER_00]
+0:03:58.617000 - 0:04:10.748000: Usted las va a poder consultar en www.segurosalza.com.com o al correo electrónico servicio al cliente arroba segurosalza.com.com ¿Y si no tengo correo electrónico?
+
+[SPEAKER_00]
+0:04:11.645000 - 0:04:18.947000:  Bueno, mi señor, en este caso, si no tiene correo electrónico, yo le puedo dar las líneas por si usted tiene alguna duda o inquietud, se pueda comunicar, ¿correcto?
+
+[SPEAKER_01]
+0:04:20.068000 - 0:04:21.108000: Ah.
+
+[SPEAKER_00]
+0:04:21.128000 - 0:04:36.993000: Bueno, mi señor, entonces le indicaba que las políticas de tratamiento y las condiciones generales del producto, usted las va a poder consultar en www.segurosalfa.com.com o al correo electrónico servicio al cliente arroba segurosalfa.com.com o al correo electrónico...
+
+[SPEAKER_00]
+0:04:38.740000 - 0:04:40.781000:  o a la línea gratuita 018-012-2531.
+
+[SPEAKER_00]
+0:04:40.881000 - 0:04:44.804000: Entonces, hasta aquí clara la información, mi señor Germán.
+
+[SPEAKER_01]
+0:04:46.865000 - 0:04:47.466000: Sí.
+
+[SPEAKER_00]
+0:04:47.486000 - 0:05:06.918000: Bueno, ya para ir finalizando y pues no quitarle más de su valioso tiempo, basados en la información anteriormente mencionada, pues acéptalo el producto y autoriza a cargar el valor mensual de $25,360 por su póliza, pero que aseguren la factura del gas natural a favor de seguridad, esa que se le habría reflejado mensualmente a partir del siguiente ciclo de facturación.
+
+[SPEAKER_00]
+0:05:07.274000 - 0:05:17.876000:  y se renovaría automáticamente pasada la vigencia de los 12 meses con un incremento en el valor asegurado de acuerdo al IPC, y hasta que usted exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:05:18.056000 - 0:05:18.996000: ¿Correcto, mi señora?
+
+[SPEAKER_00]
+0:05:19.496000 - 0:05:20.396000: Mi señor, disculpe.
+
+[SPEAKER_01]
+0:05:20.536000 - 0:05:21.877000: Sí, sí.
+
+[SPEAKER_00]
+0:05:21.897000 - 0:05:25.777000: Bueno, señor Germán, recuerde que sus beneficiarios de ley reciben la indemnización de $17.200.873.
+
+[SPEAKER_00]
+0:05:25.817000 - 0:05:31.978000: Pero en caso de muerte.
+
+[SPEAKER_00]
+0:05:31.998000 - 0:05:35.619000: Sí, exacto, que Dios me lo guarde en caso de que usted llegase a faltar,
+
+[SPEAKER_00]
+0:05:35.978000 - 0:05:39.059000:  Sí, su profesión se encuentra activa y cobrándose en su factura del gas.
+
+[SPEAKER_00]
+0:05:39.079000 - 0:05:41.960000: Dios me lo bendiga, señor Germán, que tenga usted un excelente día.
+
+[SPEAKER_00]
+0:05:41.980000 - 0:05:42.661000: Hasta luego.
+
+[SPEAKER_01]
+0:05:43.161000 - 0:05:44.361000: Amor, ¿y me está llamando de dónde?
+
+[SPEAKER_00]
+0:05:45.302000 - 0:05:47.562000: Mi señor, nosotros estamos ubicados en Bogotá.
+
+[SPEAKER_01]
+0:05:48.503000 - 0:05:50.203000: Ah, bueno, bueno.
+
+[SPEAKER_01]
+0:05:50.243000 - 0:05:51.124000: Bueno, señor Germán.
+
+[SPEAKER_01]
+0:05:51.164000 - 0:05:52.744000: ¿Cualquier inquietud te puedo marcar ahí, verdad?
+
+[SPEAKER_00]
+0:05:53.425000 - 0:05:54.405000: No, cualquier inquietud.
+
+[SPEAKER_00]
+0:05:54.445000 - 0:05:58.086000: Usted sabe en su factura hay una línea 164 y hay una 018000.
+
+[SPEAKER_00]
+0:05:59.227000 - 0:06:05.009000: En este caso, pues puede marcar cualquiera de esas dos líneas, ya que este es un corporativo y no recibimos llamadas, ¿correcto?
+
+[SPEAKER_01]
+0:06:06.150000 - 0:06:07.191000:  Bueno, mi hija, bueno.
+
+[SPEAKER_00]
+0:06:07.231000 - 0:06:10.474000: Bueno, señor Germán, Dios me lo bendiga, que tenga un excelente día.
+
+[SPEAKER_00]
+0:06:10.494000 - 0:06:11.154000: Hasta luego.
+
+[SPEAKER_00]
+0:06:11.795000 - 0:06:12.495000: Gracias por todo.
+
+[SPEAKER_00]
+0:06:12.736000 - 0:06:12.936000: Bueno.
+
+[SPEAKER_00]
+0:06:13.196000 - 0:06:14.117000: Bueno, que esté muy bien.
+
+[SPEAKER_00]
+0:06:14.137000 - 0:06:14.737000: Bendiciones.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:06:14.768000 - 0:06:14.968000:  Bueno.
+
+[SPEAKER_00]
+0:06:17.228000 - 0:06:17.969000: Señor Germán.
+
+[SPEAKER_00]
+0:06:18.989000 - 0:06:19.369000: ¿Qué?
+
+[SPEAKER_00]
+0:06:19.909000 - 0:06:21.109000: Ay, qué pena, señor Germán.
+
+[SPEAKER_00]
+0:06:21.129000 - 0:06:26.350000: Nuevamente se comunica Geraldine Jaramillo, representante de Alpen, Alianza con Gases del Caribe, Brilla.
+
+[SPEAKER_00]
+0:06:26.430000 - 0:06:27.731000: Qué pena, señor Germán.
+
+[SPEAKER_01]
+0:06:28.071000 - 0:06:31.711000: Amor, ahorita no te puedo atender porque estoy por acá buscándole una droga a mi mamá.
+
+[SPEAKER_00]
+0:06:31.811000 - 0:06:32.712000: No, tranquilo.
+
+[SPEAKER_00]
+0:06:32.892000 - 0:06:36.312000: Nada más quería confirmar en este caso que usted cumple el 10 de abril de 1962, es decir, que usted tiene 63 añitos.
+
+[SPEAKER_00]
+0:06:40.452000 - 0:06:41.094000:  Sí, claro.
+
+[SPEAKER_00]
+0:06:41.435000 - 0:06:42.057000: Correcto.
+
+[SPEAKER_00]
+0:06:42.117000 - 0:06:43.923000: Bueno, nada más era eso, señor Germán.
+
+[SPEAKER_00]
+0:06:43.963000 - 0:06:45.568000: Muy amable por atender mi llamada.
+
+[SPEAKER_00]
+0:06:45.588000 - 0:06:46.451000: Dios me lo bendiga.
+
+[SPEAKER_01]
+0:06:47.193000 - 0:06:47.935000: Bueno, bueno, bueno.

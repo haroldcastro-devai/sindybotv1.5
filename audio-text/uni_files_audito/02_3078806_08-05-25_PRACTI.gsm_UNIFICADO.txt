@@ -1,0 +1,350 @@
+
+[SPEAKER_01]
+0:00:01.229000 - 0:00:02.730000:  Hola, buenas tardes.
+
+[SPEAKER_01]
+0:00:02.790000 - 0:00:04.712000: Buenas tardes con la señora Rosalba Zúñiga.
+
+[SPEAKER_00]
+0:00:05.512000 - 0:00:06.573000: ¿De parte de quién?
+
+[SPEAKER_01]
+0:00:06.593000 - 0:00:07.814000: Señora Rosalba, mucho gusto.
+
+[SPEAKER_01]
+0:00:07.874000 - 0:00:10.856000: Le comunica José Ramos de parte de Surtigas y Alfa.
+
+[SPEAKER_01]
+0:00:10.896000 - 0:00:11.637000: ¿Cómo ha pasado usted?
+
+[SPEAKER_00]
+0:00:11.677000 - 0:00:14.078000: Excelente, gracias a Dios.
+
+[SPEAKER_01]
+0:00:14.158000 - 0:00:15.479000: Escuchala, mi señora, y que esté muy bien.
+
+[SPEAKER_01]
+0:00:15.499000 - 0:00:20.943000: Señora Rosalba, me estoy comunicando con usted para expandirle la información acerca de la protección de vida, ¿correcto?
+
+[SPEAKER_00]
+0:00:22.745000 - 0:00:23.085000: Sí.
+
+[SPEAKER_01]
+0:00:23.105000 - 0:00:23.425000: Señora.
+
+[SPEAKER_01]
+0:00:24.366000 - 0:00:26.067000: Permítame indicarle, señora Rosalba.
+
+[SPEAKER_01]
+0:00:26.820000 - 0:00:32.183000:  que Alfa le brinda a ustedes, sí señor, un respaldo económico de 16.803.497 pesos.
+
+[SPEAKER_01]
+0:00:33.844000 - 0:00:42.148000: Dinero, señora Rosalba, que de forma equitativa va a ser entregado a sus beneficiarios de ley designados, que son su familia, en caso de usted llegarles a faltar por cualquier causa.
+
+[SPEAKER_01]
+0:00:42.829000 - 0:00:49.712000: Quedan amparados, sí señora, a partir del día de hoy, 12 de la noche, con esta protección, pues están amparados hasta 8 beneficiarios de ley.
+
+[SPEAKER_01]
+0:00:50.453000 - 0:00:53.374000: El único requisito, señora Rosalba, es que usted sea menor de 66 años de edad,
+
+[SPEAKER_01]
+0:00:55.041000 - 0:01:04.105000:  Y usted tener la tranquilidad que ya el monto del cobro de la protección le llega hasta el siguiente ciclo de facturación, sí señora.
+
+[SPEAKER_01]
+0:01:04.185000 - 0:01:09.787000: Igualmente, doña Rosalba, esta llamada está siendo grabada y monitoreada, garantizándole usted lo que es la calidad del servicio.
+
+[SPEAKER_01]
+0:01:10.007000 - 0:01:11.667000: Doña Rosalba, ¿usted tiene los beneficiarios?
+
+[SPEAKER_00]
+0:01:13.028000 - 0:01:15.869000: Bueno, de momentico tenía por ahora poner dos hijos.
+
+[SPEAKER_01]
+0:01:16.649000 - 0:01:17.710000: Sí señora, ¿cómo se llaman?
+
+[SPEAKER_00]
+0:01:18.510000 - 0:01:20.231000: José Gregorio Suárez Zúñiga.
+
+[SPEAKER_01]
+0:01:21.271000 - 0:01:22.071000: José Gregorio.
+
+[SPEAKER_00]
+0:01:22.732000 - 0:01:23.332000: Sí señorita.
+
+[SPEAKER_01]
+0:01:24.081000 - 0:01:26.963000:  Suárez Zúñiga, sí señora.
+
+[SPEAKER_01]
+0:01:29.185000 - 0:01:30.366000: Parentesco hijo, ¿correcto?
+
+[SPEAKER_00]
+0:01:30.426000 - 0:01:31.426000: Hijo, sí señor.
+
+[SPEAKER_01]
+0:01:33.848000 - 0:01:35.489000: ¿Cómo se llama el otro beneficiario?
+
+[SPEAKER_00]
+0:01:35.950000 - 0:01:39.272000: María del Carmen Suárez Zúñiga.
+
+[SPEAKER_00]
+0:01:39.312000 - 0:01:42.835000: Termina entre H. Sí, María del Carmen Suárez Zúñiga.
+
+[SPEAKER_00]
+0:01:47.278000 - 0:01:48.058000: Suárez Zúñiga.
+
+[SPEAKER_00]
+0:01:48.659000 - 0:01:49.099000: Sí señor.
+
+[SPEAKER_01]
+0:01:51.160000 - 0:01:52.121000: Hija también, ¿correcto?
+
+[SPEAKER_01]
+0:01:52.421000 - 0:01:53.082000: No más ellos dos.
+
+[SPEAKER_00]
+0:01:53.482000 - 0:01:54.402000:  Sí, nada más ellos dos.
+
+[SPEAKER_01]
+0:01:54.622000 - 0:01:55.403000: Ok, sí, señora.
+
+[SPEAKER_01]
+0:01:55.803000 - 0:02:00.845000: Igualmente, señora Rosalba, usted es la persona responsable del pago de la factura natural en la vivienda, ¿correcto?
+
+[SPEAKER_00]
+0:02:01.385000 - 0:02:01.785000: Sí, señor.
+
+[SPEAKER_01]
+0:02:01.825000 - 0:02:04.646000: Igualmente, voy a proceder a leerle los datos suministrados en el sistema.
+
+[SPEAKER_01]
+0:02:04.886000 - 0:02:06.727000: Servicio prestado con el contrato 3078-806, la calle 33 y R, 18B... 65.
+
+[SPEAKER_01]
+0:02:06.827000 - 0:02:07.107000: Exacto.
+
+[SPEAKER_01]
+0:02:07.127000 - 0:02:08.267000: 18B-65, piso 1 del espinal, ¿correcto?
+
+[SPEAKER_00]
+0:02:19.672000 - 0:02:19.852000:  Sí, señor.
+
+[SPEAKER_01]
+0:02:19.992000 - 0:02:23.754000: Igualmente, servicio a nombre de doña Rosalba Zúñiga Blanquicet.
+
+[SPEAKER_01]
+0:02:23.854000 - 0:02:25.134000: Blanquicet, sí.
+
+[SPEAKER_01]
+0:02:25.174000 - 0:02:27.015000: Colombiana identificada con cédula colombiana 45477218.
+
+[SPEAKER_01]
+0:02:27.075000 - 0:02:27.395000: Teléfono 304-323-3940.
+
+[SPEAKER_01]
+0:02:27.415000 - 0:02:30.176000: Nacida doña Rosalba el 4 del mes de junio de 1960.
+
+[SPEAKER_00]
+0:02:30.236000 - 0:02:30.636000: 60, sí, señor.
+
+[SPEAKER_01]
+0:02:30.736000 - 0:02:32.137000: ¿Cuántos años cumple este año, doña Rosalba?
+
+[SPEAKER_01]
+0:02:32.157000 - 0:02:32.357000: ¿Cómo?
+
+[SPEAKER_01]
+0:02:32.377000 - 0:02:33.797000: ¿Cuántos años cumple usted este año?
+
+[SPEAKER_01]
+0:02:33.817000 - 0:02:34.217000: 62, creo que es.
+
+[SPEAKER_01]
+0:02:34.237000 - 0:02:34.598000: 61, 72 mil.
+
+[SPEAKER_01]
+0:02:34.618000 - 0:02:34.818000: Ay, señor.
+
+[SPEAKER_01]
+0:02:50.697000 - 0:02:52.238000:  Ok, sí señora.
+
+[SPEAKER_01]
+0:02:52.758000 - 0:02:58.280000: Igualmente, sí señora, la cédula fue pedida el 31 de julio de 1986.
+
+[SPEAKER_01]
+0:02:58.520000 - 0:03:02.421000: Ok, ya le saco la cuenta, permíteme un momento.
+
+[SPEAKER_01]
+0:03:02.441000 - 0:03:10.843000: O sea, este año cumple usted 65.
+
+[SPEAKER_01]
+0:03:10.883000 - 0:03:12.564000: Ay, ya estoy vieja.
+
+[SPEAKER_01]
+0:03:15.005000 - 0:03:16.225000: No, no, no.
+
+[SPEAKER_01]
+0:03:17.259000 - 0:03:18.420000:  La cédula, doña Rosalba.
+
+[SPEAKER_01]
+0:03:18.761000 - 0:03:20.902000: Sí, es la cédula que te dijo hoy.
+
+[SPEAKER_01]
+0:03:20.922000 - 0:03:23.325000: ¿Cuenta usted con algún correo electrónico, doña Rosalba?
+
+[SPEAKER_00]
+0:03:23.345000 - 0:03:27.188000: De momentico no tengo correo.
+
+[SPEAKER_01]
+0:03:27.228000 - 0:03:27.528000: Ah, listo.
+
+[SPEAKER_01]
+0:03:27.548000 - 0:03:28.029000: Sí, señora.
+
+[SPEAKER_01]
+0:03:28.409000 - 0:03:31.592000: Igualmente voy a proceder a leerle a usted la ley que protege sus datos personales.
+
+[SPEAKER_01]
+0:03:31.892000 - 0:03:33.033000: Todos me le queden protegidos.
+
+[SPEAKER_01]
+0:03:33.113000 - 0:03:33.353000: Listo.
+
+[SPEAKER_01]
+0:03:34.234000 - 0:03:43.282000: Proalfa, como responsable, hará tratamiento de su información para fines legales contractuales, en particular para el desarrollo del proceso de preventa y posventa del contrato seguro.
+
+[SPEAKER_01]
+0:03:43.362000 - 0:03:44.503000: Tiene usted derecho a conocer...
+
+[SPEAKER_01]
+0:03:45.185000 - 0:03:49.667000:  Actualizar, rectificar su información y los demás previstos en la Ley 1581 del 2012.
+
+[SPEAKER_01]
+0:03:50.347000 - 0:03:57.409000: Normas complementarias y políticas de tratamiento de información disponibles en www.seguroalfa.com.co en la protección de datos.
+
+[SPEAKER_01]
+0:03:57.990000 - 0:04:01.411000: Es voluntario responder preguntas sobre información sensible o menores de edad.
+
+[SPEAKER_01]
+0:04:01.911000 - 0:04:03.792000: Continuar en la llamada o otorgar su autorización.
+
+[SPEAKER_01]
+0:04:03.812000 - 0:04:12.175000: Declaro usted que ha sido informada de que nuestras políticas de tratamiento, las condiciones generales del producto, práctico y seguro pueden ser consultadas en www.seguroalfa.com.co.
+
+[SPEAKER_01]
+0:04:14.029000 - 0:04:26.272000:  También pueden ser solicitadas a través del correo electrónico serviciocliente.seguralfa.com.co o al teléfono fijo 601-307-7032 o a la línea nacional gratuita 018-1215-32.
+
+[SPEAKER_01]
+0:04:26.372000 - 0:04:27.953000: ¿Correcto?
+
+[SPEAKER_01]
+0:04:27.973000 - 0:04:29.133000: Sí, señor.
+
+[SPEAKER_01]
+0:04:30.793000 - 0:04:39.536000: Igualmente, doña Rosalba, declaro usted que los datos anteriormente suministrados son reales, que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales.
+
+[SPEAKER_01]
+0:04:39.636000 - 0:04:40.016000: ¿Correcto?
+
+[SPEAKER_01]
+0:04:40.477000 - 0:04:40.697000:  Sí, señor.
+
+[SPEAKER_01]
+0:04:40.857000 - 0:05:04.665000: Igualmente, doña Rosalba, si este es el producto, autoriza cargar el valor mensual de $26,460 por su póliza práctica y seguro en la factura de gas natural a favor de seguros alfa que se verán reflejados mensualmente y a partir de su siguiente ciclo de facturación se renovará automáticamente pasada la vigencia de 12 meses con incremento del valor asegurado de acuerdo con el IPC y hasta que usted exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:05:04.805000 - 0:05:05.266000: ¿Correcto?
+
+[SPEAKER_00]
+0:05:06.246000 - 0:05:07.266000: Sí, señor.
+
+[SPEAKER_01]
+0:05:07.286000 - 0:05:08.147000: ¿Correcto, doña Rosalba?
+
+[SPEAKER_00]
+0:05:08.647000 - 0:05:09.047000: Sí, señor.
+
+[SPEAKER_01]
+0:05:09.468000 - 0:05:13.832000:  Doña Rosalba, igualmente les recuerdo que sus beneficiarios de ley van a recibir una indemnización de $16.803.497.
+
+[SPEAKER_01]
+0:05:14.433000 - 0:05:17.096000: Sí, eso es lo que dijo la asesora.
+
+[SPEAKER_01]
+0:05:19.738000 - 0:05:20.119000: Exacto.
+
+[SPEAKER_01]
+0:05:20.139000 - 0:05:25.124000: En caso, Doña Rosalba, que usted llegase a faltar, su protección se encuentra activa y cobrándose en su factura de gas.
+
+[SPEAKER_01]
+0:05:26.064000 - 0:05:30.449000: Igualmente, Doña Rosalba, le agradecemos la confianza en su actividad y alfa para la protección de su familia.
+
+[SPEAKER_01]
+0:05:30.916000 - 0:05:33.057000:  Y la de usted que tenga una buena tarde, señora Rosalba.
+
+[SPEAKER_00]
+0:05:33.137000 - 0:05:33.918000: Ok, gracias.
+
+[SPEAKER_00]
+0:05:33.938000 - 0:05:35.158000: Le hago una preguntita, disculpe.
+
+[SPEAKER_01]
+0:05:35.178000 - 0:05:35.959000: Con todo gusto, sí, señora.
+
+[SPEAKER_00]
+0:05:35.999000 - 0:05:40.862000: El nombre de la asesora que se me olvidó, la chica muy atenta que me atendió, muy buena asesora.
+
+[SPEAKER_01]
+0:05:41.222000 - 0:05:42.863000: Liliana Margarita Suárez.
+
+[SPEAKER_00]
+0:05:42.923000 - 0:05:44.024000: Liliana, sí, señor.
+
+[SPEAKER_00]
+0:05:44.084000 - 0:05:45.885000: Bueno, caballero, muchas gracias.
+
+[SPEAKER_00]
+0:05:45.965000 - 0:05:47.426000: Que tenga una excelente tarde.
+
+[SPEAKER_01]
+0:05:47.466000 - 0:05:48.246000: Sí, señora, que esté muy bien.
+
+[SPEAKER_00]
+0:05:48.726000 - 0:05:49.247000: Igualmente.
+
+[SPEAKER_00]
+0:05:49.267000 - 0:05:49.747000: Hasta luego.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:05:51.618000 - 0:05:52.379000:  Ale, buenas tardes.
+
+[SPEAKER_00]
+0:05:52.699000 - 0:05:56.604000: Buenas tardes nuevamente, doña Rosalba, le comunica José Ramos de parte de Sortidad y Alfa.
+
+[SPEAKER_00]
+0:05:56.624000 - 0:05:57.164000: Sí, señor.
+
+[SPEAKER_00]
+0:05:57.184000 - 0:06:00.268000: Bueno, doña Rosalba, la dirección es calle 33, carrera 18B, 65.
+
+[SPEAKER_00]
+0:06:00.308000 - 0:06:00.468000: 65, sí.
+
+[SPEAKER_00]
+0:06:00.528000 - 0:06:01.089000: Piso 2, correcto.
+
+[SPEAKER_02]
+0:06:01.109000 - 0:06:06.315000: Piso 2, sí, señor.
+
+[SPEAKER_00]
+0:06:06.355000 - 0:06:06.836000: Exacto.
+
+[SPEAKER_00]
+0:06:06.916000 - 0:06:08.518000: Bueno, doña Rosalba, que pase una buena tarde.
+
+[SPEAKER_02]
+0:06:09.078000 - 0:06:09.919000: Ok, igualmente.
+
+[SPEAKER_00]
+0:06:09.939000 - 0:06:10.440000: Hasta luego.

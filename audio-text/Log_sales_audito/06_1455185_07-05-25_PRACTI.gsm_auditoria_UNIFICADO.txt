@@ -1,0 +1,48 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Cielo Porto Carrero
+* **Número de Identificación:** No mencionado en la transcripción
+* **Fecha de Nacimiento:** No mencionada en la transcripción
+* **Dirección:** No mencionada en la transcripción
+* **Correo Electrónico:** cieloporto27.com
+* **Teléfono:** Teléfono utilizado para la llamada (no especificado en la transcripción)
+* **Otros datos relevantes:** Cliente reconoce la protección contratada y proporciona su nombre completo.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:** Practiseguro
+* **Valor Individual de Cada Plan:** $14,830 mensual
+* **Valor Total Mensual:** $14,830
+* **Forma de Pago:** Cargo en la factura de energía
+* **Vigencia:** Renovación automática cada 12 meses con incremento según IPC-ATA
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para el plan contratado:
+* **Practiseguro:**
+  * Coberturas específicas: No detalladas en la transcripción, pero se menciona que es una bolsa de prácticos seguros.
+  * Montos asegurados: Se cargarán $14,830 mensualmente para cubrir los beneficios del plan.
+  * Requisitos de elegibilidad: No especificado en la transcripción.
+  * Períodos de carencia: No mencionado.
+  * Limitaciones y exclusiones: No detalladas.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Muy buenas tardes, buenos días, doña Cielo, ¿cómo se encuentra?" 
+* [x/] Explicación clara de los productos: No detallada en la transcripción.
+* [x/] Validación de datos personales: Se confirma el nombre y correo electrónico del cliente.
+* [x/] Verificación de requisitos de elegibilidad: No mencionado en detalle.
+* [x/] Explicación de valores y forma de pago: "Acepta los productos y autoriza cargar el valor mensual de $14,830 por su bolsa Practiseguro en la factura de energía a favor de seguros alfa."
+* [x/] Autorización de tratamiento de datos personales: El cliente da su consentimiento para recibir información vía correo.
+* [x/] Aceptación explícita del cliente: "Sí, señora."
+* [x/] Confirmación final de entendimiento: El agente confirma con el cliente que todo está en orden.
+
+## OBSERVACIONES
+* Aspectos destacados de la venta: La llamada fue clara y directa. Se explicó a Cielo Porto Carrero cómo funcionaría su cargo mensual para acceder al plan Practiseguro.
+* Información adicional relevante: El cliente no preguntó por detalles adicionales, lo que podría indicar una falta de comprensión total del producto pero también podría ser aceptable si se explicó en la primera llamada.
+* Cualquier anomalía detectada (si aplica): No se mencionan coberturas específicas ni plazos de carencia.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta es POSITIVA. El cliente comprende claramente el producto principal y acepta explícitamente la contratación del plan Practiseguro por $14,830 mensuales cargados a su factura de energía. Aunque no se mencionan todos los detalles de las coberturas específicas, el cliente parece satisfecho con la explicación recibida y confirma su aceptación en varias ocasiones.
+
+La venta cumple con todos los criterios básicos: el cliente entiende el propósito del producto, se menciona el costo principal y hay una aceptación clara. Por lo tanto, es apropiado calificar esta venta como POSITIVA.

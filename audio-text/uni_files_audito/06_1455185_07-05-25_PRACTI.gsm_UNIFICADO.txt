@@ -1,0 +1,473 @@
+
+[SPEAKER_01]
+0:00:00.132000 - 0:00:01.932000:  Cuando yo... Muy buenos días.
+
+[SPEAKER_00]
+0:00:03.053000 - 0:00:03.653000: Buenos días.
+
+[SPEAKER_01]
+0:00:03.993000 - 0:00:09.514000: Está amable con... Cielo, Melisa, Porto Carrero.
+
+[SPEAKER_00]
+0:00:10.514000 - 0:00:11.254000: Sí, señora.
+
+[SPEAKER_01]
+0:00:11.714000 - 0:00:12.754000: ¿Cómo se encuentra?
+
+[SPEAKER_01]
+0:00:12.834000 - 0:00:19.335000: Le habla Carolina Linares, Ejecutivo Comercial de Alfa, en alianza con... CEO, Compañía Energética de Occidente.
+
+[SPEAKER_01]
+0:00:19.415000 - 0:00:20.056000: ¿Cómo ha estado?
+
+[SPEAKER_00]
+0:00:21.496000 - 0:00:23.136000: Bien, gracias a Dios.
+
+[SPEAKER_01]
+0:00:23.156000 - 0:00:24.096000: Me alegra mucho.
+
+[SPEAKER_01]
+0:00:24.696000 - 0:00:28.037000: Señora Cielo, cuénteme, ¿cómo le ha ido con el suministro de energía...
+
+[SPEAKER_01]
+0:00:28.783000 - 0:00:31.945000:  En Santander de Quilechao, Cauca.
+
+[SPEAKER_00]
+0:00:31.985000 - 0:00:32.745000: Bien, gracias.
+
+[SPEAKER_00]
+0:00:32.765000 - 0:00:35.307000: De momento pues conmigo bien, gracias a Dios.
+
+[SPEAKER_01]
+0:00:35.447000 - 0:00:42.271000: Ah, bueno, nos alegra que tenga un buen concepto de SEO, compañía energética de occidente, ya que día a día trabajamos para garantizar mejor servicio.
+
+[SPEAKER_01]
+0:00:42.951000 - 0:00:47.254000: Es tan amable y me confirma, ¿es usted la persona responsable del pago de la factura de energía?
+
+[SPEAKER_00]
+0:00:48.554000 - 0:00:49.555000: Sí, señora.
+
+[SPEAKER_01]
+0:00:49.595000 - 0:00:52.417000: El día de hoy queremos contarle que por ser usuaria activa de SEO...
+
+[SPEAKER_01]
+0:00:53.603000 - 0:00:58.826000:  Compañía Energética del Occidente, Alfa te brinda la oportunidad de contar con un respaldo económico de $16,537,198.
+
+[SPEAKER_01]
+0:00:59.346000 - 0:01:07.531000: Que será repartido de forma equitativa entre su beneficiario de ley o entre las personas que usted designe.
+
+[SPEAKER_01]
+0:01:07.551000 - 0:01:10.813000: En el caso que Dios no lo permita, usted llegue a faltar por cualquier causa.
+
+[SPEAKER_01]
+0:01:10.833000 - 0:01:14.795000: Y contará con esta protección a partir de las 12 de la noche del día de hoy.
+
+[SPEAKER_01]
+0:01:14.835000 - 0:01:17.757000: El único requisito es ser menor de 66 años.
+
+[SPEAKER_01]
+0:01:18.457000 - 0:01:19.918000: ¿Es tan amable en mi indicación de edad? 25.
+
+[SPEAKER_01]
+0:01:23.581000 - 0:01:24.361000:  Ahí está, joven.
+
+[SPEAKER_01]
+0:01:25.062000 - 0:01:26.522000: ¿Sí le queda clara la información?
+
+[SPEAKER_00]
+0:01:26.542000 - 0:01:28.443000: Sí, señora.
+
+[SPEAKER_01]
+0:01:29.183000 - 0:01:36.307000: Bueno, entonces, señora Cielo, le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestro servicio.
+
+[SPEAKER_01]
+0:01:37.827000 - 0:01:46.431000: Validando la información registrada en el sistema, me confirma que su nombre completo y apellido es Cielo Melisa Porto Carrero Perea.
+
+[SPEAKER_00]
+0:01:47.852000 - 0:01:48.432000: Sí, señora.
+
+[SPEAKER_01]
+0:01:49.116000 - 0:01:53.899000:  Su tipo de identificación y su número de identificación es Cédula de Ciudadanía 10-045-11197.
+
+[SPEAKER_01]
+0:01:53.919000 - 0:01:56.201000: Sí, señora.
+
+[SPEAKER_01]
+0:01:59.083000 - 0:02:02.545000: La dirección de su predio es Santander de Quilichao, Cauca.
+
+[SPEAKER_00]
+0:02:03.846000 - 0:02:04.686000: Sí, señora.
+
+[SPEAKER_01]
+0:02:04.967000 - 0:02:10.950000: ¿Me indica un correo donde yo le pueda suministrar toda esta información, enviarle toda esta información por correo?
+
+[SPEAKER_00]
+0:02:13.432000 - 0:02:17.635000: Cielo, Melis, Cielo, Puerto Carrero, 27, arroba, gmail, punto com.
+
+[SPEAKER_01]
+0:02:18.405000 - 0:02:19.125000:  Cielo Meli.
+
+[SPEAKER_00]
+0:02:20.286000 - 0:02:21.547000: Cielo Portocarrero 27.
+
+[SPEAKER_01]
+0:02:21.587000 - 0:02:24.428000: Cielo Portacarrero.
+
+[SPEAKER_00]
+0:02:25.609000 - 0:02:26.610000: Portocarrero.
+
+[SPEAKER_01]
+0:02:26.630000 - 0:02:29.691000: Sí, 27.
+
+[SPEAKER_00]
+0:02:30.912000 - 0:02:33.393000: 27 arroba email punto com.
+
+[SPEAKER_01]
+0:02:35.674000 - 0:02:36.915000: Email punto com.
+
+[SPEAKER_01]
+0:02:36.975000 - 0:02:39.276000: ¿Me indica si es tan amable su fecha de nacimiento?
+
+[SPEAKER_00]
+0:02:39.296000 - 0:02:42.418000: El 15 de septiembre.
+
+[SPEAKER_00]
+0:02:42.438000 - 0:02:42.478000: Sí.
+
+[SPEAKER_00]
+0:02:42.498000 - 0:02:42.578000: De 99.
+
+[SPEAKER_01]
+0:02:49.242000 - 0:02:56.145000:  Permítame un momento, si está amable.
+
+[SPEAKER_01]
+0:02:56.365000 - 0:02:57.566000: Tiene 25 años, ¿sí?
+
+[SPEAKER_01]
+0:02:59.026000 - 0:03:00.647000: Sí, señora.
+
+[SPEAKER_01]
+0:03:01.267000 - 0:03:09.131000: Señora Cielo, declara que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran en los marcos legales.
+
+[SPEAKER_01]
+0:03:09.151000 - 0:03:09.831000: ¿Está de acuerdo?
+
+[SPEAKER_00]
+0:03:10.912000 - 0:03:12.312000: Señora.
+
+[SPEAKER_01]
+0:03:12.332000 - 0:03:18.715000: Señora Cielo, nosotros tenemos el día de hoy una ley que se llama Ley de AVEA Data, que es una ley que protege sus datos personales
+
+[SPEAKER_01]
+0:03:19.173000 - 0:03:22.875000:  Y a continuación yo voy a proceder a leérsela, ¿sí?
+
+[SPEAKER_00]
+0:03:22.895000 - 0:03:23.335000: Sí, nada.
+
+[SPEAKER_01]
+0:03:23.375000 - 0:03:32.639000: Segundo, como responsable de la tratamiento de esa información para fines legales, contractuales, en particular para el desarrollo del proceso de preventa, venta y posventa del contrato de seguro.
+
+[SPEAKER_01]
+0:03:33.259000 - 0:03:46.544000: Tiene derecho a conocer, actualizar, rectificar su información y lo demás previsto en la ley 1581 del 2012, normas complementarias y la política de tratamiento de información disponible en www.seguroalfa.com.co, protección de datos.
+
+[SPEAKER_01]
+0:03:48.487000 - 0:03:52.928000:  Es voluntario responder preguntas sobre información sensible a menores de edad.
+
+[SPEAKER_01]
+0:03:52.948000 - 0:04:11.312000: Al continuar en la llamada, otorga su autorización y declara usted que ha sido informada de que nuestra política de tratamiento y las condiciones generales del producto práctico y seguro puede ser consultada en www.segurojalfa.com.co y también puede ser solicitada a través del correo electrónico servicio al cliente arroba segurojalfa.com.co.
+
+[SPEAKER_01]
+0:04:13.908000 - 0:04:18.971000:  O al teléfono 601-307-7032 o a la línea nacional gratuita 018-1215-32.
+
+[SPEAKER_01]
+0:04:18.991000 - 0:04:22.954000: ¿Está de acuerdo, señora Cielo?
+
+[SPEAKER_01]
+0:04:23.074000 - 0:04:24.115000: Sí, señora.
+
+[SPEAKER_01]
+0:04:27.617000 - 0:04:35.643000: Señora Cielo, acepta los productos y autoriza cargar el valor mensual de $29,670 por su bolsa práctica y segura en la factura de energía.
+
+[SPEAKER_01]
+0:04:36.337000 - 0:04:51.200000:  A favor de seguros alfa que se verá reflejado mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente y se pasará a la vigencia de 12 meses con un incremento del valor asegurado de acuerdo con el IPC hasta que expresa en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:04:51.240000 - 0:04:52.561000: ¿Está de acuerdo, señora Cielo?
+
+[SPEAKER_00]
+0:04:54.081000 - 0:04:55.741000: ¿Me tocaría pagar mensual?
+
+[SPEAKER_01]
+0:04:57.142000 - 0:04:57.802000: Sí, señora.
+
+[SPEAKER_01]
+0:04:57.842000 - 0:04:59.622000: Ese cubre para 8 beneficiarios.
+
+[SPEAKER_01]
+0:05:00.582000 - 0:05:00.742000: ¿Sí?
+
+[SPEAKER_00]
+0:05:03.183000 - 0:05:03.343000: Mmm...
+
+[SPEAKER_00]
+0:05:07.628000 - 0:05:11.811000:  ¿Será que yo puedo dialogarlo primero con mi pareja para poder aceptarlo?
+
+[SPEAKER_01]
+0:05:12.552000 - 0:05:17.416000: Señora Cielo, si usted gusta, yo le tengo un plan más económico, ¿sí?
+
+[SPEAKER_01]
+0:05:17.676000 - 0:05:19.157000: Para que le sea más accesible.
+
+[SPEAKER_01]
+0:05:19.177000 - 0:05:28.085000: Es para cuatro beneficiarios de 14,830 pesitos y la indemnización de 268,624.
+
+[SPEAKER_01]
+0:05:29.486000 - 0:05:36.932000: Igual, pues, alguno de los dos planes que usted escoja el día de hoy se va a ver reflejado en su próximo ciclo de facturación.
+
+[SPEAKER_01]
+0:05:37.530000 - 0:05:44.753000:  La idea es que usted esté protegido a partir de las 12 de la noche del día de hoy y es usted quien decide a quién va a dejar de beneficiario.
+
+[SPEAKER_01]
+0:05:44.813000 - 0:05:46.794000: ¿Cuántos beneficiarios tiene, doña Cielo?
+
+[SPEAKER_00]
+0:05:46.814000 - 0:05:52.857000: Pues somos tres.
+
+[SPEAKER_01]
+0:05:55.078000 - 0:05:57.259000: Bueno, entonces usted escoge si el plan de 14,830 o el plan de 29,670.
+
+[SPEAKER_01]
+0:05:57.899000 - 0:05:58.660000: ¿Cuál de los dos le gustaría?
+
+[SPEAKER_00]
+0:06:05.864000 - 0:06:07.285000:  ¿Qué le iba a decir?
+
+[SPEAKER_00]
+0:06:07.305000 - 0:06:10.386000: ¿Pero es algo obligatorio que toca pagar o...?
+
+[SPEAKER_01]
+0:06:13.988000 - 0:06:16.589000: Pues toda protección tiene un valor, ¿sí?
+
+[SPEAKER_01]
+0:06:16.649000 - 0:06:20.531000: Por eso le doy estos dos planes para que sea usted la que escoja, ¿sí?
+
+[SPEAKER_01]
+0:06:20.651000 - 0:06:26.254000: Y como le indico, esto se va a ver reflejado en su próximo ciclo de facturación, ¿sí?
+
+[SPEAKER_01]
+0:06:27.454000 - 0:06:34.918000: No es una obligación, pero si usted coge alguno de los dos planes, usted estaría protegida a partir de las 12 de la noche del día de hoy.
+
+[SPEAKER_01]
+0:06:35.735000 - 0:06:39.316000:  Por ser usuaria activa y por cumplir con los requisitos, doña Cielo.
+
+[SPEAKER_01]
+0:06:41.017000 - 0:06:45.918000: Igual le pregunto, ¿es usted la persona encargada de tomar las decisiones en su hogar?
+
+[SPEAKER_00]
+0:06:45.958000 - 0:06:47.759000: Sí, sí, sí, sí, señora.
+
+[SPEAKER_01]
+0:06:47.779000 - 0:06:50.939000: Bueno, entonces, doña Cielo, ¿cuál de los planes le gustaría adquirir el día de hoy?
+
+[SPEAKER_00]
+0:06:53.440000 - 0:07:01.463000: Sí, yo le entiendo la información, pero yo no quiero pagar nada ahorita.
+
+[SPEAKER_01]
+0:07:01.503000 - 0:07:02.883000: Comprendo, comprendo.
+
+[SPEAKER_01]
+0:07:03.333000 - 0:07:05.774000:  Como le digo, el día de hoy usted no va a cancelar nada.
+
+[SPEAKER_01]
+0:07:05.834000 - 0:07:08.856000: Esto se va a ver reflejado en su próximo ciclo de facturación.
+
+[SPEAKER_00]
+0:07:09.417000 - 0:07:10.297000: Sí, yo sé, sí.
+
+[SPEAKER_01]
+0:07:12.618000 - 0:07:13.939000: Usted me dice que son tres, ¿no?
+
+[SPEAKER_01]
+0:07:14.059000 - 0:07:14.660000: Tres, cuatro.
+
+[Speaker]
+0:07:18.302000 - 0:07:18.682000: Sí.
+
+[SPEAKER_01]
+0:07:18.802000 - 0:07:25.266000: Bueno, el de 14,830 está accesible a su presupuesto porque si usted se pone a sacar cuenta, son 500 pesitos diarios, ¿sí?
+
+[SPEAKER_01]
+0:07:25.306000 - 0:07:26.947000: Que usted lo puede sacar del diario.
+
+[SPEAKER_01]
+0:07:27.807000 - 0:07:29.968000: Usted realiza el diario, ¿sí?
+
+[SPEAKER_00]
+0:07:30.048000 - 0:07:30.209000: Ajá.
+
+[SPEAKER_01]
+0:07:31.826000 - 0:07:34.668000:  Bueno, entonces usted puede ir apartando 500 pesitos diarios.
+
+[SPEAKER_01]
+0:07:35.128000 - 0:07:37.169000: Y usted ya sabe que eso es para la protección.
+
+[SPEAKER_01]
+0:07:37.189000 - 0:07:39.271000: ¿Qué es lo que estamos realizando el día de hoy?
+
+[SPEAKER_01]
+0:07:39.931000 - 0:07:43.313000: Nosotros normalmente a usted le ofrecen el seguro.
+
+[SPEAKER_01]
+0:07:45.734000 - 0:07:48.056000: Ya estamos pensando en su beneficiario, ¿sí?
+
+[SPEAKER_01]
+0:07:48.716000 - 0:07:49.557000: En su familia.
+
+[SPEAKER_01]
+0:07:49.637000 - 0:07:53.439000: Porque aparte de quedar el dolor, pues queda gasto, queda compromiso.
+
+[SPEAKER_01]
+0:07:53.479000 - 0:07:57.501000: Y la idea es, por eso le estamos presentando dos planes.
+
+[SPEAKER_01]
+0:07:57.542000 - 0:07:59.943000: Sea usted quien decida cuál de los dos planes sea.
+
+[SPEAKER_01]
+0:08:00.433000 - 0:08:10.098000:  le dejaría a usted a ellos para que ellos se puedan solventar en ese corto tiempo mientras pasa el dolor, así pueda solventar deuda, compromisos, ¿sí?
+
+[SPEAKER_01]
+0:08:10.759000 - 0:08:19.804000: Porque muchas veces, pues, la gente, pues, sí, como se dice, pues, llega ese momento y nada más en el momento, no piensan más allá, ¿sí?
+
+[SPEAKER_01]
+0:08:19.844000 - 0:08:21.405000: Ni en los beneficiarios, ni nada.
+
+[SPEAKER_01]
+0:08:21.465000 - 0:08:26.968000: El día de hoy nosotros hacemos la diferencia porque pensamos en sus hijos, en su familia, ¿sí?
+
+[SPEAKER_00]
+0:08:29.068000 - 0:08:29.728000:  Ya.
+
+[SPEAKER_01]
+0:08:30.268000 - 0:08:31.209000: Sí, señora.
+
+[SPEAKER_01]
+0:08:31.269000 - 0:08:33.150000: Es un acto de amor que usted diría hacia ellos.
+
+[Speaker]
+0:08:33.170000 - 0:08:35.270000: Ajá.
+
+[SPEAKER_01]
+0:08:35.310000 - 0:08:39.092000: Por eso le digo, o sea, esto está sumamente accesible por ser usuario activo.
+
+[SPEAKER_00]
+0:08:39.112000 - 0:08:42.813000: Ya.
+
+[SPEAKER_01]
+0:08:43.394000 - 0:08:44.034000: Sí, señora.
+
+[SPEAKER_01]
+0:08:44.594000 - 0:08:46.815000: ¿Cuál de los dos planes le gustaría adquirir el día de hoy?
+
+[SPEAKER_00]
+0:08:49.436000 - 0:08:50.056000: El más poquito.
+
+[SPEAKER_00]
+0:08:50.136000 - 0:08:50.496000: El de 14,830.
+
+[Speaker]
+0:08:50.556000 - 0:08:50.716000: Ajá.
+
+[SPEAKER_01]
+0:08:50.736000 - 0:08:51.697000: Señora Cielo Melisa Portocarrero.
+
+[SPEAKER_01]
+0:08:58.361000 - 0:09:20.068000:  Acepta los productos y autorizaciones de energía a favor de seguros alfa que se verá reflejado mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia con un incremento del valor asegurado de acuerdo con el IPC Atac Express en calidad de usuario y la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:09:20.088000 - 0:09:21.449000: ¿Está de acuerdo, señora Cielo?
+
+[SPEAKER_01]
+0:09:23.069000 - 0:09:24.890000: Señora.
+
+[SPEAKER_01]
+0:09:24.930000 - 0:09:25.690000: Señora Cielo.
+
+[SPEAKER_01]
+0:09:26.570000 - 0:09:31.512000:  Recuerde que su beneficiario recibirá una indemnización por un valor de 8.268.624 pesos.
+
+[SPEAKER_01]
+0:09:31.532000 - 0:09:44.216000: En caso de que usted llegue a faltar y su protección se encuentre activa y cobrándose la factura de energía, deseo compañía energética de Occidente.
+
+[SPEAKER_01]
+0:09:44.236000 - 0:09:52.099000: Señora Cielo, le informo que a su correo electrónico le llegará la documentación de la protección junto con las condiciones generales de servicio.
+
+[SPEAKER_01]
+0:09:52.810000 - 0:09:56.697000:  Gracias por confiar en Alfa para la protección de usted y la de su familia.
+
+[SPEAKER_01]
+0:09:56.737000 - 0:09:57.899000: Que tenga un excelente día.
+
+[SPEAKER_01]
+0:09:57.939000 - 0:09:58.520000: Hasta luego.
+
+[SPEAKER_00]
+0:09:59.322000 - 0:09:59.862000: Hasta luego.
+
+[SPEAKER_00]
+0:09:59.882000 - 0:10:00.223000: Gracias.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:10:01.681000 - 0:10:05.182000:  Muy buenas tardes, buenos días, doña Cielo, ¿cómo se encuentra?
+
+[SPEAKER_00]
+0:10:06.282000 - 0:10:07.082000: Bien, gracias.
+
+[SPEAKER_00]
+0:10:07.262000 - 0:10:14.223000: Doña Cielo, estoy subiendo la protección y quería confirmar el correo para que le llegara su correo.
+
+[SPEAKER_00]
+0:10:14.803000 - 0:10:20.724000: Me dijo que era Cielo Porta o Porto, carrero27.com.
+
+[SPEAKER_00]
+0:10:21.425000 - 0:10:23.645000: Porto Carrero, señora.
+
+[SPEAKER_00]
+0:10:23.705000 - 0:10:26.045000: Porto Carrero 27.com.
+
+[SPEAKER_00]
+0:10:26.125000 - 0:10:26.625000: Ajá.
+
+[SPEAKER_00]
+0:10:27.386000 - 0:10:29.706000: Ah, bueno, señora Cielo.
+
+[SPEAKER_00]
+0:10:30.838000 - 0:10:32.699000:  Voy a leer una partecita acá, ¿sí?
+
+[SPEAKER_00]
+0:10:33.579000 - 0:10:58.525000: Acepta los productos y autoriza cargar el valor mensual de $14,830 por su bolsa Practiseguro en la factura de energía a favor de seguros alfa, que se verá reflejado mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con incremento del valor asegurado de acuerdo con el IPC-ATA que expresa en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:10:58.585000 - 0:10:59.865000: ¿Está de acuerdo, señora Cielo?
+
+[SPEAKER_00]
+0:11:00.768000 - 0:11:01.509000:  Sí, señora.
+
+[SPEAKER_00]
+0:11:02.189000 - 0:11:03.991000: Bueno, señora Cielo, muchísimas gracias.
+
+[SPEAKER_00]
+0:11:04.011000 - 0:11:07.195000: Y a su correo le estará llegando la información.
+
+[SPEAKER_00]
+0:11:07.215000 - 0:11:08.356000: Que tenga excelente día.
+
+[SPEAKER_00]
+0:11:08.396000 - 0:11:08.916000: Hasta luego.
+
+[SPEAKER_00]
+0:11:09.557000 - 0:11:10.017000: Hasta luego.
+
+[SPEAKER_00]
+0:11:10.058000 - 0:11:10.458000: Gracias.

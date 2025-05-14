@@ -1,0 +1,81 @@
+GUIÓN PARA VENTA TELEFÓNICA DE PLAN MASCOTAS
+
+APERTURA:
+Buenos días/tardes, mi nombre es [NOMBRE DEL ASESOR] de Serviprotección, ¿cómo está? Le estoy llamando en nombre de [NOMBRE GASERA] para ofrecerle un beneficio especial para su mascota.
+
+INDAGACIÓN INICIAL:
+Antes de continuar, ¿me podría confirmar si tiene perro o gato en casa?
+
+[SI LA RESPUESTA ES POSITIVA, CONTINUAR. SI ES NEGATIVA, AGRADECER Y FINALIZAR LLAMADA]
+
+PRESENTACIÓN DEL PRODUCTO:
+Le cuento que su gasera ha pensado en todos los miembros de su familia, incluyendo a sus mascotas. Por eso queremos ofrecerle nuestro PLAN MASCOTAS, un servicio de asistencia veterinaria integral que incluye:
+
+- 3 consultas veterinarias anuales sin costo adicional
+- Vacunas incluidas: rabia, distemper, parvovirus para perros y triple felina para gatos
+- 2 sesiones de desparasitación al año
+- Atención de urgencias veterinarias 24/7
+- Descuentos en alimentos y servicios de peluquería
+
+Todo esto por solo $11,950 pesos mensuales para una mascota, cargados directamente a su factura de gas.
+
+BENEFICIOS DESTACADOS:
+Lo más valioso de nuestro PLAN MASCOTAS es que:
+- Contamos con una amplia red de clínicas veterinarias en las principales ciudades
+- No tiene que pagar en el momento de la consulta
+- Incluye las vacunas básicas anuales
+- No hay periodo de carencia, puede usar el servicio de inmediato
+- Tiene acceso a atención telefónica veterinaria las 24 horas
+
+DETALLES DE PLANES:
+
+Tenemos dos opciones para que elija la que mejor se adapte a sus necesidades:
+
+1. Plan Individual: Por solo $11,950 pesos mensuales
+   - Cubre a 1 mascota (perro o gato)
+   - 3 consultas veterinarias anuales
+   - Vacunas básicas incluidas
+   - Descuentos en alimentos y servicios de peluquería
+
+2. Plan Familiar: Por $16,950 pesos mensuales
+   - Cubre hasta 2 mascotas (perros y/o gatos)
+   - 3 consultas veterinarias anuales por mascota
+   - Vacunas básicas incluidas para ambas mascotas
+   - Descuentos en alimentos y servicios de peluquería
+   - Orientación telefónica veterinaria 24/7
+
+MANEJO DE OBJECIONES:
+
+1. "Mi mascota ya tiene veterinario"
+Respuesta: Me alegra saber que su mascota ya cuenta con atención veterinaria. Nuestro PLAN MASCOTAS le ofrece un servicio complementario, con la ventaja de que las consultas ya están cubiertas y no tiene que realizar pagos adicionales. Además, incluye las vacunas básicas anuales y tiene acceso a atención de urgencias 24/7, lo cual es muy útil en situaciones imprevistas.
+
+2. "El precio me parece alto"
+Respuesta: Entiendo su preocupación por el costo. Si lo analizamos, el plan cuesta $11,950 mensuales, aproximadamente $400 pesos diarios. Una sola consulta veterinaria puede costar entre $40,000 y $60,000 pesos, sin contar el costo de las vacunas que pueden superar los $100,000 anuales. Con nuestro plan, todo esto ya está incluido, lo que representa un ahorro significativo a lo largo del año.
+
+3. "Mi mascota no es cachorro/es muy mayor"
+Respuesta: Nuestro PLAN MASCOTAS está diseñado para mascotas de todas las edades, siempre que tengan más de 3 meses y menos de 10 años. Tanto los cachorros como las mascotas adultas necesitan atención veterinaria regular. De hecho, las mascotas mayores suelen requerir más visitas al veterinario, por lo que el plan puede ser especialmente beneficioso para ellas.
+
+4. "No sé si mi mascota califica"
+Respuesta: El plan está diseñado para perros y gatos. ¿Su mascota es un perro o un gato? [RESPUESTA] ¿Y qué edad tiene aproximadamente? [RESPUESTA] Perfecto, siempre que tenga entre 3 meses y 10 años de edad, califica para nuestro plan.
+
+VERIFICACIÓN DE REQUISITOS:
+Para poder ofrecerle este beneficio, necesito confirmar algunos datos:
+
+- ¿Me confirma si su mascota es perro o gato?
+- ¿Qué edad aproximada tiene su mascota?
+- ¿Es usted el titular de la factura de gas?
+
+CIERRE DE VENTA:
+Para activar su PLAN MASCOTAS, solo necesito confirmar:
+
+- ¿Me confirma su nombre completo?
+- ¿Me confirma su número de cédula?
+- ¿Qué plan prefiere: Individual o Familiar?
+
+Con esta información, activaremos su PLAN MASCOTAS. El cargo aparecerá en su próxima factura de gas.
+
+CONFIRMACIÓN FINAL:
+Señor(a) [NOMBRE DEL CLIENTE], ¿está de acuerdo con la activación del PLAN MASCOTAS [TIPO DE PLAN] con cargo a su factura de gas por un valor mensual de [VALOR DEL PLAN] pesos?
+
+DESPEDIDA:
+Muchas gracias por su tiempo y confianza. En las próximas 24 horas recibirá un mensaje con la confirmación de la activación y la información para acceder a los servicios veterinarios. Ha sido un placer atenderle. Que tenga un excelente día.

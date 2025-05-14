@@ -1,0 +1,446 @@
+
+[SPEAKER_00]
+0:00:03.265000 - 0:00:04.086000:  Aló.
+
+[SPEAKER_00]
+0:00:09.668000 - 0:00:11.708000: Aló, buenas tardes, por favor, señor Jairo Antonio.
+
+[SPEAKER_00]
+0:00:12.889000 - 0:00:15.370000: Sí, ¿qué sería?
+
+[SPEAKER_00]
+0:00:17.070000 - 0:00:19.011000: Bueno, buenas tardes, mi nombre es Hernando Lora.
+
+[SPEAKER_00]
+0:00:19.691000 - 0:00:24.013000: Soy ejecutivo comercial de Alfa en alianza con Surtigas.
+
+[SPEAKER_00]
+0:00:24.713000 - 0:00:26.614000: ¿El señor Jairo se encuentra en este momento?
+
+[SPEAKER_00]
+0:00:27.634000 - 0:00:27.934000: Sí.
+
+[SPEAKER_00]
+0:00:28.715000 - 0:00:29.215000: Bueno, pues...
+
+[SPEAKER_00]
+0:00:32.885000 - 0:00:34.426000:  ¿Cómo está, señor Jairo?
+
+[SPEAKER_00]
+0:00:34.506000 - 0:00:35.146000: Mucho gusto.
+
+[SPEAKER_00]
+0:00:35.186000 - 0:00:36.326000: Mi nombre es Hernando Lora.
+
+[SPEAKER_00]
+0:00:36.786000 - 0:00:40.147000: Soy ejecutivo comercial de Alfa en alianza con Sustigas.
+
+[SPEAKER_00]
+0:00:40.627000 - 0:00:41.827000: ¿Cómo le ha ido el día de hoy?
+
+[SPEAKER_00]
+0:00:41.847000 - 0:00:45.148000: Bueno, gracias a Dios, bien, mi marido.
+
+[SPEAKER_00]
+0:00:45.188000 - 0:00:47.808000: A uno me alegro mucho que se encuentre bien, señor Jairo.
+
+[SPEAKER_00]
+0:00:48.268000 - 0:00:49.429000: Es un gusto saludarle.
+
+[SPEAKER_00]
+0:00:49.509000 - 0:00:55.230000: Es tan amable de confirmarme si usted es la persona responsable del pago de la factura del gas.
+
+[SPEAKER_00]
+0:00:55.370000 - 0:00:56.910000: Sí, sí.
+
+[SPEAKER_00]
+0:00:56.970000 - 0:00:57.210000: Listo.
+
+[SPEAKER_00]
+0:00:57.270000 - 0:01:00.711000: ¿Cómo le ha ido con el suministro del gas, señor Jairo?
+
+[SPEAKER_00]
+0:01:00.751000 - 0:01:00.951000: Bueno...
+
+[SPEAKER_00]
+0:01:02.073000 - 0:01:02.853000:  Bueno, gracias a Dios, ¿todo bien?
+
+[SPEAKER_00]
+0:01:03.654000 - 0:01:10.536000: Ah, bueno, nos alegra que tenga un buen concepto de Sultigas, ya que día a día se trabaja para garantizar un mejor servicio.
+
+[SPEAKER_00]
+0:01:10.556000 - 0:01:23.660000: Señor Jairo, perdón, en el día de hoy queremos contarle que por ser usted usuario activo de Sultigas, Alfa le brinda la oportunidad de contar con un respaldo económico de $16,803,497 pesos.
+
+[SPEAKER_00]
+0:01:29.180000 - 0:01:43.987000:  que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted define, en el caso que Dios no lo permita, usted llega a faltar por cualquier causa y contará con esta protección a partir de las 12 de la noche del día de hoy.
+
+[SPEAKER_00]
+0:01:45.508000 - 0:01:47.989000: El único requisito es ser menor de 66 años.
+
+[SPEAKER_00]
+0:01:48.449000 - 0:01:49.710000: ¿Qué edad tiene usted, señor Jairo?
+
+[SPEAKER_00]
+0:01:49.750000 - 0:01:50.190000: Disculpe.
+
+[Speaker]
+0:01:51.250000 - 0:01:50.190000: 54.
+
+[SPEAKER_00]
+0:01:51.270000 - 0:01:51.350000: ¿54?
+
+[SPEAKER_00]
+0:01:51.290000 - 0:01:51.350000: Sí.
+
+[SPEAKER_00]
+0:01:56.992000 - 0:01:58.012000:  Listo, señor Jairo.
+
+[SPEAKER_00]
+0:01:59.313000 - 0:02:03.194000: ¿Le quiere aclarar la información que le acabé de brindar en este momento, señor Jairo?
+
+[SPEAKER_00]
+0:02:04.255000 - 0:02:05.755000: De nada, señor.
+
+[SPEAKER_00]
+0:02:05.795000 - 0:02:06.796000: Listo, señor Jairo.
+
+[SPEAKER_00]
+0:02:07.236000 - 0:02:13.378000: Le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestro servicio.
+
+[SPEAKER_00]
+0:02:13.879000 - 0:02:20.621000: Validando la información registrada en el sistema, me confirma que su nombre completo es Jairo Antonio Rodríguez Pérez.
+
+[SPEAKER_00]
+0:02:21.541000 - 0:02:22.202000: Correcto.
+
+[SPEAKER_00]
+0:02:22.722000 - 0:02:25.283000: Tipo de cedura o identificación...
+
+[SPEAKER_00]
+0:02:28.739000 - 0:02:42.043000:  es 92.524.801, en la cual nos confirma la dirección de su predio, que es dirección Minuto de Dios 1, Manzana H, Lote 11, con el número de contrato 52.10.291.
+
+[SPEAKER_00]
+0:02:43.023000 - 0:02:49.865000: Señora Jairo declara que los datos anteriormente suministrados son reales
+
+[SPEAKER_00]
+0:02:50.840000 - 0:02:55.943000:  Y que las actividades a las que se dedica son normales y se encuentran entre los marcos legales.
+
+[SPEAKER_00]
+0:02:56.063000 - 0:02:58.025000: ¿Está de acuerdo, señor Jairo?
+
+[SPEAKER_00]
+0:03:00.066000 - 0:03:00.146000: Sí.
+
+[SPEAKER_00]
+0:03:00.186000 - 0:03:01.107000: Listo, señor Jairo.
+
+[SPEAKER_00]
+0:03:01.727000 - 0:03:05.750000: A continuación, voy a proceder a leer la ley que protege sus datos personales.
+
+[SPEAKER_00]
+0:03:06.270000 - 0:03:17.177000: Seguros Alfa, como responsable, harán tratamiento de tu información para fines legales y contractuales, en particular para el desarrollo de procesos pre-venta, venta y por venta,
+
+[SPEAKER_00]
+0:03:17.917000 - 0:03:18.938000:  del contrato de seguro.
+
+[SPEAKER_00]
+0:03:19.178000 - 0:03:38.575000: Tiene derecho a conocer, actualizar, ratificar tu información y a lo demás previsto en la Ley 1581 de 2012, norma complementaria y la política de tratamiento de información disponible en www.segurosalfa.com.co o en la opretación de datos.
+
+[SPEAKER_00]
+0:03:39.956000 - 0:03:43.960000: Es voluntario responder preguntas sobre información sensible o de menores de edad.
+
+[SPEAKER_00]
+0:03:45.828000 - 0:04:09.275000:  A continuación a la llamada otorga su autorización, declara usted que ha sido informado de que nuestra política de tratamiento y las condiciones generales del producto Pratiseguro pueden ser consultadas en www.segurosalfa.com.co y también puede ser realizada, solicitada a través del correo electrónico servicioalquiente.segurosalfa.com.co o al teléfono 601-307-7032.
+
+[SPEAKER_00]
+0:04:15.034000 - 0:04:17.735000:  o la línea gratuita 01-8000-122532.
+
+[SPEAKER_00]
+0:04:19.676000 - 0:04:23.358000: ¿Está de acuerdo con la información que le di, señor Jairo?
+
+[SPEAKER_00]
+0:04:24.118000 - 0:04:25.079000: Listo, señor Jairo.
+
+[SPEAKER_00]
+0:04:25.159000 - 0:04:26.880000: Acepta, señor Jairo Antonio.
+
+[SPEAKER_00]
+0:04:27.420000 - 0:04:44.288000: Acepta los productos y autoriza cargar el valor mensual de $26,460 por su póliza Pratiseguro en la factura de gas natural a favor de seguros alfa, ya que se verán reflejados mensualmente a partir del siguiente ciclo de facturación
+
+[SPEAKER_00]
+0:04:44.815000 - 0:04:55.983000:  y se renovará automáticamente pasada la vigencia de 12 meses, con incremento en el valor asegurado de acuerdo con el IPC, hasta que exprese en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:04:56.464000 - 0:04:57.865000: ¿Está de acuerdo, señor Jairo?
+
+[SPEAKER_00]
+0:05:00.787000 - 0:05:01.408000: ¿Está de acuerdo?
+
+[SPEAKER_00]
+0:05:01.428000 - 0:05:04.110000: Me dice sí, si es calidad, si la respuesta es correcta.
+
+[SPEAKER_00]
+0:05:05.531000 - 0:05:06.071000: Listo.
+
+[SPEAKER_00]
+0:05:09.133000 - 0:05:13.817000: Bueno, ¿está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas, señor Jairo?
+
+[SPEAKER_00]
+0:05:15.711000 - 0:05:16.411000:  Ajá, así es.
+
+[SPEAKER_00]
+0:05:16.791000 - 0:05:36.508000: Listo, señor Jairo, antes de finalizar la llamada, queremos informarle, conforme a la ley 2300... Listo, bueno, le recuerdo, señor Jairo, que sus beneficiarios van a tener una indemnización de $16,803,497.
+
+[SPEAKER_00]
+0:05:36.548000 - 0:05:37.129000: Además, señor Jairo...
+
+[SPEAKER_00]
+0:05:45.703000 - 0:06:02.333000:  Bueno, le recuerdo que su beneficio recibirá una identificación por valor de $16,803,497 pesos en caso de que usted llegue a faltar y su protección se encuentre activa cobrándose en su factura de Sultigas.
+
+[SPEAKER_00]
+0:06:02.973000 - 0:06:05.855000: Bueno, muchas gracias, señor Jairo.
+
+[SPEAKER_00]
+0:06:06.235000 - 0:06:11.718000: Le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales de servicio.
+
+[SPEAKER_00]
+0:06:12.262000 - 0:06:17.069000:  Gracias por confiar en Alfa para la protección de usted y de la familia, que tenga un excelente y un feliz día.
+
+[SPEAKER_00]
+0:06:18.090000 - 0:06:18.611000: Igualmente.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:06:21.139000 - 0:06:21.980000:  Hola, buenas tardes.
+
+[SPEAKER_00]
+0:06:22.961000 - 0:06:23.261000: Hola.
+
+[SPEAKER_00]
+0:06:23.962000 - 0:06:25.343000: Sí, buenas tardes.
+
+[SPEAKER_00]
+0:06:25.363000 - 0:06:26.904000: Buenas tardes.
+
+[SPEAKER_00]
+0:06:26.944000 - 0:06:27.805000: Señor, mucho gusto.
+
+[SPEAKER_00]
+0:06:27.825000 - 0:06:32.029000: Nuevamente le habla Pablo Amariz de parte de la compañía Alfa en la Alianza Consultigas.
+
+[SPEAKER_00]
+0:06:32.810000 - 0:06:35.613000: Nuevamente tengo el gusto de hablar con el señor Jairo Rodríguez Pérez, ¿verdad?
+
+[SPEAKER_00]
+0:06:36.433000 - 0:06:37.474000: Sí, ¿con él qué está hablando?
+
+[SPEAKER_00]
+0:06:37.935000 - 0:06:39.336000: Ah, sí, ¿qué más, señor Jairo?
+
+[SPEAKER_00]
+0:06:39.356000 - 0:06:40.537000: Ya hace poco lo estuve llamando.
+
+[SPEAKER_00]
+0:06:40.577000 - 0:06:41.458000: Ya escapó, mi señor.
+
+[SPEAKER_00]
+0:06:41.518000 - 0:06:41.938000: Ya escapó ya.
+
+[SPEAKER_00]
+0:06:43.999000 - 0:06:45.740000:  Ah, qué bueno, qué bendición, mi señor.
+
+[SPEAKER_00]
+0:06:45.820000 - 0:06:49.443000: Me alegra mucho, mi señor, pero las lluvias son bendiciones, ¿verdad, señor Jairo?
+
+[SPEAKER_02]
+0:06:49.523000 - 0:06:50.884000: Sí, eso sí es verdad.
+
+[SPEAKER_00]
+0:06:50.924000 - 0:06:53.065000: Eso sí es cierto, mi señor, tiene toda la razón.
+
+[SPEAKER_00]
+0:06:53.125000 - 0:07:04.953000: Bueno, mi señor, usted me estaba confirmando que pues ha estado muy bien con su servicio del gas natural, que se le presta ahí en Minuto de Dios 1, Manzana H, Lote 11, Cartagena, Tindia, Bolívar, ¿cierto?
+
+[SPEAKER_00]
+0:07:05.393000 - 0:07:06.354000: Sí.
+
+[SPEAKER_00]
+0:07:06.414000 - 0:07:07.735000: Ok, perfecto, mi señor.
+
+[SPEAKER_00]
+0:07:07.795000 - 0:07:12.978000: Bueno, mi señor, entonces nos alegra mucho de que usted pueda mantener lo que es un buen concepto del gas natural.
+
+[SPEAKER_00]
+0:07:13.667000 - 0:07:22.735000:  ya que la compañía siempre va a estar buscando trabajar diariamente para poder prestarle a usted y a toda su familia el mejor de los servicios, mi señor Listo.
+
+[SPEAKER_00]
+0:07:22.755000 - 0:07:38.749000: También quiero notificarle, señor Jairo, que si cualquier tipo de inquietud, inconveniente que usted desee reportar ante la compañía, no debe hacerlo realizándolo a través de la línea de atención que le aparece en la parte de atrás de su factura del gas natural.
+
+[SPEAKER_00]
+0:07:39.610000 - 0:07:41.230000:  que es la línea 164, mi señor.
+
+[SPEAKER_00]
+0:07:41.250000 - 0:07:41.290000: Sí, 164.
+
+[SPEAKER_00]
+0:07:41.550000 - 0:07:43.831000: Es correcto.
+
+[SPEAKER_00]
+0:07:43.891000 - 0:07:54.534000: Donde usted lo atiende las 24 horas del día, los 7 días de la semana, cualquier tipo de inquietud que usted tenga, con mucho gusto por esa línea lo van a estar comunicando y brindarle toda la información, mi señor.
+
+[SPEAKER_00]
+0:07:54.574000 - 0:07:54.734000: Sí.
+
+[SPEAKER_00]
+0:07:55.414000 - 0:08:04.676000: Bueno, mi señor, importante pues en esta oportunidad, señor Jairo, adicionalmente pues también indicarle de que por ser usted un usuario activo de la compañía de Surtiga, ¿cierto?,
+
+[SPEAKER_00]
+0:08:05.346000 - 0:08:14.190000:  En este momento, pues, la compañía de Alfa le brinda, pues, la oportunidad a usted, mi señor, de contar con el respaldo económico de 16.803.497 pesos.
+
+[SPEAKER_00]
+0:08:14.250000 - 0:08:21.354000: Ese valor, mi señor, pues, será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe.
+
+[SPEAKER_00]
+0:08:21.814000 - 0:08:25.536000: En el caso de que no se lo permite y usted le hace faltar por cualquier tipo de causa.
+
+[SPEAKER_00]
+0:08:25.996000 - 0:08:28.377000: ¿Cuál es el único requisito que solicita la compañía?
+
+[SPEAKER_00]
+0:08:28.397000 - 0:08:30.418000: Es que la persona sea menor de 66 años de edad.
+
+[SPEAKER_00]
+0:08:32.128000 - 0:08:40.131000:  al cual, como usted es el titular, mi señor, me indica que a día de hoy, con todo respeto, ¿claro está?, tiene lo que son 54 años de edad, señor Jairo, ¿cierto?
+
+[SPEAKER_00]
+0:08:40.151000 - 0:08:41.312000: Sí, así es.
+
+[SPEAKER_00]
+0:08:41.352000 - 0:08:42.132000: Perfecto, mi señor.
+
+[SPEAKER_00]
+0:08:42.172000 - 0:08:54.077000: Para que usted, mi señor, tenga la certeza de que esto es una información totalmente verídica que se está abriendo de parte de la compañía a todos nuestros usuarios activos, tal cual como lo es usted, también se lo estaremos llegando a su correo electrónico.
+
+[SPEAKER_00]
+0:08:54.557000 - 0:08:57.199000: ¿Usted maneja o cuenta a día de hoy con algún correo, señor Jairo?
+
+[SPEAKER_00]
+0:08:57.219000 - 0:08:57.279000: Sí.
+
+[SPEAKER_00]
+0:08:58.616000 - 0:08:59.817000:  ¿Cuál sería su correo, mi señor?
+
+[SPEAKER_00]
+0:08:59.857000 - 0:09:01.599000: Le dejamos notificado acá a nuestro sistema.
+
+[SPEAKER_00]
+0:09:01.899000 - 0:09:07.524000: No me acuerdo, era Ro, Jairo Ro, no sé quién, no me acuerdo.
+
+[SPEAKER_00]
+0:09:07.584000 - 0:09:10.026000: Ah, ok, perfecto.
+
+[SPEAKER_00]
+0:09:10.066000 - 0:09:16.531000: Por lo normal, mi señor, nosotros siempre colocamos el primer nombre y el primer apellido.
+
+[SPEAKER_01]
+0:09:17.312000 - 0:09:22.036000: Sí, el nombre mío se encuentra Jairo Rodríguez Pérez, ya está.
+
+[SPEAKER_00]
+0:09:23.037000 - 0:09:23.697000: Vamos a ver.
+
+[SPEAKER_01]
+0:09:23.717000 - 0:09:24.178000: En el correo.
+
+[SPEAKER_00]
+0:09:25.383000 - 0:09:28.005000:  Voy a confirmar para ver qué me sale acá en mi sistema.
+
+[SPEAKER_00]
+0:09:28.025000 - 0:09:29.246000: Yo le confirmo.
+
+[SPEAKER_00]
+0:09:30.787000 - 0:09:34.930000: Permítame un momento para ver si usted dejó actualizado algún correo.
+
+[SPEAKER_00]
+0:09:35.110000 - 0:09:37.872000: ¿Usted hizo recientemente algún trámite con la compañía?
+
+[SPEAKER_00]
+0:09:37.912000 - 0:09:46.858000: ¿Algún servicio de tema de red de conexión en esta oportunidad de Brilla o algo por el estilo?
+
+[SPEAKER_00]
+0:09:48.179000 - 0:09:49.560000: Con Brilla, sí.
+
+[SPEAKER_00]
+0:09:49.640000 - 0:09:50.381000: Ok, perfecto.
+
+[SPEAKER_00]
+0:09:50.541000 - 0:09:51.561000: Sí, sí lo realizó.
+
+[SPEAKER_00]
+0:09:52.062000 - 0:09:53.503000: Muy probablemente pues tengamos su...
+
+[SPEAKER_00]
+0:09:54.050000 - 0:09:55.391000:  su correo actualizado.
+
+[SPEAKER_00]
+0:09:56.192000 - 0:09:57.533000: Así que vamos a confirmar.
+
+[SPEAKER_00]
+0:09:57.553000 - 0:10:03.977000: De igual manera, usted también puede comunicarse las líneas de atención que le aparecen en la parte de atrás de su facturación del gas natural.
+
+[SPEAKER_00]
+0:10:04.698000 - 0:10:05.878000: Sí, ahí está.
+
+[SPEAKER_00]
+0:10:06.259000 - 0:10:06.779000: Es correcto.
+
+[SPEAKER_00]
+0:10:06.979000 - 0:10:22.450000: Bueno, mi señor Jairo, ya para finalizar y no quitarle más un minuto de su valor y su tiempo, en base a la información mencionada anteriormente, el señor Jairo acepta los productos y autoriza a cargar el valor mensual de $26,460 por su policía, práctica y seguro a la factura del gas natural a favor de seguros alfa
+
+[SPEAKER_00]
+0:10:23.031000 - 0:10:34.937000:  que se le han reflejado mensualmente a partir del siguiente ciclo de facturación, y se lo han automáticamente pasado a la vigencia de 12 meses, con un incremento al valor de segura de cuartal ITC, hasta que ustedes presen cada vez su adhesión de retirarse del programa.
+
+[SPEAKER_00]
+0:10:35.077000 - 0:10:36.118000: ¿Correcto, señor Jairo?
+
+[SPEAKER_01]
+0:10:36.518000 - 0:10:36.818000: Sí.
+
+[SPEAKER_01]
+0:10:36.858000 - 0:10:37.118000: Bueno, sí.
+
+[SPEAKER_00]
+0:10:37.699000 - 0:10:38.659000: ¿Correcto, mi señor?
+
+[SPEAKER_01]
+0:10:39.220000 - 0:10:40.520000: Sí, señor, sí.
+
+[SPEAKER_00]
+0:10:40.560000 - 0:10:41.241000: Sí, señor Jairo.
+
+[SPEAKER_00]
+0:10:41.301000 - 0:10:48.564000: Bueno, entonces es importante recordarle que sus beneficiarios de ley recibían la indemnización de $17.803.497, en caso de que usted gaste a soltar y su protección se encuentre activa,
+
+[SPEAKER_00]
+0:10:51.679000 - 0:10:53.820000:  con su capturación del servicio del gas natural.
+
+[SPEAKER_00]
+0:10:54.321000 - 0:10:59.664000: Muy amable, mi señor, le informo que su correo electrónico y la documentación de la protección junto con las condiciones generales del servicio.
+
+[SPEAKER_00]
+0:11:00.145000 - 0:11:03.607000: Gracias por conferir en Alfa para la protección de usted y de toda su familia, señor Jairo.
+
+[SPEAKER_00]
+0:11:03.667000 - 0:11:07.450000: Que Dios me lo guarde y me lo bendiga y que pase una excelente noche, mi señor.
+
+[SPEAKER_02]
+0:11:07.510000 - 0:11:08.090000: Igualmente.
+
+[SPEAKER_00]
+0:11:08.470000 - 0:11:09.751000: Bueno, mi señor Jairo, hasta luego.
+
+[SPEAKER_00]
+0:11:09.791000 - 0:11:10.512000: Cuídese mucho.
+
+[SPEAKER_02]
+0:11:10.532000 - 0:11:11.432000: Bueno, igualmente.

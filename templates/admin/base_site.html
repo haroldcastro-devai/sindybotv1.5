@@ -1,0 +1,61 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | SBOT Admin{% endblock %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/admin-custom.css' %}">
+  {% if request.path|slice:"0:17" == "/admin/auth/user/" %}
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/admin-users-custom.css' %}">
+  {% if '/password/' in request.path %}
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/admin-user-password-change.css' %}">
+  {% endif %}
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body, button, input, select, textarea {
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Logo y branding personalizado */
+    #branding h1 {
+      display: flex;
+      align-items: center;
+    }
+    
+    #branding h1::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      background-image: url('{% static "assets/images/logo-small.png" %}');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  </style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+  <a href="{% url 'admin:index' %}">SBOT - Sistema de Administración</a>
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% static 'assets/js/admin-custom.js' %}"></script>
+  {% if request.path|slice:"0:17" == "/admin/auth/user/" %}
+  <script src="{% static 'assets/js/admin-users-custom.js' %}"></script>
+  {% if '/password/' in request.path %}
+  <script src="{% static 'assets/js/admin-user-password-change.js' %}"></script>
+  {% endif %}
+  {% endif %}
+{% endblock %}
+
+{% block usertools %}
+{{ block.super }}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

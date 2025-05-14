@@ -1,0 +1,65 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: sbot_mysql
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_DATABASE=auto_sbot
+      - MYSQL_USER=adminsbot
+      - MYSQL_PASSWORD=&-4GWwgiw9UfFfOp
+      - MYSQL_ROOT_PASSWORD=root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - db_network
+
+  appseed-app:
+    container_name: sbot_app
+    restart: always
+    build: .
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=adminsbot
+      - DB_PASSWORD=&-4GWwgiw9UfFfOp
+      - DB_NAME=auto_sbot
+      - DB_PORT=3306
+      # AWS variables comentadas
+      # - AWS_DB_HOST=${AWS_DB_HOST}
+      # - AWS_DB_NAME=${AWS_DB_NAME}
+      # - AWS_DB_USER=${AWS_DB_USER}
+      # - AWS_DB_PASSWORD=${AWS_DB_PASSWORD}
+      # - AWS_DB_PORT=${AWS_DB_PORT}
+    volumes:
+      - ./:/app
+    networks:
+      - db_network
+      - web_network
+    depends_on:
+      - mysql
+
+  nginx:
+    container_name: sbot_nginx
+    restart: always
+    image: "nginx:latest"
+    ports:
+      - "5085:5085"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./static:/static
+      - ./media:/media
+    networks:
+      - web_network
+    depends_on: 
+      - appseed-app
+
+networks:
+  db_network:
+    driver: bridge
+  web_network:
+    driver: bridge
+
+volumes:
+  mysql_data:

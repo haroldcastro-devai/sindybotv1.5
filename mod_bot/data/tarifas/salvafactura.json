@@ -1,0 +1,49 @@
+{
+    "nombre": "Salvafactura",
+    "descripcion": "Protección para tus facturas de servicios públicos en caso de evento imprevisto",
+    "coberturas": {
+        "servicios_cubiertos": ["Agua", "Luz", "Gas", "Internet"],
+        "valor_cubierto": "Hasta $200.000 por factura",
+        "eventos_cubiertos": ["Desempleo", "Incapacidad", "Hospitalización", "Fallecimiento"]
+    },
+    "tarifas": [
+        {
+            "plan": "Básico",
+            "precio_mensual": 8950,
+            "facturas_cubiertas": 3,
+            "monto_maximo": 150000,
+            "periodo_cobertura": "3 meses por evento"
+        },
+        {
+            "plan": "Estándar",
+            "precio_mensual": 12950,
+            "facturas_cubiertas": 4,
+            "monto_maximo": 200000,
+            "periodo_cobertura": "4 meses por evento"
+        },
+        {
+            "plan": "Premium",
+            "precio_mensual": 16950,
+            "facturas_cubiertas": 5,
+            "monto_maximo": 250000,
+            "periodo_cobertura": "5 meses por evento"
+        }
+    ],
+    "requisitos": {
+        "edad_minima": 18,
+        "edad_maxima": 65,
+        "permanencia": "No tiene período de permanencia"
+    },
+    "exclusiones": [
+        "Despido por justa causa",
+        "Renuncia voluntaria",
+        "Preexistencias no declaradas",
+        "Actos ilícitos",
+        "Facturas con más de 15 días de vencimiento"
+    ],
+    "proceso_reclamacion": {
+        "documentos": ["Facturas a cubrir", "Soporte del evento", "Formulario de reclamación"],
+        "tiempo_respuesta": "5 días hábiles",
+        "canales": ["Línea telefónica", "Correo electrónico", "App móvil"]
+    }
+}

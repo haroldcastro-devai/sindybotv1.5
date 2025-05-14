@@ -1,0 +1,59 @@
+**REPORTE DE VENTA**
+
+- **Calificación final:** VENTA [POSITIVA]
+
+### Resumen de la llamada e interacción asesor-cliente:
+El cliente fue contactado por un representante del servicio de protección y se le ofreció una cobertura de 16.803.497 pesos en caso de faltar, junto con el envío de documentación vía correo electrónico.
+
+### Valores y montos mencionados:
+- Cobertura de protección: **16.803.497 pesos**
+
+### Nombre de la gasera:
+No especificada
+
+### Registro cronológico de objeciones y resoluciones:
+Objeciones no detectadas.
+
+### Aceptaciones y rechazos detectados:
+- Aceptación explícita final: Sí, el cliente confirmó que estaba de acuerdo con la cobertura ofrecida y su permanencia en línea.
+  
+### Respuestas del cliente sobre datos personales, términos, habeas data, cobro y aceptación:
+El cliente confirmó que está de acuerdo con los términos y condiciones proporcionados, incluyendo el cobro automático.
+
+- **Dato personal:** No se detectaron objeciones o rechazos en relación a datos personales.
+- **Términos y Condiciones:** El cliente aceptó explícitamente la protección ofrecida.
+- **Habeas data:** El cliente confirmó que está de acuerdo con el manejo de sus datos según lo estipulado por las leyes colombianas (Ley 1581).
+- **Cobro:** Aceptación final del cobro automático.
+
+### Cumplimiento de puntos críticos:
+- El asesor aseguró que la documentación se enviará al correo electrónico proporcionado.
+- Confirmación explícita del cliente sobre el cobro y aceptación de la protección ofrecida.
+
+### Envío y recepción de código OTP por medio de mensaje de texto SMS o WhatsApp (SOLO PARA GASES DE OCCIDENTE):
+No aplicable en este caso ya que no se especificó la gasera.
+
+### Tipo de mascota y edad de la mascota (solo para planes de mascotas):
+No aplica.
+
+### Validación específica de aceptación final post-objeciones:
+El cliente confirmó explícitamente su aceptación final del plan ofrecido después de ser informado sobre los términos y condiciones, incluyendo el cobro automático.
+
+### Confirmación explícita de permanencia en línea para planes practiseguro/salvafactura:
+No aplica ya que no se especificó si es un plan de esta naturaleza. Sin embargo, hubo una confirmación final explícita del cliente sobre la aceptación del cobro y la protección ofrecida.
+
+### Registro de interacciones bilaterales asesor-usuario:
+- El asesor informó al cliente sobre los términos y condiciones y el envío de documentación por correo electrónico.
+- El cliente confirmó que está de acuerdo con todo lo mencionado, incluyendo el cobro automático.
+
+### Verificación de "sí" explícito final al cobro:
+"Sí", el cliente expresó su conformidad con la cobertura y el cobro automático.
+
+### Justificación de calificación:
+El cliente aceptó explícitamente la protección ofrecida, incluyendo el cobro automático y confirmó que estaba de acuerdo con los términos y condiciones.
+
+### Observaciones adicionales:
+No se detectaron objeciones o rechazos específicos durante la llamada. El asesor aseguró al cliente sobre el envío de documentación por correo electrónico y la protección ofrecida.
+
+---
+
+Este reporte ha sido generado siguiendo las pautas establecidas, con toda la información proporcionada en el diálogo proporcionado.

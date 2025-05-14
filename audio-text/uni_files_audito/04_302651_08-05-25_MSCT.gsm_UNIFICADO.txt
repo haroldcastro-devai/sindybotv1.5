@@ -1,0 +1,407 @@
+
+[SPEAKER_00]
+0:00:01.128000 - 0:00:02.909000:  Hola, buenas tardes.
+
+[SPEAKER_00]
+0:00:02.969000 - 0:00:06.590000: Tengo el gusto con la señora Diana.
+
+[SPEAKER_00]
+0:00:06.610000 - 0:00:07.831000: Buenas tardes, señora Diana.
+
+[SPEAKER_00]
+0:00:07.851000 - 0:00:11.853000: Mi nombre es Yanuri Piña, ejecutivo comercial de Alta Alianza con Gases Occidente.
+
+[SPEAKER_00]
+0:00:12.593000 - 0:00:21.237000: Señora Diana, le estamos comunicando nuevamente para ampliar la información acerca del seguro de mascotas que solicitó vía WhatsApp, ¿correcto?
+
+[SPEAKER_00]
+0:00:21.297000 - 0:00:22.757000: Ah, cuéntenme.
+
+[SPEAKER_00]
+0:00:22.777000 - 0:00:23.397000: Sí, señora.
+
+[SPEAKER_00]
+0:00:23.738000 - 0:00:25.859000: ¿Desde qué ciudad nos está comunicando, señora Diana?
+
+[SPEAKER_02]
+0:00:26.739000 - 0:00:28.039000: Desde Cali.
+
+[SPEAKER_00]
+0:00:28.119000 - 0:00:28.900000: Cali, ok.
+
+[SPEAKER_00]
+0:00:29.696000 - 0:00:59.223000:  Permítame indicarle, señora Diana, que el seguro alza en alianza con gases de occidente le brinda la oportunidad de acceder a una serie de asistencias pensadas para el bienestar de sus mascotas, entre las cuales se incluyen gastos veterinarios por accidentes de enfermedad, auxilio de gastos de exequia y eutanasia, traslado de mascota por emergencia, guardería en caso de hospitalización o viaje del dueño, informe de vacuna para la mascota, orientación nutricional veterinaria, urgencia dental para la mascota, esterilización de mascota,
+
+[SPEAKER_00]
+0:00:59.701000 - 0:01:10.286000:  pipeta antipulgas, orientación psicológica al dueño por fallecimiento de mascota, refuerzo antirrábico anual, refuerzo de esquema exavalente anual y referencia y coordinación de servicios para la mascota.
+
+[SPEAKER_00]
+0:01:10.306000 - 0:01:16.650000: Y su mascota, señora Diana, podrá hacer uso de las asistencias pasados los siguientes 30 días, ¿correcto?
+
+[SPEAKER_00]
+0:01:16.670000 - 0:01:21.652000: ¿Y para adquirir el seguro qué debe hacer?
+
+[SPEAKER_00]
+0:01:21.712000 - 0:01:28.876000: Para la adquisición del seguro, señora Diana, por medio de nuestra llamada que está siendo grabada y monitoreada para garantizar la calidad del servicio,
+
+[SPEAKER_00]
+0:01:29.429000 - 0:01:38.512000:  Usted nos indica únicamente número del contrato o nombre de la persona que aparece en el recibo del gas natural, confirmándonos si es usted la persona que paga la factura.
+
+[SPEAKER_00]
+0:01:39.513000 - 0:01:47.596000: Nombre, edad y raza de la mascota y correo electrónico para enviarle la información de la póliza de salud de la mascota.
+
+[SPEAKER_00]
+0:01:47.616000 - 0:01:48.656000: ¿Es usted señora Diana?
+
+[SPEAKER_00]
+0:01:48.676000 - 0:01:49.536000: ¿Por qué me dio mando eso?
+
+[SPEAKER_02]
+0:01:49.576000 - 0:01:52.997000: Porque es que en este momento no estoy en la casa.
+
+[SPEAKER_02]
+0:01:53.017000 - 0:01:54.438000: Yo no tengo la información aquí.
+
+[SPEAKER_00]
+0:01:55.073000 - 0:02:04.095000:  Bueno, de igual forma no se preocupe señora Diana, en este caso podríamos pues adelantar el proceso de una u otra manera, indicándome por favor el nombre de la mascota.
+
+[SPEAKER_02]
+0:02:04.255000 - 0:02:10.296000: Es que se llama Rocky, es un pincher de 6 años.
+
+[SPEAKER_00]
+0:02:10.316000 - 0:02:12.596000: Ay, un pincher, 6 años me dijo.
+
+[SPEAKER_02]
+0:02:13.056000 - 0:02:13.696000: 6 años.
+
+[SPEAKER_00]
+0:02:14.336000 - 0:02:16.197000: Ok, sí señora, 6 años.
+
+[SPEAKER_00]
+0:02:16.997000 - 0:02:18.977000: Me indica su correo electrónico señora Diana.
+
+[SPEAKER_02]
+0:02:18.997000 - 0:02:24.378000: dianicardonala.gmail.com
+
+[SPEAKER_00]
+0:02:25.343000 - 0:02:26.624000:  Arroba gmail.com.
+
+[SPEAKER_00]
+0:02:26.744000 - 0:02:27.044000: Ok.
+
+[SPEAKER_00]
+0:02:27.204000 - 0:02:28.665000: Rocky es un macho, ¿correcto?
+
+[SPEAKER_00]
+0:02:28.705000 - 0:02:29.245000: Un perrito.
+
+[SPEAKER_02]
+0:02:29.405000 - 0:02:29.585000: Sí.
+
+[SPEAKER_00]
+0:02:30.906000 - 0:02:31.406000: Ok.
+
+[SPEAKER_00]
+0:02:31.866000 - 0:02:35.908000: Señora Diana, me indica por favor su número de documento.
+
+[SPEAKER_00]
+0:02:35.928000 - 0:02:35.968000: 29-360-713.
+
+[SPEAKER_02]
+0:02:35.988000 - 0:02:39.730000: 29-360-713.
+
+[SPEAKER_02]
+0:02:39.770000 - 0:02:39.930000: Ok.
+
+[SPEAKER_00]
+0:02:39.990000 - 0:02:43.812000: Señora Diana, su fecha de nacimiento, por favor.
+
+[SPEAKER_00]
+0:02:43.832000 - 0:02:44.893000: 28 de septiembre de 1982.
+
+[SPEAKER_00]
+0:02:53.647000 - 0:02:54.307000:  1982.
+
+[SPEAKER_00]
+0:02:53.667000 - 0:02:54.307000: ¿Va a cumplir usted 43 años de edad?
+
+[Speaker]
+0:02:54.327000 - 0:02:54.307000: 1982.
+
+[SPEAKER_00]
+0:02:54.347000 - 0:02:54.427000: 1982.
+
+[SPEAKER_00]
+0:02:54.367000 - 0:02:54.427000: Ajá.
+
+[Speaker]
+0:02:54.447000 - 0:02:54.427000: 42.
+
+[SPEAKER_00]
+0:02:54.467000 - 0:02:54.848000: 28 de septiembre de 1982.
+
+[SPEAKER_00]
+0:02:54.888000 - 0:02:55.108000: ¿Tiene usted 42?
+
+[SPEAKER_00]
+0:02:55.148000 - 0:02:55.468000: ¿Va a cumplir 43?
+
+[SPEAKER_00]
+0:02:55.508000 - 0:02:55.608000: Ajá.
+
+[SPEAKER_00]
+0:02:55.688000 - 0:02:55.768000: Ok.
+
+[SPEAKER_02]
+0:02:55.788000 - 0:02:58.129000: Señora Diana, de casualidad, ¿recuerda usted a nombre de quién está la factura del gas natural?
+
+[SPEAKER_00]
+0:02:58.149000 - 0:02:59.090000: A nombre de mi mamá.
+
+[SPEAKER_00]
+0:02:59.110000 - 0:02:59.470000: Sí, señora.
+
+[SPEAKER_00]
+0:02:59.490000 - 0:03:00.531000: ¿Me indica el nombre, por favor?
+
+[SPEAKER_02]
+0:03:00.551000 - 0:03:01.551000: María Lucería Díaz.
+
+[SPEAKER_02]
+0:03:01.571000 - 0:03:01.751000: ¿María?
+
+[SPEAKER_00]
+0:03:02.152000 - 0:03:02.192000: Sí.
+
+[SPEAKER_02]
+0:03:24.962000 - 0:03:27.985000:  María Luceli Ladino Ramírez.
+
+[SPEAKER_01]
+0:03:28.025000 - 0:03:29.746000: María Luceli.
+
+[SPEAKER_02]
+0:03:30.647000 - 0:03:31.768000: Ajá.
+
+[SPEAKER_01]
+0:03:31.808000 - 0:03:32.909000: Ladino.
+
+[SPEAKER_01]
+0:03:32.929000 - 0:03:33.429000: Ladino.
+
+[SPEAKER_02]
+0:03:34.370000 - 0:03:34.810000: Sí, señora.
+
+[SPEAKER_01]
+0:03:36.852000 - 0:03:38.633000: María Luceli Ladino.
+
+[SPEAKER_00]
+0:03:40.655000 - 0:03:42.356000: Permítame un momento, por favor.
+
+[SPEAKER_00]
+0:03:44.758000 - 0:03:48.021000: El nombre completo, discúlpeme, lo repite, por favor.
+
+[SPEAKER_00]
+0:03:48.181000 - 0:03:49.702000: María Luceli.
+
+[SPEAKER_00]
+0:03:50.503000 - 0:03:52.364000: Ladino Ramírez.
+
+[SPEAKER_00]
+0:03:52.424000 - 0:03:53.045000: Ladino Ramírez.
+
+[SPEAKER_00]
+0:03:53.566000 - 0:03:53.986000:  Ramírez.
+
+[SPEAKER_00]
+0:03:54.086000 - 0:04:05.872000: ¿Se sabe el número de documento de su mamá, señora Diana?
+
+[SPEAKER_00]
+0:04:05.892000 - 0:04:05.932000: 31-222-349.
+
+[SPEAKER_00]
+0:04:05.952000 - 0:04:06.653000: 31-222-349, ¿correcto?
+
+[SPEAKER_02]
+0:04:06.793000 - 0:04:07.113000: Ajá.
+
+[SPEAKER_00]
+0:04:07.693000 - 0:04:07.974000: Ok.
+
+[SPEAKER_00]
+0:04:08.134000 - 0:04:12.616000: Señora Diana, ella es usted la persona que cancela la factura del gas natural de la vivienda, ¿correcto?
+
+[SPEAKER_02]
+0:04:12.756000 - 0:04:13.336000: Sí, señora.
+
+[SPEAKER_00]
+0:04:13.837000 - 0:04:14.417000: Ok.
+
+[SPEAKER_00]
+0:04:14.797000 - 0:04:16.978000: ¿Rocky cuenta con el esquema de vacunación al día?
+
+[SPEAKER_02]
+0:04:17.599000 - 0:04:18.259000: Sí, señora.
+
+[SPEAKER_00]
+0:04:18.983000 - 0:04:19.964000:  Listo, sí señora.
+
+[SPEAKER_00]
+0:04:20.104000 - 0:04:38.360000: Señora Diana, voy a proceder a leer la ley antes de continuar que protege sus datos personales, pero antes de eso queremos indicarle que usted como dueño también contaría con un respaldo de 2.630.000 pesos en caso de que usted presente algún enfermado o accidente que le incapacite de manera total o permanente por un periodo continuo no menor a 150 días.
+
+[SPEAKER_00]
+0:04:40.026000 - 0:04:42.628000:  generándole una pérdida de capacidad laboral igual o mayor al 50%.
+
+[SPEAKER_00]
+0:04:44.248000 - 0:04:54.314000: Y además, si usted llegase a faltar a causa de algún accidente, contaría con una indemnización de 5.260.000 pesos que sería repartida entre sus beneficiarios de ley y las personas que usted designe.
+
+[SPEAKER_00]
+0:04:54.955000 - 0:04:59.657000: Dicha indemnización podría reclamarse hasta después de 180 días de haber ocurrido el accidente.
+
+[SPEAKER_00]
+0:04:59.677000 - 0:05:07.162000: Y finalmente, se le otorga un bono de 526.000 pesos en caso de fallecimiento y incapacidad total a sus beneficiarios de ley.
+
+[SPEAKER_00]
+0:05:07.642000 - 0:05:09.443000: El único requisito, señora Diana...
+
+[SPEAKER_00]
+0:05:10.451000 - 0:05:17.536000:  Es ser menor de 76 años de edad y el valor de la protección sería cargado a factura de gas por $16,780, ¿correcto?
+
+[SPEAKER_00]
+0:05:17.676000 - 0:05:18.737000: Me parece.
+
+[SPEAKER_00]
+0:05:20.198000 - 0:05:22.619000: Sí, señora, a partir del siguiente ciclo de facturación.
+
+[SPEAKER_00]
+0:05:23.380000 - 0:05:24.521000: Ok.
+
+[SPEAKER_00]
+0:05:24.581000 - 0:05:34.047000: Señora Diana, declara usted que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:05:34.708000 - 0:05:35.988000: Correcto.
+
+[SPEAKER_00]
+0:05:36.028000 - 0:05:36.989000: ¿Correcto, señora Diana?
+
+[SPEAKER_00]
+0:05:37.690000 - 0:05:38.130000: Correcto.
+
+[SPEAKER_00]
+0:05:39.024000 - 0:05:48.453000:  Ok, señora Diana, disculpe, por motivos de calidad de la llamada, le decimos únicamente me recibe respuesta cerrada, ¿sí o no?
+
+[SPEAKER_00]
+0:05:48.853000 - 0:05:50.235000: ¿Está usted de acuerdo, señora Diana?
+
+[SPEAKER_00]
+0:05:50.295000 - 0:05:51.996000: Sí.
+
+[SPEAKER_00]
+0:05:52.337000 - 0:05:59.183000: Ok, así mismo voy a proceder ahora a leer la ley que protege sus datos personales para que sus datos no sean transferidos a terceros.
+
+[SPEAKER_00]
+0:05:59.738000 - 0:06:09.244000:  Seguro Salva, como responsable, hará tratamiento de su información para fines legales contra actualización particular para el desarrollo de los efectos de preventa, venta y posventa del contrato de seguro.
+
+[SPEAKER_00]
+0:06:09.744000 - 0:06:19.450000: Tiene derecho a conocer, actualizar y rectificar su información y a los demás previstos de la ley 1581 de 2012, normas complementarias y la política de tratamiento de información disponible.
+
+[SPEAKER_00]
+0:06:19.470000 - 0:06:27.395000: En www.segurosalva.com, en la protección de datos, es voluntario responder preguntas sobre información sensible de menores de edad
+
+[SPEAKER_00]
+0:06:27.818000 - 0:06:47.913000:  Y al continuar en la llamada, doctora, a su autorización y declara que usted ha sido informada de nuestras políticas de tratamiento y las condiciones generales del producto Mascotas, pueden ser consultadas en la página www.segurosalva.com y también pueden ser solicitadas al correo electrónico servicio al cliente arroba segurosalva.com o al teléfono 601-307-7032 o a la línea nacional gratuita 018-112-2532.
+
+[SPEAKER_00]
+0:06:53.700000 - 0:06:58.582000:  ¿Está usted de acuerdo, señora Diana, con la protección de esos datos y nuestras líneas de atención nacional, correcto?
+
+[SPEAKER_00]
+0:06:58.622000 - 0:06:58.962000: Correcto, sí.
+
+[SPEAKER_00]
+0:06:58.982000 - 0:07:02.784000: ¿Correcto, señora Diana?
+
+[SPEAKER_00]
+0:07:02.884000 - 0:07:03.684000: Sí, señora.
+
+[SPEAKER_00]
+0:07:03.764000 - 0:07:03.904000: Ok.
+
+[SPEAKER_00]
+0:07:04.384000 - 0:07:07.406000: Recuerde las asistencias que le mencioné, de las cuales tendría acceso Rocky.
+
+[SPEAKER_00]
+0:07:07.826000 - 0:07:22.812000: Igualmente recuerde que sus beneficiarios recibirán 5.260.000 pesos en caso de que usted llegue a faltar y usted 2.630.000 pesos en caso de ser calificado con una incapacidad notado permanente y su protección se encuentra activa y cobrándose por medio de gases de Occidente.
+
+[SPEAKER_00]
+0:07:23.457000 - 0:07:41.487000:  queremos informarle que conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actual que tiene con gases de occidente, podrá realizarlo a través de la página www.gdo.com.co y mientras elige será siendo contactada por los canales habituales.
+
+[SPEAKER_00]
+0:07:41.968000 - 0:07:51.193000: Ya para finalizar, acepta usted el producto y autoriza cargar el valor mensual de $16,780 con su póliza de más cuotas en la factura del gas natural
+
+[SPEAKER_00]
+0:07:52.235000 - 0:08:08.305000:  a favor de seguros alza que se vería reflejado mensualmente a partir del siguiente ciclo de facturación y se renovaría automáticamente pasada la vigencia de 12 meses con un incremento del valor asegurado de acuerdo al IPC hasta que usted exprese en calidad de usuario la decisión de retirarse del programa, ¿de acuerdo?
+
+[SPEAKER_02]
+0:08:09.106000 - 0:08:10.347000: Sí, señora.
+
+[SPEAKER_00]
+0:08:10.387000 - 0:08:15.510000: Bueno, señora Diana, muchas gracias por confiar en seguros alza para la protección de usted y la de su mascota.
+
+[SPEAKER_00]
+0:08:16.003000 - 0:08:21.329000:  Y le informo que al correo electrónico le estaremos enviando la información en conjunto con las condiciones generales del servicio.
+
+[SPEAKER_00]
+0:08:21.349000 - 0:08:22.811000: Que tenga un excelente día.
+
+[SPEAKER_00]
+0:08:22.851000 - 0:08:24.032000: Hasta luego.
+
+[SPEAKER_00]
+0:08:24.052000 - 0:08:25.213000: Muchas gracias.
+
+[SPEAKER_00]
+0:08:25.373000 - 0:08:33.803000: De igual forma, señora Diana, quedamos en comunicación vía WhatsApp cualquier cosa para el número del contrato del recibo del gas natural para confirmarlo, ¿correcto?
+
+[SPEAKER_00]
+0:08:34.263000 - 0:08:36.005000: Ah, bueno, ok.
+
+[SPEAKER_00]
+0:08:36.065000 - 0:08:37.547000: Listo, bueno, muy amable.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:08:38.359000 - 0:08:39.040000:  Aló.
+
+[SPEAKER_00]
+0:08:39.120000 - 0:08:40.902000: Aló, señora Diana.
+
+[SPEAKER_01]
+0:08:42.463000 - 0:08:48.248000: Ok, señora Diana, le habla nuevamente Yanurit Piña, Ejecutivo Comercial de Seguros Alfa en Alianza con Gases de Occidente.
+
+[SPEAKER_01]
+0:08:48.929000 - 0:08:54.414000: Ya creo que conseguimos el número del contrato, señora Diana, es en la calle 72F, carrera 4 Norte 39, ¿correcto?
+
+[SPEAKER_01]
+0:08:54.594000 - 0:08:55.835000: Sí, señora, plural y en calle.
+
+[SPEAKER_00]
+0:08:55.936000 - 0:08:59.779000: Ok, sí, señora.
+
+[SPEAKER_01]
+0:08:59.899000 - 0:09:02.442000: A nombre de la señora María Luceli Ladino Ramírez.
+
+[SPEAKER_00]
+0:09:03.142000 - 0:09:03.723000: Sí, señora.
+
+[SPEAKER_01]
+0:09:04.222000 - 0:09:04.583000:  Listo.
+
+[SPEAKER_01]
+0:09:04.623000 - 0:09:07.170000: Bueno, muy amable, señora Diana, que tenga un excelente día.
+
+[SPEAKER_01]
+0:09:07.190000 - 0:09:07.691000: Hasta luego.
+
+[SPEAKER_01]
+0:09:07.731000 - 0:09:08.754000: Listo, gracias.

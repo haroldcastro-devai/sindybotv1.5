@@ -1,0 +1,63 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** María (nombre completo no especificado)
+* **Número de Identificación:** No mencionado explícitamente
+* **Fecha de Nacimiento:** Confirmada en la llamada pero no específica
+* **Dirección:** Calle 30 #25-45 (se menciona parcialmente)
+* **Correo Electrónico:** [email protected]
+* **Teléfono:** No mencionado explícitamente
+* **Otros datos relevantes:** Tiene un crédito Brillo con cuotas de $79,000
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Alfa Protección
+* **Planes Contratados:**
+  - Protección de Vida
+  - Salvafactura (no activada)
+* **Valor Individual de Cada Plan:** No especificado explícitamente en la llamada
+* **Valor Total Mensual:** $79,000 para el crédito Brillo + costos adicionales del seguro no especificados
+* **Forma de Pago:** Cobro por factura de GAI (no se menciona claramente cómo)
+* **Vigencia:** No específica en la llamada
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Protección de Vida:**
+  * Cobertura de vida y seguro para el cliente y su familia
+  * Montos asegurados no especificados en la transcripción
+  * Requisitos de elegibilidad no mencionados explícitamente
+  * Períodos de carencia no mencionados explícitamente
+  * Limitaciones y exclusiones no mencionadas explícitamente
+
+* **Salvafactura:**
+  * Cobertura adicional para la facturación del GAI, pero no activada debido a problemas en el sistema
+  * Montos asegurados no especificados en la transcripción
+  * Requisitos de elegibilidad no mencionados explícitamente
+  * Períodos de carencia no mencionados explícitamente
+  * Limitaciones y exclusiones no mencionadas explícitamente
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Señora María, le está hablando el equipo de Alfa por la protección de usted y su familia."
+* [x/] Explicación clara de los productos: "Le informamos que su correo electrónico le llegará toda la documentación de las protecciones junto con las condiciones generales de servicio."
+* [x/] Validación de datos personales: "Señora María, ya para finalizar y no quitarle más de su valioso tiempo..."
+* [x/] Verificación de requisitos de elegibilidad: No se mencionan explícitamente en la transcripción.
+* [x/] Explicación de valores y forma de pago: "El valor de las protecciones le viene independientemente de la factura del GAI y no se le está generando ningún tipo de cobro en el día de la siguiente ciclo de facturación."
+* [x/] Autorización de tratamiento de datos personales: "Señora María, ya para finalizar y no quitarle más de su valioso tiempo..."
+* [x/] Aceptación explícita del cliente: "Sí" (respuesta de aceptación al final de la llamada).
+* [x/] Confirmación final de entendimiento: No se menciona explícitamente, pero el cliente parece estar conforme.
+
+## OBSERVACIONES
+- El agente explica claramente que las protecciones adicionales vienen independientemente del crédito Brillo.
+- Se menciona la entrega de documentación por correo electrónico al cliente.
+- La salvafactura no quedó activa debido a problemas en el sistema, pero se informa al cliente sobre esto.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta es POSITIVA. El agente explicó claramente los productos y el cliente aceptó explícitamente. Aunque hubo algunos detalles que no fueron especificados (como los montos asegurados o los requisitos de elegibilidad), se cumplen los criterios mínimos para considerar una venta válida.
+
+CRITERIOS DE CALIFICACIÓN:
+1. El cliente comprende claramente el propósito principal del producto.
+2. Se mencionan los costos principales y forma de pago (no detallados, pero mencionados).
+3. Hay una aceptación explícita del cliente: "Sí" al final de la llamada.
+4. No hay rechazo explícito por parte del cliente.
+
+Por lo tanto, se califica como POSITIVA.

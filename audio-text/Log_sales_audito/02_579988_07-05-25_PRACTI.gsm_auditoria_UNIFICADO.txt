@@ -1,0 +1,68 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Claudia
+* **Número de Identificación:** No mencionado en la transcripción
+* **Fecha de Nacimiento:** 12 de marzo de 1973 (años posteriores a esta fecha)
+* **Dirección:** Se desconoce la dirección exacta, pero se reconoce como cliente de factura de gas natural.
+* **Correo Electrónico:** [segurosalfa.com.co]
+* **Teléfono:** No mencionado en la transcripción
+* **Otros datos relevantes:**
+  * Es reconocida por su número de identificación y su dirección de facturación del servicio de gas natural.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:** 
+    - Programa Práctico y Seguro Grupo
+* **Valor Individual de Cada Plan:**
+  * Póliza mensual de $26,460.
+* **Valor Total Mensual:** $26,460
+* **Forma de Pago:** Se cargará el valor en la factura mensual del gas natural.
+* **Vigencia:** La renovación automática se realizará cada 12 meses con un incremento según el IPC.
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Programa Práctico y Seguro Grupo:**
+  * Coberturas específicas:
+    - Protección financiera de $16,803,497 en caso de fallecimiento.
+  * Montos asegurados:
+    - $16,803,497
+  * Requisitos de elegibilidad:
+    - Cliente debe estar registrado y activo con el servicio de gas natural.
+  * Períodos de carencia: No mencionado en la transcripción.
+  * Limitaciones y exclusiones:
+    - Se reflejará mensualmente a partir del siguiente ciclo de facturación.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Que tenga un excelente día, señora Claudia".
+* [x/] Explicación clara de los productos:
+  * Se menciona la protección financiera de $16,803,497 en caso de fallecimiento.
+* [x/] Validación de datos personales:
+  * Nombre: Claudia
+  * Dirección y contacto con el servicio de gas natural.
+* [x/] Verificación de requisitos de elegibilidad: Se asegura que la protección se encuentre activa por anuncio de factura de ganado.
+* [x/] Explicación de valores y forma de pago:
+  * Valor mensual del seguro es $26,460 cargado en la factura del gas natural.
+* [x/] Autorización de tratamiento de datos personales: Se solicita autorización explícita para el tratamiento de datos a través de las páginas web y correo electrónico mencionados.
+* [x/] Aceptación explícita del cliente:
+  * "¿Correcto, señora Claudia?" - Sí, señor.
+* [x/] Confirmación final de entendimiento: Se le informa que su protección estará activa por anuncio de factura de ganado.
+
+## OBSERVACIONES
+* Aspectos destacados de la venta:
+  * El agente proporcionó una explicación clara sobre el producto y los valores asociados.
+  * La información fue verificada con el cliente, y se obtuvo su aceptación explícita.
+  * Se confirmó que el cliente comprendió las coberturas y requisitos de elegibilidad del programa.
+* Información adicional relevante:
+  - El cliente recibirá documentación por correo electrónico, junto con la condición general del servicio.
+  - La protección financiera será activa siempre que la factura del gas natural esté vigente.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, determino que esta venta es POSITIVA. Se cumplieron todos los criterios fundamentales:
+1. El cliente comprendió claramente el propósito principal del producto.
+2. Se mencionaron los costos principales y forma de pago.
+3. Hubo una aceptación explícita del cliente.
+4. No hubo rechazo explícito por parte del cliente.
+
+Por lo tanto, la venta se considera POSITIVA.

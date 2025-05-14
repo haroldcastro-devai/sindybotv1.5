@@ -1,0 +1,302 @@
+
+[SPEAKER_01]
+0:00:00.031000 - 0:00:00.224000:  Gracias.
+
+[SPEAKER_00]
+0:01:55.502000 - 0:01:55.783000:  Aló.
+
+[SPEAKER_00]
+0:01:57.794000 - 0:01:57.975000: Aló.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:02:00.892000 - 0:02:01.072000:  Aló.
+
+[SPEAKER_01]
+0:02:02.793000 - 0:02:03.073000: Aló.
+
+[SPEAKER_00]
+0:02:03.714000 - 0:02:05.715000: Sí, buenas tardes, la señora María Isabel.
+
+[SPEAKER_01]
+0:02:07.036000 - 0:02:08.196000: ¿De parte de quién?
+
+[SPEAKER_00]
+0:02:08.236000 - 0:02:11.258000: De parte de Rafael, de Sortigas, en alianza con Alfebrilla.
+
+[SPEAKER_01]
+0:02:12.278000 - 0:02:13.059000: Ah, ¿cómo te va?
+
+[SPEAKER_01]
+0:02:13.439000 - 0:02:16.341000: Qué pena, si no es que tenía problemas con mi celular.
+
+[SPEAKER_00]
+0:02:16.961000 - 0:02:17.041000: Ok.
+
+[SPEAKER_00]
+0:02:17.061000 - 0:02:17.982000: ¿Cómo está, señora María?
+
+[SPEAKER_00]
+0:02:18.022000 - 0:02:18.542000: ¿Cómo ha pasado?
+
+[SPEAKER_01]
+0:02:18.622000 - 0:02:19.242000: ¿Bien?
+
+[SPEAKER_01]
+0:02:19.282000 - 0:02:20.543000: Bien, gracias, adiós.
+
+[SPEAKER_00]
+0:02:20.603000 - 0:02:22.404000: Señora María, nos alegra mucho escuchar eso.
+
+[SPEAKER_00]
+0:02:22.524000 - 0:02:29.408000: Señora María, el motivo de nuestra llamada, pues, inicialmente queremos preguntarle si esta es la títula responsable del pago de la factura del GAE y del crédito brillo.
+
+[SPEAKER_00]
+0:02:30.187000 - 0:02:31.608000:  Sí, señor.
+
+[SPEAKER_00]
+0:02:31.668000 - 0:02:36.292000: Ok, también queremos preguntarle cómo le fue con la cuestión del crédito de orilla que acabó de sacar con nosotros.
+
+[SPEAKER_00]
+0:02:36.352000 - 0:02:37.173000: ¿La atendieron bien?
+
+[SPEAKER_00]
+0:02:37.193000 - 0:02:38.253000: ¿No tuvo ningún problema?
+
+[SPEAKER_00]
+0:02:38.394000 - 0:02:38.974000: ¿Fue rápido?
+
+[SPEAKER_01]
+0:02:40.075000 - 0:02:40.956000: Rápido, excelente.
+
+[SPEAKER_00]
+0:02:41.736000 - 0:02:45.899000: Ok, nos alegra mucho escuchar eso, ya que día a día trabajamos para mejorar nuestros servicios.
+
+[SPEAKER_00]
+0:02:46.400000 - 0:02:58.269000: También permítame informarle, señora María, sobre su salva factura, la cual es su protección que usted va a contar hasta la finalización del crédito de orilla, el cual yo le voy a explicar para que usted tenga conocimiento y sepa hacer uso de ella, ¿correcto?
+
+[Speaker]
+0:02:58.329000 - 0:02:58.510000: Ajá.
+
+[SPEAKER_00]
+0:02:59.473000 - 0:03:22.413000:  Señora María, en caso que usted se llegue a incapacitar por cualquier causal de enfermedad o de accidentalidad que usted le toque ir a su EPS, si a su EPS usted le llega a dar una incapacidad que sea mayor a 15 días, esa incapacidad usted la va a presentar a nuestras oficinas de brillo y presentándola se le va a cubrir con un pago de cuatro cuotas de hasta 218.560 pesos como pago a la cuota que usted tiene con brillo.
+
+[SPEAKER_00]
+0:03:23.441000 - 0:03:31.025000:  para un total de hasta 874.240 pesos, para que así usted tenga un alivio y una tranquilidad en el momento que usted más lo llegue a necesitar, ¿correcto?
+
+[SPEAKER_00]
+0:03:31.045000 - 0:03:36.428000: ¿Lo escuchó, señora María?
+
+[SPEAKER_00]
+0:03:36.448000 - 0:03:36.888000: Sí, señor.
+
+[SPEAKER_00]
+0:03:36.988000 - 0:03:37.228000: Ok.
+
+[SPEAKER_00]
+0:03:37.468000 - 0:03:50.155000: Además, sus beneficiarios de ley contarán con 2.185.600 pesos, en caso que usted le llegue a faltar por cualquier causal de accidentalidad, y va a contar con llamadas de teleconsulta totalmente gratuitas de Medicina General y Pediatría,
+
+[SPEAKER_00]
+0:03:50.665000 - 0:04:18.998000:  hasta 5 veces mientras su protección esté en vigencia, simplemente marcando desde su celular numeral 253 opción 2, vamos a poder acceder a estos servicios y recibirá un 10% de descuento a nuestras droguerías aliadas, simplemente registrándose en la página www.lopido.com, el cual, este único requisito es que usted sea menor de 75 años de edad y la de permanencia hasta los 67 años y 364 días, con este servicio estará activo durante toda la vigencia de su crédito,
+
+[SPEAKER_00]
+0:04:19.523000 - 0:04:26.124000:  Una vez finalizado, contará con una renovación automática anual con cobertura y letras aseguradas siempre que cumpla con las políticas establecidas.
+
+[SPEAKER_00]
+0:04:26.664000 - 0:04:30.685000: Este servicio le quedará en vigencia pasados los 60 días a partir del día de hoy, ¿correcto?
+
+[SPEAKER_01]
+0:04:30.745000 - 0:04:36.806000: Pero, o sea, es que no estoy interesada en ningún tipo de seguro.
+
+[SPEAKER_00]
+0:04:37.706000 - 0:04:45.768000: Señora María, esta es la protección que cubre las cuotas del crédito brilla que ustedes tienen con nosotros, el cual es de suma importancia, el cual es hasta la finalización del crédito brilla.
+
+[SPEAKER_00]
+0:04:45.848000 - 0:04:48.188000: Cuando acaben sus 12 cuotas, acabará su protección.
+
+[SPEAKER_00]
+0:04:48.595000 - 0:04:53.540000:  Ya si usted desea continuar con allá a funcionar, ella tendrá una renovación automática correcta.
+
+[SPEAKER_01]
+0:04:53.620000 - 0:04:56.883000: Es que ese es el problema, que no quiero la renovación automática.
+
+[SPEAKER_00]
+0:04:56.943000 - 0:05:07.072000: Y entonces después... No, señora María, simplemente se comunica un mes antes que termine la protección y dice que no quiere que se le renueve y automáticamente no se le renovará.
+
+[SPEAKER_01]
+0:05:07.753000 - 0:05:08.894000: Bueno, ok.
+
+[SPEAKER_00]
+0:05:09.795000 - 0:05:14.219000: Señora María, adicionalmente a esto, señora María, suerte que ahí Alfa le brinda un respaldo económico.
+
+[SPEAKER_00]
+0:05:14.810000 - 0:05:24.972000:  de 16.803.497 pesos que será repartido equitativamente entre sus beneficiarios de ley o cualquier persona que usted designe en caso que se le llegue a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:05:25.632000 - 0:05:42.195000: El cual este servicio retorna en vigencia a partir de las 12 de la noche de hoy, siendo el único requisito que usted sea menor de 66 años, toda esta protección se renovará automáticamente pasada la vigencia de 12 meses con incremento en el valor asegurado de acuerdo al IPC hasta que usted preste en calidad de cero la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:05:42.784000 - 0:05:45.906000:  el cual, señora María, usted nació en 1972.
+
+[SPEAKER_00]
+0:05:46.026000 - 0:05:48.007000: ¿Cuántos años tiene usted, disculpe, señora María?
+
+[SPEAKER_01]
+0:05:49.048000 - 0:05:49.388000: 52 años.
+
+[SPEAKER_00]
+0:05:50.529000 - 0:05:51.129000: ¿Ya cumplidos?
+
+[SPEAKER_01]
+0:05:52.971000 - 0:05:53.591000: Sí, señor.
+
+[SPEAKER_00]
+0:05:53.631000 - 0:05:54.091000: Correcto.
+
+[SPEAKER_00]
+0:05:54.191000 - 0:06:00.896000: Señora María, por calidad de la llamada y que quede constancia con la información, estaré brindando la títula responsable del pago de la factura del gas y del crédito a Obrilla.
+
+[SPEAKER_00]
+0:06:01.536000 - 0:06:05.599000: Y enviártete esta información en su correo electrónico, que es myslager.msn.com.
+
+[SPEAKER_00]
+0:06:07.750000 - 0:06:09.631000:  Vamos a validar sus datos que están en nuestro sistema.
+
+[SPEAKER_00]
+0:06:09.691000 - 0:06:15.696000: Por favor, cualquier error que haya, me lo corrige, ya que nuestras llamadas son grabadas y monitoreadas para la calidad de nuestros servicios y tranquilidad de nuestros usuarios.
+
+[SPEAKER_00]
+0:06:16.216000 - 0:06:20.479000: Su nombre completo es María Isabel Ramírez Guerrero, ¿correcto?
+
+[Speaker]
+0:06:20.499000 - 0:06:20.539000: Sí.
+
+[Speaker]
+0:06:20.559000 - 0:06:21.860000: Su número de cédula es 45765479, ¿correcto?
+
+[SPEAKER_01]
+0:06:21.880000 - 0:06:21.920000: Sí.
+
+[SPEAKER_00]
+0:06:21.960000 - 0:06:24.141000: Su fiesta de nacimiento es el 26 de septiembre de 1972 con las 52 años cumplidos, ¿correcto?
+
+[SPEAKER_00]
+0:06:24.161000 - 0:06:24.321000: Sí, señor.
+
+[SPEAKER_00]
+0:06:36.965000 - 0:06:51.970000:  Su dirección es la titular responsable del pago de la factura del GAI del crédito Brilla con número de contrato factura 21-49-51 en el Socorro Manzana 40, Lote 16, en Bolívar, Cartagena de Indias.
+
+[SPEAKER_00]
+0:06:52.070000 - 0:06:52.470000: Correcto.
+
+[SPEAKER_00]
+0:06:53.430000 - 0:06:53.550000: Sí.
+
+[SPEAKER_00]
+0:06:54.130000 - 0:07:01.452000: Señora María, declara usted que los datos anteriores administrados son reales y que la actividad a la que usted se dedica son normales y se encuentran dentro de los marcos legales.
+
+[SPEAKER_00]
+0:07:01.552000 - 0:07:02.473000: Correcto, señora María.
+
+[SPEAKER_01]
+0:07:02.833000 - 0:07:03.273000: Sí, señor.
+
+[SPEAKER_00]
+0:07:04.384000 - 0:07:09.866000:  Asimismo, señora María, en cumplimiento de la ley ya habida, a continuación voy a proceder a leer la ley que protege sus datos personales.
+
+[SPEAKER_00]
+0:07:09.946000 - 0:07:18.709000: Seguros Alfa como responsable harán el tratamiento de su información para tus fines legales y contractuales, en particular para el desarrollo y el proceso de preventa de un tipo de venta del contrato.
+
+[SPEAKER_00]
+0:07:18.729000 - 0:07:33.695000: El seguro tiene el derecho a conocer, actualizar, rectificar su información y los temas previstos en la ley 1581 del 2012, normas complementarias y políticas de tratamiento de informaciones disponibles en www.segurosalfa.com.co en la protección de datos.
+
+[SPEAKER_00]
+0:07:34.347000 - 0:07:37.850000:  Es voluntario responder preguntas o informaciones sensibles de menores de edad.
+
+[SPEAKER_00]
+0:07:38.030000 - 0:07:40.191000: Al continuar la llamada, otorga su autorización.
+
+[SPEAKER_00]
+0:07:40.211000 - 0:07:58.704000: Señora María, declaro que nuestras políticas de tratamiento y las condiciones generales del producto pueden ser consultadas en nuestras páginas www.seguroalfa.com.co, como también las puede solicitar a través de nuestro correo electrónico servicio al cliente arroba seguroalfa.com.co o los teléfonos 601-307-7032 o nuestra línea nacional gratuita 018-012-2532.
+
+[SPEAKER_00]
+0:08:04.413000 - 0:08:06.814000:  ¿Le quedaron claras nuestras líneas de atención, señora María?
+
+[SPEAKER_00]
+0:08:06.834000 - 0:08:07.275000: ¿Correcto?
+
+[SPEAKER_01]
+0:08:08.015000 - 0:08:08.855000: Sí, señor.
+
+[SPEAKER_00]
+0:08:08.895000 - 0:08:09.976000: Así mismo, señora María.
+
+[SPEAKER_00]
+0:08:10.076000 - 0:08:23.203000: Estos son los productos autorizados a cargar el valor mensual en la factura del gas natural a favor de seguros alfa por $26,460 por su propio seguro y $16,340 por su saldo de factura, la cual se verá reflejada mensualmente a partir de su siguiente ciclo de facturación.
+
+[SPEAKER_00]
+0:08:23.283000 - 0:08:24.264000: ¿Correcto, señora María?
+
+[SPEAKER_01]
+0:08:25.124000 - 0:08:26.165000: Pero te hago una pregunta.
+
+[SPEAKER_01]
+0:08:26.185000 - 0:08:28.566000: O sea, yo saqué el crédito y me quedaron cuotas de $79,000.
+
+[SPEAKER_01]
+0:08:28.686000 - 0:08:31.708000: O sea, ¿eso aumentaría el valor de la cuota?
+
+[SPEAKER_00]
+0:08:32.127000 - 0:08:32.627000:  No, señora.
+
+[SPEAKER_00]
+0:08:32.667000 - 0:08:36.089000: Su cuota del crédito brillo se le va a llegar totalmente igual como se la pactó.
+
+[SPEAKER_00]
+0:08:36.129000 - 0:08:42.272000: El valor de las protecciones le viene independientemente de la factura del GAI y no se le está generando ningún tipo de cobro en el día de la siguiente ciclo de facturación.
+
+[SPEAKER_00]
+0:08:42.753000 - 0:08:43.033000: ¿Ok?
+
+[SPEAKER_00]
+0:08:43.393000 - 0:08:46.574000: El cuota de la información se la vamos a enviar a su correo electrónico para que la tenga a la mano.
+
+[SPEAKER_00]
+0:08:47.075000 - 0:08:52.838000: Señora María, ya para finalizar y no quitarle más de su valioso tiempo, acepte el cobro de los productos por las condiciones anteriormente mencionadas.
+
+[SPEAKER_00]
+0:08:52.918000 - 0:08:53.918000: ¿Correcto, señora María?
+
+[SPEAKER_01]
+0:08:55.739000 - 0:08:56.259000: Sí.
+
+[SPEAKER_00]
+0:08:56.299000 - 0:08:57.240000: Señora María, recuerde...
+
+[SPEAKER_00]
+0:08:57.753000 - 0:09:03.055000:  Le informamos que su correo electrónico le llegará toda la documentación de las protecciones junto con las condiciones generales de servicio.
+
+[SPEAKER_00]
+0:09:03.456000 - 0:09:05.877000: Gracias por conferir en Alfa por la protección de usted y su familia.
+
+[SPEAKER_00]
+0:09:06.257000 - 0:09:11.899000: Señora María, le está enviando un código de cinco dígitos por mensaje de texto a su teléfono celular para que su salvafactura quede activa.
+
+[SPEAKER_00]
+0:09:12.279000 - 0:09:14.540000: Pero tengo problemas en el sistema y no me deja enviarlo.
+
+[SPEAKER_00]
+0:09:14.580000 - 0:09:19.242000: En este caso, su salvafactura no queda activa, solamente contará con su protección de vida.
+
+[SPEAKER_00]
+0:09:19.302000 - 0:09:21.523000: Que tenga un excelente día, señora María, y que Dios me lo bendiga.
+
+[SPEAKER_00]
+0:09:21.543000 - 0:09:22.144000: Hasta luego.
+
+[SPEAKER_00]
+0:09:22.204000 - 0:09:22.624000: Amén.
+
+[SPEAKER_00]
+0:09:22.684000 - 0:09:23.024000: Adiós.

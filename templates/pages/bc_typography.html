@@ -1,0 +1,423 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Modal para cargar archivo Excel -->
+<div class="modal fade" id="modalAuditoria" tabindex="-1" aria-labelledby="modalAuditoriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalAuditoriaLabel">Iniciar Auditoría Remota</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> Seleccione el archivo Excel (Gerencial) para iniciar el proceso de auditoría.
+                </div>
+                <form id="formAuditoriaRemota" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="archivo_excel" class="form-label">Archivo Excel (Gerencial)</label>
+                        <input type="file" class="form-control" id="archivo_excel" name="archivo_excel" accept=".xlsx,.xls" required>
+                        <div class="form-text">Solo se admiten archivos Excel (.xlsx, .xls)</div>
+                    </div>
+                </form>
+                <div id="processingInfo" class="d-none">
+                    <div class="text-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Procesando...</span>
+                        </div>
+                        <p class="mt-2">Procesando archivo y buscando audios...<br>Este proceso puede tardar unos minutos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btnIniciarAuditoria">Iniciar Auditoría</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Progreso de Auditoría -->
+<div class="modal fade" id="modalProgreso" tabindex="-1" aria-labelledby="modalProgresoLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="overflow-y: auto !important;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" style="transform: translateY(0) !important; margin: 1.75rem auto !important; max-height: 90vh;">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="modalProgresoLabel">Proceso de Auditoría en Progreso</h5>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="visually-hidden">Procesando...</span>
+                    </div>
+                </div>
+                
+                <div class="progress mb-4" style="height: 20px;">
+                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" 
+                         role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        0%
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <i class="fas fa-file-audio"></i> Archivo en Proceso
+                            </div>
+                            <div class="card-body">
+                                <p id="currentFile" class="card-text fs-5">Esperando inicio...</p>
+                                <p class="text-muted small">Nombre del archivo de audio en procesamiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <i class="fas fa-calendar-alt"></i> Fecha del Contrato
+                            </div>
+                            <div class="card-body">
+                                <p id="currentDate" class="card-text fs-5">Esperando inicio...</p>
+                                <p class="text-muted small">Fecha del contrato en procesamiento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <i class="fas fa-info-circle"></i> Detalles del Proceso
+                            </div>
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <h5 id="filesProcessed">0</h5>
+                                        <p class="text-muted">Archivos Procesados</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 id="filesRemaining">0</h5>
+                                        <p class="text-muted">Archivos Pendientes</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 id="timeElapsed">00:00:00</h5>
+                                        <p class="text-muted">Tiempo Transcurrido</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h6 class="border-bottom pb-2">Registro de Actividad</h6>
+                    <div id="activityLog" class="small" style="max-height: 150px; overflow-y: auto;">
+                        <div class="text-muted">Esperando inicio del proceso...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="btnCancelarAuditoria">Cancelar proceso</button>
+                <button type="button" class="btn btn-outline-secondary" disabled>El proceso se completará automáticamente</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast para notificaciones -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toastResultado" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="toastMessage">
+                Proceso completado con éxito.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] start -->
+<div class="row">
+    <div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">Auditoria de Venta TMK</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="feather icon-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="#">Configuración</a></li>
+                        <li class="breadcrumb-item"><a href="#">Auditoria</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    {% comment %} visor de proceso seleccionado {% endcomment %}
+    <div class="col-md-12 col-lg-4">
+        <div class="card">
+            <div class="card-body text-center">				
+                <div class="icon-text-container">
+                    <i class="fas fa-folder-open icon"></i>
+                    <h4 class="text">Ultimo Directorio Seleccionado:</h4> 
+                </div>
+                <div style="text-align: left; padding-left: 14%">
+                    <tbody>
+                        {% if ultimo_registro %}
+                            {{ ultimo_registro.reg_tip_dir }} 
+                        {% else %}
+                            {{ mensaje }}
+                        {% endif %}						
+                    </tbody> Mostrar la ruta del directorio aquí
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-question-circle text-c-green d-block f-40"></i>
+                <h4 class="m-t-20"><span class="text-c-blgreenue">Auditoria Masiva</h4>
+                <p>Haga Click Para Comenzar la Auditoria:</p>
+                <button class="boton" id="btnAbrirModal">Iniciar</button>
+            </div>
+        </div>
+    </div>    
+    <!-- [ table ] begin -->
+    <div class="col-md-12">
+        <div class="card table-card">
+            <div class="card-header">
+                <h5>Registro de Sesiones</h5>
+                <div class="card-header-right">
+                    <div class="btn-group card-option">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="feather icon-more-horizontal"></i>
+                        </button>
+                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-end">
+                            <li class="dropdown-item reload-card">
+                                <a href="#" onclick="actualizarTabla()">
+                                    <i class="feather icon-refresh-cw"></i> reload
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-fill mt-3 border-bottom pb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <i class="feather icon-layers m-r-5"></i> Registro de Actividad
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body p-0">
+                <div class="tab-content" id="pills-tabcontent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="table-responsive">
+                            <div class="table-container">
+                                <table class="table table-hover m-b-0" id="tablaActividad">
+                                    <thead>
+                                        <tr>
+                                            <th><span>Fecha</span></th>
+                                            <th><span>Nombre de Usuario</span></th>
+                                            <th><span>Archivos procesados</span></th>
+                                            <th><span>Estado de Ventas</span></th>                                            
+                                            <th><span>Tipo de Consulta</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for registro in TbRegActividad %}
+                                        <tr>
+                                            <td>{{ registro.reg_activ_fecha }}</td>
+                                            <td>{{ registro.reg_activ_user }}</td>
+                                            <td>{{ registro.reg_activ_archproc }}</td>
+                                            <td>{{ registro.reg_sum_ventpos }}</td>
+                                           
+                                            <td>{{ registro.reg_tip_consulta }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Customer overview end -->
+    <!-- [ Main Content ] end -->
+</div>
+
+<!-- Modal de Confirmación de Cancelación -->
+<div class="modal fade" id="modalConfirmacionCancelar" tabindex="-1" aria-labelledby="modalConfirmacionCancelarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="modalConfirmacionCancelarLabel">Confirmar Cancelación</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>¡Atención!</strong> Está a punto de cancelar el proceso de auditoría en curso.
+                </div>
+                <p>Si cancela el proceso:</p>
+                <ul>
+                    <li>Se detendrán todos los procesos en ejecución</li>
+                    <li>Los archivos pendientes no serán procesados</li>
+                    <li>Los datos procesados hasta el momento se conservarán</li>
+                </ul>
+                <p class="mb-0">¿Está seguro de que desea cancelar el proceso?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, continuar proceso</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmarCancelar">Sí, cancelar proceso</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Resultado Final -->
+<div class="modal fade" id="modalResultadoFinal" tabindex="-1" aria-labelledby="modalResultadoFinalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="modalResultadoFinalLabel">Proceso de Auditoría Completado</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="text-center mb-3">El proceso de auditoría ha finalizado exitosamente</h4>
+                <p>Se han procesado <strong id="totalArchivosFinalizados">0</strong> archivos correctamente.</p>
+                <p>Puede ver los detalles completos en la tabla de registro de actividades o descargar un informe desde la página principal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="{% url 'index' %}" class="btn btn-primary">Ir a la página principal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Resultado Cancelado -->
+<div class="modal fade" id="modalResultadoCancelado" tabindex="-1" aria-labelledby="modalResultadoCanceladoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="modalResultadoCanceladoLabel">Proceso de Auditoría Cancelado</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <i class="fas fa-times-circle text-danger" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="text-center mb-3">El proceso de auditoría ha sido cancelado</h4>
+                <p>Se procesaron <strong id="totalArchivosCancelados">0</strong> archivos antes de la cancelación.</p>
+                <p>Los archivos que ya fueron procesados se han guardado correctamente en la base de datos.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="{% url 'index' %}" class="btn btn-primary">Ir a la página principal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toastDirectorio" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Directorio seleccionado correctamente.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block extrajs %}
+<style>
+/* Estilos para corregir el modal de progreso */
+#modalProgreso.modal {
+    padding-top: 350px !important; /* Ajustar el padding superior para que no se corte */
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 1060 !important; /* Aumentar el z-index para asegurar que esté por encima de la sombra */
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+#modalProgreso .modal-dialog {
+    
+    width: auto;
+    margin: 10rem auto !important; /* Posicionar más abajo en la página */
+    padding: 0.5rem !important;
+    max-width: 800px;
+}
+
+#modalProgreso .modal-content {
+    
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+/* Asegurar que el modal esté siempre visible y no se corte en la parte superior */
+.modal-open .modal {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-y: auto !important;
+}
+
+/* Arreglar el problema de la sombra del modal */
+.modal-backdrop {
+    z-index: 1050 !important; /* Asegurar que esté debajo del modal */
+}
+</style>
+<script src="{% static 'assets/js/mod-track.js' %}"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<!-- custom-chart js -->
+<script src="{% static 'assets/js/pages/dashboard-main.js' %}"></script>
+<!-- Apex Chart -->
+<script src="{% static 'assets/js/plugins/apexcharts.min.js' %}"></script>
+<!-- Enlace al nuevo archivo JavaScript -->
+<script src="{% static 'assets/js/auditor.js' %}"></script>
+
+<!-- Script para fix del modal de progreso -->
+<script>
+    // Fix para el modal de progreso que se muestra parcialmente
+    document.addEventListener('shown.bs.modal', function(event) {
+        if (event.target.id === 'modalProgreso') {
+            // Asegurar que el modal esté completamente visible
+            event.target.style.display = 'block';
+            event.target.style.paddingLeft = '0';
+            event.target.style.paddingRight = '0';
+            
+            // Ajustar el diálogo del modal
+            var modalDialog = event.target.querySelector('.modal-dialog');
+            if (modalDialog) {
+                modalDialog.style.margin = '1.75rem auto';
+                modalDialog.style.transform = 'translateY(0)';
+            }
+            
+            // Forzar el recalculo de estilos
+            window.setTimeout(function() {
+                window.dispatchEvent(new Event('resize'));
+            }, 50);
+        }
+    }, true);
+</script>
+
+{% endblock extrajs %}

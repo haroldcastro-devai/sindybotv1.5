@@ -1,0 +1,342 @@
+/* 
+ * SBOT - Estilos específicos para la página de administración de usuarios
+ * URL: http://192.168.30.241:8000/admin/auth/user/
+ * Este archivo NO usa filtros personalizados para evitar errores
+ */
+
+/* Ocultar la columna de filtros laterales */
+#changelist-filter {
+    display: none !important;
+}
+
+/* Asegurar que la tabla ocupe el ancho completo cuando se ocultan los filtros */
+.change-list .filtered .results, 
+.change-list .filtered .paginator, 
+.filtered #toolbar, 
+.filtered div.xfull, 
+.filtered .actions, 
+#changelist .paginator,
+#changelist-form,
+.card.card-body.border-0.shadow.table-wrapper.table-responsive {
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+/* Corregir la estructura de la tabla */
+.col-md-10 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+/* Mejorar la apariencia de la tabla */
+#changelist table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#changelist table thead th {
+    background: #2c3e50;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: none;
+    vertical-align: middle;
+}
+
+#changelist table thead th a {
+    color: white;
+    text-decoration: none;
+}
+
+#changelist table thead th.sorted {
+    background: #3498db;
+}
+
+/* Correcciones para los íconos de ordenamiento */
+#changelist table thead th .text a {
+    display: block;
+    padding-right: 20px;
+    position: relative;
+}
+
+#changelist table thead th .text a:after {
+    content: "↓";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+#changelist table thead th.sorted .text a:after {
+    opacity: 1;
+}
+
+#changelist table thead th.sorted.ascending .text a:after {
+    content: "↑";
+}
+
+/* Filas de la tabla */
+#changelist table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+#changelist table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+#changelist table tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+#changelist table tbody td {
+    padding: 12px 15px;
+    border-top: none;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+/* Mejorar checkboxes */
+#changelist table thead th:first-child,
+#changelist table tbody td:first-child {
+    text-align: center;
+    width: 4rem;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+input[type="checkbox"]:checked:after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+/* Mejorar la barra de acciones y búsqueda */
+#changelist #toolbar {
+    background: none;
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+#changelist #toolbar form #searchbar {
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 240px;
+}
+
+#changelist #toolbar form input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#changelist #toolbar form input[type="submit"]:hover {
+    background-color: #217dbb;
+}
+
+/* Mejorar la paginación */
+.paginator {
+    margin: 15px 0 0 0;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.paginator .this-page {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.paginator a:not(.showall) {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 2px;
+    transition: background-color 0.2s ease;
+}
+
+.paginator a:hover:not(.showall) {
+    background-color: #e9ecef;
+}
+
+.paginator .showall {
+    color: #3498db;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Mejorar el botón de acciones */
+#changelist .actions {
+    margin-bottom: 15px;
+}
+
+#changelist .actions select {
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+#changelist .actions button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 5px;
+}
+
+#changelist .actions button:hover {
+    background-color: #217dbb;
+}
+
+/* Traducciones específicas mediante selectores CSS */
+/* (Para evitar cambios en los archivos de idioma) */
+#changelist-filter h2:contains("Por"):before {
+    content: "Filtros";
+    display: block;
+}
+
+.submit-row {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    text-align: right;
+}
+
+/* Mejora el botón de "Añadir usuario" */
+.addlink {
+    background-color: #27ae60;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.addlink:hover {
+    background-color: #1e8449;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para el card alrededor de la tabla */
+.card.card-body.border-0.shadow.table-wrapper.table-responsive {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Mensajes y alertas */
+.messagelist {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.messagelist li {
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.messagelist li.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.messagelist li.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.messagelist li.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Ajustes adicionales de espaciado */
+.main-footer {
+    margin-bottom: 20px;
+}
+
+/* Arreglos para la tabla en dispositivos móviles */
+@media (max-width: 768px) {
+    #changelist table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    #changelist-form .actions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #changelist-form .actions select {
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    #changelist #toolbar form #searchbar {
+        width: 100%;
+        max-width: 240px;
+        margin-bottom: 10px;
+    }
+    
+    .paginator {
+        text-align: center;
+    }
+    
+    .paginator a, .paginator .this-page {
+        margin-bottom: 5px;
+    }
+}

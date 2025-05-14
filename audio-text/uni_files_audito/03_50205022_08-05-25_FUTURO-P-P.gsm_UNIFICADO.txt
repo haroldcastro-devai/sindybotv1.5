@@ -1,0 +1,638 @@
+
+[SPEAKER_01]
+0:00:00.917000 - 0:00:01.417000:  Aló, buenas.
+
+[SPEAKER_00]
+0:00:02.478000 - 0:00:03.498000: Buenas.
+
+[SPEAKER_01]
+0:00:03.538000 - 0:00:07.460000: Por favor, me comunica con el señor Brian Luciano Bertel Díaz.
+
+[SPEAKER_00]
+0:00:08.100000 - 0:00:09.041000: ¿Cómo le hablas?
+
+[SPEAKER_01]
+0:00:09.081000 - 0:00:10.481000: Gusto saludarlo, señor Brian.
+
+[SPEAKER_01]
+0:00:10.521000 - 0:00:14.963000: Le habla Elsa Reyes, representante de la compañía de gases de la Guajiri HDI Seguros.
+
+[SPEAKER_01]
+0:00:15.023000 - 0:00:15.583000: ¿Cómo me le va?
+
+[SPEAKER_00]
+0:00:16.224000 - 0:00:16.944000: Bien, bien, gracias.
+
+[SPEAKER_00]
+0:00:16.964000 - 0:00:17.704000: ¿Cómo estás?
+
+[SPEAKER_01]
+0:00:17.724000 - 0:00:18.485000: Bien, muy bien.
+
+[SPEAKER_01]
+0:00:18.705000 - 0:00:22.026000: Me alegra mucho, señor Brian, que también se encuentre bien.
+
+[SPEAKER_01]
+0:00:22.566000 - 0:00:30.530000: Acá le contato, señor Brian, porque necesito validar la información referente a su servicio de gas natural, para lo cual voy a confirmarle acá, me registra el sistema.
+
+[SPEAKER_01]
+0:00:31.037000 - 0:00:39.539000:  que su servicio se encuentra activo en la dirección correspondiente a la calle 11, número 1295, en Uribia, La Guajira, Estrato 1, ¿correcto?
+
+[SPEAKER_00]
+0:00:40.179000 - 0:00:41.019000: Correcto.
+
+[SPEAKER_01]
+0:00:41.039000 - 0:00:45.360000: Me indica, por favor, mi señor, ¿cómo le terminó de ir a usted en este último mes con el servicio allí prestado?
+
+[SPEAKER_01]
+0:00:45.840000 - 0:00:48.881000: ¿Usted presentó algún tipo de inconveniente que quiera comunicarme, por favor?
+
+[SPEAKER_00]
+0:00:49.681000 - 0:00:50.801000: No.
+
+[SPEAKER_01]
+0:00:50.841000 - 0:00:51.741000: Ok, perfecto.
+
+[SPEAKER_01]
+0:00:51.941000 - 0:00:55.322000: ¿Y directamente usted es la persona responsable de los pagos de esta factura?
+
+[SPEAKER_00]
+0:00:56.102000 - 0:00:56.922000: Sí.
+
+[SPEAKER_01]
+0:00:56.942000 - 0:00:57.282000: Correcto.
+
+[SPEAKER_01]
+0:00:57.322000 - 0:00:59.943000: Acá le hago la pregunta, señor Bryan, porque quiero que usted sepa que
+
+[SPEAKER_01]
+0:01:00.559000 - 0:01:11.505000:  La compañía sigue trabajando con el compromiso de seguir mejorando y que usted pueda contar con un excelente servicio, para lo cual, según la llamada que he grabado y monitoreada, pues estamos dejando constancia de su opinión como usuario activo.
+
+[SPEAKER_01]
+0:01:12.205000 - 0:01:23.791000: Y en este caso también quería indicarle, señor Bryan, que además de esto, se le está permitiendo aquí también de parte de gases de la Guajeri HD seguro contar con un respaldo económico correspondiente a lo que son 15 millones de pesos.
+
+[SPEAKER_01]
+0:01:24.272000 - 0:01:28.434000: Un dinero, señor Bryan, que usted va a poder utilizar en caso de que usted se me llegue a enfermar,
+
+[SPEAKER_01]
+0:01:28.910000 - 0:01:50.500000:  y llega a ser diagnosticado con cualquiera de las enfermedades graves más comunes que le voy a indicar, ya sea lo que es un infarto al miocardio, cáncer invasivo, accidente cerebrovascular, insuficiencia renal, esclerosis múltiple o cirugía de arterias coronarias, que son básicamente estas las enfermedades, señor Bryan, que actualmente están afectando nuestra calidad de vida y nos generan gastos para los cuales muchas veces no estamos preparados, ¿cierto?
+
+[SPEAKER_01]
+0:01:51.200000 - 0:01:56.463000: O en su defecto, señor Bryan, si usted lo que llega a padecer es una lesión orgánica de su cuerpo o alguna alteración funcional,
+
+[SPEAKER_01]
+0:01:56.937000 - 0:02:02.840000:  que le genere a usted una pérdida de la capacidad laboral igual o superior al 50%, usted va a poder contar con esta protección también.
+
+[SPEAKER_01]
+0:02:03.380000 - 0:02:08.363000: Como único requisito, mi señor Bryan, es que usted sea persona menor de 66 años de edad con permanencia hasta los 70.
+
+[SPEAKER_01]
+0:02:08.543000 - 0:02:10.944000: ¿Tiene usted cuántos años, señor Bryan?
+
+[Speaker]
+0:02:14.085000 - 0:02:10.944000: 43.
+
+[SPEAKER_01]
+0:02:14.125000 - 0:02:16.206000: ¿40 qué?
+
+[Speaker]
+0:02:16.227000 - 0:02:16.206000: 3.
+
+[SPEAKER_01]
+0:02:16.387000 - 0:02:18.448000: 3.
+
+[SPEAKER_01]
+0:02:16.447000 - 0:02:18.448000: Es decir, que se encuentra dentro de la edad requerida.
+
+[SPEAKER_01]
+0:02:18.928000 - 0:02:23.230000: En este caso, señor Bryan, quiero indicarle que usted va a poder hacer reclamación de este dinero por un solo evento.
+
+[SPEAKER_01]
+0:02:23.690000 - 0:02:28.793000:  Y le va a comenzar a ocurrir después del día 60 por todas las enfermedades graves no diagnosticadas que yo le acabé de mencionar.
+
+[SPEAKER_01]
+0:02:28.813000 - 0:02:31.634000: Hasta aquí, señor Bryan, ¿le ha sido clara la información?
+
+[SPEAKER_00]
+0:02:32.735000 - 0:02:33.455000: Sí.
+
+[SPEAKER_01]
+0:02:33.515000 - 0:02:37.557000: Una pregunta, mi señor, ¿usted ha sufrido de alguna de las enfermedades que le mencioné?
+
+[SPEAKER_00]
+0:02:38.398000 - 0:02:38.498000: No.
+
+[SPEAKER_01]
+0:02:39.238000 - 0:02:42.480000: ¿Anomalía física, deformidad congénita o amputación tiene usted?
+
+[SPEAKER_00]
+0:02:43.300000 - 0:02:43.420000: No.
+
+[SPEAKER_01]
+0:02:43.960000 - 0:02:44.461000: ¿Y cirugía?
+
+[SPEAKER_01]
+0:02:44.481000 - 0:02:46.462000: ¿Le han practicado alguna o tiene alguna pendiente?
+
+[SPEAKER_00]
+0:02:47.122000 - 0:02:51.905000: No, tengo varias, pero de un tumor óseo y unos accidentes.
+
+[SPEAKER_01]
+0:02:51.925000 - 0:02:52.765000: ¿De qué me lo han operado?
+
+[SPEAKER_00]
+0:02:53.860000 - 0:02:59.585000:  Tumor óseo y pérdida de accidente, pero no nada de... ¿El tumor fue por medio del accidente?
+
+[SPEAKER_00]
+0:03:00.606000 - 0:03:00.726000: No.
+
+[SPEAKER_01]
+0:03:02.067000 - 0:03:07.492000: ¿Y el tumor óseo cómo salió en la biopsia?
+
+[SPEAKER_00]
+0:03:08.653000 - 0:03:10.034000: No, bien.
+
+[SPEAKER_01]
+0:03:10.054000 - 0:03:11.655000: Bien, no fue maligno.
+
+[SPEAKER_01]
+0:03:12.396000 - 0:03:13.717000: Ok, perfecto.
+
+[SPEAKER_01]
+0:03:14.218000 - 0:03:17.420000: Y me dijo que tumor óseo y por un accidente.
+
+[SPEAKER_01]
+0:03:18.802000 - 0:03:19.602000: Nada más esas dos.
+
+[Speaker]
+0:03:19.702000 - 0:03:19.802000: Sí.
+
+[SPEAKER_01]
+0:03:20.876000 - 0:03:21.536000:  Ok, listo.
+
+[SPEAKER_01]
+0:03:21.576000 - 0:03:23.917000: En este caso, señor Brian, no hay ningún tipo de inconveniente.
+
+[SPEAKER_01]
+0:03:23.937000 - 0:03:25.637000: De todas maneras, dejamos la salvedad.
+
+[SPEAKER_01]
+0:03:26.738000 - 0:03:29.498000: ¿Y hace cuánto tiempo fue la operación del tumor óseo?
+
+[SPEAKER_00]
+0:03:29.518000 - 0:03:31.639000: 12 años.
+
+[SPEAKER_01]
+0:03:31.659000 - 0:03:32.259000: 12 años, listo.
+
+[SPEAKER_01]
+0:03:32.679000 - 0:03:34.420000: En este caso, señor Brian, no hay inconveniente.
+
+[SPEAKER_01]
+0:03:34.480000 - 0:03:35.220000: Dejamos la salvedad.
+
+[SPEAKER_01]
+0:03:35.240000 - 0:03:47.163000: De todas maneras, que sea a causa de esta operación del tumor óseo o de esta operación del accidente, si por estos motivos usted llega a desarrollar cualquiera de las enfermedades mencionadas, pues no podría contar con el amparo y la compañía
+
+[SPEAKER_01]
+0:03:47.643000 - 0:03:57.989000:  no sería responsable del pago de la reclamación presentada, se le van a estar cubriendo por cualquiera de las enfermedades, pero que usted la llegue a padecer a futuro por cualquier condición diferente a la operación del tumor y del accidente.
+
+[SPEAKER_01]
+0:03:58.509000 - 0:04:03.752000: En este caso, señor Bryan, esto es una llamada que es grabada y monitoreada para garantizarle a usted calidad en el buen servicio.
+
+[SPEAKER_01]
+0:04:04.192000 - 0:04:12.617000: Usted como usuario activo de gases del aguajiro, usted tiene derecho a conocer la información aquí registrada, para lo cual yo se la voy a confirmar y así le quede constancia a usted de que todo está correcto.
+
+[SPEAKER_01]
+0:04:13.208000 - 0:04:19.310000:  Entonces, acá le confirmo que la información se le ha brindado al señor Brian Luciano Bertel Díaz, identificado con cédula 17903-398, cédula colombiana, ¿correcto?
+
+[SPEAKER_01]
+0:04:19.330000 - 0:04:24.732000: Acá confirmamos el número de suscripción, señor Brian, de su factura, que es 5020-5022, en La Guajira, en Uribia, en la calle 1112-95, estrato 1.
+
+[SPEAKER_01]
+0:04:24.792000 - 0:04:26.372000: Señor Brian, ¿usted utiliza correo electrónico?
+
+[SPEAKER_01]
+0:04:26.392000 - 0:04:26.672000: Sí, señor.
+
+[SPEAKER_01]
+0:04:41.200000 - 0:04:43.501000:  ¿Me lo indica para poderle hacer el envío de la información?
+
+[SPEAKER_00]
+0:04:43.521000 - 0:04:53.806000: D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N, ajá.
+
+[SPEAKER_00]
+0:04:53.826000 - 0:04:59.448000: D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N D-R-Y-A-N
+
+[SPEAKER_01]
+0:05:11.035000 - 0:05:12.816000:  Señor Bryan, ¿cuál es su fecha de nacimiento?
+
+[SPEAKER_01]
+0:05:16.778000 - 0:05:18.199000: 13 de diciembre de 1982.
+
+[SPEAKER_01]
+0:05:18.859000 - 0:05:20.841000: 13 de diciembre de 1982.
+
+[SPEAKER_01]
+0:05:20.941000 - 0:05:28.065000: Señor Bryan, ¿usted de casualidad se acuerda o tiene presente lo que es la fecha de expedición de su cédula?
+
+[SPEAKER_01]
+0:05:28.365000 - 0:05:30.106000: Si usted se acuerda, me la puede indicar.
+
+[SPEAKER_01]
+0:05:30.126000 - 0:05:31.807000: Si no se acuerda, no hay inconveniente.
+
+[SPEAKER_01]
+0:05:31.907000 - 0:05:32.147000: Listo.
+
+[SPEAKER_00]
+0:05:33.072000 - 0:05:34.512000:  No, no la tengo.
+
+[SPEAKER_00]
+0:05:34.632000 - 0:05:35.873000: No se acuerda.
+
+[SPEAKER_01]
+0:05:35.893000 - 0:05:36.913000: Bueno, Lizo, no se preocupe.
+
+[SPEAKER_01]
+0:05:37.253000 - 0:05:47.775000: Señor Brian, esta información que hemos confirmado, estos datos, declara usted que la información suministrada toda es real y las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:05:48.415000 - 0:05:49.275000: Correcto.
+
+[SPEAKER_01]
+0:05:49.295000 - 0:05:49.635000: ¿Correcto?
+
+[SPEAKER_00]
+0:05:50.316000 - 0:05:52.096000: Correcto.
+
+[SPEAKER_01]
+0:05:52.116000 - 0:05:53.076000: Señor Brian, ¿correcto?
+
+[SPEAKER_00]
+0:05:54.036000 - 0:05:54.957000: Sí, sí.
+
+[SPEAKER_01]
+0:05:54.977000 - 0:05:59.598000: Señor Brian, acá validando la información, usted todavía no ha cumplido los 43, tiene 42, va a cumplir los 43 apenas, ¿listo?
+
+[SPEAKER_00]
+0:06:02.320000 - 0:06:04.622000:  De los 80, perdón, de los 80.
+
+[SPEAKER_01]
+0:06:05.443000 - 0:06:06.324000: Ah, usted es del 80.
+
+[SPEAKER_00]
+0:06:06.804000 - 0:06:08.165000: Sí.
+
+[SPEAKER_01]
+0:06:08.185000 - 0:06:09.947000: Bueno, me había hecho en 1982, es del 80.
+
+[SPEAKER_00]
+0:06:10.087000 - 0:06:11.849000: Sí, del 80, sí.
+
+[SPEAKER_01]
+0:06:11.909000 - 0:06:12.509000: Ok, perfecto.
+
+[SPEAKER_01]
+0:06:12.549000 - 0:06:14.451000: Entonces, bueno, entonces sí.
+
+[SPEAKER_01]
+0:06:14.911000 - 0:06:22.698000: En este caso, estaba así, estaba quitándose los añitos, sí, señor.
+
+[SPEAKER_01]
+0:06:23.119000 - 0:06:26.141000: Déjeme registrarlo aquí nuevamente.
+
+[SPEAKER_01]
+0:06:28.363000 - 0:06:28.844000: Listo.
+
+[SPEAKER_01]
+0:06:29.958000 - 0:06:34.741000:  Eh, permítame, que ya estoy haciendo la actualización porque como me haya dicho que es del 82.
+
+[SPEAKER_00]
+0:06:34.781000 - 0:06:36.463000: Sí, sí, sí.
+
+[SPEAKER_01]
+0:06:36.503000 - 0:06:37.183000: Permítame.
+
+[SPEAKER_01]
+0:06:39.225000 - 0:06:39.645000: Ok.
+
+[SPEAKER_01]
+0:06:40.205000 - 0:06:46.530000: Pero, señor Bryan, entonces acá me dice, si es del 80, me dice que tiene 44 actualmente.
+
+[SPEAKER_01]
+0:06:47.250000 - 0:06:48.071000: Va a cumplir 45.
+
+[SPEAKER_00]
+0:06:48.631000 - 0:06:50.012000: Voy por 45 en diciembre, sí.
+
+[SPEAKER_01]
+0:06:50.352000 - 0:06:51.093000: Ok, perfecto.
+
+[SPEAKER_01]
+0:06:51.113000 - 0:06:51.973000: Entonces la edad correcta es 44.
+
+[SPEAKER_01]
+0:06:52.013000 - 0:06:52.113000: Listo.
+
+[SPEAKER_01]
+0:06:54.321000 - 0:06:54.981000:  Bueno, perfecto.
+
+[SPEAKER_01]
+0:06:55.001000 - 0:07:15.160000: Entonces, señor Bryan, quería también indicarle que adicionalmente, pues también HDS Group también le va a brindar a usted la oportunidad de poder contar al 100% con todos los gastos y servicios de previsión esencial para usted y para todas las personas que convivan con usted de forma permanente en su vivienda o por periodo superior o mes, sin importar cuántas personas vivan allí en casa, ni tampoco el parentesco.
+
+[SPEAKER_01]
+0:07:15.220000 - 0:07:18.563000: Único requisito allí, señor Bryan, es que estas personas que viven con usted en casa
+
+[SPEAKER_01]
+0:07:19.080000 - 0:07:22.822000:  Debe ser personas menores de 69 años de edad al momento de la toma del servicio.
+
+[SPEAKER_01]
+0:07:22.862000 - 0:07:25.103000: La edad de permanencia para todos será ilimitada.
+
+[SPEAKER_01]
+0:07:25.644000 - 0:07:28.545000: En este caso, ¿usted vive con cuántas personas hay en la casa, señor Bryan?
+
+[SPEAKER_00]
+0:07:29.866000 - 0:07:31.567000: Con mi esposo y dos niñas.
+
+[SPEAKER_01]
+0:07:31.647000 - 0:07:36.490000: Eh, o sea, serían dos, serían cuatro con usted, ¿cierto?
+
+[SPEAKER_01]
+0:07:37.250000 - 0:07:40.552000: Y bueno, o sea, quiere decir que todos son menores de 69, ¿verdad?
+
+[SPEAKER_01]
+0:07:40.612000 - 0:07:42.573000: Porque su esposa, ¿tiene cuántos?
+
+[SPEAKER_00]
+0:07:44.385000 - 0:07:45.605000:  Mi esposo tiene 37.
+
+[SPEAKER_01]
+0:07:45.825000 - 0:07:50.187000: Ah, bueno, todos están por debajo de los 69 años, entonces no hay ningún tipo de inconveniente.
+
+[SPEAKER_01]
+0:07:50.627000 - 0:08:08.171000: Señor Bryan, en este caso, pues, le recuerdo que la edad de permanencia dentro del servicio para ustedes cuatro es ilimitada y, pues, ustedes contarán con todos los servicios correspondientes a todo lo que es trasladado del cuerpo, transporte para los acompañantes, que más o menos hubiera destino final entre todos los servicios y complementan este plan al 100% listo.
+
+[SPEAKER_01]
+0:08:08.631000 - 0:08:10.892000: Hasta acá, mi señor Bryan, ¿le ha quedado clara la información?
+
+[SPEAKER_00]
+0:08:12.392000 - 0:08:12.552000: Sí.
+
+[SPEAKER_01]
+0:08:13.197000 - 0:08:21.501000:  Señor Bryan, aquí ya por último le voy a leer la Ley de Avialdata, que es la ley encargada de resguardar esta información para que estos datos no sean utilizados por otras personas.
+
+[SPEAKER_01]
+0:08:21.981000 - 0:08:30.665000: Entonces acá le confirmo, le leo, en cumplimiento de la Ley de Avialdata, señor Bryan, debemos contar con su autorización para hacer la protección y tratamiento de sus datos personales.
+
+[SPEAKER_01]
+0:08:31.005000 - 0:08:38.108000: Sus datos serían entregados a HDI Segura Aseguradora Domiciliaria de la Ciudad de Bogotá y solicitamos aprobación para su tratamiento con los siguientes fines.
+
+[SPEAKER_01]
+0:08:38.497000 - 0:08:53.022000:  Su vinculación como aseguradora y la de sus beneficiarios, control y prevención del fraude, gestión integral del contrato de seguros, estudios actuales y estadísticos, transferencia de la casa matriz, subsidiaria o filial del asegurador a la asociación, base de datos del gremio asegurador, asimismo, autorización.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:08:54.487000 - 0:08:57.629000:  Sí, qué pena, señor Bryan, se cayó la llamadita.
+
+[SPEAKER_01]
+0:08:58.690000 - 0:09:02.792000: Le estaba diciendo, señor Bryan, le estaba leyendo la ley de Avialdata, que es la ley que va a resguardar su información.
+
+[SPEAKER_01]
+0:09:02.832000 - 0:09:06.054000: Nuevamente le leo porque, pues, debo indicársela nuevamente.
+
+[SPEAKER_01]
+0:09:06.434000 - 0:09:13.579000: Señor Bryan, entonces le indico que en cumplimiento de la ley de Avialdata debemos contar con su autorización para hacer la protección y tratamiento de sus datos personales.
+
+[SPEAKER_01]
+0:09:13.919000 - 0:09:21.423000: Sus datos serían entregados a HDI Seguro Asegurador de Domiciliaria de la Ciudad de Bogotá y solicitamos su aprobación para su tratamiento con los siguientes fines.
+
+[SPEAKER_01]
+0:09:21.443000 - 0:09:23.845000: Su vinculación como aseguradora de sus beneficiarios, control...
+
+[SPEAKER_01]
+0:09:24.688000 - 0:09:45.012000:  y prevención del fraude, gestión integral del contrato de seguro, de todos los actuales y estadísticos, transferencia a la casa matriz, auxiliario filial, de la aseguradora a la asociación, bases de datos del gremio asegurador, asimismo, mi señor, autorizo a la aseguradora y a las entidades delegadas para la realización de actividad de mercado y cobranza y que le puedan contactar a usted por cualquier medio de comunicación que usted suministre.
+
+[SPEAKER_01]
+0:09:45.412000 - 0:09:47.592000: Lo anterior, señor Bryan, es conforme a la ley 2300 del 2023.
+
+[SPEAKER_01]
+0:09:47.852000 - 0:09:49.392000: ¿Correcto, mi señor?
+
+[SPEAKER_01]
+0:09:49.812000 - 0:09:50.132000: Correcto.
+
+[SPEAKER_01]
+0:09:52.513000 - 0:09:53.453000: ¿De acuerdo, señor Bryan?
+
+[SPEAKER_00]
+0:09:54.653000 - 0:09:55.313000:  De acuerdo.
+
+[SPEAKER_01]
+0:09:55.853000 - 0:09:59.374000: Señor Bryan, ¿su respuesta de acuerdo puede ser tomada como un sí por calidad?
+
+[SPEAKER_00]
+0:10:01.155000 - 0:10:01.395000: ¿Cómo?
+
+[SPEAKER_01]
+0:10:02.155000 - 0:10:05.976000: ¿Que su respuesta correcto puede ser tomada como un sí por calidad?
+
+[SPEAKER_00]
+0:10:07.136000 - 0:10:07.736000: Sí.
+
+[SPEAKER_01]
+0:10:07.816000 - 0:10:13.698000: Ok, señor Bryan, aquí le voy a indicar unos números telefónicos y las políticas de tratamiento que se las voy a enviar a su correo.
+
+[SPEAKER_01]
+0:10:14.098000 - 0:10:22.880000: Declaro usted que ha sido informado con nuestras políticas de tratamiento y las condiciones generales de su producto futuro protegido por protecciones psiquiátricas que las va a poder consultar en nuestra página web.
+
+[SPEAKER_01]
+0:10:23.414000 - 0:10:26.376000:  Sus solicitudes van a ser atendidas a través de la línea fija en Bogotá, 601-307-7050.
+
+[SPEAKER_01]
+0:10:26.396000 - 0:10:30.880000: Al resto del país podrá comunicarse al 018-113-390, al WhatsApp 316-482-1802 o puede ingresar directamente en la página web en la opción Contáctanos.
+
+[SPEAKER_01]
+0:10:30.900000 - 0:10:31.400000: ¿Correcto, mi señor?
+
+[SPEAKER_01]
+0:10:31.420000 - 0:10:31.540000: Bueno.
+
+[SPEAKER_01]
+0:10:31.560000 - 0:10:31.720000: ¿Correcto?
+
+[SPEAKER_01]
+0:10:31.740000 - 0:10:31.780000: Sí.
+
+[SPEAKER_01]
+0:10:31.840000 - 0:10:34.662000: Señor Bryan, en este caso, a ver, le he brindado a usted toda esta información correspondiente.
+
+[SPEAKER_01]
+0:10:52.034000 - 0:11:10.241000:  Y en base, pues, a estas protecciones, en este caso, mi señor Brian acepta el producto, autoriza a generar el valor mensual de $19,100 de la protección Ezequiel, $15,750 de la póliza Futuro Protegido Plus en su factura del gas natural a favor de HD y seguros que serían reflejados mensualmente a partir del siguiente ciclo de facturación y se renovarían automáticamente.
+
+[SPEAKER_01]
+0:11:11.401000 - 0:11:15.903000: Dígame, pasada la audiencia.
+
+[SPEAKER_00]
+0:11:15.943000 - 0:11:16.243000: Dígame.
+
+[SPEAKER_01]
+0:11:17.097000 - 0:11:23.741000:  En este caso, señor Bryan, acá la protección estequial tendría un aporte mínimo de 19,100 pesos y el futuro protegido sería en 15,750.
+
+[SPEAKER_01]
+0:11:23.781000 - 0:11:24.122000: Eso sería... Dígame.
+
+[SPEAKER_01]
+0:11:24.142000 - 0:11:25.062000: Serían las dos cosas.
+
+[SPEAKER_01]
+0:11:25.683000 - 0:11:31.967000: Sí, serían las dos cosas.
+
+[SPEAKER_01]
+0:11:32.067000 - 0:11:36.330000: Se las doy por separado para que así le pueda quedar claro a usted.
+
+[SPEAKER_01]
+0:11:36.770000 - 0:11:44.155000: Pero entonces, en este caso serían acá, permítame, 19,100 pesos del futuro protegido plus y en este caso serían 15,750 de la
+
+[SPEAKER_01]
+0:11:48.018000 - 0:11:48.538000:  serían 34.850 pesos.
+
+[SPEAKER_01]
+0:11:48.578000 - 0:11:56.243000: Pero en este momento... Dígame.
+
+[SPEAKER_01]
+0:11:56.263000 - 0:12:11.874000: En este momento usted no se le va a generar este cargo porque inicialmente por usted ya ser usuario activo de la compañía de gases de la Guajira, a usted se le va a brindar un tiempo suficiente para que así usted pueda organizarse económicamente hasta su siguiente ciclo de facturación y de esta manera usted pueda estar mucho más organizado y pueda contar con las protecciones, ¿correcto?
+
+[SPEAKER_00]
+0:12:11.914000 - 0:12:13.735000: Pues el siguiente ciclo de facturación es el otro mes.
+
+[SPEAKER_01]
+0:12:14.728000 - 0:12:26.217000:  Bueno, en este caso habría que esperar el corte de la facturación porque para unos usuarios, señor Bryan, la compañía le da dos meses, para otros un mes, dependiendo cómo sea el corte, así le vendría reflejado, listo.
+
+[SPEAKER_00]
+0:12:26.237000 - 0:12:29.600000: Y otra cosa, ¿me puedo retirar cuando yo quiera?
+
+[SPEAKER_01]
+0:12:29.620000 - 0:12:37.426000: No tiene cláusula de permanencia, puede hacerlo usted cuando quiera, pero lo ideal, señor Bryan, es que usted pueda fidelizar con la compañía y pueda estar respaldado el tiempo que usted lo requiera, listo.
+
+[SPEAKER_00]
+0:12:38.928000 - 0:12:39.388000: Vale, gracias.
+
+[SPEAKER_01]
+0:12:39.759000 - 0:12:44.681000:  En este caso, señor Bryan, pues, habiéndole brindar esta información correspondiente en base a las protecciones.
+
+[SPEAKER_01]
+0:12:45.361000 - 0:12:53.325000: Entonces, en este caso, señor Bryan, acepto usted el producto, utilizada en general, valor mensual de $19,100 por la protección esencial, $15,750 por el futuro protegido plus, en su factura natural.
+
+[SPEAKER_01]
+0:12:53.345000 - 0:13:00.928000: ¿Tienen que ser los dos o no puedo coger uno solo?
+
+[SPEAKER_01]
+0:13:00.948000 - 0:13:06.510000: Sí, señor Bryan, como ustedes saben, también puede, si quiere, adquirir uno solo y después adquiere el otro, pero...
+
+[SPEAKER_01]
+0:13:07.060000 - 0:13:10.663000:  En este caso, para que aproveche la oportunidad, mire que en este momento no se le va a generar el cargo.
+
+[SPEAKER_01]
+0:13:10.703000 - 0:13:11.904000: Inicialmente no lo tiene que pagar.
+
+[SPEAKER_00]
+0:13:12.064000 - 0:13:16.428000: No, no estoy atendiendo, pero si no que yo ya tengo exequial y yo tengo.
+
+[SPEAKER_01]
+0:13:16.548000 - 0:13:17.229000: Ah, ok, comprendo.
+
+[SPEAKER_01]
+0:13:18.430000 - 0:13:21.953000: Aunque no habría ningún tipo de inconveniente, señor Bryan, porque son con compañías diferentes.
+
+[SPEAKER_01]
+0:13:21.973000 - 0:13:24.655000: Y pues siempre... Sí, pero... Sí.
+
+[SPEAKER_00]
+0:13:24.915000 - 0:13:27.697000: O sea, el otro sí me interesa, lo de exequial no.
+
+[SPEAKER_01]
+0:13:28.238000 - 0:13:29.879000: Ah, bueno, entonces, bueno, listo.
+
+[SPEAKER_01]
+0:13:29.899000 - 0:13:30.480000: Entonces acá...
+
+[SPEAKER_01]
+0:13:31.147000 - 0:13:40.976000:  le hacemos recordar y que entonces usted contaría con el futuro protegido plus, que le va a cubrir contra la serie de enfermedades graves, invalidez laboral, en caso de que usted llegue a padecer cualquiera de esas.
+
+[SPEAKER_01]
+0:13:41.517000 - 0:13:52.947000: Entonces, pues son 15 millones de pesos que va a recibir y tiene un aporte económico de 15,750 pesos que se van a ver reflejados en su factura al gas natural a partir del próximo ciclo de facturación listo.
+
+[SPEAKER_01]
+0:13:53.448000 - 0:13:57.051000: Entonces, aquí voy a confirmarle nuevamente, entonces la ley de avias data,
+
+[SPEAKER_01]
+0:13:57.685000 - 0:14:02.888000:  En cumplimiento de la ley de data, mi señor, debemos contar con su autorización para hacer protección y tratamiento de sus datos personales.
+
+[SPEAKER_01]
+0:14:03.308000 - 0:14:10.572000: Sus datos serán entregados a HDI Seguro Aseguradora Domiciliaria de la Ciudad de Bogotá y solicitamos aprobación para su tratamiento con los siguientes fines.
+
+[SPEAKER_01]
+0:14:10.612000 - 0:14:23.619000: Su vinculación como asegurado y la de sus beneficiarios, control y prevención del fraude, gestión integral del contrato de seguro, estudios arteriales y estadísticos, transferencia a la casa matriz, subsidiario filial del asegurador a la asociación, bases de datos del gremio asegurador,
+
+[SPEAKER_01]
+0:14:24.129000 - 0:14:36.652000:  Asimismo, señor Bryan, autorizo a usted a la aseguradora de las entidades delegadas para la realización de actividades de mercadeo y cobranza y que le puedan contactar a usted por cualquier medio de comunicación que usted suministre en lo anterior conforme a la ley 2300 del 2023, ¿correcto?
+
+[SPEAKER_01]
+0:14:36.712000 - 0:14:37.112000: ¿Correcto?
+
+[SPEAKER_01]
+0:14:39.653000 - 0:14:42.013000: Sí.
+
+[SPEAKER_01]
+0:14:42.053000 - 0:14:47.174000: Señor Bryan, en este caso, nuevamente le indico las políticas de tratamiento y los números de teléfono.
+
+[SPEAKER_01]
+0:14:47.214000 - 0:14:49.735000: Declaro a usted que se le ha informado con nuestras políticas de tratamiento.
+
+[SPEAKER_01]
+0:14:50.174000 - 0:14:55.237000:  y las condiciones generales de su póliza Futuro Protegido Plus, usted las va a poder consultar en la página web.
+
+[SPEAKER_01]
+0:14:55.617000 - 0:15:02.281000: Sus solicitudes van a ser atendidas a través de la línea FIJ en Bogotá, 601-307-7050, al resto del país al 018-113-390, al WhatsApp 316-482-1802, o directamente en la página web en la opción Contáctanos, ¿correcto?
+
+[SPEAKER_01]
+0:15:02.301000 - 0:15:02.541000: Correcto.
+
+[SPEAKER_01]
+0:15:02.621000 - 0:15:02.922000: ¿Correcto?
+
+[SPEAKER_01]
+0:15:02.982000 - 0:15:03.522000: ¿Correcto, señor Bryan?
+
+[SPEAKER_01]
+0:15:03.542000 - 0:15:03.582000: Sí.
+
+[SPEAKER_01]
+0:15:17.584000 - 0:15:44.523000:  Señor Bryan, bueno, en este caso, habiéndole brindado a usted esa información correspondiente y en base a su protección, acepte el producto autorizado a generar el valor mensual de $15,750 de su póliza futuro protegido, pues en su factura del GAN natural, a favor de HDI seguros que serían declarados mensualmente a partir del siguiente ciclo de facturación y se renovarían automáticamente pasada la vigencia de 12 meses, con un incremento mínimo en el valor asegurado de acuerdo a la IPC hasta que usted como usuario tome la decisión de retirarse del programa, ¿correcto?
+
+[SPEAKER_01]
+0:15:44.923000 - 0:15:45.603000: Vale, vale.
+
+[SPEAKER_01]
+0:15:45.643000 - 0:15:46.024000: ¿Correcto?
+
+[SPEAKER_01]
+0:15:46.064000 - 0:15:46.164000: Sí, sí.
+
+[SPEAKER_01]
+0:15:46.971000 - 0:16:00.483000:  Bueno, señor Bryan, entonces en este caso a su correo electrónico le daré el envío de toda la información correspondiente a la protección adquirida junto con las condiciones generales del servicio y todas las líneas de asistencia para que usted pueda comunicarse para cualquier información.
+
+[SPEAKER_01]
+0:16:01.024000 - 0:16:05.908000: Muchas gracias, señor Bryan, por haber confiado en la compañía de HDI Seguro y Gases de la Guajira para su protección.
+
+[SPEAKER_01]
+0:16:05.948000 - 0:16:07.389000: Que tenga usted un excelente día.
+
+[SPEAKER_01]
+0:16:07.429000 - 0:16:07.990000: Hasta luego.
+
+[SPEAKER_00]
+0:16:08.951000 - 0:16:09.351000: Hasta luego.

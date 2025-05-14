@@ -1,0 +1,61 @@
+**REPORTE DE VENTA**
+
+Calificación final: **VENTA [POSITIVA]**
+
+Resumen de la llamada e interacción asesor-cliente:
+La llamada se centró en la promoción de una póliza de seguro denominada Prastisegura por parte del asesor. El cliente, inicialmente con dudas sobre el cobro y el monto, finalizó aceptando la propuesta después de recibir explicaciones detalladas del proceso de facturación.
+
+Valores y montos mencionados:
+- Monto mensual: **25,360** pesos
+- Indemnización asegurada: **17,200,873** pesos
+
+Nombre de la gasera: Gases del Caribe
+
+Registro cronológico de objeciones y resoluciones:
+
+| Objetión                                             | Resolución                                                                                         |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ¿Cuándo se reflejará el cobro en mi factura?         | El asesor explicó que no habrá ningún cobro hasta el próximo ciclo de facturación.                 |
+| ¿Es correcto el monto mensual?                        | El asesor confirmó el monto mensual de 25,360 pesos.                                              |
+
+Aceptaciones y rechazos detectados:
+- Aceptada la póliza Prastisegura por un valor mensual de **25,360** pesos.
+- No se registraron rechazos.
+
+Respuestas del cliente sobre datos personales, términos, habeas data, cobro y aceptación:
+
+| Tema                         | Respuesta                                                                                     |
+|------------------------------|-----------------------------------------------------------------------------------------------|
+| Datos personales             | Aceptó la validación de los datos suministrados.                                               |
+| Términos del servicio        | No se registraron preguntas específicas sobre términos, pero aceptó la información proporcionada. |
+| Habeas data                  | No hubo consultas relacionadas con el habeas data.                                             |
+| Cobro                        | Aceptó después de entender que no habría cobros hasta su próximo ciclo de facturación.         |
+| Aceptación final             | Confirmó explícitamente la aceptación del producto.                                            |
+
+Cumplimiento de puntos críticos:
+- El cliente confirmó explícitamente la aceptación final post-objeciones.
+- El asesor explicó claramente el proceso de facturación y los términos de renovación.
+
+Confirmación explícita de permanencia en línea para planes practiseguro/salvafactura:
+El cliente confirmó que se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC, hasta que exprese su decisión de retirarse del programa.
+
+Registro de interacciones bilaterales asesor-usuario:
+
+| Interacción                                           | Respuesta                                                                                         |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Cobro                                                 | El cliente aceptó después de entender que no habrá cobros inmediatos.                             |
+| Validez                                               | Confirmó los datos personales suministrados.                                                       |
+
+Verificación de "sí" explícito final al cobro:
+El cliente confirmó el monto mensual de **25,360** pesos y aceptó que se reflejará en su próxima factura.
+
+Justificación de calificación:
+La llamada resultó en una venta positiva ya que el cliente aceptó la propuesta después de recibir todas las explicaciones necesarias sobre los términos del servicio y el proceso de facturación. No hubo rechazos significativos, y todas las objeciones fueron resueltas satisfactoriamente.
+
+Observaciones adicionales:
+- El asesor fue eficaz al manejar las inquietudes del cliente acerca del cobro y los detalles financieros.
+- La comunicación fue clara y precisa durante toda la conversación.
+
+---
+**Fecha de reporte:** [Fecha actual]
+**ID de llamada:** [ID proporcionado por el sistema]

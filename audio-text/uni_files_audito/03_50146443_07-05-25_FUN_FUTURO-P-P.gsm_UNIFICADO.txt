@@ -1,0 +1,523 @@
+
+[SPEAKER_01]
+0:00:00.773000 - 0:00:01.213000:  Buenos días.
+
+[SPEAKER_00]
+0:00:01.233000 - 0:00:03.515000: Buenos días.
+
+[SPEAKER_01]
+0:00:03.535000 - 0:00:05.616000: Por favor, me comunica con la señora Yely Karina.
+
+[SPEAKER_00]
+0:00:06.537000 - 0:00:07.037000: Sí, señora.
+
+[SPEAKER_00]
+0:00:07.158000 - 0:00:08.218000: ¿Cómo ella habla?
+
+[SPEAKER_01]
+0:00:08.238000 - 0:00:09.639000: Señora Yely, escucho saludarla.
+
+[SPEAKER_01]
+0:00:09.699000 - 0:00:13.882000: Le habla aquí del CIRREYA, representante de la compañía de gases de la Guajiri HD y Seguros.
+
+[SPEAKER_01]
+0:00:13.942000 - 0:00:15.223000: ¿Cómo se encuentra en el día de hoy?
+
+[SPEAKER_01]
+0:00:15.403000 - 0:00:16.104000: ¿Cómo me le va?
+
+[SPEAKER_00]
+0:00:16.724000 - 0:00:17.565000: Bien, gracias.
+
+[SPEAKER_01]
+0:00:18.085000 - 0:00:19.446000: Excelente, me alegra mucho.
+
+[SPEAKER_01]
+0:00:19.786000 - 0:00:24.610000: Señora Yely, yo le contanto porque necesito acá conversar con usted referente a su servicio de gas natural.
+
+[SPEAKER_01]
+0:00:25.312000 - 0:00:33.674000:  Acá el sistema me registra, mi señora, que su servicio de gas se encuentra activo en la calle 3, número 322, en el ático La Guajira Estrato 1, ¿correcto?
+
+[SPEAKER_00]
+0:00:34.295000 - 0:00:35.875000: Sí, señora.
+
+[SPEAKER_01]
+0:00:35.935000 - 0:00:39.976000: Quisiera saber, señora Yelly, ¿cómo me le terminó de ir a usted con el servicio en ese último mes?
+
+[SPEAKER_01]
+0:00:40.016000 - 0:00:41.517000: ¿Presentó algún tipo de inconveniente?
+
+[SPEAKER_00]
+0:00:42.457000 - 0:00:46.038000: Bueno, como siempre, eso nos atrasamos de pago.
+
+[SPEAKER_00]
+0:00:46.518000 - 0:00:49.179000: La mami me lo corta, me pongo el número 1 y ya.
+
+[SPEAKER_01]
+0:00:52.802000 - 0:00:55.103000:  Pero en este momento está normal, puntual.
+
+[SPEAKER_00]
+0:00:55.763000 - 0:00:57.843000: Sí, señora, gracias a Dios.
+
+[SPEAKER_01]
+0:00:58.023000 - 0:01:00.084000: Ok, perfecto, que es lo más importante, señora Yelly.
+
+[SPEAKER_01]
+0:01:00.564000 - 0:01:03.965000: ¿Directamente usted es la persona responsable de los pagos de la factura del gas natural?
+
+[SPEAKER_00]
+0:01:03.985000 - 0:01:05.806000: Sí, yo soy.
+
+[SPEAKER_01]
+0:01:05.826000 - 0:01:14.549000: Correcto, aquí le hago la pregunta, señora Yelly, porque quiero que usted sepa que seguimos trabajando, sí, señora, para mejorar y que usted pueda contar con el mejor de los servicios, pero también, señora Yelly,
+
+[SPEAKER_01]
+0:01:15.048000 - 0:01:17.850000:  Aquí estamos trabajando por velar por el bienestar de nuestros usuarios.
+
+[SPEAKER_01]
+0:01:17.870000 - 0:01:22.892000: En el día de hoy, gracias a la UAHDH, seguro ustedes están permitiendo contar con un respaldo económico.
+
+[SPEAKER_01]
+0:01:23.172000 - 0:01:25.834000: Ese respaldo económico es de 15 millones de pesos.
+
+[SPEAKER_01]
+0:01:26.194000 - 0:01:29.335000: Ese es un dinero, señora Yely, que se encuentra aquí disponible en la compañía.
+
+[SPEAKER_01]
+0:01:29.355000 - 0:01:44.063000: Usted lo va a poder utilizar en caso de que usted se me llegue a enfermar y llegue a ser diagnosticada con alguna de las enfermedades graves más comunes, ya sea lo que es un infarto al miocardio, cáncer invasivo, accidente cerebrovascular, insuficiencia renal.
+
+[SPEAKER_01]
+0:01:44.681000 - 0:01:47.403000:  esclerosis múltiple o alguna cirugía de arterias coronarias.
+
+[SPEAKER_01]
+0:01:47.883000 - 0:02:00.172000: Esas son, señora Yelly, básicamente las enfermedades que en estos momentos están afectando la calidad de vida de las personas, y no solo eso, mi señora, sino que también le están generando una serie de gastos para los cuales muchas veces las personas no estamos preparadas, ¿cierto?
+
+[SPEAKER_01]
+0:02:00.252000 - 0:02:01.273000: Sí, señora.
+
+[SPEAKER_01]
+0:02:01.333000 - 0:02:13.342000: O en efecto, señora Yelly, si usted lo que llega a padecer es una lesión orgánica en su cuerpo o alguna alteración funcional que le generen o sea una pérdida de la capacidad laboral, igual o superior al 50%, usted también va a poder contar con esta protección.
+
+[SPEAKER_01]
+0:02:13.833000 - 0:02:20.122000:  Como único requisito aquí, señora Yelly, es que usted sea persona menor de 66 años de edad con permanencia hasta los 70.
+
+[SPEAKER_01]
+0:02:20.182000 - 0:02:23.887000: ¿Usted tiene cuántos añitos?
+
+[SPEAKER_01]
+0:02:23.967000 - 0:02:24.247000: 48 años.
+
+[SPEAKER_01]
+0:02:24.267000 - 0:02:24.488000: 48 años.
+
+[SPEAKER_01]
+0:02:24.548000 - 0:02:30.356000: Es decir, señora Yelly, que usted se encuentra dentro de la edad requerida, para lo cual no habría ningún tipo de inconveniente.
+
+[SPEAKER_01]
+0:02:30.756000 - 0:02:40.590000: En este caso, señora Yelly, yo quiero recordarle que usted va a poder hacer reclamación de este dinero por un solo evento y le va a comenzar a cubrir después del día 60 por todas las enfermedades graves no diagnosticadas
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:02:41.921000 - 0:02:45.143000:  Sí, señora Ayeli, qué pena se cayó la llamada.
+
+[SPEAKER_01]
+0:02:45.883000 - 0:02:59.688000: Sí, le decía a señora Ayeli que le estoy recordando que se va a poder hacer reclamación de este dinero por un solo evento y le va a comenzar a cubrir después del día 60 por todas las enfermedades graves no diagnosticadas que yo le acabé de indicar anteriormente.
+
+[SPEAKER_01]
+0:02:59.708000 - 0:03:00.048000: Listo.
+
+[SPEAKER_01]
+0:03:00.552000 - 0:03:02.992000:  Hasta aquí, señora Yelly, la información.
+
+[SPEAKER_02]
+0:03:04.213000 - 0:03:06.533000: Igualmente, gracias por la información.
+
+[SPEAKER_01]
+0:03:06.573000 - 0:03:08.794000: Señora Yelly, ¿a usted le ha quedado clara la información hasta aquí?
+
+[SPEAKER_02]
+0:03:10.074000 - 0:03:11.194000: Sí, señora, sí.
+
+[SPEAKER_01]
+0:03:12.094000 - 0:03:17.195000: Una pregunta, señora Yelly, ¿se sufre o ha sufrido alguna de las enfermedades que yo le mencioné?
+
+[SPEAKER_02]
+0:03:18.435000 - 0:03:25.997000: Bueno, a mí supuestamente no me han confirmado, pero sí he tenido problemas de, este, alias.
+
+[SPEAKER_02]
+0:03:27.213000 - 0:03:29.475000:  Sí, señora.
+
+[SPEAKER_02]
+0:03:29.795000 - 0:03:42.984000: Llego, le voy a hacer una operación, la cual ya no me han confirmado, pero es como, la ETS pone mucho sebo, va a dar una autorización de mioma y quiste.
+
+[SPEAKER_01]
+0:03:43.824000 - 0:03:45.405000: La van a operar de mioma y quiste.
+
+[SPEAKER_02]
+0:03:46.186000 - 0:03:46.886000: Sí, señora.
+
+[SPEAKER_02]
+0:03:46.986000 - 0:03:49.048000: Eso puede estar demorado, eso no es ahora.
+
+[SPEAKER_01]
+0:03:49.148000 - 0:03:50.409000: ¿Y la taticardia por qué le da?
+
+[SPEAKER_02]
+0:03:51.831000 - 0:03:56.072000:  Este, por mi estrés, por mi pasión, le digo el lente.
+
+[SPEAKER_01]
+0:03:56.132000 - 0:04:00.673000: Ah, sí, pero no le han diagnosticado ninguna de las enfermedades de cardíaca, nada de eso.
+
+[SPEAKER_02]
+0:04:01.513000 - 0:04:03.334000: No, gracias a Dios, por ahora no.
+
+[SPEAKER_01]
+0:04:03.354000 - 0:04:05.314000: Sí, verás que yo le mencioné ninguna, listo.
+
+[SPEAKER_01]
+0:04:05.374000 - 0:04:10.235000: Entonces, en este caso, señora Yely, ¿y tiene alguna anomalía física, deformidad congénita o amputación?
+
+[SPEAKER_02]
+0:04:11.775000 - 0:04:14.916000: No, yo le voy a decir, daño de olido.
+
+[SPEAKER_02]
+0:04:14.936000 - 0:04:15.056000: Ok.
+
+[SPEAKER_02]
+0:04:15.116000 - 0:04:15.856000: Para hablar, sí.
+
+[SPEAKER_01]
+0:04:16.536000 - 0:04:18.677000: Ok, por eso es una anomalía física.
+
+[SPEAKER_01]
+0:04:19.587000 - 0:04:21.370000:  entraría ahí en la pata anomalía física.
+
+[SPEAKER_01]
+0:04:21.390000 - 0:04:22.431000: ¿Y cirugía?
+
+[SPEAKER_01]
+0:04:22.511000 - 0:04:24.394000: ¿Tiene alguna pendiente o la han practicado alguno?
+
+[SPEAKER_01]
+0:04:24.414000 - 0:04:26.597000: Usted me dijo que la van a operar de que de mioma y quiste.
+
+[SPEAKER_02]
+0:04:27.678000 - 0:04:28.920000: Esa, esa es la única.
+
+[SPEAKER_02]
+0:04:29.340000 - 0:04:31.984000: Si yo le he hecho mal, es que no.
+
+[SPEAKER_01]
+0:04:32.004000 - 0:04:32.765000: Ah, ¿y ya la han operado?
+
+[SPEAKER_02]
+0:04:32.785000 - 0:04:35.588000: Y el adiós del polino.
+
+[SPEAKER_01]
+0:04:35.608000 - 0:04:37.311000: Solamente el adiós del polino la han operado.
+
+[SPEAKER_02]
+0:04:38.240000 - 0:04:40.702000:  Sí, y para no tener más hijos.
+
+[SPEAKER_01]
+0:04:40.822000 - 0:04:43.524000: Ah, ok, el pomeroin, esa es la desconexión.
+
+[SPEAKER_01]
+0:04:43.544000 - 0:04:44.125000: Sí.
+
+[SPEAKER_01]
+0:04:44.365000 - 0:04:45.006000: Ok, perfecto.
+
+[SPEAKER_02]
+0:04:45.026000 - 0:04:45.967000: Sí, señora.
+
+[SPEAKER_01]
+0:04:45.987000 - 0:04:48.849000: Ok, bueno, en este caso, señora Geli, no hay ningún tipo de inconveniente.
+
+[SPEAKER_01]
+0:04:48.869000 - 0:05:02.160000: De todas maneras, dejamos la salvedad que si a causa de esta taficardia que usted padece o de estas operaciones que le han realizado del labio leporino o de la operación que tiene pendiente de los quistes y miomas, si por cualquier motivo...
+
+[SPEAKER_01]
+0:05:03.507000 - 0:05:09.068000:  ¿Usted llega a desarrollar cualquiera de las enfermedades mencionadas por estos tipos de inconvenientes que usted me dice que presenta?
+
+[SPEAKER_01]
+0:05:10.308000 - 0:05:16.609000: Si usted llega a desarrollar alguna de las enfermedades que yo le indique, pues no podría contar con el amparo y la compañía no será responsable por el par de reclamación presentada.
+
+[SPEAKER_01]
+0:05:16.669000 - 0:05:26.951000: Se le van a estar cubriendo por cualquiera de las enfermedades que yo le indique, pero que usted me las llegue a padecer a futuro por cualquier condición diferente a todas estas que usted me ha indicado de las cuales padece usted.
+
+[SPEAKER_01]
+0:05:27.491000 - 0:05:32.812000: En este caso, señora Yely, esta es una llamada que es grabada y monitoreada para garantizarle a usted la calidad de nuestro buen servicio.
+
+[SPEAKER_01]
+0:05:33.365000 - 0:05:39.529000:  Usted como usuario activo de la compañía, señora Yelly, usted tiene derecho a conocer la información que yo tengo registrada aquí en el sistema.
+
+[SPEAKER_01]
+0:05:39.569000 - 0:05:44.653000: Yo se la voy a indicar para que a usted le quede constancia, señora Yelly, de que todos los datos están correctos, listo.
+
+[SPEAKER_01]
+0:05:45.153000 - 0:05:55.040000: Entonces aquí le voy a indicar, aquí le confirmo que la información se le ha brindado a la señora Yelly Carina Zajau Martínez, correcto.
+
+[SPEAKER_01]
+0:05:55.060000 - 0:05:59.263000: Confirmamos que la señora Yelly se encuentra identificada con nombre de documento 56059252, cédula colombiana, correcto.
+
+[SPEAKER_02]
+0:06:02.770000 - 0:06:03.931000:  Exactamente.
+
+[SPEAKER_01]
+0:06:04.011000 - 0:06:10.376000: Señora Yelly, aquí le voy a confirmar el número de suscripción de su factura Alga Natural, con la cual su factura se encuentra registrada aquí en la compañía.
+
+[SPEAKER_01]
+0:06:10.396000 - 0:06:19.522000: Ese número es 5014-6443, en el ático La Guajira, en la calle 3, número 322, estrato 1, ¿correcto?
+
+[SPEAKER_02]
+0:06:19.542000 - 0:06:21.624000: Sí, señora.
+
+[SPEAKER_01]
+0:06:21.664000 - 0:06:24.446000: Señora Yelly, usted utiliza correo electrónico.
+
+[SPEAKER_02]
+0:06:25.667000 - 0:06:25.827000: No.
+
+[SPEAKER_01]
+0:06:26.187000 - 0:06:27.568000: No quiere, ok.
+
+[SPEAKER_01]
+0:06:27.668000 - 0:06:30.050000: Y usted, ¿cuándo cumple años, señora Yelly?
+
+[SPEAKER_01]
+0:06:30.110000 - 0:06:31.331000: ¿Cuál es su fecha de nacimiento?
+
+[SPEAKER_02]
+0:06:32.571000 - 0:06:35.033000:  El 27 de enero.
+
+[SPEAKER_02]
+0:06:35.053000 - 0:06:40.237000: ¿27 de enero de qué año?
+
+[SPEAKER_01]
+0:06:40.317000 - 0:06:41.198000: Sí, de 1977.
+
+[Speaker]
+0:06:41.238000 - 0:06:41.198000: 1977.
+
+[SPEAKER_01]
+0:06:41.719000 - 0:06:46.963000: De casualidad, señora Yele, ¿usted se acuerda de la fecha de expedición de su cédula, el día que usted la sacó?
+
+[SPEAKER_01]
+0:06:46.983000 - 0:06:48.704000: Si usted se acuerda, me la puede indicar.
+
+[SPEAKER_02]
+0:06:49.865000 - 0:06:52.768000: El 24 de enero.
+
+[SPEAKER_01]
+0:06:52.788000 - 0:06:53.689000: ¿29 de enero de qué año?
+
+[SPEAKER_02]
+0:06:53.709000 - 0:06:54.910000: 24, 24 de enero del 2000.
+
+[SPEAKER_02]
+0:06:55.030000 - 0:06:56.131000: 24 de enero del 2000, listo.
+
+[SPEAKER_02]
+0:06:56.151000 - 0:06:56.491000: 2001, por ahí está.
+
+[SPEAKER_02]
+0:07:02.770000 - 0:07:05.574000:  ¿2000 o 2001?
+
+[Speaker]
+0:07:05.815000 - 0:07:05.574000: 2001.
+
+[SPEAKER_01]
+0:07:06.035000 - 0:07:06.436000: 2001, listo.
+
+[SPEAKER_01]
+0:07:06.836000 - 0:07:18.493000: Señora Yelly, esta información que hemos confirmado, estos datos, declara usted que la información suministrada toda es real y las actividades a las que usted se dedica son normales y todo se encuentra entre los marcos legales, ¿correcto?
+
+[SPEAKER_02]
+0:07:19.382000 - 0:07:19.702000:  Sí, señora.
+
+[SPEAKER_02]
+0:07:19.722000 - 0:07:20.383000: Sí, señora.
+
+[SPEAKER_01]
+0:07:20.443000 - 0:07:37.872000: Señora Yelly, en este caso adicionalmente también HDI seguro le va a brindar a usted la oportunidad de contar al 100% con todos los gastos y servicios de previsiones que hay para usted y para todas las personas que convivan con usted de forma permanente en su vivienda o por periodo superior o mes, sin importar cuántas personas viven allí en casa con usted ni tampoco el parentesco.
+
+[SPEAKER_01]
+0:07:37.912000 - 0:07:48.298000: El único requisito, señora Yelly, es que todas estas personas que viven allí con usted deben ser personas menores de 69 años de edad al momento de la toma del servicio y la edad de permanencia para todos va a ser ilimitada.
+
+[SPEAKER_01]
+0:07:48.763000 - 0:07:50.744000:  ¿Usted vive con cuántas personas allí, señora Yelly?
+
+[SPEAKER_02]
+0:07:51.985000 - 0:07:55.587000: Vivimos con siete.
+
+[SPEAKER_01]
+0:07:55.607000 - 0:07:56.307000: ¿Siete con usted?
+
+[SPEAKER_02]
+0:07:57.548000 - 0:07:58.128000: Sí, señora.
+
+[SPEAKER_01]
+0:07:58.648000 - 0:08:03.571000: Y de estas siete personas que viven allí, señora Yelly, ¿con usted en casa hay alguna que sea mayor de 69 años?
+
+[SPEAKER_01]
+0:08:03.611000 - 0:08:03.811000: No.
+
+[SPEAKER_01]
+0:08:04.511000 - 0:08:05.572000: ¿O todos están por debajo?
+
+[SPEAKER_02]
+0:08:06.412000 - 0:08:06.492000: No.
+
+[SPEAKER_02]
+0:08:06.512000 - 0:08:07.693000: Exactamente.
+
+[SPEAKER_01]
+0:08:07.713000 - 0:08:08.173000: Ok, perfecto.
+
+[SPEAKER_01]
+0:08:08.193000 - 0:08:11.535000: En este caso, señora Yelly, ¿no hay ningún tipo de inconveniente?
+
+[SPEAKER_01]
+0:08:11.675000 - 0:08:15.497000: ¿Se le recuerda que la edad de permanencia para estas siete personas que viven allí es ilimitada?
+
+[SPEAKER_01]
+0:08:16.010000 - 0:08:26.797000:  Y todos van a contar con todos los servicios correspondientes a todo lo que es traslado del cuerpo, transporte para los acompañantes, cremación o bóveda, destino final, entre todos los servicios que complementan este plan al 100% listo.
+
+[SPEAKER_01]
+0:08:27.237000 - 0:08:29.538000: Hasta acá, mi señora Yeri, ¿le ha quedado clara la información?
+
+[SPEAKER_01]
+0:08:31.260000 - 0:08:32.540000: Sí, señora, muy bien.
+
+[SPEAKER_01]
+0:08:32.560000 - 0:08:43.307000: Ok, señora Yeri, aquí ya para ir concluyendo, por último le voy a leer ya la ley de data, que es la ley encargada de resguardar su información para que sus datos queden protegidos y no sean utilizados por otras personas.
+
+[SPEAKER_01]
+0:08:43.707000 - 0:08:44.748000: Entonces, acá le voy a leer.
+
+[SPEAKER_01]
+0:08:45.298000 - 0:08:50.819000:  En cumplimiento de la Ley Avia Data, debemos contar con su autorización para hacer tratamiento y protección de sus datos personales.
+
+[SPEAKER_01]
+0:08:51.159000 - 0:08:58.961000: Sus datos, señora Jerry, serán entregados a HDI Seguridad Aseguradora Domiciliaria de la Ciudad de Bogotá y solicitamos su aprobación para su tratamiento con los siguientes fines.
+
+[SPEAKER_01]
+0:08:59.321000 - 0:09:10.884000: Su vinculación como aseguradora de sus beneficiarios, control y prevención del fraude, gestión integral del contrato de salud, estudios actuales y estadísticos, transferencia a la casa matriz, subsidiaria filial de la aseguradora de la asociación,
+
+[SPEAKER_01]
+0:09:11.357000 - 0:09:22.422000:  Bases de datos del gremio asegurador, así mismo, señora Yelly, autoriza a la aseguradora y a las entidades delegadas para la realización de actividad de mercado y cobranza y que le puedan contactar a usted por cualquier medio de comunicación que usted suministre.
+
+[SPEAKER_01]
+0:09:22.742000 - 0:09:25.704000: Lo anterior, mi señora, es conforme a la ley 23.0 del 2023, ¿correcto, mi señora?
+
+[SPEAKER_01]
+0:09:25.724000 - 0:09:26.824000: Sí, señora, correcto.
+
+[SPEAKER_01]
+0:09:26.884000 - 0:09:35.208000: Señora Yelly, acá también dejamos confirmado que se encuentra usted como la persona responsable de los pagos de su factura del GAN natural, ¿correcto?
+
+[SPEAKER_02]
+0:09:36.208000 - 0:09:37.389000: Exactamente.
+
+[SPEAKER_01]
+0:09:37.409000 - 0:09:37.729000: ¿Correcto?
+
+[SPEAKER_02]
+0:09:38.935000 - 0:09:39.255000:  Sí, señora.
+
+[SPEAKER_01]
+0:09:39.355000 - 0:09:46.257000: Señora Yely, aquí le voy a indicar unos números de teléfono y las políticas de tratamiento y condiciones generales de sus servicios.
+
+[SPEAKER_01]
+0:09:46.337000 - 0:09:58.680000: En este caso, le indico acá a la señora Yely, declaro que ha sido informada que nuestras políticas de tratamiento y las condiciones generales del Producto Futuro Protegido y Protección Ezequiel se los va a poder consultar directamente en nuestra página web.
+
+[SPEAKER_01]
+0:09:59.100000 - 0:10:02.120000: Sus solicitudes van a ser atendidas a través de la línea fija en Bogotá, 601-307-7050.
+
+[SPEAKER_01]
+0:10:04.958000 - 0:10:15.545000:  al resto del país podrá comunicarse al 01-8000-113-390, al WhatsApp 316-482-1802, o puede hacerlo también a través de la página web en nuestra acción contacta.
+
+[SPEAKER_01]
+0:10:15.565000 - 0:10:16.546000: ¿No es correcto, mi señora?
+
+[SPEAKER_02]
+0:10:17.767000 - 0:10:18.587000: Sí, señor, correcto.
+
+[SPEAKER_01]
+0:10:18.627000 - 0:10:28.995000: Señora Yelly, en este caso, de haberle brindado a usted toda esta información correspondiente y en base a su protección, acepta usted el producto, utiliza en general el valor mensual de $19,100 por la protección estequial, $15,750 por el futuro protegido, plus en su factura alga natural,
+
+[SPEAKER_01]
+0:10:32.907000 - 0:10:47.418000:  a favor de HDI seguros que serían reflejados mensualmente a partir del siguiente ciclo de facturación y que se renovarían automáticamente pasada la vigencia de 12 meses, con un incremento mínimo del valor asegurado de acuerdo al IPC, hasta que usted como usuario tome la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:10:47.598000 - 0:10:48.339000: ¿Correcto, mi señora?
+
+[SPEAKER_02]
+0:10:48.579000 - 0:10:49.780000: Sí, señora.
+
+[SPEAKER_01]
+0:10:59.485000 - 0:11:12.271000:  a partir del día 46 le va a cubrir en caso de muerte natural no preexistente, a partir de 181 días por enfermedades preexistentes excepto cancericida y a partir de 366 días por cancericida con una cobertura para máximo 5 siniestros por vigencias al año.
+
+[SPEAKER_01]
+0:11:12.751000 - 0:11:21.815000: Quiero recordarle, señora Yelly, también e informarle que en caso de que usted llegue a realizar algún pago de forma directa a la compañía de forma independiente, la compañía le va a indemnizar a usted presentando las facturas originales.
+
+[SPEAKER_01]
+0:11:21.975000 - 0:11:28.698000: La indemnización se realizará a quien demuestre haber asumido el costo hasta el límite del asegurado que va desde 3.3 salarios mínimos legales vigentes listos.
+
+[SPEAKER_01]
+0:11:29.165000 - 0:11:31.266000:  Hasta acá mi señora Yely, le ha quedado clara la información.
+
+[SPEAKER_01]
+0:11:32.828000 - 0:11:42.114000: Ok, señora Yely, entonces de la parte de atrás le recuerdo de su factura de gas, está la línea 64 para que usted pueda comunicarse en cualquier momento para cualquier información.
+
+[SPEAKER_01]
+0:11:42.174000 - 0:11:43.114000: Listo.
+
+[SPEAKER_01]
+0:11:43.175000 - 0:11:52.541000: Señora Yely, en este caso, pues no siendo más el motivo de la llamada, le agradezco por haber confiado en la compañía de HBCU y gases de La Guajira para su protección, la de su familia, que tenga usted una excelente tarde.
+
+[SPEAKER_01]
+0:11:52.921000 - 0:11:54.522000: Hasta luego, Dios te bendiga.
+
+[SPEAKER_02]
+0:11:55.223000 - 0:11:57.944000: Sí, señora, gracias por la información.
+
+[SPEAKER_01]
+0:11:57.964000 - 0:11:58.605000: Sí, señora.
+
+[SPEAKER_01]
+0:11:59.466000 - 0:12:00.048000:  Señora Geli.
+
+[SPEAKER_01]
+0:12:00.109000 - 0:12:02.036000: Señora Geli.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:14:43.636000 - 0:14:45.477000:  Señora Yelis, qué pena se cayó la llamadita.
+
+[SPEAKER_01]
+0:14:46.317000 - 0:14:46.937000: Señora Yelis.
+
+[SPEAKER_01]
+0:14:48.077000 - 0:15:03.022000: Sí, señora Yelis, le decía que pues, no siendo más el motivo de la llamada, le recuerdo, señora Yelis, que usted va a estar contando con su protección futuro protegido, y su protección protección estequial, que pues van a ser reflejadas en su factura alga natural ahí mensualmente, listo.
+
+[SPEAKER_01]
+0:15:03.462000 - 0:15:09.304000: Entonces, en este caso, le indicaba, señora Yelis, que pues muchas gracias por haber confiado en la compañía de gases de la Guajira,
+
+[SPEAKER_01]
+0:15:09.707000 - 0:15:11.658000:  Y HDI Seguro para su protección a su familia.
+
+[SPEAKER_01]
+0:15:11.698000 - 0:15:12.563000: Que tenga un excelente día.
+
+[SPEAKER_01]
+0:15:12.603000 - 0:15:13.146000: Hasta luego.
+
+[SPEAKER_00]
+0:15:13.870000 - 0:15:14.514000: Hasta luego.
+
+[SPEAKER_00]
+0:15:14.675000 - 0:15:15.057000: Gracias.

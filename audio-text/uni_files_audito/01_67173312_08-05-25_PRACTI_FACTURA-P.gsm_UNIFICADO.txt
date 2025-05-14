@@ -1,0 +1,317 @@
+
+[SPEAKER_00]
+0:00:01.043000 - 0:00:14.611000:  hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola
+
+[SPEAKER_00]
+0:00:29.162000 - 0:00:35.426000:  Aló, mucho gusto señor Orlando, me presento, mi nombre es Luisa Bando de parte de Gases del Caribe, en el Isoes con Alfa y Brilla, ¿cómo me le va?
+
+[SPEAKER_01]
+0:00:36.527000 - 0:00:38.268000: Bien, gracias.
+
+[SPEAKER_00]
+0:00:38.308000 - 0:00:40.729000: Ok, me alegra mucho escuchar eso, que se encuentre súper bien.
+
+[SPEAKER_00]
+0:00:41.049000 - 0:00:47.954000: En este caso no estábamos comunicando con usted porque queríamos saber cómo fue su experiencia el pasado 25 de abril del 2025, ya que me registra que usted hizo un crédito a 36 cuotas.
+
+[SPEAKER_00]
+0:00:47.974000 - 0:00:48.134000: Ah, bien.
+
+[SPEAKER_00]
+0:00:54.890000 - 0:01:00.393000:  Ah, bueno, usted sabe que nosotros estamos trabajando día a día para poderle garantizar un excelente servicio a todos nuestros usuarios.
+
+[SPEAKER_00]
+0:01:00.953000 - 0:01:04.695000: Señor Orlando, hasta el momento usted es la persona responsable que cancela la factura, disculpe.
+
+[SPEAKER_01]
+0:01:05.636000 - 0:01:06.516000: Sí, claro.
+
+[SPEAKER_00]
+0:01:07.316000 - 0:01:11.038000: Y también es la persona responsable, titular y responsable de cancelar el crédito Brilla.
+
+[SPEAKER_01]
+0:01:11.939000 - 0:01:12.839000: Sí.
+
+[SPEAKER_00]
+0:01:12.859000 - 0:01:19.783000: Bueno, por esa misma razón, el día de hoy queríamos contarle que por la compra que ya usted hizo a través de nuestro programa Brilla, gases del Caribe en el ESO con Cardiff,
+
+[SPEAKER_00]
+0:01:20.572000 - 0:01:22.713000:  le da la oportunidad de que cuente con su factura protegida.
+
+[SPEAKER_00]
+0:01:22.733000 - 0:01:33.417000: Esta consiste en un respaldo en caso de que usted presente una incapacidad temporal de 15 días a 104 días.
+
+[SPEAKER_00]
+0:01:33.437000 - 0:01:39.200000: En tales circunstancias, se le estarán abonando 600 mil pesos directamente a la deuda que tiene con el crédito Brilla.
+
+[SPEAKER_00]
+0:01:39.620000 - 0:01:42.221000: Si su deuda es menor el monto, se le abonará su residuo del gas.
+
+[SPEAKER_00]
+0:01:42.715000 - 0:01:51.142000:  Y en caso de que la incapacidad se extienda por más de 105 días, se le abonarán 600 mil pesos a su cuenta bancaria para que usted los pueda utilizar según lo considere necesario.
+
+[SPEAKER_00]
+0:01:51.863000 - 0:01:54.925000: El número de eventos aquí a cubrir por incapacidad sería ilimitado.
+
+[SPEAKER_00]
+0:01:55.966000 - 0:02:03.993000: Además, le informamos, mi señor Orlando, que podrá contar con un respaldo económico de 2 millones para sus beneficiarios de ley en el caso de que usted llegue a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:02:04.487000 - 0:02:14.754000:  Este servicio a usted le incluye múltiples asistencias como telemedicina ilimitada, con médico general, educación internacional, con cursera, dos cursos certificados al año, entre otros servicios adicionales.
+
+[SPEAKER_00]
+0:02:15.374000 - 0:02:21.418000: Este servicio será activo durante toda la vigencia de su crédito y a una vez finalizado, pues usted tendrá la opción de renovación automática anual.
+
+[SPEAKER_00]
+0:02:22.258000 - 0:02:26.601000: Igual le recordamos de que este servicio estará disponible a partir de los 31 días de la activación.
+
+[SPEAKER_00]
+0:02:26.661000 - 0:02:28.042000: ¿Hasta acá la información fue clara?
+
+[SPEAKER_01]
+0:02:29.563000 - 0:02:30.024000: Sí, claro.
+
+[SPEAKER_00]
+0:02:30.804000 - 0:02:32.205000: Vale, mi señor, adicionalmente...
+
+[SPEAKER_00]
+0:02:33.504000 - 0:02:51.152000:  Teniendo en cuenta que ya usted es un usuario activo de gases del Caribe Alfa, le coloca a su disposición un respaldo económico de $17.200.873, dinero que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted defiende en el caso de que Dios lo permita, pues usted llega a faltar por cualquier tipo de causa.
+
+[SPEAKER_00]
+0:02:51.712000 - 0:02:58.075000: Si contará con esa protección a partir de las 12 de la noche de hoy, el único requisito sería ser menor de 66 años.
+
+[SPEAKER_00]
+0:02:58.115000 - 0:03:00.356000: Hasta aquí mi señor Orlando, ¿la información ha sido clara?
+
+[SPEAKER_01]
+0:03:01.317000 - 0:03:01.997000: Sí, claro, señora.
+
+[SPEAKER_00]
+0:03:02.669000 - 0:03:09.753000:  Vale, para mayor tranquilidad le informo que las llamadas siempre son totalmente grabadas y monitoreadas para poderle garantizar la calidad de nuestros servicios.
+
+[SPEAKER_00]
+0:03:10.233000 - 0:03:19.337000: Validando la información que me aparece en el sistema me indica que su nombre completo es Orlando Rafael Calvo Rivera, identificado con cédula de ciudadanía 9875319, ¿correcto?
+
+[SPEAKER_00]
+0:03:19.357000 - 0:03:19.437000: Sí.
+
+[SPEAKER_00]
+0:03:19.477000 - 0:03:25.801000: Mi señor me indica en el sistema que usted a la fecha de hoy tiene 46 añitos y que nació el 19 de septiembre de 1978, ¿correcto?
+
+[SPEAKER_00]
+0:03:33.100000 - 0:03:37.083000:  El correo electrónico hasta el momento se está manejando, mi señor Orlando, ¿por qué no me registra en el sistema?
+
+[SPEAKER_01]
+0:03:37.103000 - 0:03:42.567000: Orlando Calvo, Orlando Rafael Calvo.
+
+[SPEAKER_00]
+0:03:43.268000 - 0:03:46.470000: Orlando Rafael Calvo.
+
+[SPEAKER_01]
+0:03:47.491000 - 0:03:50.133000: Arroba y email punto com.
+
+[SPEAKER_00]
+0:03:50.213000 - 0:03:52.134000: Arroba y email punto com, perfecto.
+
+[SPEAKER_00]
+0:03:53.315000 - 0:03:57.558000: En este caso la dirección con número de contrato me registra que es 6717332 en Fundación Magdalena, calle 18A con carrera 2255, ¿correcto?
+
+[SPEAKER_01]
+0:04:03.706000 - 0:04:04.166000:  Correcto.
+
+[SPEAKER_00]
+0:04:05.007000 - 0:04:11.751000: Me registra que el crédito lo hizo el pasado 25 de abril del año presente, del 2025 a 26 cuotas, ¿de acuerdo?
+
+[SPEAKER_01]
+0:04:11.771000 - 0:04:13.952000: Sí.
+
+[SPEAKER_00]
+0:04:13.972000 - 0:04:14.732000: Listo, mi señor.
+
+[SPEAKER_00]
+0:04:14.912000 - 0:04:23.377000: Siendo más asimismo, mi señor declara que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿es correcto?
+
+[SPEAKER_01]
+0:04:24.158000 - 0:04:25.198000: Correcto.
+
+[SPEAKER_00]
+0:04:25.238000 - 0:04:25.679000: ¿Correcto?
+
+[SPEAKER_01]
+0:04:26.579000 - 0:04:27.700000: Sí, correcto.
+
+[SPEAKER_00]
+0:04:27.760000 - 0:04:29.241000: Ah, bueno, listo, mi señor, asimismo.
+
+[SPEAKER_00]
+0:04:31.542000 - 0:04:31.862000: ¿Aló?
+
+[SPEAKER_01]
+0:04:32.763000 - 0:04:32.943000: Sí, aló.
+
+[SPEAKER_00]
+0:04:33.630000 - 0:04:34.591000:  Ah, bueno, ahí lo escucho.
+
+[SPEAKER_00]
+0:04:35.071000 - 0:04:38.673000: Así mismo, mi señor, no siendo más, acepta los productos, utiliza cargar el valor mensual.
+
+[SPEAKER_01]
+0:04:40.734000 - 0:04:42.135000: ¿Cómo, cómo?
+
+[SPEAKER_00]
+0:04:42.175000 - 0:04:42.836000: Ahí me escucha.
+
+[SPEAKER_00]
+0:04:42.856000 - 0:04:43.496000: Sí, ahí me escucha.
+
+[SPEAKER_00]
+0:04:43.596000 - 0:04:43.856000: Listo.
+
+[SPEAKER_01]
+0:04:43.916000 - 0:04:48.259000: Es que hay como otra bullita por ahí que se dice.
+
+[SPEAKER_00]
+0:04:48.279000 - 0:04:50.120000: Ajá, sí, se le escucha así como un ruido al fondo.
+
+[SPEAKER_00]
+0:04:50.160000 - 0:05:00.286000: Bueno, no siendo más, así mismo, mi señor, acepta los productos, utiliza cargar el valor mensual de 15.000 por su póliza factura protegida en la factura del gas natural a Ford de Cardiff, Colombia, que se verá reflejado en su próximo ciclo de facturación.
+
+[SPEAKER_00]
+0:05:00.782000 - 0:05:06.004000:  Hasta que usted expresa en la calidad de usuario la decisión de retirar este programa, mi señor Orlando Rafael Calvo, ¿correcto?
+
+[SPEAKER_01]
+0:05:06.744000 - 0:05:07.185000: Correcto.
+
+[SPEAKER_00]
+0:05:07.665000 - 0:05:08.125000: ¿Correcto?
+
+[SPEAKER_01]
+0:05:08.865000 - 0:05:09.786000: Sí, claro.
+
+[SPEAKER_00]
+0:05:09.846000 - 0:05:10.906000: Ah, bueno, listo, mi señor.
+
+[SPEAKER_00]
+0:05:10.946000 - 0:05:15.108000: Asimismo, a continuación voy a proceder a leer la ley que ya le protege lo que sean sus datos personales.
+
+[SPEAKER_00]
+0:05:15.128000 - 0:05:25.812000: En este caso, mi señor seguro Salpicar de Colombia como responsable da un tratamiento de tu información para fines legales contratuales en particular para el desarrollo de procesos de preventa de éticos frente al contrato de seguro.
+
+[SPEAKER_00]
+0:05:26.545000 - 0:05:39.387000:  Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previsos en la Ley 1581 de 2012, Normas Complementarias y Políticas de Tratamiento, información disponible en www.segurosalco.com.co.es, la protección de datos.
+
+[SPEAKER_00]
+0:05:39.988000 - 0:05:43.013000: Es voluntario responder preguntas sobre información sensible o de menores de edad.
+
+[SPEAKER_00]
+0:05:43.513000 - 0:05:45.477000: Al continuar, le llamamos a otorgar su autorización.
+
+[SPEAKER_00]
+0:05:45.998000 - 0:05:52.589000: Señor Orlando Rafael declara que usted ha sido informado que nuestras políticas de tratamiento y las condiciones generales del protopracto y seguro, usted las puede considerar.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:05:54.110000 - 0:05:54.310000:  Aló.
+
+[SPEAKER_00]
+0:05:54.410000 - 0:05:57.851000: Aló, mi señor, qué pena, con usted se nos había caído la llamada.
+
+[SPEAKER_01]
+0:05:58.751000 - 0:06:00.612000: Ah.
+
+[SPEAKER_00]
+0:06:00.632000 - 0:06:00.812000: ¿Listo?
+
+[SPEAKER_00]
+0:06:00.832000 - 0:06:01.712000: ¿Hoy me escucha mejor?
+
+[SPEAKER_01]
+0:06:01.732000 - 0:06:03.692000: Sí, bien, me escucha.
+
+[SPEAKER_00]
+0:06:03.732000 - 0:06:09.594000: Bueno, no siendo más, así mismo, a continuación, mi señor le estaba leyendo la ley que sería sus dáticos personales la que le protege sus datos.
+
+[SPEAKER_00]
+0:06:10.154000 - 0:06:16.055000: Así mismo, seguro usar Picard y Colombia como responsable del tratamiento de tu información para fines legales contratuales en particular.
+
+[SPEAKER_00]
+0:06:16.536000 - 0:06:22.197000: Para el desarrollo de procesos de preventa 20% del contrato de seguro, tiene derecho a conocer, actualizar y identificar tu información...
+
+[SPEAKER_00]
+0:06:22.717000 - 0:06:28.720000:  y a los demás previsos en la Ley 1581 de 2012, normas complementarias y políticas de tratamiento de información disponible.
+
+[SPEAKER_00]
+0:06:29.361000 - 0:06:32.903000: En www.segurosalfa.com.co es la protección de datos.
+
+[SPEAKER_00]
+0:06:33.283000 - 0:06:38.125000: Es voluntario responder preguntas sobre información sensible o de menores de edad al continuar la llamada o tratación de autorización.
+
+[SPEAKER_00]
+0:06:38.826000 - 0:06:48.711000: Así mismo, señor Orlando declara que usted ha sido informado que nuestras políticas de tratamiento y las condiciones generales del producto en plata y seguro usted las puede consultar en nuestras páginas que serán enviadas a su correo www.segurosalfa.com.co
+
+[SPEAKER_00]
+0:06:51.029000 - 0:06:56.491000:  También sus solicitudes serán atendidas a través de nuestro correo electrónico Servicio al Cliente, arroba segurosalfa.com.com.
+
+[SPEAKER_00]
+0:06:56.711000 - 0:07:04.493000: O si usted se lo decide, se puede comunicar al teléfono 601-307-7032 o puede llamar a la línea nacional gratuita 018-012-2532.
+
+[SPEAKER_00]
+0:07:04.513000 - 0:07:06.273000: ¿De acuerdo, mi señor?
+
+[SPEAKER_00]
+0:07:06.353000 - 0:07:06.874000: De acuerdo.
+
+[SPEAKER_00]
+0:07:06.934000 - 0:07:07.334000: ¿De acuerdo?
+
+[SPEAKER_00]
+0:07:07.394000 - 0:07:07.774000: Sí, sí.
+
+[SPEAKER_00]
+0:07:07.794000 - 0:07:12.575000: Ah, bueno, listo.
+
+[SPEAKER_00]
+0:07:12.615000 - 0:07:15.596000: No siendo más, así mismo, mi señor, ya para finalizar, aceptan los productos.
+
+[SPEAKER_00]
+0:07:15.696000 - 0:07:16.977000: Utilice a cargar el valor inicial de $25,360.
+
+[SPEAKER_00]
+0:07:18.834000 - 0:07:44.122000:  por su póliza practicegún en la factura del gas natural a ford de seguro salvo que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado acuerdo con el ips hasta que expresen calidad de usuario en la decisión de retirarse de prueba mi señor orlando rafael correcto correcto pero eso es un que es un seguro como mi señor eso de que me estas hablando tu de eso que es un seguro
+
+[SPEAKER_00]
+0:07:44.965000 - 0:07:56.214000:  Efectivamente, como le había indicado desde el inicio de la llamada, se le estaba colocando a su disposición una protección que les estaría respaldando su crédito brillo y una protección que les estaría respaldando sus seres queridos en el caso que llegue a faltar por cualquier tipo de causa.
+
+[SPEAKER_00]
+0:07:56.255000 - 0:07:56.915000: ¿Sí me hago entender?
+
+[SPEAKER_01]
+0:07:57.936000 - 0:07:58.977000: Sí, claro.
+
+[SPEAKER_00]
+0:07:58.997000 - 0:08:00.018000: Bueno, listo, mi señor.
+
+[SPEAKER_00]
+0:08:00.058000 - 0:08:06.363000: Entonces, no siendo más, así mismo para finalizarle, ¿está de acuerdo con el cobro de los productos con las condiciones anteriormente mencionadas, correcto?
+
+[SPEAKER_01]
+0:08:07.184000 - 0:08:07.364000: Sí, sí.
+
+[SPEAKER_00]
+0:08:08.226000 - 0:08:08.586000:  Listo.
+
+[SPEAKER_00]
+0:08:09.307000 - 0:08:14.992000: Mi señor, asimismo le informo que al correo electrónico le estaré llegando toda la documentación junto con las condiciones generales del servicio.
+
+[SPEAKER_00]
+0:08:15.052000 - 0:08:19.976000: Muchas gracias por confiar en Alfa para la protección usted y la de su familia y gracias también por confiar en Cardiff, Colombia.
+
+[SPEAKER_00]
+0:08:20.396000 - 0:08:22.217000: Que tenga usted una excelente tarde.
+
+[SPEAKER_00]
+0:08:22.237000 - 0:08:23.158000: Hasta luego, mi señor.
+
+[SPEAKER_00]
+0:08:23.198000 - 0:08:23.819000: Bendiciones.

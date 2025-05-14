@@ -1,0 +1,245 @@
+
+[SPEAKER_00]
+0:00:02.293000 - 0:00:04.414000:  Hola, buenas tardes, la señora Patricia Luna.
+
+[SPEAKER_00]
+0:00:04.434000 - 0:00:06.554000: Sí, señora, con ella.
+
+[SPEAKER_00]
+0:00:07.474000 - 0:00:12.495000: Mucho gusto, señora Patricia, mi nombre es Madeleine Pinto, asesora comercial de Alfa Compañía Energética de Occidente.
+
+[SPEAKER_00]
+0:00:13.295000 - 0:00:13.955000: ¿Cómo se llama?
+
+[SPEAKER_00]
+0:00:13.975000 - 0:00:15.676000: ¿Cómo la vio con el servicio de energía?
+
+[SPEAKER_00]
+0:00:15.696000 - 0:00:21.357000: Bien, señora, muchas gracias, bien, bien.
+
+[SPEAKER_00]
+0:00:21.417000 - 0:00:23.197000: Me alegro, también estamos validando, disculpe.
+
+[SPEAKER_00]
+0:00:23.677000 - 0:00:26.377000: Usted es responsable de los pagos y la factura de energía, ¿correcto?
+
+[SPEAKER_00]
+0:00:26.397000 - 0:00:27.738000: Sí.
+
+[SPEAKER_00]
+0:00:28.038000 - 0:00:29.838000: Usted me acaba de decir que...
+
+[SPEAKER_00]
+0:00:30.355000 - 0:00:51.343000:  Listo, queremos informarle en este momento, señora Patricio, que por ser usted el usuario activo de Compañía Energética Occidente, al que le brinda la oportunidad de contar con respaldo económico por el valor de 16.537.198 pesos, en caso de que Dios no lo permita, usted ya falta por cualquier tipo de causa, contará con esta protección a partir de las 12 de la noche el día de hoy.
+
+[SPEAKER_00]
+0:00:51.904000 - 0:00:54.364000: El único requisito es que sea menor de 66 años.
+
+[SPEAKER_00]
+0:00:54.404000 - 0:00:55.485000: ¿Queda clara la información?
+
+[SPEAKER_00]
+0:01:02.191000 - 0:01:05.277000:  Sí, hasta el momento está quedando clara la información, señora María.
+
+[SPEAKER_00]
+0:01:10.968000 - 0:01:11.990000: Señora María, ¿me escucha?
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_01]
+0:01:13.506000 - 0:01:16.909000:  Hola señora Patricia, ¿me puede escuchar acá?
+
+[SPEAKER_00]
+0:01:16.969000 - 0:01:19.472000: Sí, sí, sí, ya la escucho.
+
+[SPEAKER_01]
+0:01:19.972000 - 0:01:32.384000: No, que le estaba indicando, señora Patricia, que por ser usted usuario activo de Compañía Energética de Occidente, al que le brinda la oportunidad de contar con un respaldo económico por el valor de $16.537.198 pesos,
+
+[SPEAKER_01]
+0:01:37.252000 - 0:01:43.936000:  En caso de que lo quiera usted ya falta por cualquier tipo de causa contará con esta protección a partir de las 12 de la noche el día de hoy.
+
+[SPEAKER_01]
+0:01:44.456000 - 0:01:47.518000: El único requisito es que sea menor de 66 años.
+
+[SPEAKER_01]
+0:01:49.579000 - 0:01:51.720000: ¿Queda más clara la información hasta aquí, correcto?
+
+[SPEAKER_00]
+0:01:51.740000 - 0:01:55.002000: No, está claro, está claro.
+
+[SPEAKER_01]
+0:01:55.042000 - 0:01:59.645000: Igual recuerde, señora Patricia, que todas las llamaditas son grabadas, monitoreadas por efectos de calidad.
+
+[SPEAKER_01]
+0:01:59.705000 - 0:02:02.447000: Su nombre es Patricia Luna Salazar con cédula 25599605.
+
+[SPEAKER_01]
+0:02:05.498000 - 0:02:10.260000:  Y la dirección donde le llegan las facturas de energía es Vereda, El Paraíso.
+
+[SPEAKER_01]
+0:02:10.901000 - 0:02:13.942000: Actualmente, señora Patricia, ¿estoy con cuántos añitos cuenta?
+
+[Speaker]
+0:02:13.962000 - 0:02:13.942000: 42.
+
+[SPEAKER_00]
+0:02:14.602000 - 0:02:15.443000: Perfecto.
+
+[SPEAKER_00]
+0:02:15.463000 - 0:02:17.804000: ¿Los 43 qué día los cumple?
+
+[SPEAKER_01]
+0:02:17.864000 - 0:02:18.564000: No, cumplo 42 este mes.
+
+[SPEAKER_01]
+0:02:18.604000 - 0:02:21.966000: ¿Qué día cumple los 43?
+
+[SPEAKER_00]
+0:02:22.286000 - 0:02:22.887000: Los 42 el 29 de mayo.
+
+[SPEAKER_00]
+0:02:22.907000 - 0:02:23.087000: Ah, ok.
+
+[SPEAKER_00]
+0:02:23.107000 - 0:02:23.287000: Ya casi...
+
+[SPEAKER_01]
+0:02:34.400000 - 0:02:58.875000:  O sea, usted tiene son 31 41 Ah, ok, 41 va para 42 Ok, le estaba quitando 10 años Bueno, mi señora Le pregunto porque aquí en el registro Me registra su año de nacimiento Perdón Aquí me registra mi señora Su año de nacimiento 1982 Lo tenemos bien 83
+
+[SPEAKER_01]
+0:03:03.917000 - 0:03:05.778000:  Ah, ok, del 83, perfecto.
+
+[SPEAKER_01]
+0:03:05.838000 - 0:03:07.098000: Ajá.
+
+[SPEAKER_01]
+0:03:07.158000 - 0:03:08.838000: Apenas va para 42, me dice, ¿cierto?
+
+[SPEAKER_00]
+0:03:08.858000 - 0:03:14.280000: Sí, creo que sí, o sea que estoy embolachada.
+
+[SPEAKER_01]
+0:03:14.300000 - 0:03:17.001000: Tranquila, no se preocupe, vamos a sacar entonces la cuenta.
+
+[SPEAKER_01]
+0:03:17.021000 - 0:03:18.601000: Dice, usted tiene 41 años.
+
+[SPEAKER_01]
+0:03:18.621000 - 0:03:18.681000: Ajá.
+
+[SPEAKER_01]
+0:03:19.721000 - 0:03:22.722000: Exactamente, usted nació en 1983, así es.
+
+[SPEAKER_01]
+0:03:23.262000 - 0:03:30.084000: Mi señora, en este caso, se declara que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica...
+
+[SPEAKER_01]
+0:03:30.667000 - 0:03:33.648000:  Son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:03:34.608000 - 0:03:35.649000: Ajá, sí, señorita.
+
+[SPEAKER_01]
+0:03:35.949000 - 0:03:36.689000: ¿Es correcto, mi señora?
+
+[SPEAKER_00]
+0:03:37.089000 - 0:03:40.510000: Sí, señorita, correcto.
+
+[SPEAKER_01]
+0:03:42.151000 - 0:03:43.872000: Ok, ¿están correctos los datos?
+
+[SPEAKER_00]
+0:03:45.772000 - 0:03:46.472000: Sí, señora.
+
+[SPEAKER_00]
+0:03:46.552000 - 0:03:47.913000: Ok, perfecto, muy bien.
+
+[SPEAKER_01]
+0:03:47.973000 - 0:03:53.855000: En este caso, mi señora, yo le voy a informar la ley ADADATA, que es la que protege de espaldas los datos personales de usted.
+
+[SPEAKER_01]
+0:03:54.335000 - 0:03:59.757000: En este caso, pues seguro que salva como responsable el andatamiento de su información para fines legales, son datos en particular.
+
+[SPEAKER_01]
+0:04:00.180000 - 0:04:09.807000:  Para el desarrollo de procesos de pre-venda, venda por venda con datos del seguro, tiene derecho también a conocer, actualizar, testificar su información y los demás previstos en la ley 1581 del 2012.
+
+[SPEAKER_01]
+0:04:10.307000 - 0:04:16.351000: Normas complementarias a la política de tratamiento de información también disponible en www.segurichalfa.com.
+
+[SPEAKER_01]
+0:04:16.391000 - 0:04:21.255000: La protección de datos y es voluntario responder preguntas sobre información sensible a menores de edad.
+
+[SPEAKER_01]
+0:04:22 - 0:04:24.441000:  Al continuar en la llamada, mi señora, pues otorga su autorización.
+
+[SPEAKER_01]
+0:04:24.481000 - 0:04:32.143000: Declaro usted que ha sido informado que nuestras políticas de tratamiento y las condiciones generales del producto CatiSeguro pueden ser consultadas en www.segurusalva.com.
+
+[SPEAKER_01]
+0:04:32.163000 - 0:04:35.344000: También la puede solicitar a través del correo que es el viceclidenteandoa.segurusalva.com.
+
+[SPEAKER_01]
+0:04:35.364000 - 0:04:36.184000: Y a través del teléfono 601-307-7032.
+
+[SPEAKER_01]
+0:04:36.204000 - 0:04:37.605000: Y manejamos la línea nacional gratuita que es la 018-1215-32.
+
+[SPEAKER_01]
+0:04:37.625000 - 0:04:38.525000: De igual manera, mi señora...
+
+[SPEAKER_01]
+0:04:49.101000 - 0:04:59.191000:  Si usted se quiere comunicar con nosotros directamente ahí en las facturas de energía, usted va a encontrar unos números de teléfonos y toda la línea de atención para que se comunique con nosotros sin ningún problema.
+
+[SPEAKER_01]
+0:05:00.032000 - 0:05:04.096000: ¿Quiere aclarar la información, señora Patricia, sobre la línea de atención y su protección de datos?
+
+[SPEAKER_01]
+0:05:04.136000 - 0:05:04.516000: ¿Correcto?
+
+[SPEAKER_00]
+0:05:05.417000 - 0:05:06.077000: Sí, señorita.
+
+[SPEAKER_00]
+0:05:06.358000 - 0:05:06.718000: Correcto.
+
+[SPEAKER_01]
+0:05:06.758000 - 0:05:07.439000: Perfecto.
+
+[SPEAKER_01]
+0:05:07.479000 - 0:05:10.622000: En este caso, mi señora, ya para finalizar, no quitarle mucho más de su tiempo.
+
+[SPEAKER_01]
+0:05:11.140000 - 0:05:32.214000:  Y en este caso, mi señora, pues acepta los productos, autoriza carga de valor mensual 29.670 por su póliza, parte de seguro en la factura de energía, perdón, a favor del seguro, salvo el severante plejado mensualmente a partir del siguiente siglo de facturación, y se renueva automáticamente pasada la vigencia de los 12 meses con incremento en valor asegurado con el BELIP-C, hasta que presenta el día de usuario la decisión de retirarse del programa.
+
+[SPEAKER_01]
+0:05:32.234000 - 0:05:33.354000: ¿Es correcto, señora Patricia?
+
+[SPEAKER_00]
+0:05:34.395000 - 0:05:35.296000: Sí, señora.
+
+[SPEAKER_01]
+0:05:35.356000 - 0:05:38.538000: Ok, en este caso, mi señora, ya para finalizar, ¿es correcto?
+
+[SPEAKER_00]
+0:05:40.232000 - 0:05:41.012000:  Sí, señorita.
+
+[SPEAKER_01]
+0:05:41.072000 - 0:05:48.736000: Ok, ya para finalizar, le recuerdo una vez más, mi señora, que sus beneficiarios contarán con una indemnización por el valor de 16.537.198 pesos.
+
+[SPEAKER_01]
+0:05:48.917000 - 0:05:55.180000: En caso, mi señora, Dios no lo permita, si va a faltar, su protección se encuentra activa con Andrés en la factura de energía.
+
+[SPEAKER_01]
+0:05:55.340000 - 0:05:57.921000: Muchas gracias por confiar en Alfa para la protección de usted y su familia.
+
+[SPEAKER_01]
+0:05:57.961000 - 0:05:58.882000: Yo me la bendiga.
+
+[SPEAKER_01]
+0:05:58.902000 - 0:05:59.762000: Hasta luego.
+
+[SPEAKER_01]
+0:05:59.782000 - 0:06:00.322000: Bendiciones.
+
+[SPEAKER_00]
+0:06:00.342000 - 0:06:01.123000: Hasta luego.

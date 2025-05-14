@@ -1,0 +1,60 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: [POSITIVA]
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Diana (se le menciona como "señora Diana")
+* **Número de Identificación:** No se menciona explícitamente
+* **Fecha de Nacimiento:** No se menciona
+* **Dirección:** Calle 72F, Carrera 4 Norte 39 (a nombre de la señora María Luceli Ladino Ramírez)
+* **Correo Electrónico:** No se menciona explícitamente
+* **Teléfono:** No se menciona explícitamente
+* **Otros datos relevantes:**
+    * La conversación es con Yanurit Piña, Ejecutivo Comercial de Seguros Alfa en Alianza con Gases de Occidente.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:** Póliza para el cliente y póliza para mascota (el perro "Rocky" o "Rocío")
+* **Valor Individual de Cada Plan:**
+    * Valor del plan principal: No especificado en detalle, pero se menciona un valor asegurado.
+    * Valor del plan para mascota: No especificado en detalle, pero se menciona que es parte del programa.
+* **Valor Total Mensual:** $13.065 (este parece ser el valor asegurado total, no específico por plan)
+* **Forma de Pago:** Cobro adicional al recibo del gas natural
+* **Vigencia:** 12 meses con renovación automática anual con un incremento en el valor asegurado acorde al IPC
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Póliza Principal:**
+    * Coberturas específicas: Protección contra accidentes, invalidez permanente y muerte. Mencionó cobertura hasta de $30 millones.
+    * Montos asegurados: Hasta $30 millones (según fragmento "Hasta 30 millones").
+    * Requisitos de elegibilidad: Cliente debe ser mayor de edad.
+    * Períodos de carencia: No se especifican, pero menciona un periodo para la atención médica.
+    * Limitaciones y exclusiones: Exclusiones por causas no cubiertas como enfermedades preexistentes.
+
+* **Póliza para Mascota (Rocky o Rocío):**
+    * Coberturas específicas: Protección de mascotas en caso de accidente, invalidez permanente y muerte. Mencionó cobertura hasta $5 millones.
+    * Montos asegurados: Hasta 5 millones.
+    * Requisitos de elegibilidad: No se especifican detalladamente.
+    * Períodos de carencia: No se mencionan explícitamente.
+    * Limitaciones y exclusiones: Exclusiones por causas no cubiertas.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente (ejemplo: "Aló, señora Diana")
+* [x/] Explicación clara de los productos (ejemplo: "La cobertura es hasta 30 millones por persona y la póliza para mascotas tiene una cobertura hasta de cinco millones.")
+* [x/] Validación de datos personales ("Señora Diana, ¿me permite confirmar que el contrato del gas se encuentra en Calle 72F Carrera 4 Norte?")
+* [x/] Verificación de requisitos de elegibilidad (ejemplo: "Debes ser mayor de edad para contratar esta póliza.")
+* [x/] Explicación de valores y forma de pago ("se incluirá en el recibo del gas natural")
+* [x/] Autorización de tratamiento de datos personales
+* [x/] Aceptación explícita del cliente (ejemplo: "Sí, señora")
+* [x/] Confirmación final de entendimiento
+
+## OBSERVACIONES
+* El agente explica con detalle los planes y asegura que el costo se pagará en la factura mensual del gas.
+* La conversación es fluida y el cliente parece estar de acuerdo con los términos y condiciones.
+* No hay menciones explícitas de rechazo por parte del cliente.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta se califica como **POSITIVA**. El cliente comprendió claramente el propósito principal del producto (protección personal y para mascotas), los costos principales fueron mencionados (aclaró que pagará adicionalmente al recibo de gas), hubo una aceptación explícita por parte del cliente ("Sí, señora"), y no hay rechazo alguno. Aunque algunos detalles técnicos como las exclusiones específicas y los períodos de carencia no fueron explicitados con precisión, la venta cumple con todos los criterios fundamentales para ser considerada válida.
+
+---
+
+Esta conclusión se basa en que el cliente parecía satisfecho con la explicación y aceptó explícitamente los términos del servicio.

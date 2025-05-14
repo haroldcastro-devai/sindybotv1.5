@@ -1,0 +1,821 @@
+/* 
+ * SBOT - Estilos específicos para la página de edición individual de usuario
+ * URL: http://192.168.30.241:8000/admin/auth/user/3/change/
+ * Implementado por Claude - Mayo 2025
+ */
+
+/* Selectores específicos para asegurar que estos estilos solo se apliquen 
+   a la página de edición de usuario */
+
+/* Estilos para el fondo */
+.change-form.app-auth.model-user #content,
+.user-edit-form,
+body:has(form#user_form) {
+    background-color: white !important;
+}
+
+/* Contenedor principal con fondo blanco */
+.change-form.app-auth.model-user .main-footer .card,
+.user-edit-form .main-footer .card,
+body:has(form#user_form) .main-footer .card {
+    background-color: white;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabecera del formulario */
+.change-form.app-auth.model-user .py-4.main-footer h1.h4,
+.user-edit-form .py-4.main-footer h1.h4,
+body:has(form#user_form) .py-4.main-footer h1.h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0;
+}
+
+/* Mejorar la organización de los fieldsets */
+.change-form.app-auth.model-user fieldset.module,
+.user-edit-form fieldset.module,
+body:has(form#user_form) fieldset.module {
+    margin-bottom: 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.change-form.app-auth.model-user fieldset.module h2,
+.user-edit-form fieldset.module h2,
+body:has(form#user_form) fieldset.module h2 {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Filas del formulario */
+.change-form.app-auth.model-user .form-row,
+.user-edit-form .form-row,
+body:has(form#user_form) .form-row {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.change-form.app-auth.model-user .form-row:last-child,
+.user-edit-form .form-row:last-child,
+body:has(form#user_form) .form-row:last-child {
+    border-bottom: none;
+}
+
+/* Columnas dentro de las filas */
+.change-form.app-auth.model-user .form-row > div,
+.user-edit-form .form-row > div,
+body:has(form#user_form) .form-row > div {
+    padding: 0;
+}
+
+/* Etiquetas del formulario */
+.change-form.app-auth.model-user .form-row label,
+.user-edit-form .form-row label,
+body:has(form#user_form) .form-row label {
+    display: block;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Campos de entrada */
+.change-form.app-auth.model-user .form-row input[type="text"],
+.change-form.app-auth.model-user .form-row input[type="password"],
+.change-form.app-auth.model-user .form-row input[type="email"],
+.change-form.app-auth.model-user .form-row select,
+.change-form.app-auth.model-user .form-row textarea,
+.user-edit-form .form-row input[type="text"],
+.user-edit-form .form-row input[type="password"],
+.user-edit-form .form-row input[type="email"],
+.user-edit-form .form-row select,
+.user-edit-form .form-row textarea,
+body:has(form#user_form) .form-row input[type="text"],
+body:has(form#user_form) .form-row input[type="password"],
+body:has(form#user_form) .form-row input[type="email"],
+body:has(form#user_form) .form-row select,
+body:has(form#user_form) .form-row textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.change-form.app-auth.model-user .form-row input[type="text"]:focus,
+.change-form.app-auth.model-user .form-row input[type="password"]:focus,
+.change-form.app-auth.model-user .form-row input[type="email"]:focus,
+.change-form.app-auth.model-user .form-row select:focus,
+.change-form.app-auth.model-user .form-row textarea:focus,
+.user-edit-form .form-row input[type="text"]:focus,
+.user-edit-form .form-row input[type="password"]:focus,
+.user-edit-form .form-row input[type="email"]:focus,
+.user-edit-form .form-row select:focus,
+.user-edit-form .form-row textarea:focus,
+body:has(form#user_form) .form-row input[type="text"]:focus,
+body:has(form#user_form) .form-row input[type="password"]:focus,
+body:has(form#user_form) .form-row input[type="email"]:focus,
+body:has(form#user_form) .form-row select:focus,
+body:has(form#user_form) .form-row textarea:focus {
+    border-color: #3498db;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Mejorar los mensajes de ayuda */
+.change-form.app-auth.model-user .help,
+.user-edit-form .help,
+body:has(form#user_form) .help {
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 6px;
+    display: block;
+}
+
+/* Estilos para checkboxes */
+.change-form.app-auth.model-user input[type="checkbox"],
+.user-edit-form input[type="checkbox"],
+body:has(form#user_form) input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+
+.change-form.app-auth.model-user input[type="checkbox"]:checked,
+.user-edit-form input[type="checkbox"]:checked,
+body:has(form#user_form) input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.change-form.app-auth.model-user input[type="checkbox"]:checked:after,
+.user-edit-form input[type="checkbox"]:checked:after,
+body:has(form#user_form) input[type="checkbox"]:checked:after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+/* Mejorar los contenedores de permisos */
+.change-form.app-auth.model-user .related-widget-wrapper,
+.user-edit-form .related-widget-wrapper,
+body:has(form#user_form) .related-widget-wrapper {
+    width: 100%;
+}
+
+/* Selector para los grupos y permisos */
+.change-form.app-auth.model-user .selector,
+.user-edit-form .selector,
+body:has(form#user_form) .selector {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.change-form.app-auth.model-user .selector select,
+.user-edit-form .selector select,
+body:has(form#user_form) .selector select {
+    height: 200px;
+}
+
+.change-form.app-auth.model-user .selector-available,
+.change-form.app-auth.model-user .selector-chosen,
+.user-edit-form .selector-available,
+.user-edit-form .selector-chosen,
+body:has(form#user_form) .selector-available,
+body:has(form#user_form) .selector-chosen {
+    width: 45%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.change-form.app-auth.model-user .selector-available h2,
+.change-form.app-auth.model-user .selector-chosen h2,
+.user-edit-form .selector-available h2,
+.user-edit-form .selector-chosen h2,
+body:has(form#user_form) .selector-available h2,
+body:has(form#user_form) .selector-chosen h2 {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ced4da;
+}
+
+.change-form.app-auth.model-user .selector-chooser,
+.user-edit-form .selector-chooser,
+body:has(form#user_form) .selector-chooser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.change-form.app-auth.model-user .selector-chooser a,
+.user-edit-form .selector-chooser a,
+body:has(form#user_form) .selector-chooser a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.change-form.app-auth.model-user .selector-chooser a:hover,
+.user-edit-form .selector-chooser a:hover,
+body:has(form#user_form) .selector-chooser a:hover {
+    background-color: #217dbb;
+}
+
+/* Mejorar la distribución de los permisos y grupos */
+.change-form.app-auth.model-user .permission-box,
+.user-edit-form .permission-box,
+body:has(form#user_form) .permission-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botones del formulario */
+.change-form.app-auth.model-user .submit-row,
+.user-edit-form .submit-row,
+body:has(form#user_form) .submit-row {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+    text-align: right;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.change-form.app-auth.model-user .submit-row input[type="submit"],
+.change-form.app-auth.model-user .submit-row a.closelink,
+.user-edit-form .submit-row input[type="submit"],
+.user-edit-form .submit-row a.closelink,
+body:has(form#user_form) .submit-row input[type="submit"],
+body:has(form#user_form) .submit-row a.closelink {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.change-form.app-auth.model-user .submit-row input[type="submit"].default,
+.user-edit-form .submit-row input[type="submit"].default,
+body:has(form#user_form) .submit-row input[type="submit"].default {
+    background-color: #3498db;
+    border: none;
+    color: white;
+}
+
+.change-form.app-auth.model-user .submit-row input[type="submit"].default:hover,
+.user-edit-form .submit-row input[type="submit"].default:hover,
+body:has(form#user_form) .submit-row input[type="submit"].default:hover {
+    background-color: #217dbb;
+}
+
+.change-form.app-auth.model-user .submit-row a.closelink,
+.user-edit-form .submit-row a.closelink,
+body:has(form#user_form) .submit-row a.closelink {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+}
+
+.change-form.app-auth.model-user .submit-row a.closelink:hover,
+.user-edit-form .submit-row a.closelink:hover,
+body:has(form#user_form) .submit-row a.closelink:hover {
+    background-color: #5a6268;
+}
+
+.change-form.app-auth.model-user .submit-row input[type="submit"].deletelink,
+.user-edit-form .submit-row input[type="submit"].deletelink,
+body:has(form#user_form) .submit-row input[type="submit"].deletelink {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    float: left;
+    margin-right: auto;
+}
+
+.change-form.app-auth.model-user .submit-row input[type="submit"].deletelink:hover,
+.user-edit-form .submit-row input[type="submit"].deletelink:hover,
+body:has(form#user_form) .submit-row input[type="submit"].deletelink:hover {
+    background-color: #c82333;
+}
+
+/* Arreglar la legibilidad del calendario */
+.change-form.app-auth.model-user .calendarbox,
+.user-edit-form .calendarbox,
+body:has(form#user_form) .calendarbox {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.change-form.app-auth.model-user .calendarbox caption,
+.user-edit-form .calendarbox caption,
+body:has(form#user_form) .calendarbox caption {
+    background-color: #3498db;
+    color: white;
+    padding: 8px;
+}
+
+/* Mensajes de error */
+.change-form.app-auth.model-user .errorlist,
+.user-edit-form .errorlist,
+body:has(form#user_form) .errorlist {
+    color: #dc3545;
+    padding: 10px 15px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.change-form.app-auth.model-user .errorlist li,
+.user-edit-form .errorlist li,
+body:has(form#user_form) .errorlist li {
+    margin: 5px 0;
+}
+
+/* Estructura de dos columnas para información principal y complementaria */
+.change-form.app-auth.model-user .aligned .form-row,
+.user-edit-form .aligned .form-row,
+body:has(form#user_form) .aligned .form-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.change-form.app-auth.model-user .aligned .form-row label,
+.user-edit-form .aligned .form-row label,
+body:has(form#user_form) .aligned .form-row label {
+    grid-column: 1;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.change-form.app-auth.model-user .aligned .form-row > div.fieldBox,
+.change-form.app-auth.model-user .aligned .form-row > div:not(.help),
+.user-edit-form .aligned .form-row > div.fieldBox,
+.user-edit-form .aligned .form-row > div:not(.help),
+body:has(form#user_form) .aligned .form-row > div.fieldBox,
+body:has(form#user_form) .aligned .form-row > div:not(.help) {
+    grid-column: 2;
+}
+
+.change-form.app-auth.model-user .aligned .form-row .help,
+.user-edit-form .aligned .form-row .help,
+body:has(form#user_form) .aligned .form-row .help {
+    grid-column: 2;
+    padding-left: 0;
+}
+
+/* Mejorar la apariencia en pantallas pequeñas */
+@media (max-width: 768px) {
+    .change-form.app-auth.model-user .aligned .form-row,
+    .user-edit-form .aligned .form-row,
+    body:has(form#user_form) .aligned .form-row {
+        display: block;
+    }
+    
+    .change-form.app-auth.model-user .aligned .form-row label,
+    .user-edit-form .aligned .form-row label,
+    body:has(form#user_form) .aligned .form-row label {
+        text-align: left;
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .change-form.app-auth.model-user .selector,
+    .user-edit-form .selector,
+    body:has(form#user_form) .selector {
+        flex-direction: column;
+    }
+    
+    .change-form.app-auth.model-user .selector-available,
+    .change-form.app-auth.model-user .selector-chosen,
+    .user-edit-form .selector-available,
+    .user-edit-form .selector-chosen,
+    body:has(form#user_form) .selector-available,
+    body:has(form#user_form) .selector-chosen {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .change-form.app-auth.model-user .selector-chooser,
+    .user-edit-form .selector-chooser,
+    body:has(form#user_form) .selector-chooser {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .change-form.app-auth.model-user .submit-row,
+    .user-edit-form .submit-row,
+    body:has(form#user_form) .submit-row {
+        flex-direction: column;
+    }
+    
+    .change-form.app-auth.model-user .submit-row input[type="submit"].deletelink,
+    .user-edit-form .submit-row input[type="submit"].deletelink,
+    body:has(form#user_form) .submit-row input[type="submit"].deletelink {
+        margin-bottom: 10px;
+    }
+}
+
+/* Iconos para campos importantes */
+.username-field label::before,
+.password-field label::before,
+.email-field label::before {
+    font-family: 'feather' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.username-field label::before {
+    content: "\e900"; /* ícono de usuario */
+}
+
+.password-field label::before {
+    content: "\e901"; /* ícono de candado */
+}
+
+.email-field label::before {
+    content: "\e902"; /* ícono de correo */
+}
+
+/* Animaciones sutiles */
+.form-row input:focus,
+.form-row select:focus {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* Tarjetas más organizadas */
+fieldset.module {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+fieldset.module:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Permisos más claros */
+.selector-available select option,
+.selector-chosen select option {
+    padding: 6px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.selector-available select option:hover,
+.selector-chosen select option:hover {
+    background-color: #f8f9fa;
+}
+
+/* Mejoras específicas para el campo de fecha y hora */
+.datetime {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.datetime .datetimeshortcuts {
+    display: flex;
+    align-items: center;
+}
+
+.datetime .datetimeshortcuts a {
+    margin-left: 8px;
+    color: #3498db;
+}
+
+/* Resaltar la sección de activo/inactivo y permisos importantes */
+.field-is_active,
+.field-is_staff,
+.field-is_superuser {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.field-is_active label,
+.field-is_staff label,
+.field-is_superuser label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Personalización adicional para breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    color: #6c757d;
+}
+
+.breadcrumb-item a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #217dbb;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+/* Mejora general para la estructura de la página */
+.main-footer .card {
+    margin-bottom: 20px;
+}
+
+/* Estilizar todos los mensajes */
+.messagelist {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.messagelist li {
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.messagelist li.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.messagelist li.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.messagelist li.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Específicamente apuntar al formulario de edición de usuario */
+form[action*="/admin/auth/user/"] .card-body,
+#user_form .card-body {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Añadir un color de fondo para cada sección del formulario */
+form[action*="/admin/auth/user/"] fieldset.module,
+#user_form fieldset.module {
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Hacer que los fieldsets se vean más atractivos */
+form[action*="/admin/auth/user/"] fieldset.module h2,
+#user_form fieldset.module h2 {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    margin: 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Mejorar la apariencia de la parte principal del contenido */
+form[action*="/admin/auth/user/"] .pcoded-main-container,
+#user_form .pcoded-main-container {
+    background-color: white;
+}
+
+/* Asegurar que toda la página tenga fondo blanco */
+body:has(form[action*="/admin/auth/user/"]) .pcoded-main-container,
+body:has(#user_form) .pcoded-main-container {
+    background-color: white;
+}
+
+/* Estilo para los encabezados de la página */
+.page-header {
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Mejorar la legibilidad de los botones */
+.submit-row input[type="submit"],
+.submit-row a {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Añadir un poco de espacio alrededor del formulario */
+form[action*="/admin/auth/user/"],
+#user_form {
+    padding: 20px;
+}
+
+/* Mejora de espaciado para los campos de checkbox */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilos para la validación de formularios */
+.required label {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.required label:after {
+    content: " *";
+    color: #dc3545;
+}
+
+/* Estilo para los mensajes de ayuda inline */
+.help {
+    color: #6c757d;
+    font-size: 0.85rem;
+    padding-top: 5px;
+}
+
+/* Mejorar las vistas móviles */
+@media (max-width: 576px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-row > div {
+        margin-bottom: 15px;
+    }
+}
+
+/* Enfatizar campos importantes */
+.field-username,
+.field-email,
+.field-password {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Añadir algo de espacio después de los fieldsets */
+fieldset.module {
+    margin-bottom: 30px !important;
+}
+
+/* Manejar los mensajes de error con más estilo */
+.errorlist {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    padding: 10px 15px !important;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 15px !important;
+}
+
+/* Añadir un efecto de hover en los botones de selector */
+.selector-chooser a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Estilizar los botones de navegación */
+.object-tools a {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.object-tools a:hover {
+    background-color: #5a6268;
+    text-decoration: none;
+}
+
+/* Estilizar específicamente botones de acción especiales */
+.object-tools a.addlink {
+    background-color: #28a745;
+}
+
+.object-tools a.addlink:hover {
+    background-color: #218838;
+}
+
+/* Asegurar que el selector tenga un buen ancho */
+.selector select {
+    min-width: 180px;
+    max-width: 100%;
+}
+
+/* Hacer que el área de permisos se vea más organizada */
+.field-user_permissions,
+.field-groups {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Mejorar la apariencia del área de filtro */
+.filter {
+    margin-top: 20px;
+}
+
+.filter h2 {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.filter ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.filter ul li {
+    margin-bottom: 5px;
+}
+
+/* Añadir algo de consistencia en los formularios */
+form .form-row:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.02);
+}

@@ -1,0 +1,263 @@
+
+[SPEAKER_02]
+0:00:00.192000 - 0:00:01.952000:  Aló.
+
+[SPEAKER_02]
+0:00:01.992000 - 0:00:06.053000: Aló, sí, buenas, por favor, con la señora Claudia Patricio.
+
+[SPEAKER_00]
+0:00:06.073000 - 0:00:06.593000: ¿Con ella?
+
+[SPEAKER_02]
+0:00:07.753000 - 0:00:08.774000: ¿Cómo está, señora Claudia?
+
+[SPEAKER_02]
+0:00:08.794000 - 0:00:16.795000: Habla con Rafael de... Habla con Rafael de Surtigal en alianza con Alfa.
+
+[SPEAKER_02]
+0:00:16.835000 - 0:00:17.555000: ¿Cómo se encuentra?
+
+[SPEAKER_02]
+0:00:17.575000 - 0:00:17.735000: ¿Bien?
+
+[SPEAKER_01]
+0:00:19.675000 - 0:00:20.516000: Bien, gracias a Dios.
+
+[SPEAKER_02]
+0:00:20.536000 - 0:00:28.677000: Señora Claudia, el motivo de nuestra llamada fue inicialmente queremos preguntarle si usted es la responsable del pago de la factura del gas y del crédito brío.
+
+[SPEAKER_01]
+0:00:30.001000 - 0:00:31.442000:  Sí, señor.
+
+[SPEAKER_02]
+0:00:31.462000 - 0:00:37.627000: Ok, también queremos preguntarle, ¿cómo le fue con la cuestión del servicio?
+
+[SPEAKER_02]
+0:00:37.687000 - 0:00:38.687000: ¿Le funcionó normal?
+
+[SPEAKER_01]
+0:00:38.727000 - 0:00:41.429000: No, muy bien.
+
+[SPEAKER_02]
+0:00:42.430000 - 0:00:47.454000: Ok, nos alegra mucho escuchar eso, señora Claudia, ya que día a día trabajamos para mejorar nuestros servicios.
+
+[SPEAKER_02]
+0:00:48.394000 - 0:00:56: También queremos preguntarle, indicarle, señora Claudia, que por ser una institución activa, el Surte y Gaje y Alfa le brindan un respaldo económico
+
+[SPEAKER_02]
+0:00:56.858000 - 0:01:08.542000:  de 16.803.497 pesos, que será repartida equitativamente entre sus beneficiarios de ley o cualquier persona que usted designe, en caso que usted le llegue a faltar por cualquier causa.
+
+[SPEAKER_02]
+0:01:09.202000 - 0:01:15.884000: El cual este servicio le traerá en vigencia a partir de las 12 de la noche de hoy, siendo el único requisito que usted sea menor de 66 años.
+
+[SPEAKER_02]
+0:01:16.604000 - 0:01:18.045000: El cual usted, ¿cuántos años tiene?
+
+[SPEAKER_01]
+0:01:18.105000 - 0:01:24.246000: Disculpe, señora... Tengo 49 para 50.
+
+[SPEAKER_02]
+0:01:25.087000 - 0:01:25.647000: Correcto.
+
+[SPEAKER_01]
+0:01:25.667000 - 0:01:25.967000: Yo creo...
+
+[SPEAKER_02]
+0:01:27.197000 - 0:01:36.906000:  Señora Claudia, por calidad de la llamada y que quede constancia con la información, se le brinda el título de la reforma.
+
+[SPEAKER_01]
+0:01:39.549000 - 0:01:40.489000: Aló.
+
+[Speaker]
+0:01:40.570000 - 0:01:40.730000: Aló.
+
+[SPEAKER_00]
+0:02:02.563000 - 0:02:02.623000:  ¿Aló?
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_00]
+0:02:04.393000 - 0:02:04.573000:  Aló.
+
+[SPEAKER_00]
+0:02:05.054000 - 0:02:05.274000: Aló.
+
+[SPEAKER_00]
+0:02:05.894000 - 0:02:08.296000: Sí, lo que pasa es que se cortó la llamada.
+
+[SPEAKER_00]
+0:02:08.316000 - 0:02:09.678000: Sí, es como la señal.
+
+[SPEAKER_00]
+0:02:09.698000 - 0:02:11.899000: Me tocó cortarla porque no le salía nada.
+
+[SPEAKER_00]
+0:02:12.120000 - 0:02:12.520000: Exacto.
+
+[SPEAKER_00]
+0:02:12.540000 - 0:02:18.445000: Como le indiqué a la señora Claudia, usted es la titular responsable de pagar la factura del gas, ¿correcto?
+
+[SPEAKER_00]
+0:02:18.485000 - 0:02:18.925000: Sí, señor.
+
+[SPEAKER_00]
+0:02:19.125000 - 0:02:19.345000: Ok.
+
+[SPEAKER_00]
+0:02:19.365000 - 0:02:27.992000: Como le estaba indicando a la contrafalde Surtiga en alianza con Alfa, le estaba indicando que por ser este un usuario activo, pues Surtiga y Alfa le brindan un respaldo económico de 16.803.497 pesos.
+
+[SPEAKER_00]
+0:02:31.465000 - 0:02:37.967000:  que será repartida equitativamente entre sus beneficiarios de ley o cualquier persona que usted designe, dado que eso se le llegue a faltar por cualquier causa.
+
+[SPEAKER_00]
+0:02:38.428000 - 0:02:47.231000: Cuales servicios estarán en videncia a partir de las 12 de la noche de hoy, siendo el único requisito que usted sea menor de 66 años, el cual es que nacemos en 1975.
+
+[SPEAKER_00]
+0:02:47.271000 - 0:02:50.152000: Usted me indica que tiene la edad de 49 años cumplidos.
+
+[SPEAKER_00]
+0:02:50.532000 - 0:02:51.973000: Sí, señor.
+
+[SPEAKER_00]
+0:02:52.033000 - 0:02:58.255000: Señora Claudia, por calidad de la llamada y que quede constancia con la información, se reviene a la titular responsable del pago a la factura del gas,
+
+[SPEAKER_00]
+0:02:58.928000 - 0:03:02.249000:  Y enviarle toda esta información a su correo electrónico para que la tenga a la mano.
+
+[SPEAKER_00]
+0:03:02.269000 - 0:03:04.570000: Veamos el resultado que está en nuestro sistema.
+
+[SPEAKER_00]
+0:03:04.610000 - 0:03:06.411000: Por favor, cualquiera de los que hayan me lo corre.
+
+[SPEAKER_00]
+0:03:06.451000 - 0:03:07.351000: Correcto.
+
+[SPEAKER_00]
+0:03:07.391000 - 0:03:11.532000: Su nombre es Claudia Patricia Osorio Gueto.
+
+[SPEAKER_00]
+0:03:11.612000 - 0:03:12.193000: Correcto.
+
+[SPEAKER_00]
+0:03:12.773000 - 0:03:13.193000: Sí, señor.
+
+[SPEAKER_00]
+0:03:13.693000 - 0:03:14.513000: Su número de cédula es 45759702.
+
+[SPEAKER_00]
+0:03:14.593000 - 0:03:14.894000: Correcto.
+
+[SPEAKER_00]
+0:03:14.914000 - 0:03:15.234000: Sí, señor.
+
+[SPEAKER_00]
+0:03:15.254000 - 0:03:18.415000: Su fecha de nacimiento es el 23 de agosto de 1975 con la edad de 49 años cumplidos.
+
+[SPEAKER_00]
+0:03:18.495000 - 0:03:18.935000: Correcto.
+
+[SPEAKER_00]
+0:03:19.095000 - 0:03:19.435000: Sí, señor.
+
+[SPEAKER_00]
+0:03:28.188000 - 0:03:33.352000:  Su correo electrónico es osorio clau arroba live punto com, correcto.
+
+[SPEAKER_00]
+0:03:33.852000 - 0:03:34.332000: Sí, señor.
+
+[SPEAKER_00]
+0:03:34.713000 - 0:03:36.154000: Su dirección, ¿dónde está la titular?
+
+[SPEAKER_00]
+0:03:36.174000 - 0:03:45.921000: Responsable del pago de la factura del gas con número de contrato de factura 579988 en la carrera 79, calle 4511 en Bolívar, Cartagena de Indias, correcto.
+
+[SPEAKER_00]
+0:03:45.941000 - 0:03:46.401000: Sí, señor.
+
+[SPEAKER_00]
+0:03:46.901000 - 0:03:52.005000: Señora Claudia, le indicamos que nuestras llamadas son grabadas y monitoreadas por la calidad de nuestros servicios y tranquilidad de nuestros usuarios.
+
+[SPEAKER_00]
+0:03:52.441000 - 0:03:59.502000:  Declaro usted que los datos anteriores suministrados son reales y que la actividad a la que usted se dedica son normales y se encuentran dentro de los marcos legales.
+
+[SPEAKER_00]
+0:03:59.542000 - 0:04:00.662000: ¿Correcto, señora Claudia?
+
+[SPEAKER_00]
+0:04:00.762000 - 0:04:01.723000: Sí, señor.
+
+[SPEAKER_00]
+0:04:02.203000 - 0:04:04.223000: Así mismo, señora Claudia.
+
+[SPEAKER_00]
+0:04:04.483000 - 0:04:08.924000: En cumplimiento de la ley de biodata a continuación, voy a proceder a leer la ley que protege sus datos personales.
+
+[SPEAKER_00]
+0:04:09.364000 - 0:04:13.845000: Seguros alfa como responsable harán el tratamiento de esta información para sus fines legales y contractuales.
+
+[SPEAKER_00]
+0:04:14.325000 - 0:04:21.206000: En particular, para el desarrollo y el proceso de preventa, venta y posventa, el contrato de seguro tiene el derecho a conocer, actualizar, ratificar la información
+
+[SPEAKER_00]
+0:04:21.603000 - 0:04:24.284000:  y los demás previstos en la Ley 1581 del 2012.
+
+[SPEAKER_00]
+0:04:25.165000 - 0:04:31.187000: Normas complementarias y políticas de tratamiento e informaciones disponibles en www.segurosalfa.com.co.
+
+[SPEAKER_00]
+0:04:31.828000 - 0:04:33.148000: Es la protección de datos.
+
+[SPEAKER_00]
+0:04:33.448000 - 0:04:36.990000: Es voluntario responder preguntas con informaciones sencillas de menores de edad.
+
+[SPEAKER_00]
+0:04:37.130000 - 0:04:39.191000: A continuación, la llamada otorga su autorización.
+
+[SPEAKER_00]
+0:04:39.211000 - 0:04:48.896000: Señora Claudia, declara usted que nuestras políticas de tratamiento y las condiciones generales del Proyecto Práctico y Seguro Grupo las puede consultar en nuestras páginas www.segurosalfa.com.co
+
+[SPEAKER_00]
+0:04:50.080000 - 0:05:03.670000:  como también las puede solicitar a través de nuestro correo electrónico, serviciosclientes.seguroalfa.com.co, o los teléfonos 601-307-7032, o nuestra línea nacional gratuita 018-012-2532.
+
+[SPEAKER_00]
+0:05:03.691000 - 0:05:07.033000: ¿Dejaron clara nuestra línea de atención, señora Claudia, correcto?
+
+[SPEAKER_00]
+0:05:07.614000 - 0:05:08.534000: Sí, señor.
+
+[SPEAKER_00]
+0:05:08.594000 - 0:05:17.241000: Así mismo, señora Claudia, se cuesta los productos turistas cargar el valor mensual de $26,460 por su póliza, por su seguro en la factura de ganado a favor de Seguros Alfa,
+
+[SPEAKER_00]
+0:05:17.651000 - 0:05:30.477000:  el cual se verá reflejado mensualmente a partir de su siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC, hasta que usted expresa en calidad de usuario la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:05:30.577000 - 0:05:31.538000: ¿Correcto, señora Claudia?
+
+[SPEAKER_00]
+0:05:32.478000 - 0:05:32.738000:  Sí, señor.
+
+[SPEAKER_00]
+0:05:32.778000 - 0:05:45.050000: Señora Claudia, le informo que su beneficiario te lo dice, que la ordenización de 16.803.497 pesos, en caso que se le llegue a faltar por cualquier causa y que su protección se encuentre activa por anuncio de factura de ganas.
+
+[SPEAKER_00]
+0:05:45.090000 - 0:05:50.395000: Le informo que su correo electrónico le llegará toda la documentación de la protección, junto con la condición general del servicio.
+
+[SPEAKER_00]
+0:05:50.415000 - 0:05:52.858000: Gracias por confiar en Alfa para la protección de usted y su familia.
+
+[SPEAKER_00]
+0:05:53.218000 - 0:05:55.640000: Que tenga un excelente día, señora Claudia, y que démosle la bendición.
+
+[SPEAKER_00]
+0:05:55.660000 - 0:05:56.321000: Hasta luego.
+
+[SPEAKER_00]
+0:05:56.341000 - 0:05:57.342000: Bueno, igualmente.
+
+[SPEAKER_00]
+0:05:57.382000 - 0:05:57.843000: Hasta luego.
+
+[SPEAKER_00]
+0:05:57.883000 - 0:05:58.223000: Gracias, señor.

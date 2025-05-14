@@ -1,0 +1,56 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Jairo [Apellidos no mencionados]
+* **Número de Identificación:** No especificado en la transcripción
+* **Fecha de Nacimiento:** 24 de febrero (se menciona que el cliente cumple años esta semana)
+* **Dirección:** No proporcionada en la llamada
+* **Correo Electrónico:** No se mencionó directamente, pero el agente sugirió al cliente comunicarse con las líneas de atención en caso de necesitar más información sobre su correo electrónico
+* **Teléfono:** No especificado en la transcripción
+* **Otros datos relevantes:**
+  - Cumple años esta semana.
+  
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:** Policía, Práctica y Seguro
+* **Valor Individual de Cada Plan:** No especificado para cada plan individualmente en la transcripción
+* **Valor Total Mensual:** $26,460
+* **Forma de Pago:** Cargo mensual a la factura del gas natural
+* **Vigencia:** 12 meses con renovación automática hasta que el cliente presente su adhesión para retirarse del programa
+
+## CARACTERÍSTICAS DE LOS PLANES
+### Policía, Práctica y Seguro:
+* **Coberturas específicas:**
+  - Protección en caso de fallecimiento.
+  
+* **Montos asegurados:** 
+  - En caso de fallecimiento del cliente, los beneficiarios legales recibirían una indemnización de $17,803,497.
+
+* **Requisitos de elegibilidad:**
+  - El cliente debe estar activo con el servicio de gas natural.
+  
+* **Períodos de carencia:** No especificados en la transcripción
+  
+* **Limitaciones y exclusiones:** 
+  - Se mencionó que el valor del seguro incluye ITC, pero no se detallaron otras limitaciones o exclusiones.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x] Saludo e identificación del agente: "Buenas noches, señor Jairo..."
+* [x] Explicación clara de los productos: El agente explicó que se trata de un seguro para proteger a la familia en caso de fallecimiento.
+* [x] Validación de datos personales: Se verificaron datos como el nombre y cumpleaños del cliente.
+* [x] Verificación de requisitos de elegibilidad: Se confirmó que la protección estará vinculada al servicio de gas natural.
+* [x] Explicación de valores y forma de pago: El valor mensual es $26,460, a cargo en la factura del gas natural.
+* [x] Autorización de tratamiento de datos personales: No se mencionó explícitamente en el extracto, pero parece haberse dado por entendido.
+* [x] Aceptación explícita del cliente: El cliente respondió "Sí" a varias preguntas sobre su aceptación y autorización.
+* [x] Confirmación final de entendimiento: Se confirmó con el cliente que entiende los términos y condiciones.
+
+## OBSERVACIONES
+- El agente explicó claramente la protección financiera en caso de fallecimiento, mencionando un monto de indemnización de $17,803,497 para los beneficiarios legales.
+- Se verificaron detalles del servicio con el cliente y se proporcionó una explicación sobre cómo el seguro estará vinculado a la factura del gas natural.
+- El cliente parecía estar satisfecho con la explicación recibida y no mostró resistencia durante la llamada.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta es POSITIVA. El cliente comprendió claramente el propósito principal del producto (protección financiera), se mencionaron los costos mensuales ($26,460) y la forma de pago (cargada a la factura de gas natural). La aceptación del cliente fue explícita con respuestas afirmativas. No hay evidencia de que el cliente esté insatisfecho o haya expresado un rechazo explícito.
+
+En resumen, aunque se omitieron algunos detalles como los períodos de carencia y las limitaciones específicas, la venta cumple con los criterios mínimos para considerarse válida.

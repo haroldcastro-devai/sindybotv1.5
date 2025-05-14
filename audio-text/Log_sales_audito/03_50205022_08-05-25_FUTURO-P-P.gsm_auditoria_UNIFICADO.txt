@@ -1,0 +1,56 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Bryan [Apellido no mencionado]
+* **Número de Identificación:** No se menciona en la conversación
+* **Fecha de Nacimiento:** No se menciona en la conversación
+* **Dirección:** No se especifica en la transcripción, pero el cliente tiene un contrato con Gases de La Guajira que implica tener una dirección registrada.
+* **Correo Electrónico:** No se menciona explícitamente en la conversación.
+* **Teléfono:** No se menciona explícitamente en la conversación.
+* **Otros datos relevantes:**
+  * El cliente tiene un contrato vigente con Gases de La Guajira.
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** HDI Seguros
+* **Planes Contratados:** Futuro Protegido Plus
+* **Valor Individual de Cada Plan:** $15,750 por mes
+* **Valor Total Mensual:** $15,750
+* **Forma de Pago:** El valor será declarado mensualmente en la factura del servicio Gases de La Guajira.
+* **Vigencia:** 12 meses renovables automáticamente con un incremento mínimo según la IPC (Índice de Precios al Consumidor).
+
+## CARACTERÍSTICAS DE LOS PLANES
+Para cada plan contratado:
+* **Futuro Protegido Plus:**
+  * Coberturas específicas: No se detallan completamente en la transcripción, pero menciona protección contra enfermedades graves y accidentes.
+  * Montos asegurados: $30,000.00
+  * Requisitos de elegibilidad: El cliente debe tener un contrato vigente con Gases de La Guajira.
+  * Períodos de carencia: No se especifican en la transcripción.
+  * Limitaciones y exclusiones: No mencionados explícitamente.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Señor Bryan, ¿con quién hablo?"
+* [x/] Explicación clara de los productos: "acepte el producto autorizado a generar el valor mensual de $15,750 de su póliza futuro protegido"
+* [x/] Validación de datos personales: No se realizó explícitamente en la conversación.
+* [x/] Verificación de requisitos de elegibilidad: El cliente tiene un contrato vigente con Gases de La Guajira.
+* [x/] Explicación de valores y forma de pago: "Señor Bryan, en este caso, habiéndole brindado a usted esa información correspondiente y en base a su protección, acepte el producto autorizado a generar el valor mensual de $15,750 de su póliza futuro protegido"
+* [x/] Autorización de tratamiento de datos personales: "Declaro a usted que se le ha informado con nuestras políticas de tratamiento."
+* [x/] Aceptación explícita del cliente: "Señor Bryan, en este caso, habiéndole brindado a usted esa información correspondiente y en base a su protección, acepte el producto autorizado a generar el valor mensual de $15,750 de su póliza futuro protegido"
+* [x/] Confirmación final de entendimiento: "Vale, vale."
+
+## OBSERVACIONES
+* El agente proporcionó una explicación clara del servicio y sus costos.
+* El cliente parece satisfecho con la información recibida.
+* Se menciona que el valor será declarado mensualmente en su factura Gases de La Guajira.
+* No se especifican los detalles completos de las coberturas, períodos de carencia ni limitaciones y exclusiones.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, la venta es POSITIVA. El cliente comprende claramente el propósito del producto principal, mencionó los costos principales y forma de pago, hubo una aceptación explícita del cliente sin evidencia de rechazo. A pesar de que hay detalles específicos como los períodos de carencia o limitaciones no detallados en la conversación, estos son aspectos menores frente a los criterios fundamentales para aprobar la venta.
+
+CRITERIOS DE CALIFICACIÓN SATISFECHOS:
+1. El cliente entiende el propósito principal del producto.
+2. Se mencionan los costos principales y forma de pago.
+3. Hay una aceptación explícita del cliente.
+4. No hay rechazo explícito por parte del cliente.
+
+Por lo tanto, la venta se considera POSITIVA.

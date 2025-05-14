@@ -1,0 +1,70 @@
+**REPORTE DE VENTA**
+
+- **Calificación final:** VENTA [POSITIVA]
+
+### Resumen de la llamada e interacción asesor-cliente
+
+La llamada fue realizada por un representante de HDI Seguro para ofrecer a la cliente una póliza de Futuro Protegido Plus. La cliente inicialmente mostró interés en el producto, pero se encontró con objeciones relacionadas con las implicaciones económicas adicionales que supondría agregar este servicio a su factura mensual del gas.
+
+### Valores y montos mencionados
+
+- Valor asegurado: No especificado explícitamente.
+- Monto mensual: $15,750
+- Incremento en el valor asegurado de acuerdo al ITC (Impuesto sobre la Transferencia de Créditos): no se proporcionó un monto específico.
+
+### Nombre de la gasera
+
+HDI Seguro
+
+### Registro cronológico de objeciones y resoluciones
+
+1. **Objeción:** La cliente mencionó que ya tiene una factura del servicio de gas que oscila entre $40,000 y $50,000 pesos mensuales, y que agregar otros 15,750 pesos le resultará incómodo.
+   - **Resolución:** El asesor recomendó que la cliente controle el uso del suministro de gas para no incurrir en costos adicionales. También sugirió hacer un ahorro programado diariamente entre $400 y $500 pesos para tener el valor mensual asegurado.
+
+### Aceptaciones y rechazos detectados
+
+- **Aceptación:** Finalmente, la cliente acepta la propuesta después de las explicaciones del asesor.
+- **Rechazo:** No se detectaron rechazos explícitos durante la llamada.
+
+### Respuestas del cliente sobre datos personales, términos, habeas data, cobro y aceptación
+
+- La cliente aceptó que el valor mensual de $15,750 sería cargado en su factura del gas natural.
+- No se detectaron preguntas específicas relacionadas con los términos o la política de Habeas Data.
+
+### Cumplimiento de puntos críticos
+
+- El asesor explicó claramente el monto que será cargado mensualmente y cómo sería reflejado en la factura del gas.
+- No se mencionó envío ni recepción de código OTP por mensaje de texto o WhatsApp, ya que este procedimiento no es aplicable para HDI Seguro.
+
+### Envio y Recepción de Codigo OTP
+
+No aplica para esta gasera.
+
+### Tipo de mascota y edad de la mascota (solo para planes de mascotas)
+
+No se mencionó nada relacionado con planes de mascotas en esta llamada.
+
+### Validación específica de aceptación final post-objeciones
+
+- **Respuesta del cliente:** "Correcto."
+- **Aceptación explícita:** "Gracias por haber confiado en HDI Seguro para la protección de usted y de toda su familia."
+
+### Confirmación explícita de permanencia en línea (solo para planes practiseguro/salvafactura)
+
+No aplica para esta póliza.
+
+### Registro de interacciones bilaterales asesor-usuario
+
+Las interacciones fueron bidireccionales, donde la cliente expresó sus inquietudes y el asesor respondió con explicaciones y recomendaciones. 
+
+### Verificación de "sí" explícito final al cobro
+
+No se detecta una respuesta enérgicamente afirmativa a la pregunta de pago.
+
+### Justificación de calificación
+
+La llamada resultó en una venta positiva debido a que, tras resolver las objeciones presentadas por la cliente, esta aceptó el producto. La confirmación explícita final post-objeciones fue clara y satisfactoria, con respuesta afirmativa del cliente.
+
+### Observaciones adicionales
+
+El asesor utilizó argumentos financieramente justificables para convencer a la cliente de la viabilidad económica del servicio en cuestión, destacando que el valor mensual puede ser administrado mediante un ahorro programado diariamente. La clienta finalmente aceptó la propuesta tras estas explicaciones.

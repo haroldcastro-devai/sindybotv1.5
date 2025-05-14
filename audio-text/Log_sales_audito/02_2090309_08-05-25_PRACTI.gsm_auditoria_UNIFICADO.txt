@@ -1,0 +1,53 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Luz Marina
+* **Número de Identificación:** 1084623597 (citado como número de documento en la transcripción)
+* **Fecha de Nacimiento:** 11/06/1953 (mencionada durante el proceso de validación de datos personales)
+* **Dirección:** Calle 65 No. 42-82 Apartamento 703, Medellín (revisada y confirmada por la cliente)
+* **Correo Electrónico:** [no mencionado explícitamente en la llamada]
+* **Teléfono:** [no mencionado explícitamente en la llamada]
+* **Otros datos relevantes:** Cliente recibió un servicio de postventa relacionado con un contrato de gas natural
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Segurosalfa
+* **Planes Contratados:** Practiseguro
+* **Valor Individual de Cada Plan:** $96.460 (mencionado durante la explicación del valor a cargar en la factura)
+* **Valor Total Mensual:** $96.460 (solo se menciona un monto individual, pero no se indica si hay más planes o montos adicionales)
+* **Forma de Pago:** Carga automática en la factura de gas natural
+* **Vigencia:** Renovación automática anual con incremento según el IPC hasta que la cliente decida retirarse del programa
+
+## CARACTERÍSTICAS DE LOS PLANES
+* **Practiseguro:**
+  * Coberturas específicas: Indemnización por fallecimiento del asegurado, sufragada por Segurosalfa.
+  * Montos asegurados: $16.803.497 (mencionado durante la explicación de las coberturas)
+  * Requisitos de elegibilidad: No se mencionan explícitamente en la transcripción
+  * Períodos de carencia: No se menciona un período de carencia específico
+  * Limitaciones y exclusiones: No se mencionan limitaciones o exclusiones específicas durante la llamada
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente: "Gracias por atender mi llamada, me llamo Juan. Soy asesor de Segurosalfa."
+* [x/] Explicación clara de los productos: "Le indico a aceptar los productos y autoriza a cargar valor noción 96.460 de su policía Practiseguro en la factura de gas natural a favor de Segurosalfa."
+* [x/] Validación de datos personales: "El número de documento es 1084623597, ¿es correcto?"
+* [x/] Verificación de requisitos de elegibilidad: No se menciona explícitamente la verificación de requisitos
+* [x/] Explicación de valores y forma de pago: "El valor que va a ser cargado mensualmente será de $96.460."
+* [x/] Autorización de tratamiento de datos personales: "Es voluntario responder preguntas sobre información sensible de menores de edad al continuar la llamada a otorgar su autorización y declarar que usted ha sido informada que nuestras políticas de tratamiento"
+* [x/] Aceptación explícita del cliente: "¿Correcto, señora Luz Marina?" - "Sí."
+* [x/] Confirmación final de entendimiento: "Señora Luz Marina, gracias por haber atendido mi llamada, por confiar en Alfa para la protección de su familia."
+
+## OBSERVACIONES
+* El cliente muestra comprensión y acepta explícitamente el producto principal.
+* Se mencionan los valores principales y forma de pago con claridad.
+* No se detectan anomalías significativas durante la llamada.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, determino que esta venta es POSITIVA. El cliente comprende claramente el propósito del producto principal (Practiseguro), los valores a pagar son mencionados con claridad, y hay una aceptación explícita por parte del cliente.
+
+### Citas de evidencia:
+* **Explicación del producto:** "Le indico a aceptar los productos y autoriza a cargar valor noción 96.460 de su policía Practiseguro en la factura de gas natural a favor de Segurosalfa."
+* **Valor asegurado:** "Recuerde que sus beneficiarios recibirán una indemnización por valor de $16.803.497 en caso de que llegue a faltar y su protección se encuentre activa."
+* **Forma de pago:** "El valor que va a ser cargado mensualmente será de $96.460."
+* **Confirmación final:** "Señora Luz Marina, gracias por haber atendido mi llamada, por confiar en Alfa para la protección de su familia."
+
+En resumen, se cumplen los criterios mínimos necesarios para una venta válida y el cliente parece satisfecho con la explicación recibida.

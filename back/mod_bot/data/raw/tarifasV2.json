@@ -1,0 +1,551 @@
+{
+  "GASERAS_TARIFAS_INDEMNIZACION_COVERTURA": {
+    "GASES DEL CARIBE": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8600435,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado Principal": 5733624,
+                "Segundo Asegurado": 2866813
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 25360,
+              "PRIMA_ANUAL": 304320,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 17200873,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "MASCOTAS PLAN 1": {
+              "TARIFA_MASCOTAS_GASERA_PLAN": 15950,
+              "PRIMA_ANUAL": 191400,
+              "INDEMNIZACION_MASCOTAS_GASERA_PLAN": {
+                "Muerte accidental": 5000000,
+                "Incapacidad total y permanente": 2500000,
+                "Bono canasta": 500000
+              },
+              "EDAD_INGRESO": "Usuario: Mayor de 18 años Menor de  75 años,   Mascotas:  La mascota debe tener una edad maxima hasta 10 años",
+              "EDAD_PERMANENCIA": "Accidentes personales 77 años"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 21820,
+              "PRIMA_ANUAL": 239520,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 32810,
+              "PRIMA_ANUAL": 360240,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13710,
+              "PRIMA_ANUAL": 164520,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13056479,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15750,
+              "PRIMA_ANUAL": 189000,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            }
+          }
+        },
+        {
+          "nombre": "CARDIFF",
+          "planes": {
+            "Factura Protegida": {
+              "TARIFA_FACTURAPROTEGIDA_GASERA_PLAN": 15000,
+              "PRIMA_ANUAL": 180000,
+              "INDEMNIZACION_1_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "15 a 14 días $600.000",
+              "INDEMNIZACION_2_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "más de 105 días  $600.000",
+              "INDEMNIZACION_3_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "$ 2.000.000  Muerte por cualquier causa",
+              "EDAD_INGRESO": "Mayor de 18 años  Menor de 75 años + 364 días",
+              "EDAD_PERMANENCIA": "80 años + 364 días"
+              }
+            }
+         }
+        
+      ]
+    },
+    "EFIGAS": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 15890,
+              "PRIMA_ANUAL": 190680,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8854257,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 15890,
+              "PRIMA_ANUAL": 190680,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado Principal": 5915950,
+                "Segundo Asegurado": 2957976
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 31770,
+              "PRIMA_ANUAL": 348840,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 16240715,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "MASCOTAS PLAN 1": {
+              "TARIFA_MASCOTAS_GASERA_PLAN": 15950,
+              "PRIMA_ANUAL": 191400,
+              "INDEMNIZACION_MASCOTAS_GASERA_PLAN": {
+                "Muerte accidental": 5000000,
+                "Incapacidad total y permanente": 2500000,
+                "Bono canasta": 500000
+              },
+              "EDAD_INGRESO": "Usuario: Mayor de 18 años Menor de  75 años,   Mascotas:  La mascota debe tener una edad maxima hasta 10 años",
+              "EDAD_PERMANENCIA": "Accidentes personales 77 años"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 26540,
+              "PRIMA_ANUAL": 291360,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 36120,
+              "PRIMA_ANUAL": 396600,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13710,
+              "PRIMA_ANUAL": 164520,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15750,
+              "PRIMA_ANUAL": 189000,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            }
+          }
+        },
+        {
+          "nombre": "CARDIFF",
+          "planes": {
+            "Factura Protegida": {
+              "TARIFA_FACTURAPROTEGIDA_GASERA_PLAN": 15000,
+              "PRIMA_ANUAL": 180000,
+              "INDEMNIZACION_1_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "15 a 14 días $600.000",
+              "INDEMNIZACION_2_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "más de 105 días  $600.000",
+              "INDEMNIZACION_3_FACTURAPROTEGIDA_GASES_DEL_CARIBE_EFIGAS": "$ 2.000.000  Muerte por cualquier causa",
+              "EDAD_INGRESO": "Mayor de 18 años  Menor de 75 años + 364 días",
+              "EDAD_PERMANENCIA": "80 años + 364 días"
+            }
+          }
+        }
+
+      ]
+    },
+    "GUAJIRA": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8600437,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado Principal": 5733624,
+                "Segundo Asegurado": 2866812
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 25360,
+              "PRIMA_ANUAL": 304320,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 17200873,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 19100,
+              "PRIMA_ANUAL": 229200,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 28710,
+              "PRIMA_ANUAL": 344520,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13710,
+              "PRIMA_ANUAL": 164520,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13056479,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15750,
+              "PRIMA_ANUAL": 189000,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            }
+          }
+        }
+      ]
+    },
+    "SURTIGAS": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8600437,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 12680,
+              "PRIMA_ANUAL": 152160,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado Principal": 5733624,
+                "Segundo Asegurado": 2534310
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 26460,
+              "PRIMA_ANUAL": 317520,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 16803497,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "MASCOTAS PLAN 1": {
+              "TARIFA_MASCOTAS_GASERA_PLAN": 15950,
+              "PRIMA_ANUAL": 191400,
+              "INDEMNIZACION_MASCOTAS_GASERA_PLAN": {
+                "Muerte accidental": 5000000,
+                "Incapacidad total y permanente": 2500000,
+                "Bono canasta": 500000
+              },
+              "EDAD_INGRESO": "Usuario: Mayor de 18 años Menor de  75 años,   Mascotas:  La mascota debe tener una edad maxima hasta 10 años",
+              "EDAD_PERMANENCIA": "Accidentes personales 77 años"
+            },
+            "SALVA FACTURA PLAN 1": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 13150,
+              "PRIMA_ANUAL": 157800,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2611300,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 130564,
+                "PAGO TOTAL DEL CREDITO VALOR": 522256
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 75 años con 364 días",
+              "EDAD_PERMANENCIA": "77 años con 364 días"
+            },
+            "SALVA FACTURA PLAN 2": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 16340,
+              "PRIMA_ANUAL": 196080,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2185600,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 218560,
+                "PAGO TOTAL DEL CREDITO VALOR": 874240
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 75 años con 364 días",
+              "EDAD_PERMANENCIA": "77 años con 364 días"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 17590,
+              "PRIMA_ANUAL": 211080,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68 años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 26440,
+              "PRIMA_ANUAL": 317280,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68 años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13710,
+              "PRIMA_ANUAL": 164520,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13056479,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15750,
+              "PRIMA_ANUAL": 189000,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            }
+          }
+        }
+      ]
+    },
+    "GASES DE OCCIDENTE": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 15570,
+              "PRIMA_ANUAL": 186840,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8873927,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 15570,
+              "PRIMA_ANUAL": 186840,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado Principal": 5915950,
+                "Segundo Asegurado": 2957976
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 29450,
+              "PRIMA_ANUAL": 353400,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 16803497,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "MASCOTAS PLAN 1": {
+              "TARIFA_MASCOTAS_GASERA_PLAN": 16780,
+              "PRIMA_ANUAL": 191400,
+              "INDEMNIZACION_MASCOTAS_GASERA_PLAN": {
+                "Muerte accidental": 5260000,
+                "Incapacidad total y permanente": 2630000,
+                "Bono canasta": 526000
+              },
+              "EDAD_INGRESO": "Usuario: Mayor de 18 años Menor de  75 años,   Mascotas:  La mascota debe tener una edad maxima hasta 10 años",
+              "EDAD_PERMANENCIA": "Accidentes personales 77 años"
+            },
+            "SALVA FACTURA PLAN 1": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 13150,
+              "PRIMA_ANUAL": 157800,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2611300,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 130564,
+                "PAGO TOTAL DEL CREDITO VALOR": 522256
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 75 años con 364 días",
+              "EDAD_PERMANENCIA": "77 años con 364 días"
+            },
+            "SALVA FACTURA PLAN 2": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 16340,
+              "PRIMA_ANUAL": 196080,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2185600,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 218560,
+                "PAGO TOTAL DEL CREDITO VALOR": 874240
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 76 años con 364 días",
+              "EDAD_PERMANENCIA": "78 años con 364 días"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 29800,
+              "PRIMA_ANUAL": 358560,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 40700,
+              "PRIMA_ANUAL": 488400,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13710,
+              "PRIMA_ANUAL": 164520,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 13056479,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 17220,
+              "PRIMA_ANUAL": 206640,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUS_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            }
+          }
+        }
+      ]
+    },
+    "CEO": {
+      "aseguradoras": [
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO PLAN 1": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 14830,
+              "PRIMA_ANUAL": 177960,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 8268624,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 2": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 14830,
+              "PRIMA_ANUAL": 177960,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": {
+                "Asegurado principal": 5512415,
+                "Segundo asegurado": 2756209
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "PRACTISEGURO PLAN 3": {
+              "TARIFA_PRACTISEGURO_GASERA_PLAN": 29670,
+              "PRIMA_ANUAL": 356040,
+              "INDEMNIZACION_PRACTISEGURO_GASERA_PLAN": 16537198,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 66 años (65años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "MASCOTAS PLAN 1": {
+              "TARIFA_MASCOTAS_GASERA_PLAN": 15950,
+              "PRIMA_ANUAL": 191400,
+              "INDEMNIZACION_MASCOTAS_GASERA_PLAN": {
+                "Muerte accidental": 5000000,
+                "Incapacidad total y permanente": 2500000,
+                "Bono canasta": 500000
+              },
+              "EDAD_INGRESO": "Usuario: Mayor de 18 años Menor de  75 años,   Mascotas:  La mascota debe tener una edad maxima hasta 10 años",
+              "EDAD_PERMANENCIA": "Accidentes personales: 77 años"
+            },
+            "SALVA FACTURA PLAN 1": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 13150,
+              "PRIMA_ANUAL": 157800,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2611300,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 130564,
+                "PAGO TOTAL DEL CREDITO VALOR": 522256
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 75 años con 364 días",
+              "EDAD_PERMANENCIA": "77 años con 364 días"
+            },
+            "SALVA FACTURA PLAN 2": {
+              "TARIFA_SALVAFACTURA_GASERA_PLAN": 16340,
+              "PRIMA_ANUAL": 196080,
+              "INDEMNIZACION_SALVAFACTURA_GASERA_PLAN": {
+                "Muerte accidental": 2185600,
+                "PAGO DE 4 CUOTAS DE CREDITO VALOR MAXIMO": 218560,
+                "PAGO TOTAL DEL CREDITO VALOR": 874240
+              },
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 76 años con 364 días",
+              "EDAD_PERMANENCIA": "78 años con 364 días"
+            }
+          }
+        },
+        {
+          "nombre": "LIBERTY SEGUROS / HDI SEGUROS",
+          "planes": {
+            "Futuro Protegido Plus plan 1": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 12119,
+              "PRIMA_ANUAL": 145428,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUSP1_GASERA_PLAN": 11542154,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Futuro Protegido Plus plan 2": {
+              "TARIFA_FUTUROPROTEGIDOPLUS_GASERA_PLAN": 15750,
+              "PRIMA_ANUAL": 189000,
+              "INDEMNIZACION_FUTUROPROTEGIDOPLUSP1_GASERA_PLAN": 15000000,
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 65 años y 364 días",
+              "EDAD_PERMANENCIA": "70 años y 364 días"
+            },
+            "Funerario Básico": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 27340,
+              "PRIMA_ANUAL": 328080,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            },
+            "Funerario Tradicional": {
+              "TARIFA_FUNERARIO_GASERA_PLAN": 37240,
+              "PRIMA_ANUAL": 446880,
+              "INDEMNIZACION_FUNERARIO_GASERA_PLAN": "N/A",
+              "EDAD_INGRESO": "Mayor de 18 años Menor de 69 años (68años 364 dias)",
+              "EDAD_PERMANENCIA": "Ilimitada (vitalicio)"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

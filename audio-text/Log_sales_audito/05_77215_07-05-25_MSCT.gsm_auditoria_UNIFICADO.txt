@@ -1,0 +1,56 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: POSITIVA
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Ángela [Apellido no mencionado]
+* **Número de Identificación:** 1-094-885-719
+* **Fecha de Nacimiento:** 17 de diciembre de 1986
+* **Dirección:** Calle no especificada, código postal desconocido (solo se menciona que reside en EFIGAS)
+* **Correo Electrónico:** No proporcionado durante la llamada
+* **Teléfono:** Número telefónico no mencionado directamente en la transcripción, pero se asume fue utilizado para la llamada
+* **Otros datos relevantes:** Residente de EFIGAS
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** Seguros Alfa
+* **Planes Contratados:** Póliza de mascotas
+* **Valor Individual de Cada Plan:** 15.950 pesos mensuales
+* **Valor Total Mensual:** 15.950 pesos
+* **Forma de Pago:** Cargo en la factura del gas natural a favor de Seguros Alfa, a partir del siguiente ciclo de facturación y renovará automáticamente pasada la vigencia de 12 meses con un incremento según IPC.
+* **Vigencia:** Renovará automáticamente cada año (12 meses) con ajustes por IPC hasta que el usuario decida retirarse.
+
+## CARACTERÍSTICAS DE LOS PLANES
+* **Póliza de Mascotas:**
+  * Coberturas específicas:
+    - Indemnización de 5 millones de pesos en caso del fallecimiento del cliente.
+    - Indemnización de 2.500.000 pesos para el cliente si es calificado con incapacidad permanente.
+    - Protección activa y cobrada por medio de EFIGAS.
+  * Montos asegurados:
+    - Fallecimiento: 5 millones de pesos
+    - Incapacidad permanente: 2.500.000 pesos
+  * Requisitos de elegibilidad:
+    - Edad del cliente entre 18 y 39 años (cumplido)
+  * Períodos de carencia:
+    - No mencionados en la transcripción.
+  * Limitaciones y exclusiones:
+    - Las limitaciones y exclusiones no fueron discutidas detalladamente durante la llamada.
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente (Ejemplo: "Bueno, señora Ángela, muy amable y muchas gracias por confiar en Seguros Alfa para la protección de usted y la de su mascota.")
+* [x/] Explicación clara de los productos (Ejemplo: "...recuerde que sus beneficiarios contarán con una indemnización de 5 millones de pesos...")
+* [x/] Validación de datos personales (Ejemplo: "He confirmado su número de documento 1-094-885-719 y su fecha de nacimiento el 17 de diciembre de 1986.")
+* [x/] Verificación de requisitos de elegibilidad (Ejemplo: "declara usted que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales")
+* [x/] Explicación de valores y forma de pago (Ejemplo: "...acepta el producto y autoriza cargar el valor mensual de 15.950 pesos por su póliza de mascotas en la factura del gas natural...")
+* [x/] Autorización de tratamiento de datos personales
+* [x/] Aceptación explícita del cliente (Ejemplo: "acepta usted el producto y autoriza cargar el valor mensual de 15.950 pesos por su póliza de mascotas en la factura del gas natural")
+* [x/] Confirmación final de entendimiento
+
+## OBSERVACIONES
+* El agente explicó claramente las coberturas, incluyendo la indemnización de 5 millones de pesos para los beneficiarios y 2.500.000 en caso de incapacidad permanente del cliente.
+* Se mencionaron los costos principales: el valor mensual es de 15.950 pesos, a pagar por medio de cargo en la factura de gas natural.
+* El agente confirmó los datos personales del cliente y verificó que cumple con los requisitos establecidos (edad entre 18 y 39 años).
+* Se explicaron las condiciones de renovación automática cada año, con ajustes por IPC.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, esta venta se considera **POSITIVA** ya que el cliente comprendió claramente el propósito del producto principal (póliza de mascotas), se mencionaron los costos principales y forma de pago, hubo una aceptación explícita del cliente, y no hubo rechazo por parte del cliente. 
+
+Aunque algunas limitaciones y exclusiones no fueron discutidas detalladamente, el agente cumple con todos los requisitos mínimos necesarios para considerar la venta válida.

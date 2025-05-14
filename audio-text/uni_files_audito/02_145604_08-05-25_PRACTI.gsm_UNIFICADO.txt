@@ -1,0 +1,545 @@
+
+[SPEAKER_01]
+0:00:00.385000 - 0:00:00.705000:  Dime.
+
+[SPEAKER_01]
+0:00:00.725000 - 0:00:00.865000: Aló.
+
+[SPEAKER_00]
+0:00:07.089000 - 0:00:07.549000: Aló, buenas.
+
+[SPEAKER_00]
+0:00:09.210000 - 0:00:09.510000: Aló.
+
+[SPEAKER_00]
+0:00:10.431000 - 0:00:11.091000: Buenas.
+
+[SPEAKER_00]
+0:00:11.391000 - 0:00:13.272000: Por favor, la señora Berta Mendoza.
+
+[SPEAKER_02]
+0:00:13.953000 - 0:00:18.295000: ¿Cómo está?
+
+[SPEAKER_00]
+0:00:18.575000 - 0:00:19.016000: Abuela.
+
+[SPEAKER_00]
+0:00:20.296000 - 0:00:20.977000: No, abuela.
+
+[SPEAKER_00]
+0:00:21.617000 - 0:00:23.098000: No, imagínate cómo se te ocurre.
+
+[SPEAKER_00]
+0:00:23.578000 - 0:00:28.061000: Nena, hay vainas que yo sé que obviamente yo... Aló.
+
+[SPEAKER_00]
+0:00:29.342000 - 0:00:29.822000: Sí, buenas.
+
+[SPEAKER_01]
+0:00:30.898000 - 0:00:31.918000:  Sí, buenas.
+
+[SPEAKER_00]
+0:00:31.958000 - 0:00:32.619000: Señora Berta.
+
+[SPEAKER_00]
+0:00:33.719000 - 0:00:34.539000: Sí, dame, doña.
+
+[SPEAKER_00]
+0:00:35.300000 - 0:00:36.420000: Mucho gusto, señora Berta.
+
+[SPEAKER_00]
+0:00:36.460000 - 0:00:37.700000: Le habla Ketty Sarmiento.
+
+[SPEAKER_00]
+0:00:37.760000 - 0:00:41.302000: Soy ejecutiva comercial de Alfa en Alianza Consultiva.
+
+[SPEAKER_00]
+0:00:41.382000 - 0:00:42.182000: ¿Cómo se encuentra?
+
+[SPEAKER_01]
+0:00:42.202000 - 0:00:45.303000: Bueno, bien, gracias.
+
+[SPEAKER_01]
+0:00:45.343000 - 0:00:46.683000: Adiós.
+
+[SPEAKER_00]
+0:00:46.783000 - 0:00:48.204000: Ah, me alegra que se encuentre bien.
+
+[SPEAKER_00]
+0:00:48.264000 - 0:00:58.107000: Señora Berta, nos estamos comunicando con usted mañana de hoy, bueno, en el día de hoy, porque queremos conocer acerca del servicio del gas que se le presta en la Diagonal 23, número 2557 en San Pedro Sucre.
+
+[SPEAKER_00]
+0:01:00.754000 - 0:01:02.516000:  ¿Cómo le funciona el servicio hasta el momento?
+
+[SPEAKER_02]
+0:01:04.637000 - 0:01:05.278000: ¿Cómo?
+
+[SPEAKER_02]
+0:01:05.318000 - 0:01:06.419000: Que casi no se oye.
+
+[SPEAKER_00]
+0:01:07.279000 - 0:01:09.941000: ¿Cómo le está funcionando el servicio de gas en su vivienda?
+
+[SPEAKER_02]
+0:01:11.783000 - 0:01:15.025000: No, bien, bien, gracias a Dios.
+
+[SPEAKER_00]
+0:01:15.106000 - 0:01:23.372000: Ah, perfecto, manera de escuchar su respuesta, ya que diariamente Surti Gas está trabajando para brindarle a usted y a su familia un buen servicio, ¿listo?
+
+[SPEAKER_02]
+0:01:24.493000 - 0:01:25.814000: Así es, verdad, bienvenida.
+
+[SPEAKER_00]
+0:01:26.385000 - 0:01:30.906000:  Señora Berta, le pregunto con mucho respeto, ¿es usted la que realiza los pagos más a mes de esta factura de gas?
+
+[SPEAKER_02]
+0:01:30.946000 - 0:01:33.146000: Sí, claro, yo.
+
+[SPEAKER_00]
+0:01:34.226000 - 0:01:54.550000: Ok, como, bueno, quiero indicarle, perdón, que por ser usted usuaria activa de Surtigas, Alcan el día de hoy le coloca a su disposición un respaldo económico de 16.803.497 pesos, que serán repartidos de forma equitativa a sus beneficiarios de ley, por las personas que ustedes signen caso de que Dios no lo permita,
+
+[SPEAKER_00]
+0:01:55.193000 - 0:02:05.518000:  Usted llega a faltar por cualquier causa, ellos quedarán protegidos a partir de las 12 de la noche del día de hoy y el único requisito es que usted sea menor de 66 años.
+
+[SPEAKER_00]
+0:02:06.019000 - 0:02:12.142000: En este caso, pues le pregunto con mucho respeto, ¿qué edad tiene usted?
+
+[SPEAKER_02]
+0:02:12.242000 - 0:02:12.602000: Voy a cumplir 61.
+
+[SPEAKER_00]
+0:02:13.843000 - 0:02:14.563000: Perfecto.
+
+[SPEAKER_00]
+0:02:14.763000 - 0:02:17.965000: Entonces, ¿hasta aquí le queda clara la información brindada, mi señora Berta?
+
+[SPEAKER_02]
+0:02:19.013000 - 0:02:21.015000:  Sí, claro, está bien, todo claro.
+
+[SPEAKER_00]
+0:02:21.515000 - 0:02:21.915000: Perfecto.
+
+[SPEAKER_00]
+0:02:21.955000 - 0:02:28.781000: Quiero informarle, mi señora, que para su calidad en el servicio y para su tranquilidad, nuestras llamadas están siendo grabadas y monitoreadas.
+
+[SPEAKER_00]
+0:02:29.101000 - 0:02:41.071000: Mi señora, confirmando la información que nos registra en el sistema, acá me registra que su nombre completo es Berta Marina Mendoza Caro, que es su dirección, donde cuenta con el servicio activo en la diagonal 23, número 2557, Barrio El Rosario, en San Pedro Sucre.
+
+[SPEAKER_00]
+0:02:45.198000 - 0:02:49.799000:  Acá me registra su número de contrato, factura es 145604.
+
+[SPEAKER_00]
+0:02:50.639000 - 0:02:54.100000: Señora Berta, usted me indica que actualmente tiene la edad de 60 años, ¿cierto?
+
+[SPEAKER_00]
+0:02:54.160000 - 0:02:54.960000: Todavía no ha cumplido los 61.
+
+[SPEAKER_02]
+0:02:55.240000 - 0:03:00.401000: No, voy a cumplir 61 ahora en agosto.
+
+[SPEAKER_00]
+0:03:00.981000 - 0:03:03.321000: ¿Qué día lo cumple, disculpe, para dejarlo registrado?
+
+[SPEAKER_02]
+0:03:03.341000 - 0:03:04.221000: 29 de agosto del 64.
+
+[SPEAKER_02]
+0:03:04.301000 - 0:03:08.282000: Perfecto, entonces su fecha de nacimiento es el 29 de agosto de 1964 y actualmente tiene 60 años, ¿correcto?
+
+[SPEAKER_02]
+0:03:14.465000 - 0:03:16.607000:  Llega un ataque.
+
+[SPEAKER_00]
+0:03:16.647000 - 0:03:18.609000: Actualmente tiene 60, perfecto.
+
+[SPEAKER_02]
+0:03:19.370000 - 0:03:22.132000: Tiene 60, voy a cumplir 61 ahora en agosto.
+
+[SPEAKER_00]
+0:03:22.493000 - 0:03:28.478000: Perfecto, acá me registra que su número de documento es 64-890-907, cédula colombiana.
+
+[SPEAKER_00]
+0:03:28.999000 - 0:03:37.967000: Señora Berta, usted declara que los datos anteriormente suministrados son reales y que las actividades a las que usted se dedica son normales y se encuentran dentro de los marcos legales, ¿correcto?
+
+[SPEAKER_00]
+0:03:38.808000 - 0:03:39.729000: Sí, sí, claro.
+
+[SPEAKER_00]
+0:03:40.399000 - 0:03:41.620000:  Ok, a continuación voy a leer.
+
+[SPEAKER_00]
+0:03:41.660000 - 0:04:04.780000: La ley que protege sus datos personales, seguros alfa como responsables para el tratamiento de su información para fines legales contractuales en particular, para el desarrollo del proceso de preventa en tipos 20 del contrato de seguro, usted tiene derecho a conocer, actualizar, a rectificar su información y a los demás previstos que en la ley 1581-2012, normas complementarias y la política de tratamiento de información disponibles en www.segurosalfa.com.co.
+
+[SPEAKER_00]
+0:04:06.814000 - 0:04:11.336000:  Es voluntario responder preguntas sobre información sensible de menores de edad al continuar la llamada.
+
+[SPEAKER_00]
+0:04:11.356000 - 0:04:12.436000: Otorga su autorización.
+
+[SPEAKER_00]
+0:04:12.456000 - 0:04:24.982000: Y usted declara, mi señora Berta, que ha sido informada que nuestras políticas de tratamiento y las condiciones generales del producto Practisegur usted las va a poder solicitar en www.segurosalfa.com.co, servicio al cliente arroba segurosalfa.com.co.
+
+[SPEAKER_00]
+0:04:26.032000 - 0:04:30.436000:  Y a la línea fija en Bogotá, 601-307-7032, ¿correcto?
+
+[SPEAKER_02]
+0:04:31.256000 - 0:04:31.737000: Correcto.
+
+[SPEAKER_02]
+0:04:31.837000 - 0:04:34.139000: Niña, qué pena con usted, mi amor lindo.
+
+[SPEAKER_02]
+0:04:35.420000 - 0:04:42.426000: Usted dice que Dios no lo quiera y Dios me vea porque todavía no me quiero morir.
+
+[SPEAKER_02]
+0:04:42.886000 - 0:04:43.426000: Así es.
+
+[SPEAKER_02]
+0:04:43.527000 - 0:04:43.887000: Exacto.
+
+[SPEAKER_02]
+0:04:44.047000 - 0:04:49.872000: O sea, después que un caso, así que uno vea que ahí queda un seguro para los hijos.
+
+[SPEAKER_00]
+0:04:50.432000 - 0:04:57.357000:  Exacto, sus hijos, las personas que usted considere más importantes para su vida serían las que recibirían este respaldo económico, señora Berta.
+
+[SPEAKER_02]
+0:04:57.377000 - 0:05:02.141000: Pero ahí no aparece en ello, no me puede dar ese dato.
+
+[SPEAKER_00]
+0:05:02.201000 - 0:05:16.572000: Yo ya le iba a indicar, usted me tiene que dar los nombres de las personas que desea dejar con esta protección activa, solamente nos tiene que indicar el nombre y el parentesco, acá no nos registra todavía sus beneficiarios de ley, usted es la que me los tiene que indicar, listo.
+
+[SPEAKER_02]
+0:05:17.536000 - 0:05:19.958000:  Ah, pero con número de cédula y todo, ¿no?
+
+[SPEAKER_00]
+0:05:20.358000 - 0:05:22.099000: No, solamente el nombre y el parámetro.
+
+[SPEAKER_02]
+0:05:22.119000 - 0:05:22.640000: Y el nombre.
+
+[SPEAKER_02]
+0:05:23.140000 - 0:05:25.161000: ¿Y si le puedo dar los nombres enseguida?
+
+[SPEAKER_00]
+0:05:26.102000 - 0:05:27.943000: Sí, al finalizar la llamada, señora Berta.
+
+[SPEAKER_00]
+0:05:28.003000 - 0:05:28.324000: ¿Listo?
+
+[SPEAKER_02]
+0:05:29.064000 - 0:05:30.405000: Ah, bueno, listo, doña.
+
+[SPEAKER_00]
+0:05:30.765000 - 0:05:31.226000: Perfecto.
+
+[SPEAKER_00]
+0:05:31.266000 - 0:05:33.828000: Entonces, ¿hasta ahí es clara la información brindada, señora Berta?
+
+[SPEAKER_01]
+0:05:33.848000 - 0:05:36.229000: Sí, está todo claro, mi reina.
+
+[SPEAKER_00]
+0:05:36.249000 - 0:05:36.610000: Perfecto.
+
+[SPEAKER_00]
+0:05:36.630000 - 0:05:44.155000: Entonces, señora Berta, usted declara que ha sido informada que nuestras políticas de tratamiento y las condiciones generales del producto PratiSeguro usted las va a poder consultar
+
+[SPEAKER_00]
+0:05:44.747000 - 0:05:52.392000:  ...en www.segurosalfa.com.co, servicio al cliente arroba segurosalfa.com.co... ...y a la línea fija 601-307-7032, ¿correcto?
+
+[SPEAKER_00]
+0:05:52.512000 - 0:05:53.213000: Exactamente.
+
+[SPEAKER_00]
+0:05:53.613000 - 0:05:57.556000: ¿Correcto, señora Berta?
+
+[SPEAKER_02]
+0:05:58.836000 - 0:05:59.937000: Sí, correcto, todo.
+
+[SPEAKER_00]
+0:06:00.037000 - 0:06:11.985000: Ok, le indico a aceptar los productos autorizados a cargarlo al valor mensual de $26.460... ...su póliza práctica y segura, una factura de gas natural a favor de seguros alfa... ...se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente...
+
+[SPEAKER_00]
+0:06:12.530000 - 0:06:20.194000:  Pasada la vigencia de ese método, se implementa en el valor asegurado de acuerdo con el IPC hasta que expresen calidad usuaria la decisión de retirarse del programa.
+
+[SPEAKER_00]
+0:06:20.274000 - 0:06:20.735000: ¿Correcto?
+
+[SPEAKER_00]
+0:06:21.835000 - 0:06:23.156000: Correcto, doña.
+
+[SPEAKER_00]
+0:06:23.196000 - 0:06:24.116000: ¿Correcto, señora Berta?
+
+[SPEAKER_00]
+0:06:24.897000 - 0:06:26.218000: Sí, mi amor, así es.
+
+[SPEAKER_00]
+0:06:26.298000 - 0:06:29.619000: Ok, recuerden, señora, que su beneficiario recibirá una indemnización por valor de $16.803.497.
+
+[SPEAKER_00]
+0:06:29.660000 - 0:06:31.400000: En caso de que llegue a faltar y su protección se encuentra activa,
+
+[SPEAKER_00]
+0:06:36.339000 - 0:06:41.602000:  Ahora sí, señora Berta, pues me indica los nombres de las personas que ustedes van a dejar incluidas con esta protección.
+
+[SPEAKER_02]
+0:06:42.603000 - 0:06:46.786000: Bueno, Joana López.
+
+[SPEAKER_00]
+0:06:46.806000 - 0:06:47.146000: Joana López.
+
+[SPEAKER_02]
+0:06:48.107000 - 0:06:48.587000: Exacto.
+
+[SPEAKER_00]
+0:06:49.087000 - 0:06:51.509000: ¿Qué parentesco tiene, señora Berta?
+
+[SPEAKER_00]
+0:06:52.510000 - 0:06:52.790000: Hija.
+
+[SPEAKER_00]
+0:06:52.850000 - 0:06:53.170000: Ok.
+
+[SPEAKER_00]
+0:06:53.830000 - 0:06:59.694000: Juliet López.
+
+[SPEAKER_00]
+0:06:59.814000 - 0:07:01.075000: Ok, Juliet López.
+
+[SPEAKER_00]
+0:07:01.295000 - 0:07:02.036000: ¿Hija también?
+
+[SPEAKER_02]
+0:07:02.736000 - 0:07:03.757000: Hija también.
+
+[SPEAKER_00]
+0:07:04.297000 - 0:07:05.278000: ¿Y su papá?
+
+[SPEAKER_00]
+0:07:06.125000 - 0:07:06.585000:  ¿Cómo?
+
+[SPEAKER_00]
+0:07:07.545000 - 0:07:08.225000: Yuranis.
+
+[SPEAKER_00]
+0:07:09.406000 - 0:07:09.926000: Yuranis.
+
+[SPEAKER_00]
+0:07:10.106000 - 0:07:10.626000: ¿El apellido?
+
+[SPEAKER_02]
+0:07:10.646000 - 0:07:12.566000: Rodríguez.
+
+[SPEAKER_00]
+0:07:12.586000 - 0:07:14.126000: Yuranis Rodríguez.
+
+[SPEAKER_02]
+0:07:15.007000 - 0:07:15.547000: Exacto.
+
+[SPEAKER_00]
+0:07:15.967000 - 0:07:16.967000: ¿Es hija también?
+
+[SPEAKER_00]
+0:07:16.987000 - 0:07:19.087000: Hija.
+
+[SPEAKER_00]
+0:07:19.207000 - 0:07:19.627000: Ok.
+
+[SPEAKER_00]
+0:07:20.147000 - 0:07:21.028000: ¿Desea incluir un nombre?
+
+[SPEAKER_00]
+0:07:21.128000 - 0:07:22.248000: Oscar.
+
+[SPEAKER_02]
+0:07:22.328000 - 0:07:24.668000: Oscar David Rodríguez.
+
+[SPEAKER_02]
+0:07:25.628000 - 0:07:29.129000: Oscar David.
+
+[SPEAKER_00]
+0:07:30.489000 - 0:07:31.549000: Oscar David Rodríguez.
+
+[SPEAKER_00]
+0:07:32.170000 - 0:07:33.090000: ¿Qué parentesco tiene?
+
+[SPEAKER_02]
+0:07:33.870000 - 0:07:34.150000: Hijo.
+
+[SPEAKER_00]
+0:07:34.998000 - 0:07:38.961000:  Y María Fernanda también.
+
+[SPEAKER_02]
+0:07:39.282000 - 0:07:41.444000: María Fernanda López.
+
+[SPEAKER_00]
+0:07:41.484000 - 0:07:42.505000: María Fernanda López.
+
+[SPEAKER_00]
+0:07:42.685000 - 0:07:43.285000: ¿Hija también?
+
+[SPEAKER_00]
+0:07:43.345000 - 0:07:45.828000: Hija.
+
+[SPEAKER_00]
+0:07:45.848000 - 0:07:46.228000: Ok, señora.
+
+[SPEAKER_00]
+0:07:46.248000 - 0:07:50.131000: A ver, entonces le voy a indicar los nombres de las personas para que me confirmen.
+
+[SPEAKER_00]
+0:07:50.171000 - 0:07:51.392000: Johanna López, hija.
+
+[SPEAKER_00]
+0:07:51.412000 - 0:07:53.134000: Juliet López, hija.
+
+[SPEAKER_00]
+0:07:53.154000 - 0:07:54.815000: Yurani Rodríguez, hija.
+
+[SPEAKER_00]
+0:07:54.835000 - 0:07:56.357000: Oscar David Rodríguez, hijo.
+
+[SPEAKER_00]
+0:07:56.377000 - 0:07:58.258000: Y María Fernanda López, vieja.
+
+[SPEAKER_00]
+0:07:58.339000 - 0:07:58.699000: ¿Correcto?
+
+[SPEAKER_00]
+0:07:59.100000 - 0:08:00.901000:  Ah, exacto, mi reina.
+
+[SPEAKER_00]
+0:08:01.061000 - 0:08:05.082000: Ok, señora Berta, entonces estas serían las personas que usted dejaría con esta protección activa.
+
+[SPEAKER_00]
+0:08:05.863000 - 0:08:08.344000: Señora Berta, ¿usted maneja correo electrónico, mi señora?
+
+[SPEAKER_02]
+0:08:09.804000 - 0:08:11.805000: No, no, en el momento no tengo.
+
+[SPEAKER_02]
+0:08:11.905000 - 0:08:14.426000: Tengo que tenerlo y ese lo envío.
+
+[SPEAKER_02]
+0:08:14.486000 - 0:08:16.087000: ¿Tiene correo?
+
+[SPEAKER_02]
+0:08:16.107000 - 0:08:17.527000: ¿Le puedo dar otro correo?
+
+[SPEAKER_00]
+0:08:17.727000 - 0:08:18.808000: Claro que sí, sí, señora.
+
+[SPEAKER_02]
+0:08:19.230000 - 0:08:23.832000:  Bueno, aquí lo voy a pasar a la niña para que le haga el favor.
+
+[SPEAKER_00]
+0:08:23.852000 - 0:08:25.233000: Muchas gracias, muy amable.
+
+[SPEAKER_00]
+0:08:25.273000 - 0:08:27.334000: Dios me la bendiga y me la guarde, ¿oyó?
+
+[SPEAKER_00]
+0:08:27.354000 - 0:08:28.054000: Amén, señora Berta.
+
+[SPEAKER_00]
+0:08:28.095000 - 0:08:46.184000: Bueno, antes de que me pase a su hija, le quiero indicar que muchas gracias por haber atendido mi llamada, por confiar en Alfa para la protección de usted y su familia, y que al correo que su hija, la persona que me va a pasar, que me va a indicar, a ese correo le voy a hacer el envío de toda la información, de la documentación junto con la protección, junto con las condiciones generales del servicio.
+
+[SPEAKER_00]
+0:08:46.264000 - 0:08:46.544000: ¿Listo?
+
+[SPEAKER_00]
+0:08:47.103000 - 0:08:48.103000:  Que tenga un excelente día.
+
+[SPEAKER_00]
+0:08:48.123000 - 0:08:49.063000: Bendiciones, señora.
+
+[SPEAKER_02]
+0:08:49.103000 - 0:08:50.024000: Gracias, doñita.
+
+[SPEAKER_02]
+0:08:50.064000 - 0:08:51.744000: Gracias, mi amor.
+
+[SPEAKER_00]
+0:08:51.824000 - 0:08:55.325000: Ahí le paso, doña.
+
+[SPEAKER_00]
+0:08:55.385000 - 0:08:55.445000: Ok.
+
+[SPEAKER_00]
+0:08:55.465000 - 0:08:57.145000: Sí, ¿me puedes indicar el correo, por favor?
+
+[SPEAKER_02]
+0:08:58.025000 - 0:08:58.565000: Sí, claro.
+
+[SPEAKER_00]
+0:08:58.605000 - 0:08:59.546000: María.
+
+[SPEAKER_02]
+0:08:59.586000 - 0:09:03.446000: Sí.
+
+[SPEAKER_00]
+0:09:03.486000 - 0:09:04.407000: López Mendoza.
+
+[SPEAKER_01]
+0:09:05.087000 - 0:09:06.787000: López Mendoza.
+
+[Speaker]
+0:09:06.807000 - 0:09:06.787000: 2002.
+
+[SPEAKER_01]
+0:09:06.847000 - 0:09:09.288000: Sí.
+
+[SPEAKER_01]
+0:09:09.348000 - 0:09:11.108000: Arroba el Dimei.com.
+
+[SPEAKER_00]
+0:09:11.168000 - 0:09:11.748000: Perfecto.
+
+[SPEAKER_00]
+0:09:12.648000 - 0:09:13.029000: Ok.
+
+[SPEAKER_00]
+0:09:13.149000 - 0:09:13.949000: Muchísimas gracias.
+
+[SPEAKER_00]
+0:09:13.969000 - 0:09:14.689000: Que tenga un buen día.
+
+[SPEAKER_00]
+0:09:14.729000 - 0:09:15.149000: Hasta luego.
+
+[SPEAKER_01]
+0:09:16.099000 - 0:09:17.290000:  Gracias, igual para usted.
+
+[SPEAKER_00]
+0:09:17.714000 - 0:09:18.118000: Gracias.
+
+[CONTINUACIÓN DE LLAMADA]
+
+[SPEAKER_02]
+0:09:20.591000 - 0:09:31.658000:  Señora Berta Señora Berta, nuevamente con Ketty Sarmiento de Alfa y Surtigas Mi señora, tuve un inconveniente acá, ¿me puede indicar nuevamente su fecha de nacimiento, por favor?
+
+[SPEAKER_01]
+0:09:31.678000 - 0:09:38.022000: 21 de?
+
+[SPEAKER_02]
+0:09:41.164000 - 0:09:43.466000: Qué pena, es que se escucha entrecortado y no le entiendo
+
+[SPEAKER_01]
+0:09:44.137000 - 0:09:48.041000:  Exacto, sí, mija, también yo te doy 29 de agosto, mi amor.
+
+[SPEAKER_02]
+0:09:48.241000 - 0:09:50.363000: Ah, perfecto, 29 de agosto de 1964.
+
+[Speaker]
+0:09:50.403000 - 0:09:50.363000: 64.
+
+[SPEAKER_02]
+0:09:50.663000 - 0:09:56.729000: Perfecto, ah, listo, señora Berta, bueno, muchas gracias, que tenga buen día.
+
+[SPEAKER_02]
+0:09:56.889000 - 0:09:59.792000: Bueno, pues, que Dios la bendiga, igual.
+
+[SPEAKER_02]
+0:09:59.852000 - 0:10:00.953000: Ya, ya, igual.

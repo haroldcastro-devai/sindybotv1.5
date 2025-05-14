@@ -1,0 +1,15 @@
+   {% load static %}
+   <!-- Required Js -->
+    <script src="{% static 'assets/js/plugins/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/pcoded.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar iconos Feather
+        if (typeof feather !== 'undefined') {
+          feather.replace();
+        }
+      });
+    </script>

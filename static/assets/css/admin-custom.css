@@ -1,0 +1,365 @@
+/* 
+ * SBOT Admin Custom Styles
+ * Estilos personalizados para el panel de administración
+ */
+
+/* Variables globales */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #1abc9c;
+    --light-bg: #f8f9fa;
+    --dark-bg: #2c3e50;
+    --text-color: #333;
+    --text-light: #f8f9fa;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset y mejoras globales */
+#header, #container, .module, .app-auth.model-user {
+    box-sizing: border-box;
+}
+
+/* Mejoras para el encabezado */
+#header {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#branding h1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#branding h1 a:link, #branding h1 a:visited {
+    color: white;
+}
+
+#user-tools {
+    font-size: 13px;
+    padding: 8px 0;
+}
+
+#user-tools a {
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+#user-tools a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* Mejora de la barra lateral */
+div.breadcrumbs {
+    background: var(--secondary-color);
+    padding: 12px 40px;
+    color: white;
+    font-size: 14px;
+    box-shadow: var(--box-shadow);
+}
+
+div.breadcrumbs a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+div.breadcrumbs a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Tabla de cambios */
+.change-list .filtered .results, .change-list .filtered .paginator, 
+.filtered #toolbar, .filtered div.xfull, 
+.filtered .actions, #changelist .paginator {
+    margin-right: 240px !important;
+    width: auto !important;
+}
+
+#changelist table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+#changelist table thead th {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+}
+
+#changelist table thead th.sorted {
+    background: var(--secondary-color);
+}
+
+#changelist table thead th a {
+    color: white;
+    text-decoration: none;
+}
+
+#changelist table tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#changelist table tbody tr:hover {
+    background-color: var(--light-bg);
+}
+
+/* Formularios y entradas */
+input[type=text], input[type=password], input[type=email], input[type=url], 
+input[type=number], input[type=tel], textarea, select, .vTextField {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, 
+input[type=url]:focus, input[type=number]:focus, input[type=tel]:focus, 
+textarea:focus, select:focus, .vTextField:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Botones */
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.button:hover, input[type=submit]:hover, input[type=button]:hover, 
+.submit-row input:hover, a.button:hover {
+    background: #217dbb;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: var(--accent-color);
+}
+
+.button.default:hover, input[type=submit].default:hover, .submit-row input.default:hover {
+    background: #16a085;
+}
+
+/* Fila de botones del formulario */
+.submit-row {
+    padding: 15px 20px;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.submit-row a.deletelink {
+    background: #e74c3c;
+    padding: 10px 18px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.submit-row a.deletelink:hover {
+    background: #c0392b;
+}
+
+/* Módulos y filtros */
+.module {
+    margin-bottom: 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.module h2, .module caption {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.module table {
+    width: 100%;
+}
+
+.module table td, .module table th {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/* Específico para usuarios */
+.app-auth.model-user .module {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.app-auth.model-user .module h2 {
+    font-size: 18px;
+    background: var(--primary-color);
+}
+
+.app-auth.model-user .form-row {
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.app-auth.model-user .form-row:last-child {
+    border-bottom: none;
+}
+
+.app-auth.model-user label {
+    font-weight: 500;
+    color: #555;
+}
+
+.app-auth.model-user .help {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Barra lateral de filtros */
+#changelist-filter {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+#changelist-filter h2 {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#changelist-filter h3 {
+    font-size: 14px;
+    padding: 12px 15px;
+    margin: 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#changelist-filter ul {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+#changelist-filter li {
+    margin: 5px 0;
+}
+
+#changelist-filter li.selected {
+    font-weight: 600;
+}
+
+#changelist-filter li.selected a {
+    color: var(--secondary-color);
+}
+
+#changelist-filter a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#changelist-filter a:hover {
+    color: var(--secondary-color);
+}
+
+/* Mensajes y notificaciones */
+.messagelist {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.messagelist li {
+    padding: 12px 15px;
+    margin: 0 0 10px 0;
+    border-radius: var(--border-radius);
+    list-style: none;
+    font-size: 14px;
+}
+
+.messagelist li.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.messagelist li.warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.messagelist li.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #header {
+        padding: 15px 20px;
+    }
+    
+    div.breadcrumbs {
+        padding: 12px 20px;
+    }
+    
+    #content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #user-tools {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    
+    #changelist .actions {
+        float: none;
+        margin-bottom: 15px;
+    }
+    
+    #changelist .actions select {
+        width: 100%;
+    }
+    
+    .change-list .filtered .results, .change-list .filtered .paginator, 
+    .filtered #toolbar, .filtered div.xfull, 
+    .filtered .actions, #changelist .paginator {
+        margin-right: 0 !important;
+    }
+    
+    #changelist-filter {
+        width: 100% !important;
+        position: static !important;
+        margin-top: 20px;
+    }
+}

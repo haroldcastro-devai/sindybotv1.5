@@ -1,0 +1,167 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+<!-- [ Main Content ] start -->
+<div class="row">
+    <div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">Auditoria de Venta TMK</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="feather icon-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="#">Configuración</a></li>
+                        <li class="breadcrumb-item"><a href="#">Auditoria</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    {% comment %} visor de proceso seleccionado {% endcomment %}
+    <div class="col-md-12 col-lg-4">
+        <div class="card">
+            <div class="card-body text-center">				
+                <div class="icon-text-container">
+                    <i class="fas fa-folder-open icon"></i>
+                    <h4 class="text">Ultimo Directorio Seleccionado:</h4> 
+                </div>
+                <div style="text-align: left; padding-left: 14%">
+                    <tbody>
+                        {% if ultimo_registro %}
+                            {{ ultimo_registro.reg_tip_dir }} 
+                        {% else %}
+                            {{ mensaje }}
+                        {% endif %}						
+                    </tbody> Mostrar la ruta del directorio aquí
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-body text-center">				
+                <div class="icon-text-container">
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <h4 class="text">Fechas Seleccionadas:</h4>						
+                </div>
+                <div style="text-align: left; padding-left: 14%">
+                    {% if ultimo_registro %}
+                    {% if mensaje_fecha %}
+                        <div>{{ mensaje_fecha }}</div>
+                    {% endif %}
+                    
+                {% else %}
+                    {{ mensaje }}
+                {% endif %}
+                </div>
+            </div>
+        </div>	
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-question-circle text-c-green d-block f-40"></i>
+                <h4 class="m-t-20"><span class="text-c-blgreenue">Auditoria Masiva</h4>
+                <p>Haga Click Para Comenzar la Auditoria:</p>
+
+                <button class="boton" onclick="ejecutarScript()">Iniciar</button>
+
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- [ table ] begin -->
+    <!-- social statustic end -->
+    <!-- customer overview start -->
+    <div class="col-md-12">
+        <div class="card table-card">
+            <div class="card-header">
+                <h5>Registro de Sesiones</h5>
+                <div class="card-header-right">
+                    <div class="btn-group card-option">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="feather icon-more-horizontal"></i>
+                        </button>
+                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-end">
+                            <li class="dropdown-item reload-card">
+                                <a href="#" onclick="actualizarTabla()">
+                                    <i class="feather icon-refresh-cw"></i> reload
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-fill mt-3 border-bottom pb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <i class="feather icon-layers m-r-5"></i> Registro de Actividad
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body p-0">
+                <div class="tab-content" id="pills-tabcontent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="table-responsive">
+                            <div class="table-container">
+                                <table class="table table-hover m-b-0" id="tablaActividad">
+                                    <thead>
+                                        <tr>
+                                            <th><span>Fecha</span></th>
+                                            <th><span>Nombre de Usuario</span></th>
+                                            <th><span>Archivos procesados</span></th>
+                                            <th><span>Estado de Ventas</span></th>                                            
+                                            <th><span>Tipo de Consulta</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for registro in TbRegActividad %}
+                                        <tr>
+                                            <td>{{ registro.reg_activ_fecha }}</td>
+                                            <td>{{ registro.reg_activ_user }}</td>
+                                            <td>{{ registro.reg_activ_archproc }}</td>
+                                            <td>{{ registro.reg_sum_ventpos }}</td>
+                                           
+                                            <td>{{ registro.reg_tip_consulta }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Customer overview end -->
+    <!-- [ Main Content ] end -->
+</div>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toastDirectorio" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Directorio seleccionado correctamente.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block extrajs %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<!-- custom-chart js -->
+<script src="{% static 'assets/js/pages/dashboard-main.js' %}"></script>
+<!-- Apex Chart -->
+<script src="{% static 'assets/js/plugins/apexcharts.min.js' %}"></script>
+<!-- Enlace al nuevo archivo JavaScript -->
+<script src="{% static 'assets/js/auditor.js' %}"></script>
+{% endblock extrajs %}

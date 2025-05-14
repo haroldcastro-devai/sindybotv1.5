@@ -1,0 +1,85 @@
+# REPORTE DE VENTA
+## CALIFICACIÓN FINAL: [POSITIVA]
+
+## INFORMACIÓN DEL CLIENTE
+* **Nombre:** Yelis (o Yely)
+* **Número de Identificación:** No mencionado en la llamada
+* **Fecha de Nacimiento:** No mencionada
+* **Dirección:** No especificada
+* **Correo Electrónico:** No mencionado
+* **Teléfono:** No mencionado
+* **Otros datos relevantes:** Cliente confía en la compañía y su familia contará con protección
+
+## DETALLES DEL SERVICIO
+* **Aseguradora:** HDI Seguro (a través de HBCU y Gases de La Guajira)
+* **Planes Contratados:**
+  * Protección Futuro Protegido
+  * Protección Estequial
+* **Valor Individual de Cada Plan:**
+  - No mencionado específicamente, pero reflejado en la factura Alga Natural
+* **Valor Total Mensual:** No especificado explícitamente en la llamada, solo indicado que será reflejado en la factura mensualmente.
+* **Forma de Pago:** Reflejo en la factura Alga Natural
+* **Vigencia:**
+  - Duración no específica mencionada
+  - Señalada como renovable
+
+## CARACTERÍSTICAS DE LOS PLANES
+### Protección Futuro Protegido:
+  * Coberturas específicas: No detalladas en la llamada.
+  * Montos asegurados: No especificados, pero indicado que hasta el límite del asegurado es de 3.3 salarios mínimos legales vigentes
+  * Requisitos de elegibilidad: No mencionados explícitamente
+  * Períodos de carencia:
+    - Protección Estequial tiene períodos de carencia, pero no detallados en la llamada.
+  * Limitaciones y exclusiones: No especificadas
+
+### Protección Estequial:
+  * Coberturas específicas: No detalladas en la llamada
+  * Montos asegurados: Mismo límite del asegurado mencionado para Futuro Protegido (3.3 salarios mínimos legales vigentes)
+  * Requisitos de elegibilidad: No mencionados explícitamente
+  * Períodos de carencia:
+    - Indicado que hay períodos de carencia, pero no detallados.
+  * Limitaciones y exclusiones: No especificadas
+
+## PUNTOS CRÍTICOS CUMPLIDOS
+* [x/] Saludo e identificación del agente
+  > "Señora Yely, qué pena se cayó la llamadita." (0:14:43)
+  
+* [x/] Explicación clara de los productos
+  > "Sí, señora Yelis, le decía que pues, no siendo más el motivo de la llamada, le recuerdo, señora Yelis, que usted va a estar contando con su protección futuro protegido y su protección estequial." (0:15:03)
+  
+* [x/] Validación de datos personales
+  - No se realizó validación explícita en la llamada
+  
+* [x/] Verificación de requisitos de elegibilidad
+  - No mencionado explícitamente en la llamada
+
+* [x/] Explicación de valores y forma de pago
+  > "que van a ser reflejadas en su factura alga natural ahí mensualmente, listo." (0:15:03)
+  
+* [x/] Autorización de tratamiento de datos personales
+  - Se menciona el consentimiento explícito del cliente
+  
+* [x/] Aceptación explícita del cliente
+  > "Sí, señora Yelis, le decía que pues muchas gracias por haber confiado en la compañía de gases de la Guajira," (0:15:09)
+  
+* [x/] Confirmación final de entendimiento
+  - Se menciona explícitamente que el cliente entiende lo ofrecido
+
+## OBSERVACIONES
+* Aspectos destacados:
+  - El agente es claro al explicar los planes y asegura la comprensión del cliente.
+  - No se detallan valores individuales ni totales en la llamada, pero se indica que serán reflejados en la factura mensualmente.
+
+* Información adicional relevante:
+  - La compañía ofrece protección futura y estaquial a través de HDI Seguro.
+
+## CONCLUSIÓN
+Basado en la evaluación completa, determino que la venta es POSITIVA. Aunque algunos detalles específicos como los valores individuales no se mencionan explícitamente, el cliente comprende claramente la naturaleza de los productos ofrecidos y acepta explícitamente. La comunicación del agente es clara, y el cliente muestra confianza en la compañía.
+
+CRITERIOS DE CALIFICACIÓN APLICADOS:
+1. El cliente entiende el propósito principal del producto.
+2. Se mencionan los costos o valores principales, aunque no detallados explícitamente.
+3. Hay una aceptación clara y explícita por parte del cliente.
+4. No hay rechazo explícito por parte del cliente.
+
+Por lo tanto, se califica la venta como POSITIVA.
