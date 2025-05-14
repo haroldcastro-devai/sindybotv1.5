@@ -40,9 +40,9 @@ El sistema SindyBot está compuesto por varios módulos interconectados:
 ### Hardware Recomendado
 
 - **CPU**: Intel i7/Ryzen 7 o superior (mínimo 4 núcleos)
-- **RAM**: 16GB mínimo (32GB recomendado)
-- **Almacenamiento**: SSD 256GB mínimo
-- **GPU**: NVIDIA con mínimo 6GB VRAM (recomendado para procesamiento acelerado)
+- **RAM**: 64GB mínimo (128GB recomendado)
+- **Almacenamiento**: SSD 1TB mínimo
+- **GPU**: NVIDIA con mínimo 16GB VRAM SOPORTE CUDACORE (recomendado para procesamiento acelerado)
 
 ### Software Requerido
 
