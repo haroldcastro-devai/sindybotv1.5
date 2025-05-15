@@ -1,0 +1,1230 @@
+{
+  "GASERAS_GUIONES": {
+    "SURTIGAS": {
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUNERARIO": {
+              "nombre": "FUNERARIO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con SURTIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de SURTIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de SURTIGAS HDI Seguros Antes Liberty Seguros le brinda la oportunidad de contar con el 100% de todos los gastos de previsión exequial para usted y todas las personas que convivan con usted de forma permanente o por un período superior a un mes, sin importar el parentesco o la cantidad de personas que habiten en la vivienda. El único requisito es ser menor de 69 años al momento de la toma del servicio y la edad de permanencia es ilimitada. Contarán con: Traslado del cuerpo, Transporte de acompañantes, Cremación o bóveda entre otros servicios más. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_adicionales": [
+                  "¿Cuántas personas conviven con usted?",
+                  "¿Todos son menores de 69 años?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FUNERARIO] por su póliza de protección Exequial en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "periodo_carencia": "Le recuerdo los periodos de carencia para su amparo funerario son los siguientes: Muerte accidental le cubre a partir del día de hoy a las 12 de la noche, a partir del día 46 le cubre en caso de muerte natural no preexistente, a partir de 181 días para enfermedades Preexistentes, excepto cáncer y SIDA, y a partir de 366 días por cáncer y SIDA; con una cobertura para máximo 5 siniestros por vigencia. [TITULO_CLIENTE] [NOMBRE_CLIENTE] queremos informarle que en caso de que el pago del servicio lo realice de forma directa, la compañía lo indemnizará con la presentación de las facturas originales. Esta indemnización se realizará a quien demuestre haber asumido el costo, hasta el límite del asegurado que es de 3.3 (plan básico) - 5 (plan tradicional) salarios mínimos mensuales legales vigentes. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con SURTIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de SURTIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de SURTIGAS HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO": {
+              "nombre": "PRACTISEGURO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con SURTIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de SURTIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de SURTIGAS Alfa le brinda la oportunidad de contar con un respaldo económico de [INDEMNIZACION_PRACTISEGURO] que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe en el caso que Dios no lo permita usted llegue a faltar por cualquier causa. Y contará con esta protección a partir de las 12:00 de la noche de hoy, el único requisito es ser menor de 66 años. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto Practiseguro pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_PRACTISEGURO] por su póliza Practiseguro en la factura de gas natural a favor de Seguros Alfa, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "recordatorio_indemnizacion": "Recuerde que sus beneficiarios recibirán una indemnización por valor de [INDEMNIZACION_PRACTISEGURO] pesos, en caso de que usted llegue a (faltar) y su protección se encuentre activa y cobrándose en su factura de SURTIGAS",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "SALVAFACTURA": {
+              "nombre": "SALVAFACTURA",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con SURTIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_credito": {
+                  "pregunta": "¿Es usted responsable o titular del pago del crédito brilla?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": true
+                  }
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de SURTIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por la adquisición con su crédito brilla Alfa desea respaldarlo en caso de que usted presente una incapacidad temporal mayor a 15 días emitida por entidad de salud reconocida, contará con un pago de cuatro cuotas de su crédito de máximo $218.560 para un total de hasta $874.240. Adicionalmente también podrá contar con una indemnización [INDEMNIZACION_SALVAFACTURA] para sus beneficiarios de ley en caso de que Dios no lo permita usted llegara a faltar por muerte accidental. [TITULO_CLIENTE] [NOMBRE_CLIENTE] además contará con tele consulta con médico general, tele consulta pediátrica hasta 5 veces mientras la póliza esté vigente para cualquier menor de su grupo familiar solicitándolo a través del #253 Opción 2 y recibirá descuentos del 10% en droguerías aliadas registrándose a través de la página www.lopido.com. El único Requisito para esta protección es ser menor de 75 años de edad y la edad de permanencia es hasta los 77 años 364 días. Este servicio queda en vigencia pasada 60 días a partir del día de la activación. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_SALVAFACTURA] por su póliza Salva Factura en la factura de gas natural a favor de Seguros Alfa que se verán reflejados mensualmente a partir del siguiente ciclo de facturación, siendo su salva factura hasta la finalización de su crédito brilla? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GDO": {
+      "alias": "GASES DE OCCIDENTE",
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUNERARIO": {
+              "nombre": "FUNERARIO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE OCCIDENTE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE OCCIDENTE HDI Seguros Antes Liberty Seguros le brinda la oportunidad de contar con el 100% de todos los gastos de previsión exequial para usted y todas las personas que convivan con usted de forma permanente o por un período superior a un mes, sin importar el parentesco o la cantidad de personas que habiten en la vivienda. El único requisito es ser menor de 69 años al momento de la toma del servicio y la edad de permanencia es ilimitada. Contarán con: Traslado del cuerpo, Transporte de acompañantes, Cremación o bóveda entre otros servicios más. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_adicionales": [
+                  "¿Cuántas personas conviven con usted?",
+                  "¿Todos son menores de 69 años?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FUNERARIO] por su póliza de protección Exequial en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "periodo_carencia": "Le recuerdo los periodos de carencia para su amparo funerario son los siguientes: Muerte accidental le cubre a partir del día de hoy a las 12 de la noche, a partir del día 46 le cubre en caso de muerte natural no preexistente, a partir de 181 días para enfermedades Preexistentes, excepto cáncer y SIDA, y a partir de 366 días por cáncer y SIDA; con una cobertura para máximo 5 siniestros por vigencia. [TITULO_CLIENTE] [NOMBRE_CLIENTE] queremos informarle que en caso de que el pago del servicio lo realice de forma directa, la compañía lo indemnizará con la presentación de las facturas originales. Esta indemnización se realizará a quien demuestre haber asumido el costo, hasta el límite del asegurado que es de 3.3 (plan básico) - 5 (plan tradicional) salarios mínimos mensuales legales vigentes. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "info_adicional_gdo": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] antes de finalizar la llamada, queremos informarle conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actuales que tiene Gases de Occidente con usted, podrá realizarlo a través de la página www.gdo.com.co mientras elige, seguirá siendo contactado por los canales habituales.",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE OCCIDENTE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE OCCIDENTE HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "info_adicional_gdo": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] antes de finalizar la llamada, queremos informarle conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actuales que tiene Gases de Occidente con usted, podrá realizarlo a través de la página www.gdo.com.co mientras elige, seguirá siendo contactado por los canales habituales.",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO": {
+              "nombre": "PRACTISEGURO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con GASES DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE OCCIDENTE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE OCCIDENTE Alfa le brinda la oportunidad de contar con un respaldo económico de [INDEMNIZACION_PRACTISEGURO] que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe en el caso que Dios no lo permita usted llegue a faltar por cualquier causa. Y contará con esta protección a partir de las 12:00 de la noche de hoy, el único requisito es ser menor de 66 años. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto Practiseguro pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_PRACTISEGURO] por su póliza Practiseguro en la factura de gas natural a favor de Seguros Alfa, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "info_adicional_gdo": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] antes de finalizar la llamada, queremos informarle conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actuales que tiene Gases de Occidente con usted, podrá realizarlo a través de la página www.gdo.com.co mientras elige, seguirá siendo contactado por los canales habituales.",
+                "recordatorio_indemnizacion": "Recuerde que sus beneficiarios recibirán una indemnización por valor de [INDEMNIZACION_PRACTISEGURO] pesos, en caso de que usted llegue a (faltar) y su protección se encuentre activa y cobrándose en su factura de GASES DE OCCIDENTE",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "SALVAFACTURA": {
+              "nombre": "SALVAFACTURA",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con GASES DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_credito": {
+                  "pregunta": "¿Es usted responsable o titular del pago del crédito brilla?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": true
+                  }
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE OCCIDENTE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por la adquisición con su crédito brilla Alfa desea respaldarlo en caso de que usted presente una incapacidad temporal mayor a 15 días emitida por entidad de salud reconocida, contará con un pago de cuatro cuotas de su crédito de máximo $218.560 para un total de hasta $874.240. Adicionalmente también podrá contar con una indemnización [INDEMNIZACION_SALVAFACTURA] para sus beneficiarios de ley en caso de que Dios no lo permita usted llegara a faltar por muerte accidental. [TITULO_CLIENTE] [NOMBRE_CLIENTE] además contará con tele consulta con médico general, tele consulta pediátrica hasta 5 veces mientras la póliza esté vigente para cualquier menor de su grupo familiar solicitándolo a través del #253 Opción 2 y recibirá descuentos del 10% en droguerías aliadas registrándose a través de la página www.lopido.com. El único Requisito para esta protección es ser menor de 75 años de edad y la edad de permanencia es hasta los 77 años 364 días. Este servicio queda en vigencia pasada 60 días a partir del día de la activación. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_SALVAFACTURA] por su póliza Salva Factura en la factura de gas natural a favor de Seguros Alfa que se verán reflejados mensualmente a partir del siguiente ciclo de facturación, siendo su salva factura hasta la finalización de su crédito brilla? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "info_adicional_gdo": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] antes de finalizar la llamada, queremos informarle conforme a la ley 2300, si en algún momento desea modificar los canales de comunicación actuales que tiene Gases de Occidente con usted, podrá realizarlo a través de la página www.gdo.com.co mientras elige, seguirá siendo contactado por los canales habituales.",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GASES DEL CARIBE": {
+      "alias": "GAS CARIBE",
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUNERARIO": {
+              "nombre": "FUNERARIO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DEL CARIBE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DEL CARIBE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DEL CARIBE HDI Seguros Antes Liberty Seguros le brinda la oportunidad de contar con el 100% de todos los gastos de previsión exequial para usted y todas las personas que convivan con usted de forma permanente o por un período superior a un mes, sin importar el parentesco o la cantidad de personas que habiten en la vivienda. El único requisito es ser menor de 69 años al momento de la toma del servicio y la edad de permanencia es ilimitada. Contarán con: Traslado del cuerpo, Transporte de acompañantes, Cremación o bóveda entre otros servicios más. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_adicionales": [
+                  "¿Cuántas personas conviven con usted?",
+                  "¿Todos son menores de 69 años?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FUNERARIO] por su póliza de protección Exequial en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "periodo_carencia": "Le recuerdo los periodos de carencia para su amparo funerario son los siguientes: Muerte accidental le cubre a partir del día de hoy a las 12 de la noche, a partir del día 46 le cubre en caso de muerte natural no preexistente, a partir de 181 días para enfermedades Preexistentes, excepto cáncer y SIDA, y a partir de 366 días por cáncer y SIDA; con una cobertura para máximo 5 siniestros por vigencia. [TITULO_CLIENTE] [NOMBRE_CLIENTE] queremos informarle que en caso de que el pago del servicio lo realice de forma directa, la compañía lo indemnizará con la presentación de las facturas originales. Esta indemnización se realizará a quien demuestre haber asumido el costo, hasta el límite del asegurado que es de 3.3 (plan básico) - 5 (plan tradicional) salarios mínimos mensuales legales vigentes. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DEL CARIBE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DEL CARIBE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DEL CARIBE HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO": {
+              "nombre": "PRACTISEGURO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con GASES DEL CARIBE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DEL CARIBE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DEL CARIBE Alfa le brinda la oportunidad de contar con un respaldo económico de [INDEMNIZACION_PRACTISEGURO] que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe en el caso que Dios no lo permita usted llegue a faltar por cualquier causa. Y contará con esta protección a partir de las 12:00 de la noche de hoy, el único requisito es ser menor de 66 años. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto Practiseguro pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_PRACTISEGURO] por su póliza Practiseguro en la factura de gas natural a favor de Seguros Alfa, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "recordatorio_indemnizacion": "Recuerde que sus beneficiarios recibirán una indemnización por valor de [INDEMNIZACION_PRACTISEGURO] pesos, en caso de que usted llegue a (faltar) y su protección se encuentre activa y cobrándose en su factura de GASES DEL CARIBE",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "CARDIF",
+          "planes": {
+            "FACTURA PROTEGIDA": {
+              "nombre": "FACTURA PROTEGIDA",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Cardif en alianza con GASES DEL CARIBE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "verificacion_credito": {
+                  "pregunta": "¿Es usted responsable o titular del pago del crédito brilla?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": true
+                  }
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DEL CARIBE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] Queremos expresarle nuestra felicitación por la compra realizada a través del programa Brilla y por este motivo comentarle que, GASES DEL CARIBE en alianza con Cardif le ofrece la oportunidad de contar con su Factura Protegida, la cual le brinda respaldo en caso de presentar una incapacidad temporal de 15 a 104 días. En tales circunstancias, se abonarán $600.000 directamente a su crédito Brilla. Si su deuda es menor, el monto se abonará a su recibo del gas y en caso de que la incapacidad se extienda por más de 105 días, se abonará $600.000 a su cuenta bancaria para que pueda utilizarlo según considere necesario. Además, le informamos que podrá contar con un respaldo económico de [INDEMNIZACION_FACTURAPROTEGIDA] para sus beneficiarios de ley en caso de que usted llegue a faltar por cualquier causa. Asimismo, este servicio incluye múltiples asistencias, como telemedicina ilimitada con médico general, educación internacional con Coursera (dos cursos certificados al año), entre otros servicios adicionales. Este servicio estará activo durante toda la vigencia de su crédito y finalizado este usted tendrá la opción de renovación automática anual con cobertura directa al asegurado, siempre y cuando cumpla con ciertas políticas establecidas. Le recordamos que este servicio estará disponible a partir de los 31 días de la activación. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FACTURAPROTEGIDA] por su póliza Factura protegida en la factura de gas natural a favor de Cardif Colombia, que se verá reflejada en su próximo ciclo de facturación hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Cardif Colombia para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "EFIGAS": {
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUNERARIO": {
+              "nombre": "FUNERARIO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con EFIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de EFIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de EFIGAS HDI Seguros Antes Liberty Seguros le brinda la oportunidad de contar con el 100% de todos los gastos de previsión exequial para usted y todas las personas que convivan con usted de forma permanente o por un período superior a un mes, sin importar el parentesco o la cantidad de personas que habiten en la vivienda. El único requisito es ser menor de 69 años al momento de la toma del servicio y la edad de permanencia es ilimitada. Contarán con: Traslado del cuerpo, Transporte de acompañantes, Cremación o bóveda entre otros servicios más. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_adicionales": [
+                  "¿Cuántas personas conviven con usted?",
+                  "¿Todos son menores de 69 años?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FUNERARIO] por su póliza de protección Exequial en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "periodo_carencia": "Le recuerdo los periodos de carencia para su amparo funerario son los siguientes: Muerte accidental le cubre a partir del día de hoy a las 12 de la noche, a partir del día 46 le cubre en caso de muerte natural no preexistente, a partir de 181 días para enfermedades Preexistentes, excepto cáncer y SIDA, y a partir de 366 días por cáncer y SIDA; con una cobertura para máximo 5 siniestros por vigencia. [TITULO_CLIENTE] [NOMBRE_CLIENTE] queremos informarle que en caso de que el pago del servicio lo realice de forma directa, la compañía lo indemnizará con la presentación de las facturas originales. Esta indemnización se realizará a quien demuestre haber asumido el costo, hasta el límite del asegurado que es de 3.3 (plan básico) - 5 (plan tradicional) salarios mínimos mensuales legales vigentes. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con EFIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de EFIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de EFIGAS HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO": {
+              "nombre": "PRACTISEGURO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con EFIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de EFIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de EFIGAS Alfa le brinda la oportunidad de contar con un respaldo económico de [INDEMNIZACION_PRACTISEGURO] que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe en el caso que Dios no lo permita usted llegue a faltar por cualquier causa. Y contará con esta protección a partir de las 12:00 de la noche de hoy, el único requisito es ser menor de 66 años. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto Practiseguro pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_PRACTISEGURO] por su póliza Practiseguro en la factura de gas natural a favor de Seguros Alfa, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "recordatorio_indemnizacion": "Recuerde que sus beneficiarios recibirán una indemnización por valor de [INDEMNIZACION_PRACTISEGURO] pesos, en caso de que usted llegue a (faltar) y su protección se encuentre activa y cobrándose en su factura de EFIGAS",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "CARDIF",
+          "planes": {
+            "FACTURA PROTEGIDA": {
+              "nombre": "FACTURA PROTEGIDA",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Cardif en alianza con EFIGAS y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "verificacion_credito": {
+                  "pregunta": "¿Es usted responsable o titular del pago del crédito brilla?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": true
+                  }
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de EFIGAS, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] Queremos expresarle nuestra felicitación por la compra realizada a través del programa Brilla y por este motivo comentarle que, EFIGAS en alianza con Cardif le ofrece la oportunidad de contar con su Factura Protegida, la cual le brinda respaldo en caso de presentar una incapacidad temporal de 15 a 104 días. En tales circunstancias, se abonarán $600.000 directamente a su crédito Brilla. Si su deuda es menor, el monto se abonará a su recibo del gas y en caso de que la incapacidad se extienda por más de 105 días, se abonará $600.000 a su cuenta bancaria para que pueda utilizarlo según considere necesario. Además, le informamos que podrá contar con un respaldo económico de [INDEMNIZACION_FACTURAPROTEGIDA] para sus beneficiarios de ley en caso de que usted llegue a faltar por cualquier causa. Asimismo, este servicio incluye múltiples asistencias, como telemedicina ilimitada con médico general, educación internacional con Coursera (dos cursos certificados al año), entre otros servicios adicionales. Este servicio estará activo durante toda la vigencia de su crédito y finalizado este usted tendrá la opción de renovación automática anual con cobertura directa al asegurado, siempre y cuando cumpla con ciertas políticas establecidas. Le recordamos que este servicio estará disponible a partir de los 31 días de la activación. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FACTURAPROTEGIDA] por su póliza Factura protegida en la factura de gas natural a favor de Cardif Colombia, que se verá reflejada en su próximo ciclo de facturación hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Cardif Colombia para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GASES DE LA GUAJIRA": {
+      "alias": "GAS GUAJIRA",
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUNERARIO": {
+              "nombre": "FUNERARIO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DE LA GUAJIRA y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE LA GUAJIRA, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE LA GUAJIRA HDI Seguros Antes Liberty Seguros le brinda la oportunidad de contar con el 100% de todos los gastos de previsión exequial para usted y todas las personas que convivan con usted de forma permanente o por un período superior a un mes, sin importar el parentesco o la cantidad de personas que habiten en la vivienda. El único requisito es ser menor de 69 años al momento de la toma del servicio y la edad de permanencia es ilimitada. Contarán con: Traslado del cuerpo, Transporte de acompañantes, Cremación o bóveda entre otros servicios más. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_adicionales": [
+                  "¿Cuántas personas conviven con usted?",
+                  "¿Todos son menores de 69 años?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_FUNERARIO] por su póliza de protección Exequial en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "periodo_carencia": "Le recuerdo los periodos de carencia para su amparo funerario son los siguientes: Muerte accidental le cubre a partir del día de hoy a las 12 de la noche, a partir del día 46 le cubre en caso de muerte natural no preexistente, a partir de 181 días para enfermedades Preexistentes, excepto cáncer y SIDA, y a partir de 366 días por cáncer y SIDA; con una cobertura para máximo 5 siniestros por vigencia. [TITULO_CLIENTE] [NOMBRE_CLIENTE] queremos informarle que en caso de que el pago del servicio lo realice de forma directa, la compañía lo indemnizará con la presentación de las facturas originales. Esta indemnización se realizará a quien demuestre haber asumido el costo, hasta el límite del asegurado que es de 3.3 (plan básico) - 5 (plan tradicional) salarios mínimos mensuales legales vigentes. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            },
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con GASES DE LA GUAJIRA y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE LA GUAJIRA, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE LA GUAJIRA HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "PRACTISEGURO": {
+              "nombre": "PRACTISEGURO",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con GASES DE LA GUAJIRA y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de gas?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de GASES DE LA GUAJIRA, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de GASES DE LA GUAJIRA Alfa le brinda la oportunidad de contar con un respaldo económico de [INDEMNIZACION_PRACTISEGURO] que será repartido de forma equitativa entre sus beneficiarios de ley o entre las personas que usted designe en el caso que Dios no lo permita usted llegue a faltar por cualquier causa. Y contará con esta protección a partir de las 12:00 de la noche de hoy, el único requisito es ser menor de 66 años. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto Practiseguro pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_PRACTISEGURO] por su póliza Practiseguro en la factura de gas natural a favor de Seguros Alfa, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación y se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo con el IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "recordatorio_indemnizacion": "Recuerde que sus beneficiarios recibirán una indemnización por valor de [INDEMNIZACION_PRACTISEGURO] pesos, en caso de que usted llegue a (faltar) y su protección se encuentre activa y cobrándose en su factura de GASES DE LA GUAJIRA",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "COMPAÑIA ENERGETICA DE OCCIDENTE": {
+      "alias": "CEO", 
+      "aseguradoras": [
+        {
+          "nombre": "HDI SEGUROS",
+          "planes": {
+            "FUTURO PROTEGIDO PLUS": {
+              "nombre": "FUTURO PROTEGIDO PLUS",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de HDI Seguros Antes Liberty Seguros en alianza con COMPAÑIA ENERGETICA DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro del servicio?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura del gas en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de COMPAÑIA ENERGETICA DE OCCIDENTE, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por ser usted usuario activo de COMPAÑIA ENERGETICA DE OCCIDENTE HDI Seguros Antes Liberty Seguros desea brindarle un respaldo económico de: [INDEMNIZACION_FUTUROPROTEGIDOPLUS] en caso de que Dios no lo permita, usted llegase a ser diagnosticado con enfermedades graves como: Infarto al Miocardio, Cáncer Invasivo, Accidente Cerebro – Vascular, Insuficiencia Renal, Esclerosis Múltiple, Cirugía de Arterias Coronarias (By-Pass). Enfermedades muy comunes actualmente, que afectan nuestra calidad de vida generando una serie de gastos para los cuales muchas veces no estamos preparados, o en su defecto si usted llegase a padecer lesiones orgánicas o alteraciones funcionales que generen una pérdida de la capacidad laboral igual o superior al 50% podrá contar con esta protección. Uno de los requisitos es ser menor de 66 años. La edad de permanencia es hasta los 70 años. Recuerde que puede solicitar la reclamación por un solo evento y comienza a cubrirlo después del día 60 por enfermedades graves no diagnosticadas. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "preguntas_asegurabilidad": [
+                  "¿Sufre o ha sufrido usted de alguna de las siguientes enfermedades o lesiones relacionadas anteriormente? [LA RESPUESTA DEBE SER NO]",
+                  "¿Tiene alguna anomalía física, deformidad congénita y/o amputación?",
+                  "¿Ha sido sometido a cirugías o tiene alguna pendiente?"
+                ],
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Cuál es la Fecha de expedición de su documento? (Requisito indispensable)",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] en cumplimiento de la Ley de Habeas data debemos contar con su autorización para hacer tratamiento de sus datos personales. Autoriza a HDI Seguros Antes Liberty Seguros, aseguradora domiciliada en la ciudad de Bogotá, para que su información sea almacenada, consultada, usada, procesada, compartida con los siguientes fines: Su vinculación como asegurado y las de sus beneficiarios, Control y prevención de fraude, Gestión integral del contrato de seguros, Estudios actuariales y estadísticos, Transferencia a la casa matriz, subsidiaria o filial de la aseguradora, a la asociación y bases de datos del gremio asegurador. ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "declaraciones_certificaciones": {
+                  "intro": "Declara usted que ha sido informado:",
+                  "contenido": [
+                    "1. Qué nuestras políticas de tratamiento y las condiciones generales del producto póliza de seguro de vida grupo pueden ser consultadas en nuestra página web.",
+                    "2. Y sus solicitudes pueden ser atendidas a través de las líneas en Bogotá 601-3077050 Resto del País 01 8000 113390 WhatsApp 3164821802. O en nuestra página web opción CONTACTANOS"
+                  ],
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER POSITIVA]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta el producto y autoriza a cargar el valor mensual de [TARIFA_FUTUROPROTEGIDOPLUS] por su póliza futuro protegido plus, en la factura del gas natural a favor de HDI Seguros Antes Liberty Seguros, que se verán reflejados mensualmente a partir del siguiente ciclo de facturación; el cual se renovará automáticamente pasada la vigencia de 12 meses con un incremento en el valor asegurado de acuerdo al IPC hasta que exprese en calidad de usuario la decisión de retirarse del programa? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias ¡[TITULO_CLIENTE] [NOMBRE_CLIENTE]!, le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en HDI Seguros Antes Liberty Seguros, para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        },
+        {
+          "nombre": "SEGUROS ALFA",
+          "planes": {
+            "SALVAFACTURA": {
+              "nombre": "SALVAFACTURA",
+              "guion": {
+                "saludo": "Buenos días/tardes/noches, habla con [NOMBRE_ASESOR] ejecutivo comercial de Alfa en alianza con COMPAÑIA ENERGETICA DE OCCIDENTE y Brilla. Es tan amable con el [TITULO_CLIENTE] [NOMBRE_CLIENTE] o ¿Con quién tengo el gusto de hablar?, ¿Cómo le va con el suministro de energía?",
+                "verificacion_responsable": {
+                  "pregunta": "Es un gusto saludarle, es tan amable de confirmarme ¿Es usted la persona responsable del pago de la factura de energía en la dirección [DIRECCION_DOMICILIO]?",
+                  "respuesta_requerida": "SÍ",
+                  "solo_si_es_no": {
+                    "accion": "preguntar_verificacion_decisiones",
+                    "obligatorio": true
+                  },
+                  "solo_si_es_si": {
+                    "accion": "Continuar con la Venta"
+                  }
+                },
+                "verificacion_decisiones": {
+                  "pregunta": "¿Participa usted activamente en la toma de decisiones de su hogar?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": false
+                  },
+                  "preguntar_solo_si": "verificacion_responsable_es_no"
+                },
+                "verificacion_credito": {
+                  "pregunta": "¿Es usted responsable o titular del pago del crédito brilla?",
+                  "respuesta_requerida": "SÍ",
+                  "si_es_no": {
+                    "accion": "cancelar_venta",
+                    "obligatorio": true
+                  }
+                },
+                "introduccion": "Nos alegra que tenga un buen concepto de CEO, ya que día a día se trabaja para garantizar un mejor servicio.",
+                "presentacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] el día de hoy queremos contarle que por la adquisición con su crédito brilla Alfa desea respaldarlo en caso de que usted presente una incapacidad temporal mayor a 15 días emitida por entidad de salud reconocida, contará con un pago de cuatro cuotas de su crédito de máximo $130.564 para un total de hasta $522.256. Adicionalmente también podrá contar con una indemnización [INDEMNIZACION_SALVAFACTURA] para sus beneficiarios de ley en caso de que Dios no lo permita usted llegara a faltar por muerte accidental. [TITULO_CLIENTE] [NOMBRE_CLIENTE] además contará con tele consulta con médico general, tele consulta pediátrica hasta 5 veces mientras la póliza esté vigente para cualquier menor de su grupo familiar solicitándolo a través del #253 Opción 2 y recibirá descuentos del 10% en droguerías aliadas registrándose a través de la página www.lopido.com. El único Requisito para esta protección es ser menor de 75 años de edad y la edad de permanencia es hasta los 77 años 364 días. Este servicio queda en vigencia pasada 60 días a partir del día de la activación. ¿Le queda clara esta información? [LA RESPUESTA DEBE SER POSITIVA]",
+                "validacion_datos": {
+                  "intro": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] le informamos que esta llamada está siendo grabada y monitoreada para garantizar la calidad de nuestros servicios. Validando la información registrada en el sistema me confirma que:",
+                  "campos": [
+                    "Su nombre completo es: [NOMBRE_CLIENTE]",
+                    "¿Tipo de identificación? (Es Cédula de ciudadanía o Cédula de extranjería o ppt)",
+                    "Su número de identificación: [IDENTIFICACION]",
+                    "¿Cuál es su fecha de nacimiento? [FECHA_NACIMIENTO]",
+                    "¿Nos confirmas la dirección de su predio es? [DIRECCION_DOMICILIO]",
+                    "Por favor nos puede suministrar un correo electrónico para poder enviarle toda la información: [CORREO_ELECTRONICO]"
+                  ],
+                  "declaracion": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] declara que los datos anteriormente suministrados son reales y que a las actividades a las que se dedica son normales y se encuentran dentro de los marcos legales, ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "habeas_data": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] a continuación, voy a proceder a leer la ley que protege sus datos personales: Seguros Alfa como responsables, harán tratamiento de tu información para fines legales, contractuales, en particular para el desarrollo de procesos de preventa, venta y post venta del contrato de seguro. Tiene derecho a conocer, actualizar, rectificar tu información y a los demás previstos en la Ley 1581 de 2012, normas complementarias y la Política de Tratamiento de Información, disponible en: https://www.segurosalfa.com.co/proteccion-de-datos. Es voluntario responder preguntas sobre información sensible o de menores de edad. Al continuar en la llamada, otorga su autorización.",
+                "declaraciones_certificaciones": {
+                  "intro": "Estas son las Declaraciones, Certificaciones y Autorizaciones de los Asegurados. Declara usted que ha sido informado de:",
+                  "contenido": "Que nuestras políticas de tratamiento y las condiciones generales del producto pueden ser consultadas en www.segurosalfa.com.co y también pueden ser solicitadas a través del correo electrónico servicioalcliente@segurosalfa.com.co o al teléfono 6013077032 o a la línea nacional gratuita 01 8000 12 25 32.",
+                  "confirmacion": "¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]"
+                },
+                "aceptacion_producto": "[TITULO_CLIENTE] [NOMBRE_CLIENTE] ¿Acepta los productos y autoriza a cargar el valor mensual de [TARIFA_SALVAFACTURA] por su póliza Salva Factura en la factura de energía a favor de Seguros Alfa que se verán reflejados mensualmente a partir del siguiente ciclo de facturación, siendo su salva factura hasta la finalización de su crédito brilla? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ] ¿Está de acuerdo con el cobro del producto con las condiciones anteriormente mencionadas? ¿Está de acuerdo? [LA RESPUESTA DEBE SER SÍ]",
+                "despedida": "Muchas gracias [TITULO_CLIENTE] [NOMBRE_CLIENTE], le informo que a su correo electrónico llegará la documentación de la protección junto con las condiciones generales del servicio. Gracias por confiar en Alfa para la protección de usted y la de su familia. Que tenga un excelente día. Hasta Luego."
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
