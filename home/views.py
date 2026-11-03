@@ -278,10 +278,6 @@ def iniciar_auditoria_remota(request):
                 for chunk in archivo_excel.chunks():
                     destination.write(chunk)
             
-            # Registrar el usuario para el script
-            user_file = _write_usuario_temporal(usuario_actual)
-            os.environ["SINDYBOT_USER_FILE"] = user_file
-            
             # Ejecutar proceso en un hilo separado para no bloquear la respuesta
             def proceso_background():
                 try:

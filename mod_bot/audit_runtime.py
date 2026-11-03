@@ -1,12 +1,18 @@
 """
 Rutas de estado de auditoría por usuario (SCRUM-21).
-Usado por home/views.py y remote_auditor.py.
+
+- Toast, cancelación y progreso viven en ``temp/`` con sufijo por username.
+- ``remote_auditor`` debe usar ``iniciar_proceso_remoto`` (contexto por hilo).
+- Dos auditorías remotas **del mismo usuario** a la vez comparten los mismos
+  archivos; el aislamiento es entre usuarios distintos, no entre pestañas paralelas.
 """
 
+import logging
 import os
 import threading
 from typing import Dict, Optional
 
+logger = logging.getLogger(__name__)
 _ctx = threading.local()
 
 
@@ -28,12 +34,24 @@ def paths_for_user(base_dir: str, username: str) -> Dict[str, str]:
 
 
 def legacy_paths(base_dir: str) -> Dict[str, str]:
+    """Rutas globales pre-SCRUM-21 (solo referencia; no usar en flujos nuevos)."""
     log_dir = os.path.join(base_dir, "Logica_Log_Err")
     return {
         "toast": os.path.join(base_dir, "senal_toast.txt"),
         "cancel": os.path.join(base_dir, "cancelar_proceso.txt"),
         "progress": os.path.join(log_dir, "progreso_auditoria.json"),
     }
+
+
+def _active_paths(base_dir: str) -> Dict[str, str]:
+    username = getattr(_ctx, "username", None)
+    if not username:
+        logger.warning(
+            "audit_runtime sin contexto de usuario; usando rutas legacy en %s",
+            base_dir,
+        )
+        return legacy_paths(base_dir)
+    return paths_for_user(base_dir, username)
 
 
 def set_audit_context(base_dir: str, username: Optional[str] = None) -> None:
@@ -46,13 +64,6 @@ def clear_audit_context() -> None:
     for name in ("base_dir", "username"):
         if hasattr(_ctx, name):
             delattr(_ctx, name)
-
-
-def _active_paths(base_dir: str) -> Dict[str, str]:
-    username = getattr(_ctx, "username", None)
-    if username:
-        return paths_for_user(base_dir, username)
-    return legacy_paths(base_dir)
 
 
 def progress_file(base_dir: str) -> str:

@@ -27,9 +27,11 @@ mod_bot/whisperX/
 mod_bot/gingerit/
 mod_bot/pyhunspell/
 *.log
+# Runtime / estado auditoría (SCRUM-21: preferir archivos bajo /temp/)
 usuario_temporal.txt
-temp/usuario_*.txt
+cancelar_proceso.txt
 senal_toast.txt
+temp/usuario_*.txt
 
 # ---
 # SindyBot v1.5 — exclusiones de repositorio (SCRUM-11)

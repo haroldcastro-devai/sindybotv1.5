@@ -512,7 +512,10 @@ def comprobar_cancelacion():
 
 def iniciar_proceso_remoto(archivo_excel, usuario):
     """
-    Función principal que inicia el proceso de auditoría desde un cliente remoto
+    Función principal que inicia el proceso de auditoría desde un cliente remoto.
+
+    Establece contexto por hilo (``set_audit_context``) para rutas bajo ``temp/``.
+    No invoque ``inicializar_progreso`` / ``actualizar_progreso`` sin ese contexto.
     
     Args:
         archivo_excel: Ruta del archivo Excel
