@@ -346,13 +346,17 @@ WantedBy=multi-user.target
 
 ### Opción 2: Contenedores Docker (SCRUM-18)
 
-Copie `.env.example` → `.env` con `DB_PASSWORD` y `MYSQL_ROOT_PASSWORD`. Nginx expone **http://localhost:5085** (proxy a Gunicorn con `X-Forwarded-Proto`). El entrypoint **no** incluye contraseñas por defecto.
+Copie `.env.example` → `.env` con `DB_PASSWORD` y `MYSQL_ROOT_PASSWORD`. Nginx expone **http://localhost:5085** (proxy a Gunicorn; `X-Forwarded-Proto` para SCRUM-13). **`/media/`** no se sirve directo desde nginx: va a Django (`protected_media`, SCRUM-17). El entrypoint **no** incluye contraseñas por defecto.
 
 ```bash
 docker compose build
 docker compose up -d
 docker compose exec appseed-app python manage.py createsuperuser
 ```
+
+Marque **Personal de staff** en el admin para exportaciones Excel (SCRUM-14).
+
+**Demo SQLite (`USE_SQLITE_DEMO=True`):** el entrypoint omite la espera MySQL; puede levantar solo app y proxy con `docker compose up appseed-app nginx` (el servicio `mysql` sigue definido — no es obligatorio usarlo en demo local).
 
 ## Mantenimiento
 

@@ -13,6 +13,12 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p\"$$MYSQL_ROOT_PASSWORD\" || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 25s
     networks:
       - db_network
 
@@ -32,7 +38,9 @@ services:
       - db_network
       - web_network
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
+        required: false
 
   nginx:
     container_name: sbot_nginx
@@ -43,7 +51,6 @@ services:
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - ./staticfiles:/staticfiles
-      - ./media:/media
     networks:
       - web_network
     depends_on:
@@ -59,8 +66,8 @@ volumes:
   mysql_data:
 
 # Stack demo: copie .env.example → .env, defina DB_PASSWORD y MYSQL_ROOT_PASSWORD.
-# Acceso: http://localhost:5085 (nginx → gunicorn). Para TLS público: termine SSL en nginx
-# y use DJANGO_USE_HTTPS=True + CSRF_TRUSTED_ORIGINS=https://... en .env (SCRUM-13).
+# Acceso: http://localhost:5085 (nginx → gunicorn). /media/ autenticado vía Django (no alias nginx).
+# Para TLS público: termine SSL en nginx y DJANGO_USE_HTTPS=True en .env (SCRUM-13).
 
 # ---
 # SindyBot v1.5 — Docker Compose (SCRUM-18)
