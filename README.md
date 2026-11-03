@@ -109,7 +109,7 @@ Cree un archivo `.env` copiando `.env.example` y complete los valores (SECRET_KE
 
 ### 5. Google Gemini (auditoría LLM)
 
-Configure `GEMINI_API_KEY` y `GEMINI_MODEL` (p. ej. `gemini-3.8-flash`) en `.env`. Ver `Docs--Readme/GEMINI-STT-MIGRATION.md`.
+Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env` (mismos valores que `.env.example`, p. ej. `gemini-3.8-flash`). Ver `Docs--Readme/GEMINI-STT-MIGRATION.md`.
 
 ### 6. Creación de Usuario Administrador
 
