@@ -1,0 +1,37 @@
+{% extends 'layouts/auth_base.html' %}
+{% load static %}
+{% block content %}
+<div class="auth-wrapper">
+	<div class="auth-content">
+		<div class="card">
+			<div class="row align-items-center text-center">
+				<div class="col-md-12">
+					<div class="card-body">
+						<img src="{% static 'assets/images/logo-dark.png' %}" alt="" class="img-fluid mb-4">
+						<h4 class="mb-3 f-w-400">Registro</h4>
+						<form method="post">
+							{% csrf_token %}
+							{% if form.non_field_errors %}
+							{% for error in form.non_field_errors %}
+								<small class="text-danger mb-3">{{ error }}</small>
+							{% endfor %}
+							{% endif %}
+							{% for field in form %}
+							<div class="input-group mb-3">
+								<span class="input-group-text"><i class="feather icon-user"></i></span>
+								{{ field }}
+							</div>
+							<small class="text-danger">{{ field.errors }}</small>
+							{% endfor %}
+							<button class="btn btn-block btn-primary mt-2 mb-4">Crear cuenta</button>
+						</form>
+						<p class="mb-0 text-muted"><a href="{% url 'login' %}">¿Ya tienes cuenta? Ingresar</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
+
+<!-- Desarrollado por: hcastro -->

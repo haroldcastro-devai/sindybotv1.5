@@ -213,22 +213,34 @@ def main():
                         help='Formato del archivo (texto o json)')
     
     args = parser.parse_args()
-    
-    # Configuraciones de bases de datos
+
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
+    local_pwd = os.environ.get("DB_PASSWORD")
+    if not local_pwd:
+        print("Error: DB_PASSWORD no configurada en el entorno")
+        return 1
+
     configs = {
-        'Nube': {
-            'host': '34.229.113.3',
-            'user': 'prod_user',
-            'password': 'ProdPassword456!',
-            'database': 'sindybot_prod'
-        },
-        'Local': {
-            'host': 'localhost',
-            'user': 'adminsbot',
-            'password': '&-4GWwgiw9UfFfOp',
-            'database': 'auto_sbot'
+        "Local": {
+            "host": os.environ.get("DB_HOST", "localhost"),
+            "user": os.environ.get("DB_USER", "adminsbot"),
+            "password": local_pwd,
+            "database": os.environ.get("DB_NAME", "auto_sbot"),
         }
     }
+    if all(
+        os.environ.get(k)
+        for k in ("AWS_DB_HOST", "AWS_DB_USER", "AWS_DB_PASSWORD", "AWS_DB_NAME")
+    ):
+        configs["Nube"] = {
+            "host": os.environ["AWS_DB_HOST"],
+            "user": os.environ["AWS_DB_USER"],
+            "password": os.environ["AWS_DB_PASSWORD"],
+            "database": os.environ["AWS_DB_NAME"],
+        }
     
     # Establecer conexiones
     conexiones = {}

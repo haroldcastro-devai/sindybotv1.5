@@ -30,14 +30,16 @@ import uuid
 
 from django.contrib.auth import logout
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_POST
 
 
 
 @login_required
+@require_POST
 def logout_view(request):
     """
-    Vista personalizada para cerrar sesión.
-    Funciona tanto para usuarios normales como para administradores.
+    Cierra sesión solo con POST (evita logout CSRF por enlace GET).
     """
     logout(request)
     return redirect('/accounts/auth-signin/')

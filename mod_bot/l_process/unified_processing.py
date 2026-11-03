@@ -13,7 +13,7 @@ if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
 from .logger_config import logger
-from .audio_processing import procesar_audio
+from .stt_provider import procesar_audio_via_provider
 from .text_processing import unificar_transcripciones
 from .file_utils import load_json_file
 from .detection import extraer_calificacion
@@ -21,6 +21,8 @@ from .call_evaluation import process_call
 from logic_utils.get_tags import obtener_gasera_seguro
 from .detection import extract_names
 from data_updateBD import guardar_resultado_auditoria, actualizar_estado_venta
+
+from .llm_client import generate_from_prompt
 
 # Importar el nuevo módulo de prompts mejorados
 from enhanced_prompt import generar_prompt_mejorado, procesar_respuesta_modelo
@@ -89,7 +91,7 @@ def procesar_audio_dividido(grupo_archivos: dict) -> str:
        for parte in grupo_archivos['partes']:
            try:
                logger.info(f"Procesando parte: {parte['parte']}")
-               diarized_text, _, result = procesar_audio(parte['ruta'])
+               diarized_text, _, result = procesar_audio_via_provider(parte['ruta'])
                transcripciones.append(diarized_text)
                resultados.append(result)
            except Exception as e:
@@ -142,23 +144,12 @@ def procesar_audio_dividido(grupo_archivos: dict) -> str:
            # Generar prompt mejorado con la transcripción y metadatos
            prompt_mejorado = generar_prompt_mejorado(texto_unificado, metadata)
            
-           # Usar Ollama para procesar el prompt
-           import ollama
-           max_intentos = 3
-           resultado_auditoria = None
-           
-           for intento in range(max_intentos):
-               try:
-                   logger.info(f"Intento {intento + 1} de análisis con el modelo de IA mejorado para audio dividido")
-                   model = ollama.Client()
-                   response = model.generate(model="qwen2.5:14b-instruct-q6_K", prompt=prompt_mejorado)
-                   resultado_auditoria = response['response']
-                   logger.info(f"Análisis con prompt mejorado completado correctamente en intento {intento + 1}")
-                   break
-               except Exception as e:
-                   logger.error(f"Intento {intento + 1} fallido para audio dividido: {e}")
-                   if intento == max_intentos - 1:
-                       raise Exception(f"Error después de {max_intentos} intentos")
+           logger.info("Análisis audio dividido con llm_client")
+           resultado_auditoria = generate_from_prompt(
+               prompt_mejorado,
+               temperature=0.3,
+               max_output_tokens=8192,
+           )
            
            # Extraer calificación del resultado
            try:

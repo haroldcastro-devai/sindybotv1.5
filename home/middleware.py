@@ -1,5 +1,11 @@
-from django.utils.deprecation import MiddlewareMixin
+from django.contrib.auth import logout
 from django.shortcuts import redirect
+from django.utils.deprecation import MiddlewareMixin
+
+# ---
+# SindyBot v1.5 — logout admin sin GET abierto (SCRUM-16)
+# Harold Castro (hcastro)
+
 
 class AdminRedirectMiddleware(MiddlewareMixin):
     """
@@ -7,10 +13,12 @@ class AdminRedirectMiddleware(MiddlewareMixin):
     a las páginas equivalentes para usuarios regulares.
     """
     def process_request(self, request):
-        # Redirigir logout del admin
+        # /admin/logout/ con GET permitía logout CSRF; solo POST cierra sesión.
         if request.path == '/admin/logout/':
-            return redirect('/logout/')
-            
+            if request.method == 'POST':
+                logout(request)
+            return redirect('/accounts/auth-signin/')
+
         # Redirigir cambio de contraseña del admin
         elif request.path == '/admin/password_change/':
             return redirect('/accounts/password-change/')

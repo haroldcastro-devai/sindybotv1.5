@@ -35,8 +35,13 @@ def procesar_audio(audio_file: str) -> tuple:
         model_a, metadata = whisperx.load_align_model(language_code="es", device=device)
         result = whisperx.align(result["segments"], model_a, metadata, audio, device, return_char_alignments=False)
 
-        # Diarización
-        diarize_model = whisperx.DiarizationPipeline(use_auth_token="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", device=device)
+        # Diarización — token Hugging Face desde entorno (SCRUM-7)
+        hf_token = os.environ.get("HF_TOKEN")
+        if not hf_token:
+            raise ValueError(
+                "HF_TOKEN no configurado. Añade HF_TOKEN en .env (ver .env.example)."
+            )
+        diarize_model = whisperx.DiarizationPipeline(use_auth_token=hf_token, device=device)
         diarize_segments = diarize_model(audio)
         result = whisperx.assign_word_speakers(diarize_segments, result)
 

@@ -29,11 +29,15 @@ def get_mysql_connection(db_type='default'):
     """
     try:
         if db_type == 'default':
+            password = os.environ.get('DB_PASSWORD')
+            if not password:
+                logger.error("DB_PASSWORD no configurada en el entorno")
+                return None
             connection = mysql.connector.connect(
                 host=os.environ.get('DB_HOST', 'localhost'),
                 database=os.environ.get('DB_NAME', 'auto_sbot'),
                 user=os.environ.get('DB_USER', 'adminsbot'),
-                password=os.environ.get('DB_PASSWORD', '&-4GWwgiw9UfFfOp')
+                password=password,
             )
         # Conexión a AWS comentada
         # elif db_type == 'aws':

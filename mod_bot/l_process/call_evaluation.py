@@ -4,7 +4,6 @@
 import os
 import gc
 import json
-import ollama
 import re
 from pathlib import Path
 from typing import Dict, List, Union, Optional
@@ -24,6 +23,8 @@ from .file_utils import validate_call_content
 # Importar módulos externos
 from data_updateBD import guardar_resultado_auditoria, actualizar_estado_venta, insertar_datos_aprendizaje, obtener_datos_aprendizaje
 from logic_utils.get_tags import obtener_gasera_seguro
+
+from .llm_client import generate_from_prompt
 
 # Importar el nuevo módulo de prompts mejorados
 from enhanced_prompt import generar_prompt_mejorado, procesar_respuesta_modelo
@@ -197,24 +198,9 @@ def process_call(file_path: str, guiones: JsonDict, tarifas: JsonDict) -> str:
         logger.info("Generando prompt mejorado para la auditoría")
         prompt_mejorado = generar_prompt_mejorado(contenido, metadata)
         
-        # Procesamiento con OLLAMA
-        max_intentos = 3
-        resultado = None
-
-        for intento in range(max_intentos):
-            try:
-                logger.info(f"Intento {intento + 1} de análisis con el modelo de IA")
-                # Usamos el mismo modelo qwen2.5 pero con el prompt mejorado
-                model = ollama.Client()
-                response = model.generate(model="qwen2.5:14b-instruct-q6_K", prompt=prompt_mejorado)
-                resultado = response['response']
-                logger.info(f"Análisis completado correctamente en intento {intento + 1}")
-                break
-            except Exception as e:
-                logger.error(f"Intento {intento + 1} fallido: {e}")
-                if intento == max_intentos - 1:
-                    raise Exception(f"Error después de {max_intentos} intentos")
-                continue
+        # Procesamiento con LLM (Google Gemini API)
+        logger.info("Generando auditoría con llm_client")
+        resultado = generate_from_prompt(prompt_mejorado, temperature=0.3, max_output_tokens=8192)
 
         if not resultado:
             raise Exception("No se pudo obtener respuesta del modelo")
