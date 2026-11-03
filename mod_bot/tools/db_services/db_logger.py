@@ -49,12 +49,16 @@ def log_db_info(connection_config=None):
     
     # Si no se proporcionó configuración, usar valores por defecto
     if not connection_config:
+        pwd = os.environ.get("DB_PASSWORD")
         connection_config = {
-            'host': 'localhost',
-            'user': 'adminsbot',
-            'password': '&-4GWwgiw9UfFfOp',
-            'database': 'auto_sbot'
+            "host": os.environ.get("DB_HOST", "localhost"),
+            "user": os.environ.get("DB_USER", "adminsbot"),
+            "password": pwd or "",
+            "database": os.environ.get("DB_NAME", "auto_sbot"),
         }
+        if not pwd:
+            db_logger.error("DB_PASSWORD no configurada; omitiendo diagnóstico")
+            return
     
     # Registrar configuración (ocultando la contraseña)
     safe_config = connection_config.copy()

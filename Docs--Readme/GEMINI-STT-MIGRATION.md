@@ -8,7 +8,7 @@ La evaluación de auditoría usa `mod_bot/l_process/llm_client.py` (**solo Googl
 
 ```env
 GEMINI_API_KEY=tu_clave
-GEMINI_MODEL=gemini-2.0-flash
+GEMINI_MODEL=gemini-3.8-flash
 ```
 
 Sin `GEMINI_API_KEY` la auditoría falla con un error explícito.

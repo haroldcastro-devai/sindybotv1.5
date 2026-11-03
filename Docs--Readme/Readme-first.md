@@ -121,7 +121,7 @@ DB_HOST=localhost
 DB_PORT=3306
 
 GEMINI_API_KEY=tu-clave-google-ai
-GEMINI_MODEL=gemini-2.0-flash
+GEMINI_MODEL=gemini-3.8-flash
 HF_TOKEN=tu-token-huggingface
 ```
 

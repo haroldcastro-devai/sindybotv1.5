@@ -6,6 +6,11 @@ from mysql.connector import Error
 from typing import Dict, List, Tuple, Any, Optional
 import json
 import logging
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Configurar logging
 logging.basicConfig(
@@ -21,21 +26,27 @@ class GestorDB:
     
     def __init__(self):
         """Inicializa el gestor de bases de datos."""
-        # Configuración de BD en la nube
-        self.cloud_config = {
-            'host': '34.229.113.3',
-            'user': 'dev_user',
-            'password': 'DevPassword123!',
-            'database': 'sindybot_dev'
-        }
-        
-        # Configuración de BD local
+        local_pwd = os.environ.get("DB_PASSWORD")
+        if not local_pwd:
+            raise ValueError("DB_PASSWORD no configurada en el entorno")
         self.local_config = {
-            'host': 'localhost',
-            'user': 'adminsbot',
-            'password': '&-4GWwgiw9UfFfOp',
-            'database': 'auto_sbot'
+            "host": os.environ.get("DB_HOST", "localhost"),
+            "user": os.environ.get("DB_USER", "adminsbot"),
+            "password": local_pwd,
+            "database": os.environ.get("DB_NAME", "auto_sbot"),
         }
+
+        self.cloud_config = None
+        if all(
+            os.environ.get(k)
+            for k in ("AWS_DB_HOST", "AWS_DB_USER", "AWS_DB_PASSWORD", "AWS_DB_NAME")
+        ):
+            self.cloud_config = {
+                "host": os.environ["AWS_DB_HOST"],
+                "user": os.environ["AWS_DB_USER"],
+                "password": os.environ["AWS_DB_PASSWORD"],
+                "database": os.environ["AWS_DB_NAME"],
+            }
         
         # Conexiones
         self.db_cloud = None
@@ -50,18 +61,20 @@ class GestorDB:
         """
         mensaje = []
         
-        # Intentar conectar a BD en la nube
-        try:
-            self.db_cloud = mysql.connector.connect(**self.cloud_config)
-            if self.db_cloud.is_connected():
-                mensaje.append("Nube: Conectada")
-                # Crear tabla si no existe
-                self._crear_tabla(self.db_cloud)
-            else:
-                mensaje.append("Nube: Error de conexión")
-        except Error as e:
-            logger.error(f"Error conectando a BD nube: {e}")
-            mensaje.append(f"Nube: Error ({str(e)[:30]}...)")
+        # Intentar conectar a BD en la nube (solo si hay variables AWS_DB_*)
+        if self.cloud_config:
+            try:
+                self.db_cloud = mysql.connector.connect(**self.cloud_config)
+                if self.db_cloud.is_connected():
+                    mensaje.append("Nube: Conectada")
+                    self._crear_tabla(self.db_cloud)
+                else:
+                    mensaje.append("Nube: Error de conexión")
+            except Error as e:
+                logger.error(f"Error conectando a BD nube: {e}")
+                mensaje.append(f"Nube: Error ({str(e)[:30]}...)")
+        else:
+            mensaje.append("Nube: omitida (sin AWS_DB_* en entorno)")
         
         # Intentar conectar a BD local
         try:

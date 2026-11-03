@@ -3,7 +3,7 @@
 """
 Auditoría vía Google Gemini API (sin LLM local).
 
-Variables: GEMINI_API_KEY, GEMINI_MODEL (default gemini-2.0-flash).
+Variables: GEMINI_API_KEY, GEMINI_MODEL (default gemini-3.8-flash).
 
 ---
 SindyBot v1.5 — SCRUM-33 Gemini-only
@@ -47,7 +47,7 @@ def generate_from_prompt(
 
     import google.generativeai as genai
 
-    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+    model_name = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
     logger.info("Generando auditoría con Gemini (%s)", model_name)
 
     last_error: Optional[Exception] = None
