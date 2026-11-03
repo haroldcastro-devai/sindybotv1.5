@@ -1,0 +1,14 @@
+# Dependencias mínimas web + demo Git (ver Docs--Readme/req-envsbot.yaml para ML completo)
+Django>=4.2,<5
+django-admin-gradient
+djangorestframework>=3.14
+gunicorn>=21
+mysqlclient>=2.2
+mysql-connector-python>=8.0
+python-dotenv>=1.0
+str2bool>=1.1
+google-generativeai>=0.8.0
+
+# ---
+# SindyBot v1.5 — requirements.txt raíz (Docker / CI)
+# Harold Castro (hcastro)

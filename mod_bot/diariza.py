@@ -20,6 +20,8 @@ from l_process.detection import extraer_calificacion
 from l_process.extractor_datos import procesar_transcripcion
 from data_updateBD import guardar_resultado_auditoria, actualizar_estado_venta
 
+from l_process.llm_client import generate_from_prompt
+
 # Importar módulo de extracción de datos y prompts mejorados
 from enhanced_prompt import generar_prompt_mejorado, procesar_respuesta_modelo
 
@@ -163,30 +165,12 @@ def main():
                     # Generar prompt mejorado con la transcripción y metadatos enriquecidos
                     prompt_mejorado = generar_prompt_mejorado(texto_corregido, metadata)
                     
-                    # Usar Ollama para procesar el prompt
-                    import ollama
-                    max_intentos = 3
-                    resultado_auditoria = None
-                    
-                    for intento in range(max_intentos):
-                        try:
-                            logger.info(f"Intento {intento + 1} de análisis con el modelo de IA mejorado")
-                            model = ollama.Client()
-                            # Aumentar temperatura para obtener respuestas más creativas y detalladas
-                            response = model.generate(
-                                model="qwen2.5:14b-instruct-q6_K", 
-                                prompt=prompt_mejorado,
-                                temperature=0.3,  # Valor bajo pero no cero para mantener precisión con creatividad
-                                num_ctx=8192,  # Aumentar el contexto para permitir más texto de entrada
-                                num_predict=5000  # Permitir respuestas más largas y detalladas
-                            )
-                            resultado_auditoria = response['response']
-                            logger.info(f"Análisis con prompt mejorado completado correctamente en intento {intento + 1}")
-                            break
-                        except Exception as e:
-                            logger.error(f"Intento {intento + 1} fallido: {e}")
-                            if intento == max_intentos - 1:
-                                raise Exception(f"Error después de {max_intentos} intentos")
+                    logger.info("Análisis con llm_client (Gemini u Ollama)")
+                    resultado_auditoria = generate_from_prompt(
+                        prompt_mejorado,
+                        temperature=0.3,
+                        max_output_tokens=8192,
+                    )
                     
                     # Extraer calificación del resultado
                     try:

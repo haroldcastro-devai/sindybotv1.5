@@ -3,6 +3,8 @@
 
 import logging
 import json
+import os
+
 import mysql.connector
 from mysql.connector import Error
 from typing import Dict, Any, Optional, Tuple
@@ -21,12 +23,16 @@ class DatabaseQuerier:
         Inicializa la conexión a la base de datos.
         Si no se proporcionan parámetros, usa valores por defecto.
         """
-        # Valores por defecto
+        pwd = password or os.environ.get("DB_PASSWORD")
+        if not pwd:
+            raise ValueError(
+                "DB_PASSWORD no configurada. Define la variable de entorno o pasa password."
+            )
         self.config = {
-            'host': host or 'localhost',
-            'user': user or 'adminsbot',
-            'password': password or '&-4GWwgiw9UfFfOp',
-            'database': database or 'auto_sbot'
+            'host': host or os.environ.get('DB_HOST', 'localhost'),
+            'user': user or os.environ.get('DB_USER', 'adminsbot'),
+            'password': pwd,
+            'database': database or os.environ.get('DB_NAME', 'auto_sbot'),
         }
         self.connection = None
         self.cursor = None

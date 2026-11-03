@@ -109,29 +109,27 @@ Cree un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
 ```
 DEBUG=True
-SECRET_KEY=s8hfg738hf72h3fhh20sdhf03h2f0hslfhslhf83hf2
-ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,192.168.X.X
+SECRET_KEY=genera-una-clave-segura-unica
+ALLOWED_HOSTS=localhost,127.0.0.1
 CSRF_TRUSTED_ORIGINS=http://localhost:8000,http://127.0.0.1:8000
+ALLOW_PUBLIC_REGISTRATION=False
 
 DB_NAME=auto_sbot
 DB_USER=adminsbot
-DB_PASSWORD=&-4GWwgiw9UfFfOp
+DB_PASSWORD=tu-contraseña-mysql
 DB_HOST=localhost
 DB_PORT=3306
+
+GEMINI_API_KEY=tu-clave-google-ai
+GEMINI_MODEL=gemini-2.0-flash
+HF_TOKEN=tu-token-huggingface
 ```
 
-### 5. Configuración de Ollama (Modelo de IA)
+Copie `.env.example` a `.env` y complete los valores. **No** suba `.env` al repositorio.
 
-```bash
-# Instalar Ollama
-curl -fsSL https://ollama.com/install.sh | sh
+### 5. Google Gemini (auditoría LLM)
 
-# Iniciar servicio Ollama
-systemctl start ollama
-
-# Descargar modelo Qwen2.5
-ollama pull qwen2.5:14b-instruct-q6_K
-```
+La auditoría de guiones usa la API de Google Gemini (sin Ollama local). Configure `GEMINI_API_KEY` y opcionalmente `GEMINI_MODEL` en `.env`. Requiere créditos/billing activo en Google AI Studio.
 
 ### 6. Creación de Usuario Administrador
 

@@ -9,7 +9,26 @@ build/
 env
 /staticfiles/
 
-#src
 *.sqlite*
+*.sqlite3
 
-#.env
+.env
+.env.*
+!.env.example
+.jira-email
+.jira-token
+
+/logs/
+/temp/
+/media/
+/back/
+
+mod_bot/whisperX/
+mod_bot/gingerit/
+mod_bot/pyhunspell/
+*.log
+auditoria.log
+
+# ---
+# SindyBot v1.5 — exclusiones de repositorio (SCRUM-11)
+# Harold Castro (hcastro)
