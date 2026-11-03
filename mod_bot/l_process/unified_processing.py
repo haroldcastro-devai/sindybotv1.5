@@ -13,7 +13,7 @@ if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
 from .logger_config import logger
-from .audio_processing import procesar_audio
+from .stt_provider import procesar_audio_via_provider
 from .text_processing import unificar_transcripciones
 from .file_utils import load_json_file
 from .detection import extraer_calificacion
@@ -91,7 +91,7 @@ def procesar_audio_dividido(grupo_archivos: dict) -> str:
        for parte in grupo_archivos['partes']:
            try:
                logger.info(f"Procesando parte: {parte['parte']}")
-               diarized_text, _, result = procesar_audio(parte['ruta'])
+               diarized_text, _, result = procesar_audio_via_provider(parte['ruta'])
                transcripciones.append(diarized_text)
                resultados.append(result)
            except Exception as e:

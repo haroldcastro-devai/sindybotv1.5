@@ -6,7 +6,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import update_session_auth_hash
 
-from .forms import CustomPasswordChangeForm
+from django.urls import reverse_lazy
+
+from .forms import CustomPasswordChangeForm, UserRegistrationForm
 
 # ---
 # SindyBot v1.5 — auth endurecida (SCRUM-15/16)
@@ -18,7 +20,9 @@ class LoginView(LoginView):
 
 
 class RegisterView(CreateView):
+    form_class = UserRegistrationForm
     template_name = 'accounts/auth-signup.html'
+    success_url = reverse_lazy('login')
 
 
 class UserProfileView(View):

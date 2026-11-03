@@ -6,8 +6,8 @@ Abstracción STT — Fase B (implementación gradual).
 Variables de entorno:
   STT_PROVIDER   whisperx (default) | faster_whisper | google
 
-whisperx: pipeline actual (GPU recomendada).
-faster_whisper / google: por implementar; ver Docs--Readme/GEMINI-STT-MIGRATION.md
+whisperx: pipeline actual (GPU recomendada), usado vía diariza/unified_processing.
+faster_whisper / google: por implementar (Fase B); error explícito si se eligen.
 """
 
 from __future__ import annotations

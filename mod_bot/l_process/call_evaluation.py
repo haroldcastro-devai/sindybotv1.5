@@ -198,7 +198,7 @@ def process_call(file_path: str, guiones: JsonDict, tarifas: JsonDict) -> str:
         logger.info("Generando prompt mejorado para la auditoría")
         prompt_mejorado = generar_prompt_mejorado(contenido, metadata)
         
-        # Procesamiento con LLM (Gemini API u Ollama local)
+        # Procesamiento con LLM (Google Gemini API)
         logger.info("Generando auditoría con llm_client")
         resultado = generate_from_prompt(prompt_mejorado, temperature=0.3, max_output_tokens=8192)
 

@@ -11,7 +11,8 @@ from pathlib import Path
 from l_process.logger_config import logger, configure_logging
 
 # Importar módulos de procesamiento
-from l_process.audio_processing import procesar_audio, analizar_hablantes
+from l_process.stt_provider import procesar_audio_via_provider
+from l_process.audio_processing import analizar_hablantes
 from l_process.call_evaluation import process_call
 from l_process.text_processing import corregir_texto, cargar_diccionario
 from l_process.unified_processing import procesar_audio_dividido
@@ -82,7 +83,7 @@ def main():
                     logger.warning("Advertencia: Diccionario vacío o no encontrado")
 
                 # Procesar audio
-                diarized_text, file_name, result = procesar_audio(audio_file)
+                diarized_text, file_name, result = procesar_audio_via_provider(audio_file)
                 hablantes_info = analizar_hablantes(result)
 
                 # Generar resumen de hablantes
@@ -165,7 +166,7 @@ def main():
                     # Generar prompt mejorado con la transcripción y metadatos enriquecidos
                     prompt_mejorado = generar_prompt_mejorado(texto_corregido, metadata)
                     
-                    logger.info("Análisis con llm_client (Gemini u Ollama)")
+                    logger.info("Análisis con llm_client (Gemini API)")
                     resultado_auditoria = generate_from_prompt(
                         prompt_mejorado,
                         temperature=0.3,

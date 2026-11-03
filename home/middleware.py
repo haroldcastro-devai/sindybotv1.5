@@ -13,11 +13,12 @@ class AdminRedirectMiddleware(MiddlewareMixin):
     a las páginas equivalentes para usuarios regulares.
     """
     def process_request(self, request):
-        # Redirigir logout del admin
+        # /admin/logout/ con GET permitía logout CSRF; solo POST cierra sesión.
         if request.path == '/admin/logout/':
-            logout(request)
+            if request.method == 'POST':
+                logout(request)
             return redirect('/accounts/auth-signin/')
-            
+
         # Redirigir cambio de contraseña del admin
         elif request.path == '/admin/password_change/':
             return redirect('/accounts/password-change/')

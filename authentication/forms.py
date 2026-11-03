@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.forms import PasswordChangeForm, UserCreationForm
 from django.contrib.auth.models import User
 
 class CustomPasswordChangeForm(PasswordChangeForm):
@@ -25,3 +25,11 @@ class CustomPasswordChangeForm(PasswordChangeForm):
         
         # También podemos personalizar los mensajes de ayuda si es necesario
         self.fields['new_password1'].help_text = None  # Eliminar mensaje de ayuda complejo
+
+
+class UserRegistrationForm(UserCreationForm):
+    """Alta de usuario cuando ALLOW_PUBLIC_REGISTRATION=True."""
+
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = ("username", "email")

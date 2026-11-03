@@ -2,27 +2,21 @@
 
 ## Fase A — IA con Gemini (implementada)
 
-La evaluación de auditoría usa `mod_bot/l_process/llm_client.py`.
+La evaluación de auditoría usa `mod_bot/l_process/llm_client.py` (**solo Google Gemini**; no hay fallback Ollama).
 
 ### Configuración `.env`
 
 ```env
-LLM_PROVIDER=gemini
 GEMINI_API_KEY=tu_clave
 GEMINI_MODEL=gemini-2.0-flash
 ```
 
-Fallback local (requiere Ollama + GPU/RAM):
-
-```env
-LLM_PROVIDER=ollama
-OLLAMA_MODEL=qwen2.5:14b-instruct-q6_K
-```
+Sin `GEMINI_API_KEY` la auditoría falla con un error explícito.
 
 ### Dependencia
 
 ```bash
-pip install google-generativeai
+pip install -r mod_bot/requirements-llm.txt
 ```
 
 ### Archivos que llaman al LLM
@@ -40,22 +34,24 @@ pip install google-generativeai
 | `whisperx` (actual) | Infra | Sí | Sí (PyAnnote) |
 | `faster_whisper` CPU | Bajo | No (lento) | Limitada |
 | Google Cloud Speech-to-Text | Por minuto | No | Opcional API |
-| Gemini multimodal (audio) | Por token | No | Cambia diseño |
 
-Variable: `STT_PROVIDER=whisperx|faster_whisper|google`
+Variable: `STT_PROVIDER=whisperx|faster_whisper|google` (default: `whisperx`)
 
-Punto de extensión: `mod_bot/l_process/stt_provider.py`
+Punto de extensión: `mod_bot/l_process/stt_provider.py` — usado por `diariza.py` y `unified_processing.py`.
+
+Proveedores `faster_whisper` y `google` aún no implementados; el código devuelve error claro si se seleccionan.
 
 ### Tareas sugeridas (Jira)
 
 1. Implementar `faster_whisper` para pruebas en VPS sin GPU.
 2. Prototipo Google STT v2 con diarización.
-3. Sustituir imports directos a `procesar_audio` en `diariza.py` / `unified_processing.py` por `stt_provider`.
-4. Pruebas de regresión con 3 audios de referencia en `back/audio-text/`.
+3. Pruebas de regresión con audios de referencia.
 
 ---
 
-## Desarrollo del código (PC bajo recursos)
+## Desarrollo en PC bajo recursos
 
 - Editar Django y `llm_client` en local: **sin GPU**.
-- Probar auditoría completa: VPS + `LLM_PROVIDER=gemini` y STT en cloud o VM GPU puntual.
+- Probar auditoría completa: Gemini en cloud + STT whisperx en VM con GPU o Fase B.
+
+# Desarrollado por: hcastro

@@ -8,7 +8,7 @@ services:
       - MYSQL_DATABASE=${DB_NAME:-auto_sbot}
       - MYSQL_USER=${DB_USER:-adminsbot}
       - MYSQL_PASSWORD=${DB_PASSWORD:?Set DB_PASSWORD in .env}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-change_me_root}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
     ports:
       - "3306:3306"
     volumes:

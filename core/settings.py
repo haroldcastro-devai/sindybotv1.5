@@ -30,7 +30,7 @@ ALLOW_PUBLIC_REGISTRATION = str2bool(
 USE_SQLITE_DEMO = str2bool(os.environ.get("USE_SQLITE_DEMO", "False"))
 
 # Enable/Disable DEBUG Mode
-DEBUG = str2bool(os.environ.get('DEBUG', 'True'))
+DEBUG = str2bool(os.environ.get('DEBUG', 'False'))
 
 # Hosts
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '192.168.30.241']
