@@ -17,4 +17,9 @@ urlpatterns = [
     path('obtener_datos_grafica/', login_required(views.obtener_datos_grafica), name='obtener_datos_grafica'),
     path('descargar-registros-fecha/<str:fecha>/', login_required(views.descargar_registros_fecha), name='descargar_registros_fecha'),
     path('logout/', views.logout_view, name='logout'),
+    # API REST dashboard (SCRUM-20) — alineado con static/assets/js/api/config.js
+    path('api/dashboard/stats/', views.DashboardStatsAPIView.as_view(), name='api_dashboard_stats'),
+    path('api/dashboard/graph-data/', views.GraphDataAPIView.as_view(), name='api_dashboard_graph'),
+    path('api/activity-log/', views.ActivityLogAPIView.as_view(), name='api_activity_log'),
+    path('api/generate-report/', views.generate_report, name='api_generate_report'),
 ]

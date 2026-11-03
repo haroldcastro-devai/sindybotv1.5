@@ -180,12 +180,16 @@ def ejecutar_script():
     """
     Función para ejecutar script externo
     """
-    try:        
+    try:
         ruta_script = os.path.join(settings.BASE_DIR, 'mod_bot', 'logical.py')
-        subprocess.Popen(['python', ruta_script], shell=True)
-        print('Script ejecutado correctamente.')
+        subprocess.Popen(
+            [sys.executable, ruta_script],
+            cwd=str(settings.BASE_DIR),
+            shell=False,
+        )
+        logger.info('Script logical.py iniciado.')
     except Exception as e:
-        print('Error al ejecutar el script:', str(e))
+        logger.error('Error al ejecutar el script: %s', e)
 
 @login_required
 def abrir_ubicacion(request):
@@ -193,10 +197,15 @@ def abrir_ubicacion(request):
     Vista para abrir ubicación y ejecutar script
     """
     usuario_actual = request.user.username
-    with open("usuario_temporal.txt", "w") as f:
+    user_file = os.path.join(settings.BASE_DIR, 'usuario_temporal.txt')
+    with open(user_file, 'w', encoding='utf-8') as f:
         f.write(usuario_actual)
     ruta_script = os.path.join(settings.BASE_DIR, 'mod_bot', 'logical.py')
-    subprocess.Popen(['python', ruta_script], shell=True)
+    subprocess.Popen(
+        [sys.executable, ruta_script],
+        cwd=str(settings.BASE_DIR),
+        shell=False,
+    )
     return redirect('config')
 
 @login_required
@@ -220,7 +229,8 @@ def iniciar_auditoria_remota(request):
                     destination.write(chunk)
             
             # Registrar el usuario para el script
-            with open("usuario_temporal.txt", "w") as f:
+            user_file = os.path.join(settings.BASE_DIR, 'usuario_temporal.txt')
+            with open(user_file, 'w', encoding='utf-8') as f:
                 f.write(usuario_actual)
             
             # Ejecutar proceso en un hilo separado para no bloquear la respuesta
