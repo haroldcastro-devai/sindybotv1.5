@@ -117,6 +117,15 @@ Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env` (mismos valores que `.env.
 python manage.py createsuperuser
 ```
 
+### 7. Roles y exportaciones (SCRUM-14)
+
+El dashboard y las APIs de estadísticas están disponibles para cualquier usuario autenticado. Las **descargas Excel** (vistas web y `POST /api/generate-report/`) exigen **`is_staff`** o superuser. En el admin de Django (`/admin/auth/user/`), marque **Personal de staff** para quien deba exportar reportes.
+
+### 8. Media y archivos estáticos (SCRUM-17)
+
+- **`/media/`**: requiere inicio de sesión; no es acceso público anónimo. No separa archivos por usuario (documentado en código).
+- **Producción (`DEBUG=False`)**: Django no sirve `/static/`; ejecute `python manage.py collectstatic` y configure nginx (u otro front) para `STATIC_ROOT`.
+
 ## Ejecución del Sistema
 
 ### Modo Desarrollo

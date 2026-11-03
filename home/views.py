@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, HttpResponseForbidden
 from django.core.exceptions import ValidationError
 from django.contrib import messages
 from .models import TbRegAudio, TbRegActividad
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
+from django.views.decorators.http import require_POST
+from django.views.static import serve
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, BasePermission
 from rest_framework.decorators import api_view, permission_classes
 from django.db.models import Count, Q, Case, When, F, FloatField, Sum
 from django.db.models.functions import TruncDate
@@ -29,13 +32,6 @@ from datetime import datetime, timedelta
 import uuid
 from typing import Optional
 
-from django.contrib.auth import logout
-from django.shortcuts import redirect
-from django.contrib.auth.decorators import login_required
-from django.views.decorators.http import require_POST
-
-
-
 @login_required
 @require_POST
 def logout_view(request):
@@ -49,6 +45,40 @@ def logout_view(request):
 
 
 logger = logging.getLogger(__name__)
+
+
+def user_can_export_data(user) -> bool:
+    """SCRUM-14: exportaciones solo staff/superuser."""
+    return user.is_authenticated and (user.is_staff or user.is_superuser)
+
+
+def staff_export_required(view_func):
+    """Decorador login + rol exportación (403 si autenticado sin permiso)."""
+
+    @login_required
+    def wrapper(request, *args, **kwargs):
+        if not user_can_export_data(request.user):
+            return HttpResponseForbidden(
+                "Las exportaciones Excel requieren usuario staff o superuser (SCRUM-14)."
+            )
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
+
+
+class IsStaffExporter(BasePermission):
+    def has_permission(self, request, view):
+        return user_can_export_data(request.user)
+
+
+@login_required
+def protected_media(request, path):
+    """
+    SCRUM-17: archivos media solo con sesión autenticada.
+    Cualquier usuario logueado puede acceder a rutas bajo MEDIA_ROOT si las conoce;
+    no hay aislamiento por usuario (mejora futura vía ownership o storage privado).
+    """
+    return serve(request, path, document_root=settings.MEDIA_ROOT)
 
 
 def _usuario_temporal_path(username: str) -> str:
@@ -121,7 +151,7 @@ def index(request):
     return render(request, 'pages/index.html', context)
 
 
-@login_required
+@staff_export_required
 def descargar_registros_fecha(request, fecha):
     """
     Vista para descargar registros de una fecha específica
@@ -426,7 +456,7 @@ def obtener_datos_grafica(request):
 
     return JsonResponse(resultados, safe=False)
 
-@login_required
+@staff_export_required
 def descargar_reporte(request):
     """
     Vista para descargar reporte
@@ -606,7 +636,7 @@ class ActivityLogAPIView(APIView):
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated, IsStaffExporter])
 def generate_report(request):
     """
     Vista API para generar reporte
