@@ -4,8 +4,8 @@ import { DashboardAPI } from './api/config.js';
 async function loadDashboardData() {
     try {
         // Obtener estadísticas
-        const stats = await DashboardAPI.getStats();
-        updateDashboardStats(stats);
+        const payload = await DashboardAPI.getStats();
+        updateDashboardStats(payload.stats);
 
         // Obtener datos para gráficas
         const response = await fetch('/obtener_datos_grafica/');
@@ -126,8 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // Función para descargar reporte
 document.getElementById('download-report-btn')?.addEventListener('click', async () => {
     try {
-        const response = await DashboardAPI.generateReport();
-        // Manejar la descarga del archivo
+        const blob = await DashboardAPI.generateReport();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `reporte_tb_reg_audio_${Date.now()}.xlsx`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
     } catch (error) {
         console.error('Error generando reporte:', error);
     }

@@ -260,3 +260,9 @@ LOGGING = {
 # Inicialización inmediata del logger para sesión
 session_logger = logging.getLogger('home.session_debug_middleware')
 session_logger.info('Configuración de logging inicializada')
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+    ],
+}

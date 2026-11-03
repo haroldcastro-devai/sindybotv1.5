@@ -28,6 +28,7 @@ mod_bot/gingerit/
 mod_bot/pyhunspell/
 *.log
 usuario_temporal.txt
+temp/usuario_*.txt
 senal_toast.txt
 
 # ---

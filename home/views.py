@@ -27,6 +27,7 @@ import logging
 import json
 from datetime import datetime, timedelta
 import uuid
+from typing import Optional
 
 from django.contrib.auth import logout
 from django.shortcuts import redirect
@@ -48,6 +49,33 @@ def logout_view(request):
 
 
 logger = logging.getLogger(__name__)
+
+
+def _usuario_temporal_path(username: str) -> str:
+    temp_dir = os.path.join(settings.BASE_DIR, 'temp')
+    os.makedirs(temp_dir, exist_ok=True)
+    safe = "".join(c for c in username if c.isalnum() or c in ("_", "-", "."))[:64] or "user"
+    return os.path.join(temp_dir, f"usuario_{safe}.txt")
+
+
+def _write_usuario_temporal(username: str) -> str:
+    path = _usuario_temporal_path(username)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(username)
+    return path
+
+
+def _spawn_logical_script(user_file: Optional[str] = None) -> None:
+    ruta_script = os.path.join(settings.BASE_DIR, "mod_bot", "logical.py")
+    env = os.environ.copy()
+    if user_file:
+        env["SINDYBOT_USER_FILE"] = user_file
+    subprocess.Popen(
+        [sys.executable, ruta_script],
+        cwd=str(settings.BASE_DIR),
+        shell=False,
+        env=env,
+    )
 
 @login_required
 def index(request):
@@ -177,19 +205,12 @@ def config(request):
     return render(request, 'pages/bc_typography.html', data)
 
 def ejecutar_script():
-    """
-    Función para ejecutar script externo
-    """
+    """Ejecuta mod_bot/logical.py (sin shell)."""
     try:
-        ruta_script = os.path.join(settings.BASE_DIR, 'mod_bot', 'logical.py')
-        subprocess.Popen(
-            [sys.executable, ruta_script],
-            cwd=str(settings.BASE_DIR),
-            shell=False,
-        )
-        logger.info('Script logical.py iniciado.')
+        _spawn_logical_script()
+        logger.info("Script logical.py iniciado.")
     except Exception as e:
-        logger.error('Error al ejecutar el script: %s', e)
+        logger.error("Error al ejecutar el script: %s", e)
 
 @login_required
 def abrir_ubicacion(request):
@@ -197,15 +218,8 @@ def abrir_ubicacion(request):
     Vista para abrir ubicación y ejecutar script
     """
     usuario_actual = request.user.username
-    user_file = os.path.join(settings.BASE_DIR, 'usuario_temporal.txt')
-    with open(user_file, 'w', encoding='utf-8') as f:
-        f.write(usuario_actual)
-    ruta_script = os.path.join(settings.BASE_DIR, 'mod_bot', 'logical.py')
-    subprocess.Popen(
-        [sys.executable, ruta_script],
-        cwd=str(settings.BASE_DIR),
-        shell=False,
-    )
+    user_file = _write_usuario_temporal(usuario_actual)
+    _spawn_logical_script(user_file)
     return redirect('config')
 
 @login_required
@@ -229,9 +243,8 @@ def iniciar_auditoria_remota(request):
                     destination.write(chunk)
             
             # Registrar el usuario para el script
-            user_file = os.path.join(settings.BASE_DIR, 'usuario_temporal.txt')
-            with open(user_file, 'w', encoding='utf-8') as f:
-                f.write(usuario_actual)
+            user_file = _write_usuario_temporal(usuario_actual)
+            os.environ["SINDYBOT_USER_FILE"] = user_file
             
             # Ejecutar proceso en un hilo separado para no bloquear la respuesta
             def proceso_background():
@@ -489,8 +502,13 @@ class DashboardStatsAPIView(APIView):
 
     def get(self, request):
         try:
-            # Obtener todos los registros
-            tb_reg_audio = TbRegAudio.objects.all().order_by('-reg_fecha')
+            try:
+                limit = int(request.query_params.get("limit", 500))
+            except (TypeError, ValueError):
+                limit = 500
+            limit = max(1, min(limit, 5000))
+
+            tb_reg_audio = TbRegAudio.objects.all().order_by("-reg_fecha")[:limit]
 
             # Contadores
             total_records = TbRegAudio.objects.count()
@@ -519,7 +537,9 @@ class DashboardStatsAPIView(APIView):
                     'ventas_negativas': ventas_negativas,
                     'porcentaje_positivas': round((ventas_positivas/total_records)*100 if total_records > 0 else 0, 2)
                 },
-                'registros': registros
+                'registros': registros,
+                'registros_limit': limit,
+                'registros_truncated': total_records > limit,
             })
         except Exception as e:
             return Response({

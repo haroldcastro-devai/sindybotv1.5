@@ -34,8 +34,10 @@ def registrar_error(tipo_error, nombre_archivo, hora):
         file.write(f"Hora: {hora}\n\n")
 
 def guardar_ruta_directorio(ruta):
-    usuario_file = os.path.join(BASE_DIR, "usuario_temporal.txt")
-    with open(usuario_file, "r") as f:
+    usuario_file = os.environ.get("SINDYBOT_USER_FILE") or os.path.join(
+        BASE_DIR, "usuario_temporal.txt"
+    )
+    with open(usuario_file, "r", encoding="utf-8") as f:
         usuario = f.read().strip()
     from data_updateBD import guardar_ruta_directorio as guardar_ruta_bd
     guardar_ruta_bd(ruta, usuario)
