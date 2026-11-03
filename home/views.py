@@ -3,7 +3,10 @@ from django.http import HttpResponse, JsonResponse
 from django.core.exceptions import ValidationError
 from django.contrib import messages
 from .models import TbRegAudio, TbRegActividad
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth import logout
+from django.views.decorators.http import require_POST
+from django.views.static import serve
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
