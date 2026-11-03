@@ -13,7 +13,7 @@ Los valores que antes estaban en código o en commits **siguen en el historial d
 
 ## Opcional: limpiar historial
 
-Si el repo fue o será público, valora `git filter-repo` o BFG para eliminar secretos del historial y **forzar rotación** de todos los valores afectados.
+Si el repo fue o será público, valora `git filter-repo` o BFG para eliminar secretos del historial y **forzar rotación** de todos los valores afectados. Procedimiento detallado: [GIT-HISTORY-AUDIT.md](./GIT-HISTORY-AUDIT.md) (SCRUM-12).
 
 ## Verificación
 
