@@ -74,11 +74,17 @@ def protected_media(request, path):
     return serve(request, path, document_root=settings.MEDIA_ROOT)
 
 
+def _audit_paths(username: str):
+    mod_bot = os.path.join(settings.BASE_DIR, "mod_bot")
+    if mod_bot not in sys.path:
+        sys.path.insert(0, mod_bot)
+    from audit_runtime import paths_for_user
+
+    return paths_for_user(str(settings.BASE_DIR), username)
+
+
 def _usuario_temporal_path(username: str) -> str:
-    temp_dir = os.path.join(settings.BASE_DIR, 'temp')
-    os.makedirs(temp_dir, exist_ok=True)
-    safe = "".join(c for c in username if c.isalnum() or c in ("_", "-", "."))[:64] or "user"
-    return os.path.join(temp_dir, f"usuario_{safe}.txt")
+    return _audit_paths(username)["usuario"]
 
 
 def _write_usuario_temporal(username: str) -> str:
@@ -286,11 +292,12 @@ def iniciar_auditoria_remota(request):
                         log_file.write(f"[{datetime.now()}] Usuario: {usuario_actual} - Resultado: {json.dumps(resultado)}\n")
                     
                     # Crear archivo de señal para mostrar toast
+                    paths = _audit_paths(usuario_actual)
                     if resultado.get('success'):
-                        with open(os.path.join(settings.BASE_DIR, "senal_toast.txt"), "w") as signal_file:
+                        with open(paths["toast"], "w", encoding="utf-8") as signal_file:
                             signal_file.write(f"success|{resultado.get('total_archivos', 0)}")
                     else:
-                        with open(os.path.join(settings.BASE_DIR, "senal_toast.txt"), "w") as signal_file:
+                        with open(paths["toast"], "w", encoding="utf-8") as signal_file:
                             signal_file.write(f"error|{resultado.get('error', 'Error desconocido')}")
                     
                 finally:
@@ -330,7 +337,8 @@ def ver_senal_toast(request):
     """
     try:
         # Verificar si existe el archivo de señal
-        senal_file = os.path.join(settings.BASE_DIR, "senal_toast.txt")
+        paths = _audit_paths(request.user.username)
+        senal_file = paths["toast"]
         if os.path.exists(senal_file):
             with open(senal_file, "r") as f:
                 contenido = f.read().strip()
@@ -362,11 +370,11 @@ def cancelar_auditoria(request):
     """
     try:
         # Crear un archivo de señal para cancelar el proceso
-        with open(os.path.join(settings.BASE_DIR, "cancelar_proceso.txt"), "w") as f:
+        paths = _audit_paths(request.user.username)
+        with open(paths["cancel"], "w", encoding="utf-8") as f:
             f.write(f"Cancelado por {request.user.username} en {datetime.now()}")
         
-        # Limpiar archivo de progreso
-        progreso_file = os.path.join(settings.BASE_DIR, "Logica_Log_Err", "progreso_auditoria.json")
+        progreso_file = paths["progress"]
         if os.path.exists(progreso_file):
             with open(progreso_file, "w") as f:
                 json.dump({
@@ -483,7 +491,8 @@ def ver_progreso_auditoria(request):
     """
     try:
         # Verificar si existe el archivo de progreso
-        progreso_file = os.path.join(settings.BASE_DIR, "Logica_Log_Err", "progreso_auditoria.json")
+        paths = _audit_paths(request.user.username)
+        progreso_file = paths["progress"]
         
         if os.path.exists(progreso_file):
             with open(progreso_file, "r") as f:
