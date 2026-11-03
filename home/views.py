@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, HttpResponseForbidden
 from django.core.exceptions import ValidationError
 from django.contrib import messages
 from .models import TbRegAudio, TbRegActividad
-from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.views.decorators.http import require_POST
 from django.views.static import serve
@@ -53,11 +53,14 @@ def user_can_export_data(user) -> bool:
 
 
 def staff_export_required(view_func):
-    """Decorador login + rol exportación."""
+    """Decorador login + rol exportación (403 si autenticado sin permiso)."""
 
     @login_required
-    @user_passes_test(user_can_export_data, login_url="/accounts/auth-signin/")
     def wrapper(request, *args, **kwargs):
+        if not user_can_export_data(request.user):
+            return HttpResponseForbidden(
+                "Las exportaciones Excel requieren usuario staff o superuser (SCRUM-14)."
+            )
         return view_func(request, *args, **kwargs)
 
     return wrapper
@@ -70,7 +73,11 @@ class IsStaffExporter(BasePermission):
 
 @login_required
 def protected_media(request, path):
-    """SCRUM-17: archivos media solo con sesión autenticada."""
+    """
+    SCRUM-17: archivos media solo con sesión autenticada.
+    Cualquier usuario logueado puede acceder a rutas bajo MEDIA_ROOT si las conoce;
+    no hay aislamiento por usuario (mejora futura vía ownership o storage privado).
+    """
     return serve(request, path, document_root=settings.MEDIA_ROOT)
 
 
