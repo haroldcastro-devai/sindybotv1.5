@@ -344,16 +344,14 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-### Opción 2: Contenedores Docker
+### Opción 2: Contenedores Docker (SCRUM-18)
 
-Un archivo `Dockerfile` y `docker-compose.yml` están disponibles en la raíz del proyecto:
+Copie `.env.example` → `.env` con `DB_PASSWORD` y `MYSQL_ROOT_PASSWORD`. Nginx expone **http://localhost:5085** (proxy a Gunicorn con `X-Forwarded-Proto`). El entrypoint **no** incluye contraseñas por defecto.
 
 ```bash
-# Construir imagen
-docker-compose build
-
-# Ejecutar servicios
-docker-compose up -d
+docker compose build
+docker compose up -d
+docker compose exec appseed-app python manage.py createsuperuser
 ```
 
 ## Mantenimiento

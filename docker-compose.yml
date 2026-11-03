@@ -25,6 +25,7 @@ services:
     environment:
       - DB_HOST=mysql
       - DB_PORT=3306
+      - TRUST_X_FORWARDED_PROTO=True
     volumes:
       - ./:/app
     networks:
@@ -41,7 +42,7 @@ services:
       - "5085:5085"
     volumes:
       - ./nginx:/etc/nginx/conf.d
-      - ./static:/static
+      - ./staticfiles:/staticfiles
       - ./media:/media
     networks:
       - web_network
@@ -57,6 +58,10 @@ networks:
 volumes:
   mysql_data:
 
+# Stack demo: copie .env.example → .env, defina DB_PASSWORD y MYSQL_ROOT_PASSWORD.
+# Acceso: http://localhost:5085 (nginx → gunicorn). Para TLS público: termine SSL en nginx
+# y use DJANGO_USE_HTTPS=True + CSRF_TRUSTED_ORIGINS=https://... en .env (SCRUM-13).
+
 # ---
-# SindyBot v1.5 — secretos vía .env (SCRUM-6)
+# SindyBot v1.5 — Docker Compose (SCRUM-18)
 # Harold Castro (hcastro)
