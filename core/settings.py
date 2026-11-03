@@ -40,6 +40,18 @@ def _env_bool(name: str, default: bool) -> bool:
     return str2bool(raw)
 
 
+def _env_int(name: str, default: int) -> int:
+    raw = os.environ.get(name)
+    if raw is None or raw.strip() == "":
+        return default
+    try:
+        return int(raw.strip())
+    except ValueError as exc:
+        raise ImproperlyConfigured(
+            f"{name} debe ser un entero, recibido: {raw!r}"
+        ) from exc
+
+
 # Hosts
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '192.168.30.241']
 host_setting = os.environ.get('ALLOWED_HOSTS', '')
@@ -54,6 +66,7 @@ if csrf_setting:
 
 # Producción / HTTPS (SCRUM-13)
 DJANGO_USE_HTTPS = _env_bool("DJANGO_USE_HTTPS", False)
+TRUST_X_FORWARDED_PROTO = _env_bool("TRUST_X_FORWARDED_PROTO", False)
 
 SESSION_COOKIE_SECURE = _env_bool("SESSION_COOKIE_SECURE", DJANGO_USE_HTTPS)
 CSRF_COOKIE_SECURE = _env_bool("CSRF_COOKIE_SECURE", DJANGO_USE_HTTPS)
@@ -61,22 +74,31 @@ SESSION_COOKIE_SAMESITE = os.environ.get("SESSION_COOKIE_SAMESITE", "Lax")
 CSRF_COOKIE_SAMESITE = os.environ.get("CSRF_COOKIE_SAMESITE", "Lax")
 
 SECURE_SSL_REDIRECT = _env_bool("SECURE_SSL_REDIRECT", DJANGO_USE_HTTPS)
-SECURE_HSTS_SECONDS = int(
-    os.environ.get(
-        "SECURE_HSTS_SECONDS",
-        "31536000" if DJANGO_USE_HTTPS else "0",
-    )
+SECURE_HSTS_SECONDS = _env_int(
+    "SECURE_HSTS_SECONDS",
+    31536000 if DJANGO_USE_HTTPS else 0,
 )
 SECURE_HSTS_INCLUDE_SUBDOMAINS = _env_bool(
     "SECURE_HSTS_INCLUDE_SUBDOMAINS", False
 )
+SECURE_HSTS_PRELOAD = _env_bool("SECURE_HSTS_PRELOAD", False)
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_REFERRER_POLICY = os.environ.get("SECURE_REFERRER_POLICY", "same-origin")
 
-if _env_bool("TRUST_X_FORWARDED_PROTO", False):
+if TRUST_X_FORWARDED_PROTO:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 else:
     SECURE_PROXY_SSL_HEADER = None
+
+if DJANGO_USE_HTTPS and not TRUST_X_FORWARDED_PROTO and not DEBUG:
+    import warnings
+
+    warnings.warn(
+        "DJANGO_USE_HTTPS=True sin TRUST_X_FORWARDED_PROTO: si TLS termina en "
+        "nginx/Render/GCP, active TRUST_X_FORWARDED_PROTO=True para evitar "
+        "redirecciones SSL incorrectas o bucles.",
+        stacklevel=1,
+    )
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
