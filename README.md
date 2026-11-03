@@ -126,6 +126,10 @@ El dashboard y las APIs de estadísticas están disponibles para cualquier usuar
 - **`/media/`**: requiere inicio de sesión; no es acceso público anónimo. No separa archivos por usuario (documentado en código).
 - **Producción (`DEBUG=False`)**: Django no sirve `/static/`; ejecute `python manage.py collectstatic` y configure nginx (u otro front) para `STATIC_ROOT`.
 
+### 9. Auditoría remota — estado por usuario (SCRUM-21)
+
+Cada ejecución remota recibe un **`job_id`** (UUID). Toast, progreso y cancelación viven en `temp/audit/<usuario>/<job>/`, de modo que dos auditorías del **mismo** login en paralelo no comparten archivos. El front guarda `job_id` en `sessionStorage` y lo envía como `?job=` en progreso, cancelación y toast. `remote_auditor.iniciar_proceso_remoto(..., job_id=...)` fija el contexto por hilo.
+
 ## Ejecución del Sistema
 
 ### Modo Desarrollo

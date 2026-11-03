@@ -6,6 +6,12 @@ import logging
 from datetime import datetime, timedelta
 import subprocess
 import time
+from audit_runtime import (
+    clear_audit_context,
+    progress_file,
+    cancel_file,
+    set_audit_context,
+)
 from data_updateBD import guardar_ruta_directorio, insertar_datos_audio, actualizar_conteo_archivos
 from logic_utils.get_tags import obtener_gasera_seguro
 
@@ -22,8 +28,9 @@ logger = logging.getLogger(__name__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO_BASE_DIR = r"I:\Unidades compartidas\PV-AUDIOS-AUDITORIA\AUDIOS ESCUCHA\SERVIPROTECCION"
 
-# Archivo de progreso
-PROGRESO_FILE = os.path.join(BASE_DIR, "Logica_Log_Err", "progreso_auditoria.json")
+
+def _progreso_path():
+    return progress_file(BASE_DIR)
 
 def inicializar_progreso(total_archivos):
     """
@@ -44,7 +51,7 @@ def inicializar_progreso(total_archivos):
         ]
     }
     
-    with open(PROGRESO_FILE, 'w') as f:
+    with open(_progreso_path(), 'w') as f:
         json.dump(progreso, f)
 
 def actualizar_progreso(archivo_actual='', fecha_actual='', archivos_procesados=None, mensaje=None):
@@ -53,11 +60,11 @@ def actualizar_progreso(archivo_actual='', fecha_actual='', archivos_procesados=
     """
     try:
         # Verificar si existe el archivo
-        if not os.path.exists(PROGRESO_FILE):
+        if not os.path.exists(_progreso_path()):
             inicializar_progreso(100)  # valor por defecto
 
         # Leer el archivo actual
-        with open(PROGRESO_FILE, 'r') as f:
+        with open(_progreso_path(), 'r') as f:
             progreso = json.load(f)
         
         # Actualizar campos
@@ -89,7 +96,7 @@ def actualizar_progreso(archivo_actual='', fecha_actual='', archivos_procesados=
             progreso['tiempo_transcurrido'] = f"{horas:02d}:{minutos:02d}:{segundos:02d}"
         
         # Guardar actualización
-        with open(PROGRESO_FILE, 'w') as f:
+        with open(_progreso_path(), 'w') as f:
             json.dump(progreso, f)
     
     except Exception as e:
@@ -101,11 +108,11 @@ def finalizar_progreso(exito=True, mensaje=None):
     """
     try:
         # Verificar si existe el archivo
-        if not os.path.exists(PROGRESO_FILE):
+        if not os.path.exists(_progreso_path()):
             return
 
         # Leer el archivo actual
-        with open(PROGRESO_FILE, 'r') as f:
+        with open(_progreso_path(), 'r') as f:
             progreso = json.load(f)
         
         # Marcar como finalizado
@@ -118,7 +125,7 @@ def finalizar_progreso(exito=True, mensaje=None):
             })
         
         # Guardar actualización
-        with open(PROGRESO_FILE, 'w') as f:
+        with open(_progreso_path(), 'w') as f:
             json.dump(progreso, f)
     
     except Exception as e:
@@ -488,7 +495,7 @@ def comprobar_cancelacion():
         bool: True si el proceso ha sido cancelado, False en caso contrario
     """
     try:
-        archivo_cancelacion = os.path.join(BASE_DIR, "cancelar_proceso.txt")
+        archivo_cancelacion = cancel_file(BASE_DIR)
         if os.path.exists(archivo_cancelacion):
             logger.info("Proceso cancelado por el usuario")
             actualizar_progreso(mensaje="Proceso cancelado por el usuario")
@@ -503,21 +510,30 @@ def comprobar_cancelacion():
         logger.error(f"Error al comprobar cancelación: {str(e)}")
         return False
 
-def iniciar_proceso_remoto(archivo_excel, usuario):
+def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
     """
-    Función principal que inicia el proceso de auditoría desde un cliente remoto
+    Función principal que inicia el proceso de auditoría desde un cliente remoto.
+
+    Establece contexto por hilo (``set_audit_context``) para rutas bajo ``temp/audit/``.
+    No invoque ``inicializar_progreso`` / ``actualizar_progreso`` sin ese contexto.
     
     Args:
         archivo_excel: Ruta del archivo Excel
         usuario: Nombre de usuario que inicia el proceso
+        job_id: UUID de la ejecución (se genera uno si no se pasa)
     
     Returns:
         dict: Resultados del proceso con éxito/error
     """
+    import uuid
+
+    if not job_id:
+        job_id = str(uuid.uuid4())
     try:
-        # Verificar si hay un proceso en curso que fue cancelado
-        if os.path.exists(os.path.join(BASE_DIR, "cancelar_proceso.txt")):
-            os.remove(os.path.join(BASE_DIR, "cancelar_proceso.txt"))
+        set_audit_context(BASE_DIR, usuario, job_id)
+        cancel_path = cancel_file(BASE_DIR)
+        if os.path.exists(cancel_path):
+            os.remove(cancel_path)
             logger.info("Eliminado archivo de cancelación anterior")
         
         logger.info(f"Iniciando proceso remoto para usuario {usuario} con archivo {archivo_excel}")
@@ -631,6 +647,8 @@ def iniciar_proceso_remoto(archivo_excel, usuario):
         registrar_error(str(e), "proceso_remoto", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         finalizar_progreso(exito=False, mensaje=f"Error en el proceso: {str(e)}")
         return {"success": False, "error": str(e)}
+    finally:
+        clear_audit_context()
 
 # Para probar individualmente
 if __name__ == "__main__":
