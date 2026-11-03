@@ -135,7 +135,8 @@ Cada ejecución remota recibe un **`job_id`** (UUID). Toast, progreso y cancelac
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
 - Con **HTTPS** (nginx, Render, GCP, etc.): `DJANGO_USE_HTTPS=True` activa cookies seguras, redirección SSL y HSTS (ajustable con variables en `.env.example`).
 - **Proxy con TLS terminado:** use **`DJANGO_USE_HTTPS=True` y `TRUST_X_FORWARDED_PROTO=True` a la vez**; configure `CSRF_TRUSTED_ORIGINS=https://...`.
-- **Health checks HTTP** internos (sin TLS hasta Gunicorn): ponga `SECURE_SSL_REDIRECT=False` o exponga el check por HTTPS.
+- **Health checks HTTP** internos: `SECURE_SSL_REDIRECT=False` o `SECURE_REDIRECT_EXEMPT=^/health/?$` (regex en `.env`).
+- En **Render** con `DJANGO_USE_HTTPS=True`, si no define `TRUST_X_FORWARDED_PROTO`, se asume proxy (`X-Forwarded-Proto`) automáticamente.
 - Demo local HTTP: deje `DJANGO_USE_HTTPS=False` (comportamiento actual en LAN/localhost).
 
 ## Ejecución del Sistema

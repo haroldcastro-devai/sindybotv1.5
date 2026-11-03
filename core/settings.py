@@ -7,6 +7,7 @@ Harold Castro (hcastro)
 """
 
 import os
+import re
 from pathlib import Path
 
 from django.core.exceptions import ImproperlyConfigured
@@ -64,9 +65,20 @@ csrf_setting = os.environ.get('CSRF_TRUSTED_ORIGINS', '')
 if csrf_setting:
     CSRF_TRUSTED_ORIGINS.extend(csrf_setting.split(','))
 
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
 # Producción / HTTPS (SCRUM-13)
 DJANGO_USE_HTTPS = _env_bool("DJANGO_USE_HTTPS", False)
-TRUST_X_FORWARDED_PROTO = _env_bool("TRUST_X_FORWARDED_PROTO", False)
+
+_trust_raw = os.environ.get("TRUST_X_FORWARDED_PROTO")
+if _trust_raw is not None and _trust_raw.strip() != "":
+    TRUST_X_FORWARDED_PROTO = str2bool(_trust_raw)
+elif DJANGO_USE_HTTPS and RENDER_EXTERNAL_HOSTNAME:
+    TRUST_X_FORWARDED_PROTO = True
+else:
+    TRUST_X_FORWARDED_PROTO = False
 
 SESSION_COOKIE_SECURE = _env_bool("SESSION_COOKIE_SECURE", DJANGO_USE_HTTPS)
 CSRF_COOKIE_SECURE = _env_bool("CSRF_COOKIE_SECURE", DJANGO_USE_HTTPS)
@@ -82,8 +94,17 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = _env_bool(
     "SECURE_HSTS_INCLUDE_SUBDOMAINS", False
 )
 SECURE_HSTS_PRELOAD = _env_bool("SECURE_HSTS_PRELOAD", False)
+if SECURE_HSTS_PRELOAD and SECURE_HSTS_SECONDS <= 0:
+    raise ImproperlyConfigured(
+        "SECURE_HSTS_PRELOAD=True requiere SECURE_HSTS_SECONDS > 0"
+    )
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_REFERRER_POLICY = os.environ.get("SECURE_REFERRER_POLICY", "same-origin")
+
+_redirect_exempt = os.environ.get("SECURE_REDIRECT_EXEMPT", "")
+SECURE_REDIRECT_EXEMPT = [
+    re.compile(p.strip()) for p in _redirect_exempt.split(",") if p.strip()
+]
 
 if TRUST_X_FORWARDED_PROTO:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
@@ -101,10 +122,6 @@ if DJANGO_USE_HTTPS and not TRUST_X_FORWARDED_PROTO and not DEBUG:
     )
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 INSTALLED_APPS = [
