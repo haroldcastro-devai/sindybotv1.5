@@ -130,6 +130,15 @@ El dashboard y las APIs de estadísticas están disponibles para cualquier usuar
 
 Cada ejecución remota recibe un **`job_id`** (UUID). Toast, progreso y cancelación viven en `temp/audit/<usuario>/<job>/`, de modo que dos auditorías del **mismo** login en paralelo no comparten archivos. El front guarda `job_id` en `sessionStorage` y lo envía como `?job=` en progreso, cancelación y toast. `remote_auditor.iniciar_proceso_remoto(..., job_id=...)` fija el contexto por hilo.
 
+### 10. Producción y cookies (SCRUM-13)
+
+- **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
+- Con **HTTPS** (nginx, Render, GCP, etc.): `DJANGO_USE_HTTPS=True` activa cookies seguras, redirección SSL y HSTS (ajustable con variables en `.env.example`).
+- **Proxy con TLS terminado:** use **`DJANGO_USE_HTTPS=True` y `TRUST_X_FORWARDED_PROTO=True` a la vez**; configure `CSRF_TRUSTED_ORIGINS=https://...`.
+- **Health checks HTTP** internos: `SECURE_SSL_REDIRECT=False` o `SECURE_REDIRECT_EXEMPT=^/health/?$` (regex en `.env`).
+- En **Render** con `DJANGO_USE_HTTPS=True`, si no define `TRUST_X_FORWARDED_PROTO`, se asume proxy (`X-Forwarded-Proto`) automáticamente.
+- Demo local HTTP: deje `DJANGO_USE_HTTPS=False` (comportamiento actual en LAN/localhost).
+
 ## Ejecución del Sistema
 
 ### Modo Desarrollo

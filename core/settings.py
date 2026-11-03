@@ -7,6 +7,7 @@ Harold Castro (hcastro)
 """
 
 import os
+import re
 from pathlib import Path
 
 from django.core.exceptions import ImproperlyConfigured
@@ -32,6 +33,26 @@ USE_SQLITE_DEMO = str2bool(os.environ.get("USE_SQLITE_DEMO", "False"))
 # Enable/Disable DEBUG Mode
 DEBUG = str2bool(os.environ.get('DEBUG', 'False'))
 
+
+def _env_bool(name: str, default: bool) -> bool:
+    raw = os.environ.get(name)
+    if raw is None or raw.strip() == "":
+        return default
+    return str2bool(raw)
+
+
+def _env_int(name: str, default: int) -> int:
+    raw = os.environ.get(name)
+    if raw is None or raw.strip() == "":
+        return default
+    try:
+        return int(raw.strip())
+    except ValueError as exc:
+        raise ImproperlyConfigured(
+            f"{name} debe ser un entero, recibido: {raw!r}"
+        ) from exc
+
+
 # Hosts
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '192.168.30.241']
 host_setting = os.environ.get('ALLOWED_HOSTS', '')
@@ -44,11 +65,63 @@ csrf_setting = os.environ.get('CSRF_TRUSTED_ORIGINS', '')
 if csrf_setting:
     CSRF_TRUSTED_ORIGINS.extend(csrf_setting.split(','))
 
-X_FRAME_OPTIONS = "SAMEORIGIN"
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
+# Producción / HTTPS (SCRUM-13)
+DJANGO_USE_HTTPS = _env_bool("DJANGO_USE_HTTPS", False)
+
+_trust_raw = os.environ.get("TRUST_X_FORWARDED_PROTO")
+if _trust_raw is not None and _trust_raw.strip() != "":
+    TRUST_X_FORWARDED_PROTO = str2bool(_trust_raw)
+elif DJANGO_USE_HTTPS and RENDER_EXTERNAL_HOSTNAME:
+    TRUST_X_FORWARDED_PROTO = True
+else:
+    TRUST_X_FORWARDED_PROTO = False
+
+SESSION_COOKIE_SECURE = _env_bool("SESSION_COOKIE_SECURE", DJANGO_USE_HTTPS)
+CSRF_COOKIE_SECURE = _env_bool("CSRF_COOKIE_SECURE", DJANGO_USE_HTTPS)
+SESSION_COOKIE_SAMESITE = os.environ.get("SESSION_COOKIE_SAMESITE", "Lax")
+CSRF_COOKIE_SAMESITE = os.environ.get("CSRF_COOKIE_SAMESITE", "Lax")
+
+SECURE_SSL_REDIRECT = _env_bool("SECURE_SSL_REDIRECT", DJANGO_USE_HTTPS)
+SECURE_HSTS_SECONDS = _env_int(
+    "SECURE_HSTS_SECONDS",
+    31536000 if DJANGO_USE_HTTPS else 0,
+)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = _env_bool(
+    "SECURE_HSTS_INCLUDE_SUBDOMAINS", False
+)
+SECURE_HSTS_PRELOAD = _env_bool("SECURE_HSTS_PRELOAD", False)
+if SECURE_HSTS_PRELOAD and SECURE_HSTS_SECONDS <= 0:
+    raise ImproperlyConfigured(
+        "SECURE_HSTS_PRELOAD=True requiere SECURE_HSTS_SECONDS > 0"
+    )
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_REFERRER_POLICY = os.environ.get("SECURE_REFERRER_POLICY", "same-origin")
+
+_redirect_exempt = os.environ.get("SECURE_REDIRECT_EXEMPT", "")
+SECURE_REDIRECT_EXEMPT = [
+    re.compile(p.strip()) for p in _redirect_exempt.split(",") if p.strip()
+]
+
+if TRUST_X_FORWARDED_PROTO:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+else:
+    SECURE_PROXY_SSL_HEADER = None
+
+if DJANGO_USE_HTTPS and not TRUST_X_FORWARDED_PROTO and not DEBUG:
+    import warnings
+
+    warnings.warn(
+        "DJANGO_USE_HTTPS=True sin TRUST_X_FORWARDED_PROTO: si TLS termina en "
+        "nginx/Render/GCP, active TRUST_X_FORWARDED_PROTO=True para evitar "
+        "redirecciones SSL incorrectas o bucles.",
+        stacklevel=1,
+    )
+
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # Application definition
 INSTALLED_APPS = [
@@ -190,10 +263,9 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.file'
 SESSION_FILE_PATH = os.path.join(BASE_DIR, 'temp', 'sessions')
 if not os.path.exists(SESSION_FILE_PATH):
     os.makedirs(SESSION_FILE_PATH, exist_ok=True)
-SESSION_COOKIE_AGE = 86400  # 24 horas en segundos
-SESSION_COOKIE_SECURE = False  # No requerir HTTPS en desarrollo
-SESSION_COOKIE_HTTPONLY = True  # Prevenir acceso JavaScript a la cookie
-SESSION_SAVE_EVERY_REQUEST = False  # No guardar en cada petición para mejor rendimiento
+SESSION_COOKIE_AGE = int(os.environ.get("SESSION_COOKIE_AGE", "86400"))
+SESSION_COOKIE_HTTPONLY = True
+SESSION_SAVE_EVERY_REQUEST = False
 
 # Configuración de logging mejorada para diagnosticar problemas de sesión
 import logging.config
@@ -203,6 +275,7 @@ LOG_DIR = os.path.join(BASE_DIR, 'logs')
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # Configuración de logs
+SESSION_LOG_LEVEL = "DEBUG" if DEBUG else "WARNING"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -219,7 +292,7 @@ LOGGING = {
             'formatter': 'verbose',
         },
         'session_file': {
-            'level': 'DEBUG',
+            'level': SESSION_LOG_LEVEL,
             'class': 'logging.FileHandler',
             'filename': os.path.join(LOG_DIR, 'session_debug.log'),
             'formatter': 'verbose',
@@ -246,12 +319,12 @@ LOGGING = {
         },
         'django.contrib.sessions': {
             'handlers': ['console', 'session_file'],
-            'level': 'DEBUG',
+            'level': SESSION_LOG_LEVEL,
             'propagate': False,
         },
         'home.session_debug_middleware': {
             'handlers': ['console', 'session_file', 'error_file'],
-            'level': 'DEBUG',
+            'level': SESSION_LOG_LEVEL,
             'propagate': False,
         },
     },
