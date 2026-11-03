@@ -114,6 +114,9 @@ if USE_SQLITE_DEMO:
             "NAME": BASE_DIR / "db_demo.sqlite3",
         }
     }
+elif os.environ.get("DJANGO_SETTINGS_MODULE", "").endswith("settings_aws"):
+    # core.settings_aws reemplaza DATABASES tras importar este módulo
+    DATABASES = {}
 else:
     db_password = os.environ.get("DB_PASSWORD")
     if not db_password:

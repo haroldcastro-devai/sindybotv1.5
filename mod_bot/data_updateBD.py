@@ -25,7 +25,7 @@ def get_mysql_connection(db_type='default'):
     """
     Establece y retorna una conexión a la base de datos MySQL.
     Args:
-        db_type: 'default' para local, 'aws' para AWS (comentado)
+        db_type: 'default' (DB_*) o 'aws' (AWS_DB_* en .env).
     """
     try:
         if db_type == 'default':
@@ -39,14 +39,27 @@ def get_mysql_connection(db_type='default'):
                 user=os.environ.get('DB_USER', 'adminsbot'),
                 password=password,
             )
-        # Conexión a AWS comentada
-        # elif db_type == 'aws':
-        #     connection = mysql.connector.connect(
-        #         host=os.environ.get('AWS_DB_HOST', '34.229.113.3'),
-        #         database=os.environ.get('AWS_DB_NAME', 'sindybot_dev'),
-        #         user=os.environ.get('AWS_DB_USER', 'dev_user'),
-        #         password=os.environ.get('AWS_DB_PASSWORD', 'DevPassword123!')
-        #     )
+        elif db_type == 'aws':
+            required = (
+                'AWS_DB_HOST',
+                'AWS_DB_USER',
+                'AWS_DB_PASSWORD',
+                'AWS_DB_NAME',
+            )
+            missing = [k for k in required if not os.environ.get(k)]
+            if missing:
+                logger.error("Faltan variables AWS en entorno: %s", missing)
+                return None
+            connection = mysql.connector.connect(
+                host=os.environ['AWS_DB_HOST'],
+                database=os.environ['AWS_DB_NAME'],
+                user=os.environ['AWS_DB_USER'],
+                password=os.environ['AWS_DB_PASSWORD'],
+                port=int(os.environ.get('AWS_DB_PORT', '3306')),
+            )
+        else:
+            logger.error("db_type desconocido: %s", db_type)
+            return None
         return connection
     except Error as e:
         logger.error(f"Error al conectar a MySQL ({db_type}): {e}")
