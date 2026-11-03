@@ -1,45 +1,51 @@
 #!/bin/bash
+set -euo pipefail
 
-# Función para esperar por la disponibilidad de la base de datos MySQL
 wait_for_db() {
+    if [ "${USE_SQLITE_DEMO:-False}" = "True" ]; then
+        echo "USE_SQLITE_DEMO=True — omitiendo espera MySQL."
+        return 0
+    fi
+    if [ -z "${DB_PASSWORD:-}" ]; then
+        echo "Error: DB_PASSWORD no definida (configure .env)."
+        return 1
+    fi
     echo "Esperando que MySQL esté disponible..."
-    for i in {1..30}; do
+    for i in $(seq 1 30); do
         python -c "
-import sys
+import os, sys
 import mysql.connector
 try:
     mysql.connector.connect(
-        host='${DB_HOST:-mysql}',
-        port=${DB_PORT:-3306},
-        user='${DB_USER:-adminsbot}',
-        password='${DB_PASSWORD:-&-4GWwgiw9UfFfOp}',
-        database='${DB_NAME:-auto_sbot}'
+        host=os.environ.get('DB_HOST', 'mysql'),
+        port=int(os.environ.get('DB_PORT', '3306')),
+        user=os.environ.get('DB_USER', 'adminsbot'),
+        password=os.environ['DB_PASSWORD'],
+        database=os.environ.get('DB_NAME', 'auto_sbot'),
     )
     sys.exit(0)
-except Exception as e:
+except Exception:
     sys.exit(1)
 "
         if [ $? -eq 0 ]; then
-            echo "Base de datos disponible. Continuando..."
+            echo "Base de datos disponible."
             return 0
         fi
-        echo "Esperando que la base de datos esté disponible... $i/30"
+        echo "Esperando MySQL... $i/30"
         sleep 2
     done
-    echo "Error: No se pudo conectar a la base de datos después de 60 segundos."
+    echo "Error: MySQL no disponible tras 60s."
     return 1
 }
 
-# Esperar por la base de datos
 wait_for_db
 
-# Aplicar migraciones
 echo "Aplicando migraciones..."
-python manage.py migrate
+python manage.py migrate --noinput
 
-# Recolectar archivos estáticos
 echo "Recolectando archivos estáticos..."
 python manage.py collectstatic --noinput
 
-# Ejecutar el comando pasado a este script
 exec "$@"
+
+# Desarrollado por: hcastro
