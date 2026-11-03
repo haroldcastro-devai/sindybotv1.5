@@ -187,7 +187,7 @@ Herramientas para la corrección ortográfica y manejo del diccionario personali
    - Se construye un prompt detallado para el modelo de IA
 
 4. **Análisis con IA**:
-   - Se procesa el prompt con Ollama usando el modelo Qwen 14B
+   - Se procesa el prompt con Google Gemini (`GEMINI_API_KEY` en `.env`)
    - Se genera un análisis detallado y estructurado
    - Se extrae la calificación final (POSITIVA/NEGATIVA)
 

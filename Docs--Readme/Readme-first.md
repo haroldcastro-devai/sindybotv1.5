@@ -92,7 +92,7 @@ mysql -u root -p
 
 ```sql
 CREATE DATABASE auto_sbot CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'adminsbot'@'localhost' IDENTIFIED BY '&-4GWwgiw9UfFfOp';
+CREATE USER 'adminsbot'@'localhost' IDENTIFIED BY 'tu_contraseña_segura';
 GRANT ALL PRIVILEGES ON auto_sbot.* TO 'adminsbot'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -208,7 +208,7 @@ torchaudio==2.0.2
 numpy==1.24.3
 pandas==2.0.2
 openpyxl==3.1.2
-ollama==0.1.20
+google-generativeai>=0.8.0
 whisper==1.1.10
 librosa==0.10.1
 pyannote.audio==2.1.1
@@ -238,7 +238,7 @@ El proyecto depende de varias librerías Python, categorizadas por funcionalidad
 - FFmpeg-Python: Manipulación de archivos de audio
 
 ### Inteligencia Artificial
-- Ollama: Cliente para modelos locales de IA
+- Google Gemini API: auditoría de guiones (`GEMINI_API_KEY` en `.env`)
 - Transformers: Modelos pre-entrenados de Hugging Face
 - Torch: Framework para aprendizaje profundo
 - HunSpell: Para corrección ortográfica

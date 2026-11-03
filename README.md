@@ -92,7 +92,7 @@ mysql -u root -p
 
 ```sql
 CREATE DATABASE auto_sbot CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'adminsbot'@'localhost' IDENTIFIED BY '&-4GWwgiw9UfFfOp';
+CREATE USER 'adminsbot'@'localhost' IDENTIFIED BY 'tu_contraseña_segura';
 GRANT ALL PRIVILEGES ON auto_sbot.* TO 'adminsbot'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -105,33 +105,11 @@ python manage.py migrate
 
 ### 4. Configuración de Variables de Entorno
 
-Cree un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+Cree un archivo `.env` copiando `.env.example` y complete los valores (SECRET_KEY, DB_PASSWORD, GEMINI_API_KEY, HF_TOKEN). **No** suba `.env` al repositorio.
 
-```
-DEBUG=True
-SECRET_KEY=s8hfg738hf72h3fhh20sdhf03h2f0hslfhslhf83hf2
-ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,192.168.X.X
-CSRF_TRUSTED_ORIGINS=http://localhost:8000,http://127.0.0.1:8000
+### 5. Google Gemini (auditoría LLM)
 
-DB_NAME=auto_sbot
-DB_USER=adminsbot
-DB_PASSWORD=&-4GWwgiw9UfFfOp
-DB_HOST=localhost
-DB_PORT=3306
-```
-
-### 5. Configuración de Ollama (Modelo de IA)
-
-```bash
-# Instalar Ollama
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Iniciar servicio Ollama
-systemctl start ollama
-
-# Descargar modelo Qwen2.5
-ollama pull qwen2.5:14b-instruct-q6_K  --->  app optimizada para usar cualquier modelo ollama deacuerdo a compatibilidad con la VRAM
-```
+Configure `GEMINI_API_KEY` y `GEMINI_MODEL` (p. ej. `gemini-3.8-flash`) en `.env`. Ver `Docs--Readme/GEMINI-STT-MIGRATION.md`.
 
 ### 6. Creación de Usuario Administrador
 
@@ -210,7 +188,7 @@ torchaudio==2.0.2
 numpy==1.24.3
 pandas==2.0.2
 openpyxl==3.1.2
-ollama==0.1.20
+google-generativeai>=0.8.0
 whisper==1.1.10
 librosa==0.10.1
 pyannote.audio==2.1.1
@@ -240,7 +218,7 @@ El proyecto depende de varias librerías Python, categorizadas por funcionalidad
 - FFmpeg-Python: Manipulación de archivos de audio
 
 ### Inteligencia Artificial
-- Ollama: Cliente para modelos locales de IA
+- Google Gemini API: auditoría de guiones vía `mod_bot/l_process/llm_client.py`
 - Transformers: Modelos pre-entrenados de Hugging Face
 - Torch: Framework para aprendizaje profundo
 - HunSpell: Para corrección ortográfica

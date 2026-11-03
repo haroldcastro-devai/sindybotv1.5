@@ -39,15 +39,20 @@ def get_mysql_connection(db_type='default'):
                 user=os.environ.get('DB_USER', 'adminsbot'),
                 password=password,
             )
-        # Conexión a AWS comentada
-        # elif db_type == 'aws':
-        #     connection = mysql.connector.connect(
-        #         host=os.environ.get('AWS_DB_HOST', '34.229.113.3'),
-        #         database=os.environ.get('AWS_DB_NAME', 'sindybot_dev'),
-        #         user=os.environ.get('AWS_DB_USER', 'dev_user'),
-        #         password=os.environ.get('AWS_DB_PASSWORD', 'DevPassword123!')
-        #     )
-        return connection
+        elif db_type == 'aws':
+            aws_pwd = os.environ.get('AWS_DB_PASSWORD')
+            if not aws_pwd:
+                logger.error("AWS_DB_PASSWORD no configurada")
+                return None
+            connection = mysql.connector.connect(
+                host=os.environ.get('AWS_DB_HOST'),
+                database=os.environ.get('AWS_DB_NAME'),
+                user=os.environ.get('AWS_DB_USER'),
+                password=aws_pwd,
+            )
+        else:
+            logger.error("db_type desconocido: %s", db_type)
+            return None
     except Error as e:
         logger.error(f"Error al conectar a MySQL ({db_type}): {e}")
         return None
