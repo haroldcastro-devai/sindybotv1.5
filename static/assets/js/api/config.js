@@ -1,67 +1,68 @@
-// Configuración de la API
-const BASE_URL = 'http://192.168.30.241:8000'; // URL base del servidor
+// Configuración de la API (autenticación por sesión Django + CSRF)
+const BASE_URL = window.location.origin;
+
+function getCsrfToken() {
+    const match = document.cookie.match(/(?:^|;\s*)csrftoken=([^;]+)/);
+    return match ? decodeURIComponent(match[1]) : '';
+}
 
 const API_CONFIG = {
-    getHeaders: () => {
-        const token = localStorage.getItem('access_token');
-        return {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Authorization': token ? `Bearer ${token}` : '',
+    getHeaders: (jsonBody = true) => {
+        const headers = {
+            Accept: 'application/json',
+            'X-CSRFToken': getCsrfToken(),
         };
+        if (jsonBody) {
+            headers['Content-Type'] = 'application/json';
+        }
+        return headers;
     },
-    
-    apiRequest: async (endpoint, options = {}) => {
-        const headers = API_CONFIG.getHeaders();
-        const defaultOptions = {
-            headers,
-            credentials: 'include',
-        };
 
+    apiRequest: async (endpoint, options = {}) => {
+        const method = (options.method || 'GET').toUpperCase();
+        const jsonBody = method !== 'GET' && !(options.body instanceof Blob);
         const response = await fetch(`${BASE_URL}${endpoint}`, {
-            ...defaultOptions,
+            credentials: 'include',
             ...options,
+            headers: {
+                ...API_CONFIG.getHeaders(jsonBody),
+                ...(options.headers || {}),
+            },
         });
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        return await response.json();
-    }
+        return response.json();
+    },
+
+    downloadPost: async (endpoint) => {
+        const response = await fetch(`${BASE_URL}${endpoint}`, {
+            method: 'POST',
+            credentials: 'include',
+            headers: API_CONFIG.getHeaders(false),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.blob();
+    },
 };
 
-// Endpoints del dashboard
 const DashboardAPI = {
-    // Autenticación
-    login: (credentials) => {
-        return API_CONFIG.apiRequest('/api/auth/login/', {
-            method: 'POST',
-            body: JSON.stringify(credentials)
-        });
+    // Login vía formulario Django: /accounts/auth-signin/
+    loginViaSession: () => {
+        window.location.href = '/accounts/auth-signin/';
     },
 
-    // Estadísticas del dashboard
-    getStats: () => {
-        return API_CONFIG.apiRequest('/api/dashboard/stats/');
-    },
+    getStats: () => API_CONFIG.apiRequest('/api/dashboard/stats/'),
 
-    // Datos para las gráficas
-    getGraphData: () => {
-        return API_CONFIG.apiRequest('/api/dashboard/graph-data/');
-    },
+    getGraphData: () => API_CONFIG.apiRequest('/api/dashboard/graph-data/'),
 
-    // Log de actividades
-    getActivityLog: () => {
-        return API_CONFIG.apiRequest('/api/activity-log/');
-    },
+    getActivityLog: () => API_CONFIG.apiRequest('/api/activity-log/'),
 
-    // Generar reporte
-    generateReport: () => {
-        return API_CONFIG.apiRequest('/api/generate-report/', {
-            method: 'POST'
-        });
-    }
+    generateReport: () => API_CONFIG.downloadPost('/api/generate-report/'),
 };
 
 export { API_CONFIG, DashboardAPI };
