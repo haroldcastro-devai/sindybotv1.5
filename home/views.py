@@ -81,13 +81,20 @@ def protected_media(request, path):
     return serve(request, path, document_root=settings.MEDIA_ROOT)
 
 
-def _audit_paths(username: str):
+def _audit_paths(username: str, job_id: Optional[str] = None):
     mod_bot = os.path.join(settings.BASE_DIR, "mod_bot")
     if mod_bot not in sys.path:
         sys.path.insert(0, mod_bot)
     from audit_runtime import paths_for_user
 
-    return paths_for_user(str(settings.BASE_DIR), username)
+    return paths_for_user(str(settings.BASE_DIR), username, job_id)
+
+
+def _audit_job_id_from_request(request) -> Optional[str]:
+    job = request.GET.get("job") or request.POST.get("job")
+    if job:
+        return job.strip()[:36]
+    return request.session.get("sindybot_audit_job_id")
 
 
 def _usuario_temporal_path(username: str) -> str:
@@ -277,25 +284,29 @@ def iniciar_auditoria_remota(request):
             with open(temp_file, 'wb+') as destination:
                 for chunk in archivo_excel.chunks():
                     destination.write(chunk)
+
+            job_id = str(uuid.uuid4())
+            request.session["sindybot_audit_job_id"] = job_id
+            request.session.modified = True
             
-            # Ejecutar proceso en un hilo separado para no bloquear la respuesta
-            def proceso_background():
+            def proceso_background(run_job_id: str):
                 try:
-                    # Importar el módulo de auditoría remota
                     sys.path.append(os.path.join(settings.BASE_DIR, 'mod_bot'))
                     from remote_auditor import iniciar_proceso_remoto
                     
-                    # Ejecutar el proceso
-                    resultado = iniciar_proceso_remoto(temp_file, usuario_actual)
+                    resultado = iniciar_proceso_remoto(
+                        temp_file, usuario_actual, job_id=run_job_id
+                    )
                     
-                    # Registrar el resultado en el log
                     log_dir = os.path.join(settings.BASE_DIR, "Logica_Log_Err")
                     os.makedirs(log_dir, exist_ok=True)
                     with open(os.path.join(log_dir, "auditoria_remota.log"), "a") as log_file:
-                        log_file.write(f"[{datetime.now()}] Usuario: {usuario_actual} - Resultado: {json.dumps(resultado)}\n")
+                        log_file.write(
+                            f"[{datetime.now()}] Usuario: {usuario_actual} job={run_job_id} "
+                            f"- Resultado: {json.dumps(resultado)}\n"
+                        )
                     
-                    # Crear archivo de señal para mostrar toast
-                    paths = _audit_paths(usuario_actual)
+                    paths = _audit_paths(usuario_actual, run_job_id)
                     if resultado.get('success'):
                         with open(paths["toast"], "w", encoding="utf-8") as signal_file:
                             signal_file.write(f"success|{resultado.get('total_archivos', 0)}")
@@ -304,7 +315,6 @@ def iniciar_auditoria_remota(request):
                             signal_file.write(f"error|{resultado.get('error', 'Error desconocido')}")
                     
                 finally:
-                    # Limpiar archivos temporales
                     try:
                         if os.path.exists(temp_file):
                             os.remove(temp_file)
@@ -313,14 +323,13 @@ def iniciar_auditoria_remota(request):
                     except Exception as e:
                         logger.error(f"Error al limpiar archivos temporales: {str(e)}")
             
-            # Iniciar proceso en segundo plano
-            thread = threading.Thread(target=proceso_background)
+            thread = threading.Thread(target=proceso_background, args=(job_id,))
             thread.daemon = True
             thread.start()
             
-            # Enviar respuesta inmediata
             return JsonResponse({
                 'success': True,
+                'job_id': job_id,
                 'message': 'Proceso de auditoría iniciado. Los resultados se mostrarán una vez completado.'
             })
             
@@ -340,7 +349,7 @@ def ver_senal_toast(request):
     """
     try:
         # Verificar si existe el archivo de señal
-        paths = _audit_paths(request.user.username)
+        paths = _audit_paths(request.user.username, _audit_job_id_from_request(request))
         senal_file = paths["toast"]
         if os.path.exists(senal_file):
             with open(senal_file, "r") as f:
@@ -373,7 +382,7 @@ def cancelar_auditoria(request):
     """
     try:
         # Crear un archivo de señal para cancelar el proceso
-        paths = _audit_paths(request.user.username)
+        paths = _audit_paths(request.user.username, _audit_job_id_from_request(request))
         with open(paths["cancel"], "w", encoding="utf-8") as f:
             f.write(f"Cancelado por {request.user.username} en {datetime.now()}")
         
@@ -494,7 +503,7 @@ def ver_progreso_auditoria(request):
     """
     try:
         # Verificar si existe el archivo de progreso
-        paths = _audit_paths(request.user.username)
+        paths = _audit_paths(request.user.username, _audit_job_id_from_request(request))
         progreso_file = paths["progress"]
         
         if os.path.exists(progreso_file):

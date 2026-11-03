@@ -2,7 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Variable global para guardar el intervalo del seguimiento
     let intervaloSeguimiento = null;
     let procesoAuditoriaEnEjecucion = false;
-    
+
+    function getAuditJobId() {
+        return sessionStorage.getItem('sindybot_audit_job_id') || '';
+    }
+
+    function auditJobQuery() {
+        const id = getAuditJobId();
+        return id ? `?job=${encodeURIComponent(id)}` : '';
+    }
+
+    function clearAuditJobStorage() {
+        sessionStorage.removeItem('sindybot_audit_job_id');
+    }
     // Verificar si hay un proceso de auditoría en curso al cargar la página
     if (sessionStorage.getItem('auditoria_en_progreso') === 'true') {
         // Remover estilos inline que puedan estar causando problemas
@@ -75,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
             modalAuditoria.hide();
             
             if (data.success) {
+                if (data.job_id) {
+                    sessionStorage.setItem('sindybot_audit_job_id', data.job_id);
+                }
                 // Mostrar modal de progreso
                 var modalProgreso = new bootstrap.Modal(document.getElementById('modalProgreso'), {
                     backdrop: 'static',
@@ -161,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('btnCancelarAuditoria').innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Cancelando...';
         
         // Enviar petición para cancelar el proceso
-        fetch('/cancelar_auditoria/', {
+        fetch('/cancelar_auditoria/' + auditJobQuery(), {
             method: 'POST',
             headers: {
                 'X-CSRFToken': getCookie('csrftoken'),
@@ -174,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Limpiar sessionStorage
                 sessionStorage.removeItem('auditoria_en_progreso');
                 sessionStorage.removeItem('progreso_auditoria');
+                clearAuditJobStorage();
                 
                 // Detener el intervalo de verificación
                 if (intervaloSeguimiento) {
@@ -239,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Almacenar el intervalo en la variable global para poder cancelarlo
         intervaloSeguimiento = setInterval(function() {
-            fetch('/ver_progreso_auditoria/')
+            fetch('/ver_progreso_auditoria/' + auditJobQuery())
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error en la respuesta del servidor');
@@ -269,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     procesoAuditoriaEnEjecucion = false;
                     sessionStorage.removeItem('auditoria_en_progreso');
                     sessionStorage.removeItem('progreso_auditoria');
+                    clearAuditJobStorage();
                     
                     // Esperar un poco y cerrar el modal solo cuando el proceso ha finalizado
                     setTimeout(function() {
@@ -300,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Función para verificar si el proceso sigue activo
         function verificarProcesoActivo() {
-            fetch('/ver_progreso_auditoria/', { 
+            fetch('/ver_progreso_auditoria/' + auditJobQuery(), { 
                 method: 'GET',
                 headers: { 'Cache-Control': 'no-cache' } 
             })
@@ -311,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     clearInterval(intervalo);
                     sessionStorage.removeItem('auditoria_en_progreso');
                     sessionStorage.removeItem('progreso_auditoria');
+                    clearAuditJobStorage();
                 }
             })
             .catch(() => {
@@ -361,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Verificar si hay un resultado pendiente
     function verificarResultadoPendiente() {
-        fetch('/ver_senal_toast/')
+        fetch('/ver_senal_toast/' + auditJobQuery())
         .then(response => response.json())
         .then(data => {
             if (data.mostrar) {

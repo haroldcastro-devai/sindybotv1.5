@@ -510,22 +510,27 @@ def comprobar_cancelacion():
         logger.error(f"Error al comprobar cancelación: {str(e)}")
         return False
 
-def iniciar_proceso_remoto(archivo_excel, usuario):
+def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
     """
     Función principal que inicia el proceso de auditoría desde un cliente remoto.
 
-    Establece contexto por hilo (``set_audit_context``) para rutas bajo ``temp/``.
+    Establece contexto por hilo (``set_audit_context``) para rutas bajo ``temp/audit/``.
     No invoque ``inicializar_progreso`` / ``actualizar_progreso`` sin ese contexto.
     
     Args:
         archivo_excel: Ruta del archivo Excel
         usuario: Nombre de usuario que inicia el proceso
+        job_id: UUID de la ejecución (se genera uno si no se pasa)
     
     Returns:
         dict: Resultados del proceso con éxito/error
     """
+    import uuid
+
+    if not job_id:
+        job_id = str(uuid.uuid4())
     try:
-        set_audit_context(BASE_DIR, usuario)
+        set_audit_context(BASE_DIR, usuario, job_id)
         cancel_path = cancel_file(BASE_DIR)
         if os.path.exists(cancel_path):
             os.remove(cancel_path)
