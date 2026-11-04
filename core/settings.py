@@ -217,6 +217,10 @@ TEMPLATES = [
 WSGI_APPLICATION = "core.wsgi.application"
 
 # Database configuration
+_use_aws_db = _env_bool("USE_AWS_DATABASE", False)
+if os.environ.get("DJANGO_SETTINGS_MODULE", "").endswith("settings_aws"):
+    _use_aws_db = True
+
 if USE_SQLITE_DEMO:
     DATABASES = {
         "default": {
@@ -224,9 +228,29 @@ if USE_SQLITE_DEMO:
             "NAME": BASE_DIR / "db_demo.sqlite3",
         }
     }
-elif os.environ.get("DJANGO_SETTINGS_MODULE", "").endswith("settings_aws"):
-    # core.settings_aws reemplaza DATABASES tras importar este módulo
-    DATABASES = {}
+elif _use_aws_db:
+    _aws_required = ("AWS_DB_HOST", "AWS_DB_USER", "AWS_DB_PASSWORD", "AWS_DB_NAME")
+    _aws_missing = [k for k in _aws_required if not os.environ.get(k)]
+    if _aws_missing:
+        raise ImproperlyConfigured(
+            f"Base AWS/RDS: faltan en .env: {', '.join(_aws_missing)} "
+            "(o USE_AWS_DATABASE=False con DB_* local)."
+        )
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": os.environ["AWS_DB_NAME"],
+            "USER": os.environ["AWS_DB_USER"],
+            "PASSWORD": os.environ["AWS_DB_PASSWORD"],
+            "HOST": os.environ["AWS_DB_HOST"],
+            "PORT": os.environ.get("AWS_DB_PORT", "3306"),
+            "OPTIONS": {
+                "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+                "charset": "utf8mb4",
+            },
+            "CONN_MAX_AGE": 60,
+        }
+    }
 else:
     db_password = os.environ.get("DB_PASSWORD")
     if not db_password:
