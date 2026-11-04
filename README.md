@@ -156,6 +156,14 @@ Las transcripciones de ejemplo bajo `audio-text/log_audio_to_text/` **no deben v
 
 **Importante:** quitar `.txt` del commit actual **no borra** el contenido de commits antiguos. Si el repo fue público o se compartió con transcripciones en Git, ejecute la auditoría de historial ([GIT-HISTORY-AUDIT.md](Docs--Readme/GIT-HISTORY-AUDIT.md), sección transcripciones).
 
+### Configuración Django unificada (SCRUM-30)
+
+- **`core/settings.py`** concentra seguridad, middleware y bases de datos.
+- **MySQL local:** variables `DB_*` en `.env`.
+- **AWS/RDS:** `USE_AWS_DATABASE=True` y `AWS_DB_*` (mismo módulo `core.settings`).
+- **`core.settings_aws`** permanece como alias de compatibilidad (activa `USE_AWS_DATABASE`).
+- Eliminado **`core/____settings.py`** (legacy con defaults inseguros).
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
