@@ -22,6 +22,8 @@ env
 /temp/
 /media/
 /back/
+# Transcripciones reales — no versionar (SCRUM-29)
+/audio-text/log_audio_to_text/*.txt
 
 mod_bot/whisperX/
 mod_bot/gingerit/

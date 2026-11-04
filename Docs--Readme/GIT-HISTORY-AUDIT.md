@@ -47,4 +47,15 @@ El script lista **conteos** en historial (`-S`) y **rutas en HEAD** sin volcar l
 - [ ] Credenciales rotadas en proveedores (Google AI, HF, MySQL, Django `SECRET_KEY`).
 - [ ] Documentar fecha de auditoría en Jira **SCRUM-12**.
 
+## 5. Transcripciones de ventas en historial (SCRUM-29)
+
+Si en el pasado se versionaron archivos bajo `audio-text/log_audio_to_text/*.txt`, **eliminarlos del HEAD no limpia el historial**. Antes de publicar el repo o entregarlo:
+
+```bash
+git log --all --oneline -- audio-text/log_audio_to_text/ | head
+gitleaks detect --source . --log-opts="--all"
+```
+
+Si hubo exposición: tratar como **dato personal/sensible de negocio** — reescritura de historial (`git-filter-repo` / BFG) o repo nuevo, según política del cliente, además de retirar copias locales.
+
 # Desarrollado por: hcastro

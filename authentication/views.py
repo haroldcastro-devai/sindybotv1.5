@@ -1,6 +1,6 @@
 from django.contrib.auth.views import LoginView, LogoutView as AuthLogoutView
-from django.views import View
-from django.views.generic import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import CreateView, TemplateView
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -25,8 +25,10 @@ class RegisterView(CreateView):
     success_url = reverse_lazy('login')
 
 
-class UserProfileView(View):
-    pass
+class UserProfileView(LoginRequiredMixin, TemplateView):
+    """Perfil basico del usuario autenticado (SCRUM-27)."""
+
+    template_name = "accounts/profile.html"
 
 
 class LogoutView(AuthLogoutView):
