@@ -1,7 +1,6 @@
 """
 Módulo que contiene el banner de presentación para SBOT.
-Este archivo permite separar la presentación visual del sistema
-de la lógica de ejecución, facilitando su mantenimiento.
+Utilidad de consola únicamente; no interviene en Django ni en el pipeline de auditoría.
 """
 
 import os
@@ -38,6 +37,31 @@ UNICODE_BANNER = f"""{GREEN}
 ╰──────────────────────────────────────────────────────────────────────────╯
 {RESET}"""
 
+
+def _probe_unicode_stdout() -> bool:
+    """Prueba escribir un carácter Unicode en stdout (sin subprocess)."""
+    try:
+        sys.stdout.write("✓")
+        sys.stdout.flush()
+        return True
+    except UnicodeEncodeError:
+        return False
+
+
+def _windows_unicode_likely() -> bool:
+    """
+    Heurística Windows sin shell.
+    WT_SESSION: Windows Terminal. PSModulePath en cmd puede ser falso positivo → probe.
+    """
+    if os.environ.get("WT_SESSION"):
+        return True
+    if os.environ.get("POWERSHELL_DISTRIBUTION_CHANNEL"):
+        return _probe_unicode_stdout()
+    if os.environ.get("PSModulePath"):
+        return _probe_unicode_stdout()
+    return False
+
+
 def is_unicode_supported():
     """
     Verifica si la terminal actual soporta caracteres Unicode.
@@ -53,24 +77,11 @@ def is_unicode_supported():
             return False
             
         if platform.system() == 'Windows':
-            # PowerShell / Windows Terminal (sin subprocess ni shell=True)
-            if os.environ.get("PSModulePath") or os.environ.get("WT_SESSION"):
-                return True
-            return False
+            return _windows_unicode_likely()
 
-        # En otros sistemas, intentar escribir un carácter Unicode
-        # y ver si hay error
-        try:
-            sys.stdout.write('✓')
-            sys.stdout.flush()
-            return True
-        except UnicodeEncodeError:
-            return False
-    except:
+        return _probe_unicode_stdout()
+    except Exception:
         return False
-    
-    # Por defecto, asumir que no soporta Unicode
-    return False
 
 def supports_ansi_colors():
     """
