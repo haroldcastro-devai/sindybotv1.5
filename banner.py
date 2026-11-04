@@ -1,7 +1,6 @@
 """
 Módulo que contiene el banner de presentación para SBOT.
-Este archivo permite separar la presentación visual del sistema
-de la lógica de ejecución, facilitando su mantenimiento.
+Utilidad de consola únicamente; no interviene en Django ni en el pipeline de auditoría.
 """
 
 import os
@@ -38,6 +37,31 @@ UNICODE_BANNER = f"""{GREEN}
 ╰──────────────────────────────────────────────────────────────────────────╯
 {RESET}"""
 
+
+def _probe_unicode_stdout() -> bool:
+    """Prueba escribir un carácter Unicode en stdout (sin subprocess)."""
+    try:
+        sys.stdout.write("✓")
+        sys.stdout.flush()
+        return True
+    except UnicodeEncodeError:
+        return False
+
+
+def _windows_unicode_likely() -> bool:
+    """
+    Heurística Windows sin shell.
+    WT_SESSION: Windows Terminal. PSModulePath en cmd puede ser falso positivo → probe.
+    """
+    if os.environ.get("WT_SESSION"):
+        return True
+    if os.environ.get("POWERSHELL_DISTRIBUTION_CHANNEL"):
+        return _probe_unicode_stdout()
+    if os.environ.get("PSModulePath"):
+        return _probe_unicode_stdout()
+    return False
+
+
 def is_unicode_supported():
     """
     Verifica si la terminal actual soporta caracteres Unicode.
@@ -52,35 +76,12 @@ def is_unicode_supported():
         if encoding is None or encoding.lower() not in ('utf-8', 'utf8'):
             return False
             
-        # En Windows, verificar si es cmd.exe (que normalmente usa cp1252)
         if platform.system() == 'Windows':
-            import subprocess
-            try:
-                # Verificar si estamos en PowerShell o Command Prompt
-                result = subprocess.run('echo $PSVersionTable', shell=True, 
-                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                # Si es PowerShell (normalmente soporta Unicode)
-                if result.returncode == 0 and result.stdout:
-                    return True
-                # Si no es PowerShell, probablemente es cmd.exe
-                else:
-                    return False
-            except:
-                return False
-                
-        # En otros sistemas, intentar escribir un carácter Unicode
-        # y ver si hay error
-        try:
-            sys.stdout.write('✓')
-            sys.stdout.flush()
-            return True
-        except UnicodeEncodeError:
-            return False
-    except:
+            return _windows_unicode_likely()
+
+        return _probe_unicode_stdout()
+    except Exception:
         return False
-    
-    # Por defecto, asumir que no soporta Unicode
-    return False
 
 def supports_ansi_colors():
     """
