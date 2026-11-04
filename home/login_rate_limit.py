@@ -17,9 +17,10 @@ LOGIN_POST_PATHS = frozenset(
 
 
 def _client_ip(request) -> str:
-    forwarded = request.META.get("HTTP_X_FORWARDED_FOR", "")
-    if forwarded:
-        return forwarded.split(",")[0].strip()
+    if getattr(settings, "TRUST_X_FORWARDED_PROTO", False):
+        forwarded = request.META.get("HTTP_X_FORWARDED_FOR", "")
+        if forwarded:
+            return forwarded.split(",")[0].strip()
     return request.META.get("REMOTE_ADDR", "unknown")
 
 

@@ -140,7 +140,11 @@ Antes de iniciar la auditoría remota, el servidor valida el archivo subido: ext
 
 ### Rate limiting login (SCRUM-26)
 
-POST a `/accounts/auth-signin/`, `/accounts/login/` y `/admin/login/` cuentan intentos **fallidos** por IP (cache local; configurable con `SINDYBOT_LOGIN_RATE_LIMIT` y `SINDYBOT_LOGIN_RATE_WINDOW`). Respuesta **429** si se supera el tope.
+POST a `/accounts/auth-signin/`, `/accounts/login/` y `/admin/login/` cuentan intentos **fallidos** por IP (cache; configurable con `SINDYBOT_LOGIN_RATE_LIMIT` y `SINDYBOT_LOGIN_RATE_WINDOW`). Respuesta **429** si se supera el tope.
+
+- **Sin `REDIS_URL`:** cache LocMem — con Gunicorn de **N workers** el tope efectivo puede ser ~**N × límite** (cada proceso cuenta aparte). Adecuado para demo local.
+- **Producción (Docker/GCP):** defina `REDIS_URL` (p. ej. `redis://redis:6379/1`) para contador compartido; requiere paquete `redis` en el entorno.
+- **`X-Forwarded-For`:** solo se usa si `TRUST_X_FORWARDED_PROTO=True` (proxy de confianza, p. ej. nginx). Sin proxy fiable, no active TRUST en internet público.
 
 ### Perfil de usuario (SCRUM-27)
 
@@ -149,6 +153,8 @@ Ruta `/accounts/profile/` muestra datos básicos y enlace a cambio de contraseñ
 ### Datos sensibles en Git (SCRUM-29)
 
 Las transcripciones de ejemplo bajo `audio-text/log_audio_to_text/` **no deben versionarse** (contenido real de ventas). Use datos locales o almacenamiento fuera del repo. La carpeta duplicada **`/back/`** ya está en `.gitignore` (SCRUM-28); no forma parte del árbol desplegado en este repo.
+
+**Importante:** quitar `.txt` del commit actual **no borra** el contenido de commits antiguos. Si el repo fue público o se compartió con transcripciones en Git, ejecute la auditoría de historial ([GIT-HISTORY-AUDIT.md](Docs--Readme/GIT-HISTORY-AUDIT.md), sección transcripciones).
 
 ### 10. Producción y cookies (SCRUM-13)
 

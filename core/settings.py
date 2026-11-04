@@ -116,12 +116,21 @@ SINDYBOT_MAX_EXCEL_UPLOAD_BYTES = _env_int(
 SINDYBOT_LOGIN_RATE_LIMIT = _env_int("SINDYBOT_LOGIN_RATE_LIMIT", 10)
 SINDYBOT_LOGIN_RATE_WINDOW = _env_int("SINDYBOT_LOGIN_RATE_WINDOW", 300)
 
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "sindybot-default",
+_redis_url = os.environ.get("REDIS_URL", "").strip()
+if _redis_url:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": _redis_url,
+        }
     }
-}
+else:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+            "LOCATION": "sindybot-default",
+        }
+    }
 
 if TRUST_X_FORWARDED_PROTO:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
