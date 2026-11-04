@@ -190,6 +190,32 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 - En **Render** con `DJANGO_USE_HTTPS=True`, si no define `TRUST_X_FORWARDED_PROTO`, se asume proxy (`X-Forwarded-Proto`) automáticamente.
 - Demo local HTTP: deje `DJANGO_USE_HTTPS=False` (comportamiento actual en LAN/localhost).
 
+### Checklist HTTP / cookies (SCRUM-32)
+
+Complementa SCRUM-13 con el [deployment checklist](https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/) de Django en `core/settings.py`:
+
+| Variable | Rol |
+|----------|-----|
+| `SESSION_COOKIE_*` / `CSRF_COOKIE_*` | Secure, SameSite (`Lax`/`Strict`/`None`), `CSRF_COOKIE_HTTPONLY` |
+| `SECURE_SSL_REDIRECT`, `SECURE_REDIRECT_EXEMPT` | Redirect HTTP→HTTPS y exenciones (health) |
+| `SECURE_HSTS_*` | HSTS (solo cuando hay HTTPS real) |
+| `SECURE_CONTENT_TYPE_NOSNIFF`, `SECURE_REFERRER_POLICY` | Cabeceras de endurecimiento |
+| `SECURE_CROSS_ORIGIN_OPENER_POLICY` | COOP (`same-origin` por defecto) |
+| `X_FRAME_OPTIONS` | `DENY` o `SAMEORIGIN` (env) |
+| `SECURE_PROXY_SSL_HEADER` | Con `TRUST_X_FORWARDED_PROTO=True` |
+
+Validación: `SameSite=None` exige cookies `Secure`. Antes de producción:
+
+```bash
+DJANGO_USE_HTTPS=True TRUST_X_FORWARDED_PROTO=True python manage.py check --deploy
+```
+
+(Use `.env` con `CSRF_TRUSTED_ORIGINS=https://...` y hosts reales.)
+
+Script repetible (misma secuencia que CI): `bash scripts/verify-django-deploy-check.sh` o `.\scripts\verify-django-deploy-check.ps1` (requiere entorno con dependencias de `requirements.txt`).
+
+Valores permitidos en `.env`: `SECURE_REFERRER_POLICY` — `same-origin`, `strict-origin`, `strict-origin-when-cross-origin`, `no-referrer-when-downgrade`, `no-referrer` (o `none` para desactivar). `SECURE_CROSS_ORIGIN_OPENER_POLICY` — `same-origin`, `same-origin-allow-popups`, `unsafe-none` (o `none`/`disable` para desactivar).
+
 ## Ejecución del Sistema
 
 ### Modo Desarrollo
@@ -348,7 +374,7 @@ Puede ajustar el comportamiento de las sesiones en `core/settings.py`:
 SESSION_ENGINE = 'django.contrib.sessions.backends.file'
 SESSION_FILE_PATH = os.path.join(BASE_DIR, 'temp', 'sessions')
 SESSION_COOKIE_AGE = 86400  # 24 horas en segundos
-SESSION_COOKIE_SECURE = False  # Cambiar a True en producción con HTTPS
+# Producción HTTPS: DJANGO_USE_HTTPS=True o SESSION_COOKIE_SECURE=True en .env (SCRUM-13/32)
 SESSION_COOKIE_HTTPONLY = True
 SESSION_SAVE_EVERY_REQUEST = False
 ```

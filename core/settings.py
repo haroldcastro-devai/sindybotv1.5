@@ -63,13 +63,47 @@ if host_setting:
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://127.0.0.1:8000', 'http://0.0.0.0:8000', 'http://192.168.30.241:8000']
 csrf_setting = os.environ.get('CSRF_TRUSTED_ORIGINS', '')
 if csrf_setting:
-    CSRF_TRUSTED_ORIGINS.extend(csrf_setting.split(','))
+    CSRF_TRUSTED_ORIGINS.extend(
+        origin.strip() for origin in csrf_setting.split(',') if origin.strip()
+    )
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
-# Producción / HTTPS (SCRUM-13)
+def _env_samesite(name: str, default: str) -> str:
+    raw = os.environ.get(name, default).strip()
+    if not raw:
+        raw = default
+    normalized = {"lax": "Lax", "strict": "Strict", "none": "None"}
+    key = raw.lower()
+    if key not in normalized:
+        raise ImproperlyConfigured(
+            f"{name} debe ser Lax, Strict o None, recibido: {raw!r}"
+        )
+    return normalized[key]
+
+
+def _env_policy_choice(name: str, default: str, allowed: frozenset, *, disable_tokens=()):
+    raw = os.environ.get(name, default).strip()
+    if not raw:
+        raw = default
+    key = raw.lower()
+    if key in disable_tokens:
+        return None
+    if key not in allowed:
+        raise ImproperlyConfigured(
+            f"{name} invalido: {raw!r}. Valores: {', '.join(sorted(allowed))}"
+            + (
+                f" o {', '.join(disable_tokens)} para desactivar."
+                if disable_tokens
+                else "."
+            )
+        )
+    return key
+
+
+# Producción / HTTPS (SCRUM-13) + checklist despliegue (SCRUM-32)
 DJANGO_USE_HTTPS = _env_bool("DJANGO_USE_HTTPS", False)
 
 _trust_raw = os.environ.get("TRUST_X_FORWARDED_PROTO")
@@ -82,8 +116,9 @@ else:
 
 SESSION_COOKIE_SECURE = _env_bool("SESSION_COOKIE_SECURE", DJANGO_USE_HTTPS)
 CSRF_COOKIE_SECURE = _env_bool("CSRF_COOKIE_SECURE", DJANGO_USE_HTTPS)
-SESSION_COOKIE_SAMESITE = os.environ.get("SESSION_COOKIE_SAMESITE", "Lax")
-CSRF_COOKIE_SAMESITE = os.environ.get("CSRF_COOKIE_SAMESITE", "Lax")
+SESSION_COOKIE_SAMESITE = _env_samesite("SESSION_COOKIE_SAMESITE", "Lax")
+CSRF_COOKIE_SAMESITE = _env_samesite("CSRF_COOKIE_SAMESITE", "Lax")
+CSRF_COOKIE_HTTPONLY = _env_bool("CSRF_COOKIE_HTTPONLY", False)
 
 SECURE_SSL_REDIRECT = _env_bool("SECURE_SSL_REDIRECT", DJANGO_USE_HTTPS)
 SECURE_HSTS_SECONDS = _env_int(
@@ -99,7 +134,43 @@ if SECURE_HSTS_PRELOAD and SECURE_HSTS_SECONDS <= 0:
         "SECURE_HSTS_PRELOAD=True requiere SECURE_HSTS_SECONDS > 0"
     )
 SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_REFERRER_POLICY = os.environ.get("SECURE_REFERRER_POLICY", "same-origin")
+SECURE_REFERRER_POLICY = _env_policy_choice(
+    "SECURE_REFERRER_POLICY",
+    "same-origin",
+    frozenset(
+        {
+            "same-origin",
+            "strict-origin",
+            "strict-origin-when-cross-origin",
+            "no-referrer-when-downgrade",
+            "no-referrer",
+        }
+    ),
+    disable_tokens=("none", "disable"),
+)
+SECURE_CROSS_ORIGIN_OPENER_POLICY = _env_policy_choice(
+    "SECURE_CROSS_ORIGIN_OPENER_POLICY",
+    "same-origin",
+    frozenset(
+        {
+            "same-origin",
+            "same-origin-allow-popups",
+            "unsafe-none",
+        }
+    ),
+    disable_tokens=("none", "disable"),
+)
+
+if SESSION_COOKIE_SAMESITE == "None" and not SESSION_COOKIE_SECURE:
+    raise ImproperlyConfigured(
+        "SESSION_COOKIE_SAMESITE=None requiere SESSION_COOKIE_SECURE=True "
+        "(o DJANGO_USE_HTTPS=True)."
+    )
+if CSRF_COOKIE_SAMESITE == "None" and not CSRF_COOKIE_SECURE:
+    raise ImproperlyConfigured(
+        "CSRF_COOKIE_SAMESITE=None requiere CSRF_COOKIE_SECURE=True "
+        "(o DJANGO_USE_HTTPS=True)."
+    )
 
 _redirect_exempt = os.environ.get("SECURE_REDIRECT_EXEMPT", "")
 SECURE_REDIRECT_EXEMPT = [
@@ -137,17 +208,32 @@ if TRUST_X_FORWARDED_PROTO:
 else:
     SECURE_PROXY_SSL_HEADER = None
 
-if DJANGO_USE_HTTPS and not TRUST_X_FORWARDED_PROTO and not DEBUG:
+if DJANGO_USE_HTTPS and not DEBUG:
     import warnings
 
-    warnings.warn(
-        "DJANGO_USE_HTTPS=True sin TRUST_X_FORWARDED_PROTO: si TLS termina en "
-        "nginx/Render/GCP, active TRUST_X_FORWARDED_PROTO=True para evitar "
-        "redirecciones SSL incorrectas o bucles.",
-        stacklevel=1,
-    )
+    if not TRUST_X_FORWARDED_PROTO:
+        warnings.warn(
+            "DJANGO_USE_HTTPS=True sin TRUST_X_FORWARDED_PROTO: si TLS termina en "
+            "nginx/Render/GCP, active TRUST_X_FORWARDED_PROTO=True para evitar "
+            "redirecciones SSL incorrectas o bucles.",
+            stacklevel=1,
+        )
+    if not any(
+        origin.lower().startswith("https://") for origin in CSRF_TRUSTED_ORIGINS
+    ):
+        warnings.warn(
+            "DJANGO_USE_HTTPS=True en produccion pero CSRF_TRUSTED_ORIGINS no "
+            "incluye un origen https://. Anada su dominio publico en .env.",
+            stacklevel=1,
+        )
 
-X_FRAME_OPTIONS = "SAMEORIGIN"
+_allowed_xframe = {"DENY", "SAMEORIGIN"}
+_xframe = os.environ.get("X_FRAME_OPTIONS", "SAMEORIGIN").strip().upper()
+if _xframe not in _allowed_xframe:
+    raise ImproperlyConfigured(
+        f"X_FRAME_OPTIONS debe ser DENY o SAMEORIGIN, recibido: {_xframe!r}"
+    )
+X_FRAME_OPTIONS = _xframe
 
 # Application definition
 INSTALLED_APPS = [
