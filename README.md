@@ -360,6 +360,10 @@ Marque **Personal de staff** en el admin para exportaciones Excel (SCRUM-14).
 
 ## Mantenimiento
 
+### Seguridad — historial Git (SCRUM-12)
+
+Antes de publicar el repo, siga `Docs--Readme/GIT-HISTORY-AUDIT.md` y rote credenciales según `Docs--Readme/SECRET-ROTATION.md`. Script local: `bash scripts/audit-git-history.sh`.
+
 ### Respaldo de Base de Datos
 
 ```bash
