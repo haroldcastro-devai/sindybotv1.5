@@ -7,7 +7,7 @@ mysqlclient>=2.2
 mysql-connector-python>=8.0
 python-dotenv>=1.0
 str2bool>=1.1
-google-generativeai>=0.8.0
+google-genai>=1.0.0
 
 # ---
 # SindyBot v1.5 — requirements.txt raíz (Docker / CI)
