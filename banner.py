@@ -52,22 +52,12 @@ def is_unicode_supported():
         if encoding is None or encoding.lower() not in ('utf-8', 'utf8'):
             return False
             
-        # En Windows, verificar si es cmd.exe (que normalmente usa cp1252)
         if platform.system() == 'Windows':
-            import subprocess
-            try:
-                # Verificar si estamos en PowerShell o Command Prompt
-                result = subprocess.run('echo $PSVersionTable', shell=True, 
-                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                # Si es PowerShell (normalmente soporta Unicode)
-                if result.returncode == 0 and result.stdout:
-                    return True
-                # Si no es PowerShell, probablemente es cmd.exe
-                else:
-                    return False
-            except:
-                return False
-                
+            # PowerShell / Windows Terminal (sin subprocess ni shell=True)
+            if os.environ.get("PSModulePath") or os.environ.get("WT_SESSION"):
+                return True
+            return False
+
         # En otros sistemas, intentar escribir un carácter Unicode
         # y ver si hay error
         try:
