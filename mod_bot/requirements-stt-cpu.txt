@@ -1,0 +1,4 @@
+# STT en CPU (Fase B — SCRUM-34). No incluir en Docker web minimo si solo usa whisperx en GPU.
+faster-whisper>=1.0.0
+
+# Desarrollado por: hcastro

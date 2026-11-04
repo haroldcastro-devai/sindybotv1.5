@@ -44,20 +44,37 @@ Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: model
 | Proveedor | Coste | GPU propia | Diarización |
 |-----------|-------|------------|-------------|
 | `whisperx` (actual) | Infra | Sí | Sí (PyAnnote) |
-| `faster_whisper` CPU | Bajo | No (lento) | Limitada |
+| `faster_whisper` CPU | Bajo | No (lento) | Limitada (`SPEAKER_00`) |
 | Google Cloud Speech-to-Text | Por minuto | No | Opcional API |
 
 Variable: `STT_PROVIDER=whisperx|faster_whisper|google` (default: `whisperx`)
 
 Punto de extensión: `mod_bot/l_process/stt_provider.py` — usado por `diariza.py` y `unified_processing.py`.
 
-Proveedores `faster_whisper` y `google` aún no implementados; el código devuelve error claro si se seleccionan.
+### faster_whisper (SCRUM-34 — implementado)
+
+```bash
+pip install -r mod_bot/requirements-stt-cpu.txt
+# .env
+STT_PROVIDER=faster_whisper
+FASTER_WHISPER_MODEL=small
+FASTER_WHISPER_DEVICE=cpu
+FASTER_WHISPER_COMPUTE_TYPE=int8
+```
+
+Regresión con hasta 3 audios locales (no versionados):
+
+```bash
+python scripts/stt_faster_whisper_regression.py audio1.mp3 audio2.gsm audio3.wav
+```
+
+Proveedor `google` aún no implementado; error explícito si se selecciona.
 
 ### Tareas sugeridas (Jira)
 
-1. Implementar `faster_whisper` para pruebas en VPS sin GPU.
+1. ~~Implementar `faster_whisper` para pruebas en VPS sin GPU.~~ (SCRUM-34)
 2. Prototipo Google STT v2 con diarización.
-3. Pruebas de regresión con audios de referencia.
+3. Pruebas de regresión con audios de referencia (script anterior + pipeline completo).
 
 ---
 

@@ -181,6 +181,10 @@ python manage.py check
 
 Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_logger.py` y `mod_bot/loading.py`; errores de consola/fuentes se registran con `logging` (debug/warning). En entrypoints CLI, `core/cli_logging.py` aplica `basicConfig` (nivel por defecto **WARNING**; `LOG_LEVEL=DEBUG` en entorno para ver trazas de banner/fuentes antes de Django).
 
+### STT CPU faster-whisper (SCRUM-34)
+
+`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
