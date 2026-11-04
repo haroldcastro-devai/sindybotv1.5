@@ -134,6 +134,10 @@ Cada ejecución remota recibe un **`job_id`** (UUID). Toast, progreso y cancelac
 
 Antes de iniciar la auditoría remota, el servidor valida el archivo subido: extensión **`.xlsx`/`.xls`**, tamaño (`SINDYBOT_MAX_EXCEL_UPLOAD_BYTES`, default 15 MB), firma binaria, hoja **Hoja1**, columnas de contrato/fecha/producto y al menos una fila con datos. Rechazo **HTTP 400** con mensaje JSON. Dependencias en `requirements.txt`: `openpyxl` (`.xlsx`), `xlrd` (`.xls` legacy).
 
+### Sesiones y depuración (SCRUM-25)
+
+`SessionDebugMiddleware` (logs de sesión/cookies, diagnóstico de `SuspiciousSession`) **no se carga** con `DEBUG=False`. En desarrollo puede desactivarse con `ENABLE_SESSION_DEBUG_MIDDLEWARE=False` en `.env`.
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.

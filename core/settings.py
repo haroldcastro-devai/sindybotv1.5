@@ -143,18 +143,28 @@ INSTALLED_APPS = [
     "authentication",  
 ]
 
+_SESSION_MIDDLEWARE = "django.contrib.sessions.middleware.SessionMiddleware"
+_SESSION_DEBUG_MIDDLEWARE = "home.session_debug_middleware.SessionDebugMiddleware"
+
+# SCRUM-25: solo en desarrollo (DEBUG=True); nunca en produccion
+_ENABLE_SESSION_DEBUG = _env_bool("ENABLE_SESSION_DEBUG_MIDDLEWARE", True)
+if not DEBUG and _ENABLE_SESSION_DEBUG:
+    _ENABLE_SESSION_DEBUG = False
+
 MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",    
-    "django.contrib.sessions.middleware.SessionMiddleware",  # PRIMERO debe estar el middleware de sesiones de Django
-    # Middleware personalizado para depurar problemas con sesiones (DESPUÉS del SessionMiddleware)    
-    "home.session_debug_middleware.SessionDebugMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    _SESSION_MIDDLEWARE,
+]
+if DEBUG and _ENABLE_SESSION_DEBUG:
+    MIDDLEWARE.append(_SESSION_DEBUG_MIDDLEWARE)
+MIDDLEWARE.extend([
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "home.middleware.AdminRedirectMiddleware",  # Middleware actualizado
-]
+])
 
 ROOT_URLCONF = "core.urls"
 
