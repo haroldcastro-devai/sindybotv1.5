@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Auditoría vía Google Gemini API (sin LLM local).
+Auditoría vía Google Gemini API (SDK `google-genai`, sin LLM local).
 
 Variables: GEMINI_API_KEY, GEMINI_MODEL (default gemini-3.8-flash).
 
@@ -45,26 +45,28 @@ def generate_from_prompt(
             "GEMINI_API_KEY no configurada. Copia .env.example a .env y añade tu clave."
         )
 
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
 
     model_name = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
     logger.info("Generando auditoría con Gemini (%s)", model_name)
 
+    client = genai.Client(api_key=api_key)
     last_error: Optional[Exception] = None
     for attempt in range(3):
         try:
-            genai.configure(api_key=api_key)
-            model = genai.GenerativeModel(model_name)
-            response = model.generate_content(
-                prompt,
-                generation_config=genai.types.GenerationConfig(
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
                     temperature=temperature,
                     max_output_tokens=max_output_tokens,
                 ),
             )
-            if not response.text:
+            text = (response.text or "").strip()
+            if not text:
                 raise ValueError("Gemini devolvió respuesta vacía")
-            return response.text
+            return text
         except Exception as exc:
             last_error = exc
             logger.error("Intento %s Gemini fallido: %s", attempt + 1, exc)
