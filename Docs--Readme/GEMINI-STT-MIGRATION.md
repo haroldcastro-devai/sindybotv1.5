@@ -2,7 +2,7 @@
 
 ## Fase A — IA con Gemini (implementada)
 
-La evaluación de auditoría usa `mod_bot/l_process/llm_client.py` (**solo Google Gemini**; no hay fallback Ollama).
+La evaluación de auditoría usa `mod_bot/l_process/llm_client.py` (**solo Google Gemini**, SDK oficial **`google-genai`**; no hay fallback Ollama).
 
 ### Configuración `.env`
 
@@ -15,9 +15,21 @@ Sin `GEMINI_API_KEY` la auditoría falla con un error explícito.
 
 ### Dependencia
 
+Paquete PyPI: **`google-genai`** (no usar el legacy `google-generativeai`).
+
 ```bash
 pip install -r mod_bot/requirements-llm.txt
 ```
+
+### Smoke test (antes de merge / tras cambios en `llm_client`)
+
+Con `.env` configurado:
+
+```bash
+python scripts/smoke_gemini.py
+```
+
+Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: modelo inexistente, cuota/créditos, bloqueo safety (mensaje en la excepción).
 
 ### Archivos que llaman al LLM
 
