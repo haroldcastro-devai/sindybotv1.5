@@ -1,8 +1,11 @@
+import logging
 import pygame
 import sys
 import win32gui
 import win32con
 import win32api
+
+logger = logging.getLogger(__name__)
 
 class PreloaderAnimation:
     def __init__(self):
@@ -69,13 +72,20 @@ class PreloaderAnimation:
 
         # Configuración del texto
         # Intentar cargar una fuente más gruesa
+        _font_errors = (OSError, TypeError, pygame.error)
         try:
             self.font = pygame.font.SysFont('Arial Black', 18, bold=True)
-        except:
+        except _font_errors as exc:
+            logger.debug("Fuente Arial Black no disponible: %s", exc)
             try:
                 self.font = pygame.font.SysFont('Impact', 18, bold=True)
-            except:
-                self.font = pygame.font.SysFont('Arial', 18, bold=True)
+            except _font_errors as exc2:
+                logger.debug("Fuente Impact no disponible: %s", exc2)
+                try:
+                    self.font = pygame.font.SysFont('Arial', 18, bold=True)
+                except _font_errors as exc3:
+                    logger.debug("Fuente Arial no disponible: %s", exc3)
+                    self.font = pygame.font.Font(None, 18)
 
         # Colores ajustados para máxima visibilidad
         self.TEXT_COLOR = (100, 100, 100)      # Negro puro

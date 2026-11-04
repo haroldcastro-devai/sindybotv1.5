@@ -177,6 +177,10 @@ set DJANGO_SETTINGS_MODULE=core.settings_aws
 python manage.py check
 ```
 
+### Logging explícito (SCRUM-31)
+
+Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_logger.py` y `mod_bot/loading.py`; errores de consola/fuentes se registran con `logging` (debug/warning). En entrypoints CLI, `core/cli_logging.py` aplica `basicConfig` (nivel por defecto **WARNING**; `LOG_LEVEL=DEBUG` en entorno para ver trazas de banner/fuentes antes de Django).
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
