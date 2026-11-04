@@ -156,6 +156,10 @@ Las transcripciones de ejemplo bajo `audio-text/log_audio_to_text/` **no deben v
 
 **Importante:** quitar `.txt` del commit actual **no borra** el contenido de commits antiguos. Si el repo fue público o se compartió con transcripciones en Git, ejecute la auditoría de historial ([GIT-HISTORY-AUDIT.md](Docs--Readme/GIT-HISTORY-AUDIT.md), sección transcripciones).
 
+### Logging explícito (SCRUM-31)
+
+Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_logger.py` y `mod_bot/loading.py`; errores de consola/fuentes se registran con `logging` (debug/warning).
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.

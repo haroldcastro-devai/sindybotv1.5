@@ -5,6 +5,7 @@ Este script intercepta y reformatea la salida del servidor Django
 para mostrar logs profesionales y limpios.
 """
 
+import logging
 import os
 import sys
 import re
@@ -14,6 +15,8 @@ import subprocess
 import threading
 import platform
 import atexit
+
+logger = logging.getLogger(__name__)
 
 # Definir colores ANSI
 class Colors:
@@ -88,7 +91,8 @@ def enable_ansi_colors():
             kernel32 = ctypes.windll.kernel32
             kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
             return True
-        except:
+        except (OSError, AttributeError) as exc:
+            logger.debug("No se pudo habilitar ANSI: %s", exc)
             return False
     return True
 
@@ -113,7 +117,8 @@ def check_unicode_support():
                 return True
             except UnicodeEncodeError:
                 return False
-        except:
+        except OSError as exc:
+            logger.debug("Prueba Unicode fallida: %s", exc)
             return False
     return True
 
@@ -148,8 +153,8 @@ def show_banner(use_unicode=True, use_colors=True):
                 banner = create_simple_banner()
         else:
             banner = create_simple_banner()
-    except:
-        # En caso de cualquier error, usar un banner muy simple
+    except Exception as exc:
+        logger.warning("Error al cargar banner: %s", exc, exc_info=True)
         banner = "\n=== SBOT v1.5.8.0 - SISTEMA IA DE AUDITORIA ===\n"
     
     print(banner)
@@ -313,7 +318,8 @@ def get_memory_usage():
         import psutil
         process = psutil.Process(os.getpid())
         return process.memory_info().rss / (1024 * 1024)  # MB
-    except:
+    except (ImportError, OSError, AttributeError) as exc:
+        logger.debug("Uso de memoria no disponible: %s", exc)
         return 0
 
 def simulate_file_processing(symbols, use_colors=True):

@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+import logging
 import os
 import sys
 import tempfile
 import atexit
+
+logger = logging.getLogger(__name__)
 
 def safe_banner():
     """
@@ -38,8 +41,8 @@ def cleanup():
     if os.path.exists(lock_file):
         try:
             os.remove(lock_file)
-        except:
-            pass
+        except OSError as exc:
+            logger.debug("No se pudo eliminar %s: %s", lock_file, exc)
 
 # Registrar la función de limpieza para ejecutarse al salir
 atexit.register(cleanup)
@@ -58,8 +61,8 @@ def display_banner_once():
                     import ctypes
                     kernel32 = ctypes.windll.kernel32
                     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
-                except:
-                    pass
+                except (OSError, AttributeError) as exc:
+                    logger.debug("Consola Windows sin modo ANSI: %s", exc)
             
             try:
                 # Intentamos mostrar el banner
@@ -68,8 +71,8 @@ def display_banner_once():
             except UnicodeEncodeError:
                 # Si hay error de codificación, usamos el banner seguro
                 print(safe_banner())
-            except:
-                # Para cualquier otro error, mostramos un mensaje simple
+            except Exception as exc:
+                logger.warning("Error al mostrar banner: %s", exc, exc_info=True)
                 print("\n=== SBOT v1.5.8.0 - SISTEMA IA DE AUDITORIA ===\n")
             
             print(f"\n{'=' * 78}\n")  # Línea separadora
@@ -78,8 +81,8 @@ def display_banner_once():
             try:
                 with open(lock_file, 'w') as f:
                     f.write(str(parent_pid))
-            except:
-                pass  # Ignorar errores al crear el archivo de bloqueo
+            except OSError as exc:
+                logger.debug("No se pudo crear lock de banner: %s", exc)
 
 def main():
     """Run administrative tasks."""
@@ -88,9 +91,8 @@ def main():
     try:
         # Mostrar el banner solo una vez, con manejo de errores
         display_banner_once()
-    except:
-        # Si hay algún error con el banner, continuamos sin él
-        pass
+    except Exception as exc:
+        logger.debug("Banner omitido: %s", exc, exc_info=True)
 
     try:
         from django.core.management import execute_from_command_line

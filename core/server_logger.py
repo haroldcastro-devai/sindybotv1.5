@@ -51,7 +51,10 @@ class Colors:
                 kernel32.GetConsoleMode(kernel32.GetStdHandle(-11), ctypes.byref(mode))
                 if mode.value & 4:  # ENABLE_VIRTUAL_TERMINAL_PROCESSING
                     return True
-            except:
+            except (OSError, AttributeError) as exc:
+                logging.getLogger(__name__).debug(
+                    "Terminal sin VT processing: %s", exc
+                )
                 return False
         return os.environ.get('TERM') not in (None, '', 'dumb')
 

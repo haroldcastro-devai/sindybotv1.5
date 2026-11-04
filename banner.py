@@ -3,9 +3,12 @@ Módulo que contiene el banner de presentación para SBOT.
 Utilidad de consola únicamente; no interviene en Django ni en el pipeline de auditoría.
 """
 
+import logging
 import os
-import sys
 import platform
+import sys
+
+logger = logging.getLogger(__name__)
 
 # Códigos ANSI para colores
 GREEN = "\033[32m"  # Verde
@@ -107,7 +110,8 @@ def supports_ansi_colors():
                 kernel32.GetConsoleMode(kernel32.GetStdHandle(-11), ctypes.byref(mode))
                 if mode.value & 4:  # ENABLE_VIRTUAL_TERMINAL_PROCESSING
                     return True
-        except:
+        except (OSError, AttributeError) as exc:
+            logger.debug("ANSI no disponible en Windows: %s", exc)
             return False
     
     # En sistemas Unix-like, comprobamos la variable TERM
@@ -125,8 +129,8 @@ def get_banner():
         # Intentar la versión Unicode si es soportada
         if is_unicode_supported() and supports_ansi_colors():
             return UNICODE_BANNER
-    except:
-        pass
+    except Exception as exc:
+        logger.debug("Banner Unicode no disponible: %s", exc)
     
     # Si hay algún problema o no se soporta Unicode, usar ASCII
     return ASCII_BANNER
