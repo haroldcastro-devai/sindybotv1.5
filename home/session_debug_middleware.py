@@ -1,5 +1,7 @@
 """
-Middleware para depurar problemas con las sesiones.
+Middleware para depurar problemas con las sesiones (solo desarrollo, SCRUM-25).
+
+Se carga unicamente si DEBUG=True y ENABLE_SESSION_DEBUG_MIDDLEWARE=True en settings.
 """
 import logging
 import traceback
