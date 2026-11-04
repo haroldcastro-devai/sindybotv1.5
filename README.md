@@ -163,6 +163,19 @@ Las transcripciones de ejemplo bajo `audio-text/log_audio_to_text/` **no deben v
 - **AWS/RDS:** `USE_AWS_DATABASE=True` y `AWS_DB_*` (mismo módulo `core.settings`).
 - **`core.settings_aws`** permanece como alias de compatibilidad (activa `USE_AWS_DATABASE`).
 - Eliminado **`core/____settings.py`** (legacy con defaults inseguros).
+- **Precedencia:** si `USE_SQLITE_DEMO=True`, se usa **SQLite** aunque también tenga `USE_AWS_DATABASE` o `AWS_DB_*` en `.env` (no mezcle demo local con RDS en el mismo `.env`).
+
+Verificación antes de desplegar:
+
+```bash
+USE_SQLITE_DEMO=True python manage.py check
+python manage.py check
+# AWS/RDS (con AWS_DB_* en .env):
+USE_AWS_DATABASE=True python manage.py check
+# Alias legacy:
+set DJANGO_SETTINGS_MODULE=core.settings_aws
+python manage.py check
+```
 
 ### 10. Producción y cookies (SCRUM-13)
 
