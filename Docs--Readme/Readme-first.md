@@ -208,7 +208,7 @@ torchaudio==2.0.2
 numpy==1.24.3
 pandas==2.0.2
 openpyxl==3.1.2
-google-generativeai>=0.8.0
+google-genai>=1.0.0
 whisper==1.1.10
 librosa==0.10.1
 pyannote.audio==2.1.1
