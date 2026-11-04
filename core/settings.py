@@ -84,6 +84,25 @@ def _env_samesite(name: str, default: str) -> str:
     return normalized[key]
 
 
+def _env_policy_choice(name: str, default: str, allowed: frozenset, *, disable_tokens=()):
+    raw = os.environ.get(name, default).strip()
+    if not raw:
+        raw = default
+    key = raw.lower()
+    if key in disable_tokens:
+        return None
+    if key not in allowed:
+        raise ImproperlyConfigured(
+            f"{name} invalido: {raw!r}. Valores: {', '.join(sorted(allowed))}"
+            + (
+                f" o {', '.join(disable_tokens)} para desactivar."
+                if disable_tokens
+                else "."
+            )
+        )
+    return key
+
+
 # Producción / HTTPS (SCRUM-13) + checklist despliegue (SCRUM-32)
 DJANGO_USE_HTTPS = _env_bool("DJANGO_USE_HTTPS", False)
 
@@ -115,12 +134,32 @@ if SECURE_HSTS_PRELOAD and SECURE_HSTS_SECONDS <= 0:
         "SECURE_HSTS_PRELOAD=True requiere SECURE_HSTS_SECONDS > 0"
     )
 SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_REFERRER_POLICY = os.environ.get("SECURE_REFERRER_POLICY", "same-origin")
-_coop = os.environ.get("SECURE_CROSS_ORIGIN_OPENER_POLICY", "same-origin").strip()
-if _coop.lower() in ("", "none", "disable"):
-    SECURE_CROSS_ORIGIN_OPENER_POLICY = None
-else:
-    SECURE_CROSS_ORIGIN_OPENER_POLICY = _coop
+SECURE_REFERRER_POLICY = _env_policy_choice(
+    "SECURE_REFERRER_POLICY",
+    "same-origin",
+    frozenset(
+        {
+            "same-origin",
+            "strict-origin",
+            "strict-origin-when-cross-origin",
+            "no-referrer-when-downgrade",
+            "no-referrer",
+        }
+    ),
+    disable_tokens=("none", "disable"),
+)
+SECURE_CROSS_ORIGIN_OPENER_POLICY = _env_policy_choice(
+    "SECURE_CROSS_ORIGIN_OPENER_POLICY",
+    "same-origin",
+    frozenset(
+        {
+            "same-origin",
+            "same-origin-allow-popups",
+            "unsafe-none",
+        }
+    ),
+    disable_tokens=("none", "disable"),
+)
 
 if SESSION_COOKIE_SAMESITE == "None" and not SESSION_COOKIE_SECURE:
     raise ImproperlyConfigured(

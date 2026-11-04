@@ -212,6 +212,9 @@ DJANGO_USE_HTTPS=True TRUST_X_FORWARDED_PROTO=True python manage.py check --depl
 
 (Use `.env` con `CSRF_TRUSTED_ORIGINS=https://...` y hosts reales.)
 
+Valores permitidos en `.env`: `SECURE_REFERRER_POLICY` — `same-origin`, `strict-origin`, `strict-origin-when-cross-origin`, `no-referrer-when-downgrade`, `no-referrer` (o `none` para desactivar). `SECURE_CROSS_ORIGIN_OPENER_POLICY` — `same-origin`, `same-origin-allow-popups`, `unsafe-none` (o `none`/`disable` para desactivar).
+
+## Ejecución del Sistema
 
 ### Modo Desarrollo
 
