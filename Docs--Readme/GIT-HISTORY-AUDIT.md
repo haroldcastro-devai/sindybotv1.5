@@ -7,35 +7,34 @@ El código actual puede estar limpio y **aún así** quedar secretos en commits 
 - Antes de hacer el repo **público** o entregarlo a un cliente.
 - Tras la auditoría inicial de SindyBot (PR #1 en adelante ya sacó secretos del *working tree*).
 
-## 1. Escaneo rápido (local)
+## 1. Escaneo con herramientas (recomendado primero)
 
-Desde la raíz del repo:
+| Herramienta | Uso |
+|-------------|-----|
+| [Gitleaks](https://github.com/gitleaks/gitleaks) | `gitleaks detect --source . --log-opts="--all"` (redacta en salida) |
+| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | `trufflehog git file://. --since-commit HEAD~500` |
+
+Si hay hallazgos: **rotar** las credenciales afectadas (checklist en SECRET-ROTATION) aunque borres el historial.
+
+## 2. Escaneo rápido (local, sin diffs)
+
+**No uses `git log -p`** en terminales compartidas, CI logs ni capturas de pantalla: el patch puede **mostrar secretos** aún presentes en commits viejos. Prefiere **`--oneline`** con `-S` (solo metadatos) o gitleaks.
 
 ```bash
-# Patrones habituales en todo el historial
-git log -p --all -S "DB_PASSWORD" --oneline | head
-git log -p --all -S "SECRET_KEY" --oneline | head
-git log -p --all -S "HF_TOKEN" --oneline | head
-git log -p --all -S "GEMINI_API_KEY" --oneline | head
-git log -p --all -S "AWS_DB_PASSWORD" --oneline | head
+git log --all -S "DB_PASSWORD" --oneline | head
+git log --all -S "SECRET_KEY" --oneline | head
+git log --all -S "HF_TOKEN" --oneline | head
+git log --all -S "GEMINI_API_KEY" --oneline | head
+git log --all -S "AWS_DB_PASSWORD" --oneline | head
 ```
 
-Script incluido (bash/Git Bash):
+Script incluido (bash/Git Bash o `./scripts/audit-git-history.sh` si es ejecutable):
 
 ```bash
 bash scripts/audit-git-history.sh
 ```
 
-## 2. Escaneo con herramientas (recomendado)
-
-| Herramienta | Uso |
-|-------------|-----|
-| [Gitleaks](https://github.com/gitleaks/gitleaks) | `gitleaks detect --source . --log-opts="--all"` |
-| [TruffleHog](https://github.com/trufflesecurity/trufflehog) | `trufflehog git file://. --since-commit HEAD~500` |
-
-Si hay hallazgos: **rotar** las credenciales afectadas (checklist en SECRET-ROTATION) aunque borres el historial.
-
-## 3. Limpiar historial (solo si es imprescindible)
+El script lista **conteos** en historial (`-S`) y **rutas en HEAD** sin volcar líneas con secretos. Patrones amplios (`password=`, `.env`) suelen dar muchos hits históricos (ruido); confirme hallazgos con gitleaks antes de rotar.
 
 - [git-filter-repo](https://github.com/newren/git-filter-repo) o [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/).
 - Tras reescribir historial: **force push** coordinado con el equipo y **rotación obligatoria** de todos los secretos que hayan aparecido en commits.
