@@ -112,6 +112,17 @@ SINDYBOT_MAX_EXCEL_UPLOAD_BYTES = _env_int(
     15 * 1024 * 1024,
 )
 
+# Rate limiting login / admin (SCRUM-26)
+SINDYBOT_LOGIN_RATE_LIMIT = _env_int("SINDYBOT_LOGIN_RATE_LIMIT", 10)
+SINDYBOT_LOGIN_RATE_WINDOW = _env_int("SINDYBOT_LOGIN_RATE_WINDOW", 300)
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "sindybot-default",
+    }
+}
+
 if TRUST_X_FORWARDED_PROTO:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 else:
@@ -160,6 +171,7 @@ if DEBUG and _ENABLE_SESSION_DEBUG:
 MIDDLEWARE.extend([
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
+    "home.login_rate_limit_middleware.LoginRateLimitMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",

@@ -138,6 +138,18 @@ Antes de iniciar la auditoría remota, el servidor valida el archivo subido: ext
 
 `SessionDebugMiddleware` (logs de sesión/cookies, diagnóstico de `SuspiciousSession`) **no se carga** con `DEBUG=False`. En desarrollo puede desactivarse con `ENABLE_SESSION_DEBUG_MIDDLEWARE=False` en `.env`.
 
+### Rate limiting login (SCRUM-26)
+
+POST a `/accounts/auth-signin/`, `/accounts/login/` y `/admin/login/` cuentan intentos **fallidos** por IP (cache local; configurable con `SINDYBOT_LOGIN_RATE_LIMIT` y `SINDYBOT_LOGIN_RATE_WINDOW`). Respuesta **429** si se supera el tope.
+
+### Perfil de usuario (SCRUM-27)
+
+Ruta `/accounts/profile/` muestra datos básicos y enlace a cambio de contraseña (ya no es una vista vacía).
+
+### Datos sensibles en Git (SCRUM-29)
+
+Las transcripciones de ejemplo bajo `audio-text/log_audio_to_text/` **no deben versionarse** (contenido real de ventas). Use datos locales o almacenamiento fuera del repo. La carpeta duplicada **`/back/`** ya está en `.gitignore` (SCRUM-28); no forma parte del árbol desplegado en este repo.
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.
