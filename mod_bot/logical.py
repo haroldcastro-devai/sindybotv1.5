@@ -58,31 +58,48 @@ def show_messagebox(type, title, message):
         messagebox.showerror(title, message, parent=root)
     root.destroy()
 
-def run_loading_animation():
-    """Inicia loading.py y guarda el Popen para cerrarlo de forma fiable (SCRUM-23)."""
-    global _loading_proc
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    loading_path = os.path.join(script_dir, "loading.py")
-    proc = subprocess.Popen([sys.executable, loading_path])
-    with _loading_lock:
-        _loading_proc = proc
-
-
 def _cmdline_runs_loading_py(cmdline):
     if not cmdline:
         return False
     return any(os.path.basename(arg) == "loading.py" for arg in cmdline)
 
 
-def _terminate_loading_processes():
-    """Respaldo: cierra procesos loading.py huérfanos (p. ej. tras crash previo)."""
-    current_pid = os.getpid()
+def _stop_popen_proc(proc):
+    if proc is None:
+        return
+    try:
+        if proc.poll() is None:
+            proc.terminate()
+            try:
+                proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                proc.wait(timeout=5)
+    except (ProcessLookupError, OSError):
+        pass
+
+
+def run_loading_animation():
+    """Inicia loading.py y guarda el Popen para cerrarlo de forma fiable (SCRUM-23)."""
+    global _loading_proc
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    loading_path = os.path.join(script_dir, "loading.py")
+    with _loading_lock:
+        if _loading_proc is not None and _loading_proc.poll() is None:
+            _stop_popen_proc(_loading_proc)
+        _loading_proc = subprocess.Popen([sys.executable, loading_path])
+
+
+def _terminate_loading_child_processes(*, parent_pid):
+    """Solo hijos loading.py de este proceso (evita pisar otra auditoria local en paralelo)."""
     for proc in psutil.process_iter(["pid", "name", "cmdline"]):
         try:
+            if proc.pid == parent_pid:
+                continue
             name = (proc.info.get("name") or "").lower()
             if "python" not in name:
                 continue
-            if proc.pid == current_pid:
+            if proc.ppid() != parent_pid:
                 continue
             if not _cmdline_runs_loading_py(proc.cmdline()):
                 continue
@@ -94,23 +111,13 @@ def _terminate_loading_processes():
 def stop_loading_animation():
     """Detiene la animación iniciada por run_loading_animation (SCRUM-23)."""
     global _loading_proc
+    parent_pid = os.getpid()
     with _loading_lock:
         proc = _loading_proc
         _loading_proc = None
 
-    if proc is not None:
-        try:
-            if proc.poll() is None:
-                proc.terminate()
-                try:
-                    proc.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    proc.kill()
-                    proc.wait(timeout=5)
-        except (ProcessLookupError, OSError):
-            pass
-
-    _terminate_loading_processes()
+    _stop_popen_proc(proc)
+    _terminate_loading_child_processes(parent_pid=parent_pid)
 
 def ordenar_archivos_audio(archivos_audios, productos_por_contrato=None):
     """
