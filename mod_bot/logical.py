@@ -14,6 +14,9 @@ from logic_utils.get_tags import obtener_gasera_seguro
 # Obtener directorio base del script
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+_loading_proc = None
+_loading_lock = threading.Lock()
+
 def convertir_fechas(df):
     fechas_convertidas = []
     for fecha in df[3]:
@@ -55,21 +58,66 @@ def show_messagebox(type, title, message):
         messagebox.showerror(title, message, parent=root)
     root.destroy()
 
+def _cmdline_runs_loading_py(cmdline):
+    if not cmdline:
+        return False
+    return any(os.path.basename(arg) == "loading.py" for arg in cmdline)
+
+
+def _stop_popen_proc(proc):
+    if proc is None:
+        return
+    try:
+        if proc.poll() is None:
+            proc.terminate()
+            try:
+                proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                proc.wait(timeout=5)
+    except (ProcessLookupError, OSError):
+        pass
+
+
 def run_loading_animation():
-    # Usar ruta relativa para loading.py
+    """Inicia loading.py y guarda el Popen para cerrarlo de forma fiable (SCRUM-23)."""
+    global _loading_proc
     script_dir = os.path.dirname(os.path.abspath(__file__))
     loading_path = os.path.join(script_dir, "loading.py")
-    subprocess.Popen([sys.executable, loading_path])
+    with _loading_lock:
+        if _loading_proc is not None and _loading_proc.poll() is None:
+            _stop_popen_proc(_loading_proc)
+        _loading_proc = subprocess.Popen([sys.executable, loading_path])
+
+
+def _terminate_loading_child_processes(*, parent_pid):
+    """Solo hijos loading.py de este proceso (evita pisar otra auditoria local en paralelo)."""
+    for proc in psutil.process_iter(["pid", "name", "cmdline"]):
+        try:
+            if proc.pid == parent_pid:
+                continue
+            name = (proc.info.get("name") or "").lower()
+            if "python" not in name:
+                continue
+            if proc.ppid() != parent_pid:
+                continue
+            if not _cmdline_runs_loading_py(proc.cmdline()):
+                continue
+            proc.terminate()
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+
 
 def stop_loading_animation():
-    for proc in psutil.process_iter(['pid', 'name']):
-        if 'python' in proc.info['name'].lower():
-            try:
-                cmdline = proc.cmdline()
-                if len(cmdline) > 1 and 'loading.py' in cmdline[1]:
-                    proc.terminate()
-            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
-                pass
+    """Detiene la animación iniciada por run_loading_animation (SCRUM-23)."""
+    global _loading_proc
+    parent_pid = os.getpid()
+    with _loading_lock:
+        proc = _loading_proc
+        _loading_proc = None
+
+    _stop_popen_proc(proc)
+    _terminate_loading_child_processes(parent_pid=parent_pid)
 
 def ordenar_archivos_audio(archivos_audios, productos_por_contrato=None):
     """
@@ -297,46 +345,55 @@ def seleccionar_archivo():
                                 print("Cantidad de archivos en el directorio:", len(archivos_audios))
                                 guardar_ruta_directorio(directorio_audios)
 
-                                # Iniciar la animación de carga en un hilo separado
-                                animation_thread = threading.Thread(target=run_loading_animation)
+                                animation_thread = threading.Thread(
+                                    target=run_loading_animation, daemon=True
+                                )
                                 animation_thread.start()
 
+                                total_archivos_procesados = 0
+                                processing_failed = False
                                 try:
-                                    # Ordenar y agrupar los archivos por contrato, usando la información de productos
                                     archivos_ordenados = ordenar_archivos_audio(
-                                        archivos_audios, 
+                                        archivos_audios,
                                         productos_por_contrato
                                     )
-
-                                    # Procesar los archivos ordenados, pasando la información de productos
                                     total_archivos_procesados = procesar_archivos_ordenados(
                                         archivos_ordenados,
                                         contratos,
                                         fechas,
                                         productos_por_contrato
                                     )
-
                                     print(f"Total de archivos procesados: {total_archivos_procesados}")
-
-                                    # Actualizar el conteo en la base de datos
                                     actualizar_conteo_archivos(total_archivos_procesados)
-
-                                    # Detener la animación de carga
-                                    stop_loading_animation()
-                                    animation_thread.join()
-
-                                    if total_archivos_procesados > 0:
-                                        show_messagebox("info", "Proceso Completado",
-                                                    f"Se han procesado {total_archivos_procesados} archivos.")
-                                    else:
-                                        show_messagebox("error", "Error: No Existe Coincidencia",
-                                                    "No hay coincidencia entre el Reporte Gerencial y los archivos de audio en el directorio seleccionado.")
-
                                 except Exception as e:
+                                    processing_failed = True
+                                    show_messagebox(
+                                        "error",
+                                        "Error",
+                                        f"Error durante el procesamiento: {str(e)}",
+                                    )
+                                    registrar_error(
+                                        str(e),
+                                        "proceso_general",
+                                        datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                    )
+                                finally:
                                     stop_loading_animation()
-                                    animation_thread.join()
-                                    show_messagebox("error", "Error", f"Error durante el procesamiento: {str(e)}")
-                                    registrar_error(str(e), "proceso_general", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                                    animation_thread.join(timeout=15)
+
+                                if not processing_failed:
+                                    if total_archivos_procesados > 0:
+                                        show_messagebox(
+                                            "info",
+                                            "Proceso Completado",
+                                            f"Se han procesado {total_archivos_procesados} archivos.",
+                                        )
+                                    elif total_archivos_procesados == 0:
+                                        show_messagebox(
+                                            "error",
+                                            "Error: No Existe Coincidencia",
+                                            "No hay coincidencia entre el Reporte Gerencial y los archivos de audio en el directorio seleccionado.",
+                                        )
 
                                 break
                             else:
