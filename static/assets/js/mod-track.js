@@ -62,6 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Por favor, seleccione un archivo Excel');
             return;
         }
+        const selected = fileInput.files[0];
+        const ext = selected.name.split('.').pop().toLowerCase();
+        if (ext !== 'xlsx' && ext !== 'xls') {
+            alert('Solo se admiten archivos .xlsx o .xls');
+            return;
+        }
         
         // Mostrar spinner
         document.getElementById('formAuditoriaRemota').classList.add('d-none');
@@ -80,7 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 'X-CSRFToken': getCookie('csrftoken')
             }
         })
-        .then(response => response.json())
+        .then(async response => {
+            const data = await response.json();
+            if (!response.ok && data.error === undefined) {
+                data.success = false;
+                data.error = 'Error al procesar la solicitud';
+            }
+            return data;
+        })
         .then(data => {
             // Cerrar modal inicial
             var modalAuditoria = bootstrap.Modal.getInstance(document.getElementById('modalAuditoria'));

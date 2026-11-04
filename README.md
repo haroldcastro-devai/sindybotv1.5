@@ -130,6 +130,10 @@ El dashboard y las APIs de estadísticas están disponibles para cualquier usuar
 
 Cada ejecución remota recibe un **`job_id`** (UUID). Toast, progreso y cancelación viven en `temp/audit/<usuario>/<job>/`, de modo que dos auditorías del **mismo** login en paralelo no comparten archivos. El front guarda `job_id` en `sessionStorage` y lo envía como `?job=` en progreso, cancelación y toast. `remote_auditor.iniciar_proceso_remoto(..., job_id=...)` fija el contexto por hilo.
 
+### Upload Excel gerencial (SCRUM-24)
+
+Antes de iniciar la auditoría remota, el servidor valida el archivo subido: extensión **`.xlsx`/`.xls`**, tamaño (`SINDYBOT_MAX_EXCEL_UPLOAD_BYTES`, default 15 MB), firma binaria, hoja **Hoja1**, columnas de contrato/fecha/producto y al menos una fila con datos. Rechazo **HTTP 400** con mensaje JSON. Dependencias en `requirements.txt`: `openpyxl` (`.xlsx`), `xlrd` (`.xls` legacy).
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.

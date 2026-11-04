@@ -106,6 +106,12 @@ SECURE_REDIRECT_EXEMPT = [
     re.compile(p.strip()) for p in _redirect_exempt.split(",") if p.strip()
 ]
 
+# Auditoría remota — tope de Excel gerencial (SCRUM-24)
+SINDYBOT_MAX_EXCEL_UPLOAD_BYTES = _env_int(
+    "SINDYBOT_MAX_EXCEL_UPLOAD_BYTES",
+    15 * 1024 * 1024,
+)
+
 if TRUST_X_FORWARDED_PROTO:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 else:
