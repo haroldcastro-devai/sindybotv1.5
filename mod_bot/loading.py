@@ -72,15 +72,20 @@ class PreloaderAnimation:
 
         # Configuración del texto
         # Intentar cargar una fuente más gruesa
+        _font_errors = (OSError, TypeError, pygame.error)
         try:
             self.font = pygame.font.SysFont('Arial Black', 18, bold=True)
-        except (OSError, TypeError) as exc:
+        except _font_errors as exc:
             logger.debug("Fuente Arial Black no disponible: %s", exc)
             try:
                 self.font = pygame.font.SysFont('Impact', 18, bold=True)
-            except (OSError, TypeError) as exc2:
+            except _font_errors as exc2:
                 logger.debug("Fuente Impact no disponible: %s", exc2)
-                self.font = pygame.font.SysFont('Arial', 18, bold=True)
+                try:
+                    self.font = pygame.font.SysFont('Arial', 18, bold=True)
+                except _font_errors as exc3:
+                    logger.debug("Fuente Arial no disponible: %s", exc3)
+                    self.font = pygame.font.Font(None, 18)
 
         # Colores ajustados para máxima visibilidad
         self.TEXT_COLOR = (100, 100, 100)      # Negro puro

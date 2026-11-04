@@ -16,6 +16,9 @@ import threading
 import platform
 import atexit
 
+from core.cli_logging import configure_cli_logging
+
+configure_cli_logging()
 logger = logging.getLogger(__name__)
 
 # Definir colores ANSI
