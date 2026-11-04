@@ -9,6 +9,11 @@ python-dotenv>=1.0
 str2bool>=1.1
 google-genai>=1.0.0
 
+# Excel gerencial / exportaciones (SCRUM-24, export staff)
+openpyxl>=3.1
+xlrd>=2.0.1
+pandas>=2.0
+
 # ---
 # SindyBot v1.5 — requirements.txt raíz (Docker / CI)
 # Harold Castro (hcastro)

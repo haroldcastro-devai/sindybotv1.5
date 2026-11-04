@@ -32,7 +32,10 @@ from datetime import datetime, timedelta
 import uuid
 from typing import Optional
 
-from home.gerencial_excel_validation import validate_archivo_excel_upload
+from home.gerencial_excel_validation import (
+    validate_archivo_excel_upload,
+    validation_error_message,
+)
 
 @login_required
 @require_POST
@@ -277,20 +280,19 @@ def iniciar_auditoria_remota(request):
         try:
             archivo_excel = request.FILES['archivo_excel']
             try:
-                file_ext = validate_archivo_excel_upload(archivo_excel)
+                file_ext, file_bytes = validate_archivo_excel_upload(archivo_excel)
             except ValidationError as exc:
                 return JsonResponse(
-                    {'success': False, 'error': exc.messages[0]},
+                    {'success': False, 'error': validation_error_message(exc)},
                     status=400,
                 )
             usuario_actual = request.user.username
 
             temp_dir = tempfile.mkdtemp()
             temp_file = os.path.join(temp_dir, f"{uuid.uuid4()}{file_ext}")
-            
-            with open(temp_file, 'wb+') as destination:
-                for chunk in archivo_excel.chunks():
-                    destination.write(chunk)
+
+            with open(temp_file, 'wb') as destination:
+                destination.write(file_bytes)
 
             job_id = str(uuid.uuid4())
             request.session["sindybot_audit_job_id"] = job_id
