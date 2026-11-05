@@ -83,8 +83,10 @@ GOOGLE_SPEECH_MIN_SPEAKERS=2
 GOOGLE_SPEECH_MAX_SPEAKERS=2
 ```
 
-- **Coste:** facturación GCP por minuto de audio (diarización con recargo; ver [precios Speech-to-Text](https://cloud.google.com/speech-to-text/pricing)).
-- **Formatos:** `.gsm`/`.mp3` se convierten con **ffmpeg** a WAV 16 kHz mono; límite **10 MB** inline (sin GCS en este prototipo).
+- **Coste:** facturación GCP por minuto de audio (diarización con recargo; ver [precios Speech-to-Text](https://cloud.google.com/speech-to-text/pricing)). `GOOGLE_SPEECH_ENABLE_DIARIZATION=False` reduce factura si solo necesita texto.
+- **Formatos:** todo audio (incl. `.wav`) se **normaliza con ffmpeg** a LINEAR16 16 kHz mono; límite **10 MB** inline (sin GCS en este prototipo).
+- **Timeout:** `GOOGLE_SPEECH_OPERATION_TIMEOUT` (60–7200 s, default 3600) bloquea el hilo hasta que GCP responda.
+- **Privacidad:** audio de ventas sale a Google; requiere DPA/política interna antes de producción.
 - **Smoke:** `python scripts/stt_google_smoke.py ruta/audio.gsm`
 
 ### Tareas sugeridas (Jira)

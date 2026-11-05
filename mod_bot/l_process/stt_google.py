@@ -102,20 +102,15 @@ def _convert_to_wav_16k_mono(source: Path) -> Path:
 
 
 def _load_linear16_wav(path: Path) -> tuple[bytes, int]:
-    suffix = path.suffix.lower()
-    wav_path = path
-    temp_wav: Path | None = None
-    if suffix not in (".wav",):
-        temp_wav = _convert_to_wav_16k_mono(path)
-        wav_path = temp_wav
+    """Normaliza cualquier entrada (incl. .wav) a LINEAR16 mono 16 kHz vía ffmpeg."""
+    temp_wav = _convert_to_wav_16k_mono(path)
     try:
-        data = wav_path.read_bytes()
+        data = temp_wav.read_bytes()
     finally:
-        if temp_wav and temp_wav.exists():
-            temp_wav.unlink(missing_ok=True)
+        temp_wav.unlink(missing_ok=True)
     if len(data) > _INLINE_MAX_BYTES:
         raise ValueError(
-            f"Audio supera {_INLINE_MAX_BYTES // (1024*1024)} MB inline; "
+            f"Audio supera {_INLINE_MAX_BYTES // (1024 * 1024)} MB inline; "
             "use GCS + URI en una fase posterior o acorte el archivo."
         )
     return data, 16000
@@ -249,7 +244,14 @@ def _recognize(client, speech, audio_bytes: bytes, sample_rate: int):
     )
 
     operation = client.long_running_recognize(config=config, audio=audio)
-    response = operation.result(timeout=3600)
+    timeout_sec = _env_int(
+        "GOOGLE_SPEECH_OPERATION_TIMEOUT",
+        3600,
+        min_val=60,
+        max_val=7200,
+    )
+    logger.info("Google STT: esperando operacion (timeout=%ss)", timeout_sec)
+    response = operation.result(timeout=timeout_sec)
     return list(response.results)
 
 
