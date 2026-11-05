@@ -19,6 +19,13 @@ ROOT = Path(__file__).resolve().parent.parent
 MOD_BOT = ROOT / "mod_bot"
 
 ALLOWED_CALLER = MOD_BOT / "l_process" / "stt_provider.py"
+DEFINITION_FILES = frozenset(
+    {
+        MOD_BOT / "l_process" / "audio_processing.py",
+        MOD_BOT / "l_process" / "stt_faster_whisper.py",
+        MOD_BOT / "l_process" / "stt_google.py",
+    }
+)
 ENTRYPOINTS = (
     MOD_BOT / "diariza.py",
     MOD_BOT / "l_process" / "unified_processing.py",
@@ -61,19 +68,20 @@ def _scan_file(path: Path) -> list[str]:
     if FORBIDDEN_IMPORT.search(text):
         issues.append(f"{rel}: import de audio_processing orientado a bypass STT")
 
-    for pattern, label in (
-        (DIRECT_CALL, "procesar_audio()"),
-        (INDIRECT_CALL, "llamada indirecta a procesar_audio()"),
-    ):
-        for match in pattern.finditer(text):
-            start = max(0, match.start() - 50)
-            snippet = text[start : match.start() + 30]
-            if _is_allowed_procesar_audio_call(snippet):
-                continue
-            if label.startswith("llamada indirecta") and "def procesar_audio" in snippet:
-                continue
-            issues.append(f"{rel}: {label}")
-            break
+    if path not in DEFINITION_FILES:
+        for pattern, label in (
+            (DIRECT_CALL, "procesar_audio()"),
+            (INDIRECT_CALL, "llamada indirecta a procesar_audio()"),
+        ):
+            for match in pattern.finditer(text):
+                start = max(0, match.start() - 50)
+                snippet = text[start : match.start() + 30]
+                if _is_allowed_procesar_audio_call(snippet):
+                    continue
+                if "def procesar_audio" in snippet:
+                    continue
+                issues.append(f"{rel}: {label}")
+                break
 
     if path in ENTRYPOINTS:
         if not REQUIRED_IMPORT.search(text):
