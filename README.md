@@ -6,7 +6,9 @@
 
 SindyBot es un sistema integral de auditoría automática para llamadas de ventas de seguros, desarrollado específicamente para agilizar y estandarizar el proceso de evaluación de calidad y cumplimiento normativo. El sistema procesa archivos de audio de llamadas, realiza transcripciones con separación de hablantes, extrae información clave y genera evaluaciones automáticas que determinan si la venta cumple con todos los requisitos legales y de calidad.
 
-**Versión actual**: 0.14 (Mayo 2025)
+**Versión actual**: 1.5.x (endurecimiento Git + Gemini LLM + STT configurable, 2025–2026)
+
+**Documentación:** [Docs--Readme/INDICE-DOCUMENTACION.md](Docs--Readme/INDICE-DOCUMENTACION.md) · IA/STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md)
 
 ## Características Principales
 
@@ -26,12 +28,14 @@ SindyBot es un sistema integral de auditoría automática para llamadas de venta
 
 El sistema SindyBot está compuesto por varios módulos interconectados:
 
-1. **Frontend (Django)**: Interfaz web para la interacción con el usuario
-2. **Módulo de Procesamiento de Audio**: Realiza la diarización y transcripción
-3. **Módulo de Análisis de Texto**: Extrae información clave y corrige texto
-4. **Módulo de Evaluación**: Analiza el cumplimiento utilizando IA
-5. **Base de Datos**: Almacena resultados, transcripciones y evaluaciones
-6. **API REST**: Permite integración con sistemas externos
+1. **Frontend (Django)**: Interfaz web, auditoría remota, dashboard y API REST
+2. **STT (transcripción)**: `mod_bot/l_process/stt_provider.py` — default **WhisperX** (GPU); opcional CPU/GCP (`STT_PROVIDER`)
+3. **Análisis de texto**: Extracción, diccionario y corrección (`l_process/`)
+4. **LLM (auditoría)**: **Google Gemini** vía `llm_client.py` (nube; no reemplaza al STT)
+5. **Base de datos**: MySQL o SQLite demo; resultados y estados por usuario/job
+6. **Seguridad**: Settings unificados, HTTPS, RBAC exportaciones, media protegida
+
+Detalle LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md)
 
 ![Arquitectura SindyBot](static/docs/arquitectura_sindybot.png)
 
@@ -42,7 +46,7 @@ El sistema SindyBot está compuesto por varios módulos interconectados:
 - **CPU**: 13th Gen Intel(R) Core(TM) i7-13700F
 - **RAM**: 64GB mínimo (128GB recomendado)
 - **Almacenamiento**: SSD 1TB mínimo
-- **GPU**: NVIDIA GeForce RTX 4080 (recomendado para procesamiento acelerado para whisperx, y modelo IA de Auditoria)
+- **GPU**: NVIDIA con CUDA (p. ej. RTX serie 40) — **WhisperX / PyAnnote** (`STT_PROVIDER=whisperx`). La **auditoría LLM** usa **Gemini en la nube** (`GEMINI_API_KEY`), no consume GPU local.
 
 ### Software Requerido
 
@@ -183,13 +187,13 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 
 ### STT CPU faster-whisper (SCRUM-34)
 
-`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) (sección STT → faster_whisper).
 
 **Importante:** este backend asigna un único hablante (`SPEAKER_00`) — **no reemplaza** WhisperX + PyAnnote para distinguir vendedor y cliente. Use `STT_PROVIDER=whisperx` (GPU + `HF_TOKEN`) en **producción** cuando la auditoría dependa de roles por hablante; reserve `faster_whisper` para pruebas, VPS sin GPU o transcripción sin diarización real. El modelo se reutiliza en memoria dentro del mismo proceso al procesar varios archivos.
 
 ### Google Cloud STT (SCRUM-35)
 
-`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) y [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md) (Google Speech **no** es Gemini).
 
 **Privacidad y operación:** las grabaciones de ventas se procesan en **Google Cloud** (no on-prem). No use audios con datos personales sensibles sin acuerdo legal/DPA y política interna. Vigile **cuotas y costes** en la consola GCP; es un **prototipo** — no sustituye por defecto a WhisperX on-prem/GPU. `long_running_recognize` **bloquea** el worker hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` segundos (default 3600) por archivo; en lotes largos planifique timeouts o colas.
 
@@ -265,26 +269,23 @@ python mod_bot/diariza.py --contrato-dividido '{"contrato": "12345", "archivos":
 
 ```
 sindybot/
-├── admin_gradient/     # Personalización del admin Django
-├── audio-text/         # Directorio de salida para transcripciones
-│   ├── log_audio_to_text/    # Transcripciones de audio
-│   ├── Log_sales_audito/     # Resultados de auditoría
-│   └── uni_files_audito/     # Archivos unificados (contratos divididos)
-├── authentication/     # Módulo de autenticación
-├── core/               # Configuración principal de Django
-├── home/               # Aplicación principal (vistas y lógica)
-├── mod_bot/            # Módulo de procesamiento y IA
-│   ├── data/           # Datos de referencia (guiones, tarifas)
-│   ├── Diccionary/     # Diccionario para corrección de texto
-│   ├── l_process/      # Módulos de procesamiento
-│   ├── logic_utils/    # Utilidades para lógica de negocio
-│   ├── tools/          # Herramientas auxiliares
-│   └── whisperX/       # Motor de transcripción modificado
-├── static/             # Archivos estáticos
-├── staticfiles/        # Archivos estáticos recopilados
-├── templates/          # Plantillas HTML
-└── temp/               # Archivos temporales y sesiones
+├── .github/workflows/  # CI (django-check, verify_stt_provider_wiring)
+├── Docs--Readme/       # INDICE, IA-STT-ARQUITECTURA, seguridad Git
+├── scripts/            # smoke Gemini, verify deploy, STT regression
+├── admin_gradient/
+├── audio-text/         # Salidas (transcripciones no versionadas — SCRUM-29)
+├── authentication/
+├── core/               # settings.py, cli_logging.py, wsgi
+├── home/
+├── mod_bot/
+│   ├── l_process/      # stt_provider, llm_client, audio_processing, …
+│   ├── requirements-stt-cpu.txt / requirements-stt-google.txt  # STT opcional
+│   └── whisperX/
+├── static/ · templates/ · temp/
+└── .env.example        # Plantilla (copiar a .env)
 ```
+
+Árbol completo histórico: `estructura_directorios.txt` (snapshot; ver [INDICE-DOCUMENTACION.md](Docs--Readme/INDICE-DOCUMENTACION.md)).
 
 ## Entorno Conda
 
@@ -357,20 +358,21 @@ El proyecto depende de varias librerías Python, categorizadas por funcionalidad
 
 ## Configuración Avanzada
 
-### Configuración de Modelos
+### Auditoría LLM (Gemini)
 
-Puede ajustar los parámetros del modelo en `mod_bot/diariza.py`:
+El modelo de auditoría se configura con **`GEMINI_MODEL`** en `.env` (default `gemini-3.8-flash`). La generación está centralizada en `mod_bot/l_process/llm_client.py`:
 
 ```python
-# Aumentar temperatura para respuestas más creativas y detalladas
-response = model.generate(
-    model="qwen2.5:14b-instruct-q6_K", 
-    prompt=prompt_mejorado,
-    temperature=0.3,  # Valor ajustable (0.1-0.5 recomendado)
-    num_ctx=8192,     # Tamaño del contexto 
-    num_predict=5000  # Longitud máxima de la respuesta
+from l_process.llm_client import generate_from_prompt
+
+texto_auditoria = generate_from_prompt(
+    prompt_mejorado,
+    temperature=0.3,       # 0.1–0.5 recomendado
+    max_output_tokens=8192,
 )
 ```
+
+Smoke: `python scripts/smoke_gemini.py`. Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md).
 
 ### Configuración de Extracción de Datos
 
