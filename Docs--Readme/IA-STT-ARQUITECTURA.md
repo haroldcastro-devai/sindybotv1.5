@@ -1,5 +1,7 @@
 # IA (Gemini) y STT (WhisperX) en SindyBot
 
+Índice general: [INDICE-DOCUMENTACION.md](./INDICE-DOCUMENTACION.md)
+
 | Capa | Función | Default | Variable |
 |------|---------|---------|----------|
 | **LLM** | Auditoría sobre **texto** | **Gemini** | `GEMINI_API_KEY` |

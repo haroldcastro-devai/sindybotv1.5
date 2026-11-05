@@ -1,4 +1,9 @@
 /mnt/d/.origen/dev_dash_
+# NOTA (2026): snapshot historico del arbol de archivos. No regenerado automaticamente.
+# Estructura logica actual: README.md (seccion Estructura de Directorios).
+# Docs: Docs--Readme/INDICE-DOCUMENTACION.md
+# Anadidos en v1.5 (no listados exhaustivamente aqui): stt_provider.py, stt_google.py,
+# stt_faster_whisper.py, core/cli_logging.py, scripts/verify_*.py, .github/workflows/
 ├── .env
 ├── .git
 │   ├── COMMIT_EDITMSG
