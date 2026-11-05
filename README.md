@@ -39,6 +39,8 @@ Detalle LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md
 
 ![Arquitectura SindyBot](Docs--Readme/doc/approach.png)
 
+*Diagrama de arquitectura canónico en repo (`Docs--Readme/doc/approach.png`). Sustituye la ruta antigua `static/docs/arquitectura_sindybot.png`, que no existía en el árbol versionado.*
+
 ## Requisitos del Sistema
 
 ### Hardware Recomendado Minimo
@@ -200,7 +202,7 @@ HF_TOKEN=su_token_huggingface
 
 Implementación: `mod_bot/l_process/audio_processing.py`, invocada solo desde `mod_bot/l_process/stt_provider.py` → `procesar_audio_via_provider()` (`diariza.py`, `unified_processing.py`, auditoría web). Requiere **GPU NVIDIA**, FFmpeg y el entorno ML ([`req-envsbot.yaml`](Docs--Readme/req-envsbot.yaml)).
 
-**No cambie** `STT_PROVIDER` en producción salvo decisión explícita de arquitectura. El código incluye otros valores (`faster_whisper`, `google`) solo para pruebas o Fase B sin GPU; **no** son el flujo estándar de SindyBot. Detalle de esas alternativas (opcional): [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md#fase-b--stt-sin-whisperx-en-gpu).
+**No cambie** `STT_PROVIDER` en producción salvo decisión explícita de arquitectura. El código incluye otros valores (`faster_whisper`, `google`) solo para pruebas o Fase B sin GPU; **no** son el flujo estándar de SindyBot. Detalle de esas alternativas (opcional): [GEMINI-STT-MIGRATION.md — Fase B](Docs--Readme/GEMINI-STT-MIGRATION.md#fase-b-stt).
 
 Comprobación de cableado STT (SCRUM-36): `python scripts/verify_stt_provider_wiring.py` (también en CI). Resumen LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md).
 
@@ -297,7 +299,7 @@ sindybot/
 
 ## Entorno Conda
 
-Entorno **ML completo** (WhisperX, PyTorch, PyAnnote): archivo [`Docs--Readme/req-envsbot.yaml`](Docs--Readme/req-envsbot.yaml) — nombre del entorno en el YAML: **`Origen2-0`**, Python **3.9.21**. Para solo web/demo sin transcripción GPU, basta `requirements.txt` y un entorno Conda propio (p. ej. `sindybot`).
+Entorno **ML completo** (WhisperX, PyTorch, PyAnnote): archivo [`Docs--Readme/req-envsbot.yaml`](Docs--Readme/req-envsbot.yaml) — nombre del entorno en el YAML: **`Origen2-0`**, Python **3.9.21**. Para solo web/demo sin transcripción GPU, basta `requirements.txt` y un entorno Conda propio (p. ej. `sindybot`). El YAML también lista **`faster-whisper`** (y otras libs ML) para quien active alternativas STT de Fase B; con **`STT_PROVIDER=whisperx`** (default) el runtime de producción usa **WhisperX**, no faster-whisper.
 
 Extracto de dependencias críticas del YAML (no sustituye leer el archivo completo):
 

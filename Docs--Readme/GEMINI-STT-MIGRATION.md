@@ -41,6 +41,8 @@ Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: model
 
 ---
 
+<a id="fase-b-stt"></a>
+
 ## Fase B — STT sin WhisperX en GPU (opcional; no producción estándar)
 
 SindyBot en operación normal usa **`STT_PROVIDER=whisperx`**. Los valores siguientes existen para pruebas o despliegues excepcionales; no sustituyen WhisperX + PyAnnote para distinguir hablantes salvo `google` con diarización API (coste extra).

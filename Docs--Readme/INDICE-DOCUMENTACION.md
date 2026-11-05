@@ -15,7 +15,7 @@
 |-----------|-----------|
 | [GIT-HISTORY-AUDIT.md](./GIT-HISTORY-AUDIT.md) | Secretos en historial Git (SCRUM-12) |
 | [SECRET-ROTATION.md](./SECRET-ROTATION.md) | Rotación de credenciales |
-| [req-envsbot.yaml](./req-envsbot.yaml) | Entorno Conda completo (ML / WhisperX) |
+| [req-envsbot.yaml](./req-envsbot.yaml) | Entorno Conda ML (WhisperX; incluye `faster-whisper` solo si usa Fase B) |
 
 ## Módulo de procesamiento
 
