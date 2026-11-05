@@ -187,6 +187,12 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 
 **Importante:** este backend asigna un único hablante (`SPEAKER_00`) — **no reemplaza** WhisperX + PyAnnote para distinguir vendedor y cliente. Use `STT_PROVIDER=whisperx` (GPU + `HF_TOKEN`) en **producción** cuando la auditoría dependa de roles por hablante; reserve `faster_whisper` para pruebas, VPS sin GPU o transcripción sin diarización real. El modelo se reutiliza en memoria dentro del mismo proceso al procesar varios archivos.
 
+### Google Cloud STT (SCRUM-35)
+
+`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+
+**Privacidad y operación:** las grabaciones de ventas se procesan en **Google Cloud** (no on-prem). No use audios con datos personales sensibles sin acuerdo legal/DPA y política interna. Vigile **cuotas y costes** en la consola GCP; es un **prototipo** — no sustituye por defecto a WhisperX on-prem/GPU. `long_running_recognize` **bloquea** el worker hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` segundos (default 3600) por archivo; en lotes largos planifique timeouts o colas.
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.

@@ -70,13 +70,31 @@ python scripts/stt_faster_whisper_regression.py audio1.mp3 audio2.gsm audio3.wav
 
 **Producción:** no sustituye multi-hablante (vendedor/cliente); solo `SPEAKER_00`. Auditoría con roles → `STT_PROVIDER=whisperx`. El modelo faster-whisper se cachea por proceso al transcribir lotes.
 
-Proveedor `google` aún no implementado; error explícito si se selecciona.
+### Google Cloud Speech-to-Text (SCRUM-35 — prototipo)
+
+```bash
+pip install -r mod_bot/requirements-stt-google.txt
+# Cuenta de servicio con rol Speech Client; API Speech-to-Text habilitada
+export GOOGLE_APPLICATION_CREDENTIALS=/ruta/sa.json
+STT_PROVIDER=google
+GOOGLE_SPEECH_LANGUAGE_CODE=es-CO
+GOOGLE_SPEECH_ENABLE_DIARIZATION=True
+GOOGLE_SPEECH_MIN_SPEAKERS=2
+GOOGLE_SPEECH_MAX_SPEAKERS=2
+GOOGLE_SPEECH_OPERATION_TIMEOUT=3600
+```
+
+- **Coste:** facturación GCP por minuto de audio (diarización con recargo; ver [precios Speech-to-Text](https://cloud.google.com/speech-to-text/pricing)). `GOOGLE_SPEECH_ENABLE_DIARIZATION=False` reduce factura si solo necesita texto.
+- **Formatos:** todo audio (incl. `.wav`) se **normaliza con ffmpeg** a LINEAR16 16 kHz mono; límite **10 MB** inline (sin GCS en este prototipo).
+- **Timeout:** `GOOGLE_SPEECH_OPERATION_TIMEOUT` (60–7200 s, default 3600) bloquea el hilo hasta que GCP responda.
+- **Privacidad:** audio de ventas sale a Google; requiere DPA/política interna antes de producción.
+- **Smoke:** `python scripts/stt_google_smoke.py ruta/audio.gsm`
 
 ### Tareas sugeridas (Jira)
 
 1. ~~Implementar `faster_whisper` para pruebas en VPS sin GPU.~~ (SCRUM-34)
-2. Prototipo Google STT v2 con diarización.
-3. Pruebas de regresión con audios de referencia (script anterior + pipeline completo).
+2. ~~Prototipo Google STT con diarización.~~ (SCRUM-35)
+3. Pruebas de regresión / unificación `stt_provider` (SCRUM-36).
 
 ---
 
