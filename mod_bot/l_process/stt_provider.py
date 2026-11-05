@@ -22,6 +22,7 @@ google: Cloud Speech-to-Text vía mod_bot/l_process/stt_google.py (credenciales 
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 from .logger_config import logger
 
@@ -33,7 +34,11 @@ def get_stt_provider() -> str:
 def procesar_audio_via_provider(audio_file: str):
     """Delega al backend STT configurado (`STT_PROVIDER`)."""
     provider = get_stt_provider()
-    logger.info("STT provider=%s archivo=%s", provider, audio_file)
+    logger.info(
+        "STT provider=%s archivo=%s",
+        provider,
+        Path(audio_file).name,
+    )
     if provider == "whisperx":
         from .audio_processing import procesar_audio
 

@@ -81,6 +81,8 @@ GOOGLE_SPEECH_OPERATION_TIMEOUT=3600
 
 Smoke: `python scripts/stt_google_smoke.py ruta/audio.gsm`
 
+Detalle operativo (privacidad DPA, ffmpeg, coste/min, timeout, límite 10 MB): **README** sección *Google Cloud STT (SCRUM-35)* y [IA-STT-ARQUITECTURA.md](./IA-STT-ARQUITECTURA.md).
+
 ### Unificación stt_provider (SCRUM-36 — implementado)
 
 - No importar `procesar_audio` fuera de `stt_provider.py`.

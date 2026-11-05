@@ -3,6 +3,9 @@
 """
 Verifica que el pipeline STT no llame a procesar_audio fuera de stt_provider (SCRUM-36).
 
+Guarda estatica (regex): no detecta eval/exec ni codigo fuera de mod_bot/.
+Amplie patrones si aparecen bypass (import alias + ap.procesar_audio).
+
 Uso (desde raiz sindybotv1.5):
   python scripts/verify_stt_provider_wiring.py
 """
@@ -10,7 +13,6 @@ Uso (desde raiz sindybotv1.5):
 from __future__ import annotations
 
 import re
-import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -25,35 +27,58 @@ ENTRYPOINTS = (
 FORBIDDEN_IMPORT = re.compile(
     r"from\s+\.?\.?l_process\.audio_processing\s+import\s+.*\bprocesar_audio\b"
     r"|from\s+\.audio_processing\s+import\s+.*\bprocesar_audio\b"
+    r"|import\s+l_process\.audio_processing\s+as\s+\w+"
+    r"|from\s+l_process\s+import\s+audio_processing\s+as\s+\w+"
 )
 REQUIRED_IMPORT = re.compile(
     r"from\s+\.?\.?l_process\.stt_provider\s+import\s+.*\bprocesar_audio_via_provider\b"
     r"|from\s+\.stt_provider\s+import\s+.*\bprocesar_audio_via_provider\b"
 )
 DIRECT_CALL = re.compile(r"(?<![\w.])procesar_audio\s*\(")
+INDIRECT_CALL = re.compile(
+    r"(?<![\w.])audio_processing\.procesar_audio\s*\("
+    r"|(?<!\w)\w+\.procesar_audio\s*\("
+)
+
+
+def _is_allowed_procesar_audio_call(snippet: str) -> bool:
+    if "procesar_audio_via_provider" in snippet:
+        return True
+    if "procesar_audio_dividido" in snippet:
+        return True
+    if "procesar_audio_faster_whisper" in snippet:
+        return True
+    if "procesar_audio_google" in snippet:
+        return True
+    return False
 
 
 def _scan_file(path: Path) -> list[str]:
     issues: list[str] = []
     text = path.read_text(encoding="utf-8")
+    rel = path.relative_to(ROOT)
+
     if FORBIDDEN_IMPORT.search(text):
-        issues.append(f"{path.relative_to(ROOT)}: import directo de procesar_audio")
+        issues.append(f"{rel}: import de audio_processing orientado a bypass STT")
+
+    for pattern, label in (
+        (DIRECT_CALL, "procesar_audio()"),
+        (INDIRECT_CALL, "llamada indirecta a procesar_audio()"),
+    ):
+        for match in pattern.finditer(text):
+            start = max(0, match.start() - 50)
+            snippet = text[start : match.start() + 30]
+            if _is_allowed_procesar_audio_call(snippet):
+                continue
+            if label.startswith("llamada indirecta") and "def procesar_audio" in snippet:
+                continue
+            issues.append(f"{rel}: {label}")
+            break
+
     if path in ENTRYPOINTS:
         if not REQUIRED_IMPORT.search(text):
-            issues.append(
-                f"{path.relative_to(ROOT)}: falta import de procesar_audio_via_provider"
-            )
-        for match in DIRECT_CALL.finditer(text):
-            start = max(0, match.start() - 40)
-            snippet = text[start : match.start() + 20]
-            if "procesar_audio_via_provider" in snippet:
-                continue
-            if "procesar_audio_dividido" in snippet:
-                continue
-            issues.append(
-                f"{path.relative_to(ROOT)}: llamada directa a procesar_audio()"
-            )
-            break
+            issues.append(f"{rel}: falta import de procesar_audio_via_provider")
+
     return issues
 
 

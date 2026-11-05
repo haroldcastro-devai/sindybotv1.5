@@ -26,7 +26,7 @@ Ver sección Fase A en [GEMINI-STT-MIGRATION.md](./GEMINI-STT-MIGRATION.md) o RE
 | `faster_whisper` | `stt_faster_whisper.py` | CPU; diarización limitada |
 | `google` | `stt_google.py` | GCP Speech; coste/min |
 
-Detalle de configuración: [GEMINI-STT-MIGRATION.md](./GEMINI-STT-MIGRATION.md) (Fase B).
+Detalle de configuración: [GEMINI-STT-MIGRATION.md](./GEMINI-STT-MIGRATION.md) (Fase B). Operación Google STT (privacidad, coste): README *SCRUM-35*.
 
 ---
 
