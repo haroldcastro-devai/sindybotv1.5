@@ -26,7 +26,11 @@ def main() -> int:
     if not path.is_file():
         logger.error("No existe: %s", path)
         return 1
-    text, name, result = procesar_audio_via_provider(str(path))
+    try:
+        text, name, result = procesar_audio_via_provider(str(path))
+    except Exception as exc:
+        logger.error("Smoke Google STT fallido: %s", exc, exc_info=True)
+        return 1
     n = len(result.get("segments", []))
     preview = (text or "").strip().replace("\n", " ")[:160]
     print(f"Smoke Google STT OK: {name} ({n} segmentos) preview={preview!r}")

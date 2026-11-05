@@ -8,6 +8,9 @@ Diarización opcional vía SpeakerDiarizationConfig (coste adicional por minuto)
 
 Coste orientativo (consulte precios GCP vigentes): facturación por duración de audio
 procesada; la diarización suele tener recargo respecto a transcripción estándar.
+
+Todo archivo de entrada (incl. .wav) se normaliza con ffmpeg antes de enviar a GCP.
+Timeout de operación: GOOGLE_SPEECH_OPERATION_TIMEOUT (default 3600 s).
 """
 
 from __future__ import annotations

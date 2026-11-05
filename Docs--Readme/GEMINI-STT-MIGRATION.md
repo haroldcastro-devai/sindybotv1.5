@@ -81,6 +81,7 @@ GOOGLE_SPEECH_LANGUAGE_CODE=es-CO
 GOOGLE_SPEECH_ENABLE_DIARIZATION=True
 GOOGLE_SPEECH_MIN_SPEAKERS=2
 GOOGLE_SPEECH_MAX_SPEAKERS=2
+GOOGLE_SPEECH_OPERATION_TIMEOUT=3600
 ```
 
 - **Coste:** facturación GCP por minuto de audio (diarización con recargo; ver [precios Speech-to-Text](https://cloud.google.com/speech-to-text/pricing)). `GOOGLE_SPEECH_ENABLE_DIARIZATION=False` reduce factura si solo necesita texto.
