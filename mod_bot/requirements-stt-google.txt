@@ -1,0 +1,4 @@
+# Google Cloud Speech-to-Text (Fase B — SCRUM-35). Requiere cuenta GCP y credenciales.
+google-cloud-speech>=2.27.0
+
+# Desarrollado por: hcastro
