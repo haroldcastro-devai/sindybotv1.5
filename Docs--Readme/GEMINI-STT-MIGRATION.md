@@ -41,11 +41,13 @@ Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: model
 
 ---
 
-## Fase B — STT sin WhisperX en GPU
+## Fase B — STT sin WhisperX en GPU (opcional; no producción estándar)
+
+SindyBot en operación normal usa **`STT_PROVIDER=whisperx`**. Los valores siguientes existen para pruebas o despliegues excepcionales; no sustituyen WhisperX + PyAnnote para distinguir hablantes salvo `google` con diarización API (coste extra).
 
 | Proveedor | Coste | GPU propia | Diarización |
 |-----------|-------|------------|-------------|
-| `whisperx` (actual) | Infra | Sí | Sí (PyAnnote) |
+| `whisperx` (producción) | Infra | Sí | Sí (PyAnnote) |
 | `faster_whisper` CPU | Bajo | No (lento) | Limitada (`SPEAKER_00`) |
 | Google Cloud Speech-to-Text | Por minuto | No | Opcional API |
 
@@ -54,7 +56,9 @@ Variable: `STT_PROVIDER=whisperx|faster_whisper|google` (default: `whisperx`)
 **Punto único de entrada:** `stt_provider.procesar_audio_via_provider` — `diariza.py` y `unified_processing.py` (SCRUM-36).  
 Verificación en CI/local: `python scripts/verify_stt_provider_wiring.py`.
 
-### faster_whisper (SCRUM-34 — implementado)
+### faster_whisper (SCRUM-34 — solo Fase B / pruebas CPU)
+
+No usar en producción SindyBot si necesita diarización real. Requiere `STT_PROVIDER=faster_whisper` explícito.
 
 ```bash
 pip install -r mod_bot/requirements-stt-cpu.txt
@@ -81,7 +85,7 @@ GOOGLE_SPEECH_OPERATION_TIMEOUT=3600
 
 Smoke: `python scripts/stt_google_smoke.py ruta/audio.gsm`
 
-Detalle operativo (privacidad DPA, ffmpeg, coste/min, timeout, límite 10 MB): **README** sección *Google Cloud STT (SCRUM-35)* y [IA-STT-ARQUITECTURA.md](./IA-STT-ARQUITECTURA.md).
+Detalle operativo (privacidad DPA, ffmpeg, coste/min, timeout, límite 10 MB inline): README sección *Google Cloud STT — prototipo opcional* y [IA-STT-ARQUITECTURA.md](./IA-STT-ARQUITECTURA.md).
 
 ### Unificación stt_provider (SCRUM-36 — implementado)
 
@@ -93,6 +97,6 @@ Detalle operativo (privacidad DPA, ffmpeg, coste/min, timeout, límite 10 MB): *
 ## Desarrollo en PC bajo recursos
 
 - Editar Django y `llm_client` en local: **sin GPU**.
-- STT producción: `whisperx` en VM GPU; alternativas Fase B para pruebas.
+- STT producción: **`STT_PROVIDER=whisperx`** en VM GPU; Fase B solo para pruebas puntuales.
 
 # Desarrollado por: hcastro

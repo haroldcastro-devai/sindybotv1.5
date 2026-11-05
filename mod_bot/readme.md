@@ -36,8 +36,10 @@ mod_bot/
 │   └── diccionary.txt
 │
 ├── l_process/               # Procesos lógicos centrales
-│   ├── stt_provider.py      # Entrada STT (STT_PROVIDER); usar desde diariza/unified
-│   ├── audio_processing.py  # Backend WhisperX (solo vía stt_provider)
+│   ├── stt_provider.py      # Entrada STT; default whisperx → audio_processing.py
+│   ├── audio_processing.py  # WhisperX + PyAnnote (producción)
+│   ├── llm_client.py        # Gemini (auditoría)
+│   ├── stt_faster_whisper.py / stt_google.py  # alternativas Fase B (no producción estándar)
 │   ├── call_evaluation.py   # Evaluación de llamadas y criterios
 │   ├── detection.py         # Detección de aceptaciones y rechazos
 │   ├── file_utils.py        # Utilidades para manejo de archivos
@@ -182,7 +184,7 @@ Herramientas para la corrección ortográfica y manejo del diccionario personali
 
 2. **Procesamiento de Audio**:
    - Se determina si es una llamada única o dividida
-   - Se realiza la transcripción y diarización con WhisperX
+   - Transcripción y diarización con **WhisperX** (`STT_PROVIDER=whisperx`, vía `stt_provider`)
    - Se almacena el texto en `log_audio_to_text` o se unifica en `uni_files_audito`
 
 3. **Evaluación de Llamada**:
@@ -239,7 +241,7 @@ Estructura:
 
 - El sistema se integra con una base de datos MySQL para el almacenamiento persistente de resultados.
 - Los resultados de la auditoría se pueden consultar a través de la interfaz web de SINDYBOT.
-- El directorio `whisperX` contiene una implementación modificada de WhisperX adaptada específicamente para los requisitos de SINDYBOT.
+- El paquete **WhisperX** y PyAnnote se instalan con [`Docs--Readme/req-envsbot.yaml`](../Docs--Readme/req-envsbot.yaml) (no incluidos en `requirements.txt` raíz).
 
 ## Manejo de Errores
 
@@ -255,9 +257,9 @@ El sistema está diseñado para manejar un volumen considerable de llamadas:
 
 - Procesamiento en lotes para múltiples archivos
 - Liberación de memoria después de cada procesamiento
-- Optimización del uso de GPU para el modelo WhisperX
+- Optimización del uso de GPU para WhisperX
 - Mecanismos para evitar la sobrecarga de la base de datos
 
 ---
 
-*Para más información sobre las capacidades específicas o para consultar la documentación del directorio `whisperX`, por favor consulte la documentación correspondiente.*
+*Documentación ampliada: [IA-STT-ARQUITECTURA.md](../Docs--Readme/IA-STT-ARQUITECTURA.md) y README raíz.*
