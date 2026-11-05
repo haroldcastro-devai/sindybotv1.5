@@ -1,5 +1,7 @@
 # Solución para Mejorar la Precisión de las Auditorías de Ventas
 
+> **Documento histórico (era Ollama / qwen).** La auditoría actual usa **Google Gemini** vía `l_process/llm_client.py`. Ver [IA-STT-ARQUITECTURA.md](../Docs--Readme/IA-STT-ARQUITECTURA.md).
+
 Este documento explica la solución implementada para resolver el problema de alucinaciones en el modelo de inteligencia artificial que realiza las auditorías de ventas telefónicas.
 
 ## Problema Identificado

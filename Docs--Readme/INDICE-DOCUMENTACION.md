@@ -15,7 +15,7 @@
 |-----------|-----------|
 | [GIT-HISTORY-AUDIT.md](./GIT-HISTORY-AUDIT.md) | Secretos en historial Git (SCRUM-12) |
 | [SECRET-ROTATION.md](./SECRET-ROTATION.md) | Rotación de credenciales |
-| [req-envsbot.yaml](./req-envsbot.yaml) | Entorno Conda completo (ML / WhisperX) |
+| [req-envsbot.yaml](./req-envsbot.yaml) | Entorno Conda ML (WhisperX; incluye `faster-whisper` solo si usa Fase B) |
 
 ## Módulo de procesamiento
 
@@ -29,9 +29,9 @@
 |--------|-----|
 | `smoke_gemini.py` | Prueba `GEMINI_API_KEY` |
 | `verify-django-deploy-check.sh` / `.ps1` | `manage.py check --deploy` |
-| `verify_stt_provider_wiring.py` | Comprueba que STT pasa por `stt_provider` (CI) |
-| `stt_faster_whisper_regression.py` | Hasta 3 audios locales (CPU) |
-| `stt_google_smoke.py` | Prueba Google Speech-to-Text |
+| `verify_stt_provider_wiring.py` | Comprueba cableado STT → WhisperX vía `stt_provider` (CI) |
+| `stt_faster_whisper_regression.py` | Solo si `STT_PROVIDER=faster_whisper` (Fase B) |
+| `stt_google_smoke.py` | Solo si `STT_PROVIDER=google` (prototipo) |
 
 ## Árbol de directorios
 

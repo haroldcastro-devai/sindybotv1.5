@@ -37,7 +37,9 @@ El sistema SindyBot está compuesto por varios módulos interconectados:
 
 Detalle LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md)
 
-![Arquitectura SindyBot](static/docs/arquitectura_sindybot.png)
+![Arquitectura SindyBot](Docs--Readme/doc/approach.png)
+
+*Diagrama de arquitectura canónico en repo (`Docs--Readme/doc/approach.png`). Sustituye la ruta antigua `static/docs/arquitectura_sindybot.png`, que no existía en el árbol versionado.*
 
 ## Requisitos del Sistema
 
@@ -78,14 +80,18 @@ pip install django==4.2.20 mysql-connector-python==8.0.33 python-dotenv==1.0.0
 # Navegue a la carpeta del proyecto
 cd /path/to/sindybot
 
-# Instalar dependencias
+# Web, Django, Gemini (Docker / CI / demo sin GPU)
 pip install -r requirements.txt
 
-# Instalar WhisperX (modificado)
-cd mod_bot/whisperX
-pip install -e .
-cd ../..
+# STT de producción: WhisperX + PyTorch + PyAnnote (GPU)
+# Entorno Conda completo (recomendado para auditoría con audio):
+conda env create -f Docs--Readme/req-envsbot.yaml
+conda activate Origen2-0
+
+# En .env (defaults): STT_PROVIDER=whisperx  y  HF_TOKEN=…
 ```
+
+`requirements.txt` **no** incluye WhisperX ni PyAnnote; sin el entorno ML la app web arranca pero **no** transcribe con diarización real. La carpeta `mod_bot/whisperX/` (instalación editable antigua) está en `.gitignore` y **no** forma parte del clone — use el paquete `whisperx` del entorno anterior.
 
 ### 3. Configuración de la Base de Datos
 
@@ -185,21 +191,26 @@ python manage.py check
 
 Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_logger.py` y `mod_bot/loading.py`; errores de consola/fuentes se registran con `logging` (debug/warning). En entrypoints CLI, `core/cli_logging.py` aplica `basicConfig` (nivel por defecto **WARNING**; `LOG_LEVEL=DEBUG` en entorno para ver trazas de banner/fuentes antes de Django).
 
-### STT CPU faster-whisper (SCRUM-34)
+### STT — WhisperX en producción
 
-`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) (sección STT → faster_whisper).
+SindyBot transcribe audio con **WhisperX** (diarización vendedor/cliente vía PyAnnote). En `.env` deje el default:
 
-**Importante:** este backend asigna un único hablante (`SPEAKER_00`) — **no reemplaza** WhisperX + PyAnnote para distinguir vendedor y cliente. Use `STT_PROVIDER=whisperx` (GPU + `HF_TOKEN`) en **producción** cuando la auditoría dependa de roles por hablante; reserve `faster_whisper` para pruebas, VPS sin GPU o transcripción sin diarización real. El modelo se reutiliza en memoria dentro del mismo proceso al procesar varios archivos.
+```env
+STT_PROVIDER=whisperx
+HF_TOKEN=su_token_huggingface
+```
 
-### Google Cloud STT (SCRUM-35)
+Implementación: `mod_bot/l_process/audio_processing.py`, invocada solo desde `mod_bot/l_process/stt_provider.py` → `procesar_audio_via_provider()` (`diariza.py`, `unified_processing.py`, auditoría web). Requiere **GPU NVIDIA**, FFmpeg y el entorno ML ([`req-envsbot.yaml`](Docs--Readme/req-envsbot.yaml)).
 
-`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) y [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md) (Google Speech **no** es Gemini).
+**No cambie** `STT_PROVIDER` en producción salvo decisión explícita de arquitectura. El código incluye otros valores (`faster_whisper`, `google`) solo para pruebas o Fase B sin GPU; **no** son el flujo estándar de SindyBot. Detalle de esas alternativas (opcional): [GEMINI-STT-MIGRATION.md — Fase B](Docs--Readme/GEMINI-STT-MIGRATION.md#fase-b-stt).
 
-**Privacidad y operación:** las grabaciones de ventas se procesan en **Google Cloud** (no on-prem). No use audios con datos personales sensibles sin acuerdo legal/DPA y política interna. Vigile **cuotas y costes** en la consola GCP; es un **prototipo** — no sustituye por defecto a WhisperX on-prem/GPU. `long_running_recognize` **bloquea** el worker hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` segundos (default 3600) por archivo; en lotes largos planifique timeouts o colas.
+Comprobación de cableado STT (SCRUM-36): `python scripts/verify_stt_provider_wiring.py` (también en CI). Resumen LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md).
 
-### Unificación STT — stt_provider (SCRUM-36)
+### Google Cloud STT — prototipo opcional (SCRUM-35)
 
-Toda transcripción en el pipeline pasa por `mod_bot/l_process/stt_provider.py` → `procesar_audio_via_provider()` (`diariza.py`, `unified_processing.py`). No llamar `procesar_audio()` directamente. Comprobación: `python scripts/verify_stt_provider_wiring.py` (también en CI). Arquitectura LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md).
+Solo si `STT_PROVIDER=google` (no es WhisperX ni Gemini): `mod_bot/l_process/stt_google.py`, credenciales GCP, **facturación por minuto**. Audio vía **ffmpeg** (WAV 16 kHz mono); límite **10 MB** por petición inline. Smoke: `python scripts/stt_google_smoke.py <audio>`. Ver [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md) (Google Speech **no** es Gemini).
+
+**Privacidad y operación:** las grabaciones se procesan en **Google Cloud**. No use audios sensibles sin DPA; vigile costes. `long_running_recognize` bloquea hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` s (default 3600) por archivo.
 
 ### 10. Producción y cookies (SCRUM-13)
 
@@ -271,16 +282,15 @@ python mod_bot/diariza.py --contrato-dividido '{"contrato": "12345", "archivos":
 sindybot/
 ├── .github/workflows/  # CI (django-check, verify_stt_provider_wiring)
 ├── Docs--Readme/       # INDICE, IA-STT-ARQUITECTURA, seguridad Git
-├── scripts/            # smoke Gemini, verify deploy, STT regression
+├── scripts/            # smoke Gemini, verify deploy, verify STT wiring
 ├── admin_gradient/
 ├── audio-text/         # Salidas (transcripciones no versionadas — SCRUM-29)
 ├── authentication/
 ├── core/               # settings.py, cli_logging.py, wsgi
 ├── home/
 ├── mod_bot/
-│   ├── l_process/      # stt_provider, llm_client, audio_processing, …
-│   ├── requirements-stt-cpu.txt / requirements-stt-google.txt  # STT opcional
-│   └── whisperX/
+│   ├── l_process/      # stt_provider → WhisperX (default), llm_client, …
+│   └── requirements-stt-cpu.txt / requirements-stt-google.txt  # solo alternativas STT
 ├── static/ · templates/ · temp/
 └── .env.example        # Plantilla (copiar a .env)
 ```
@@ -289,13 +299,11 @@ sindybot/
 
 ## Entorno Conda
 
-El proyecto utiliza un entorno Conda específico con las siguientes dependencias principales:
+Entorno **ML completo** (WhisperX, PyTorch, PyAnnote): archivo [`Docs--Readme/req-envsbot.yaml`](Docs--Readme/req-envsbot.yaml) — nombre del entorno en el YAML: **`Origen2-0`**, Python **3.9.21**. Para solo web/demo sin transcripción GPU, basta `requirements.txt` y un entorno Conda propio (p. ej. `sindybot`). El YAML también lista **`faster-whisper`** (y otras libs ML) para quien active alternativas STT de Fase B; con **`STT_PROVIDER=whisperx`** (default) el runtime de producción usa **WhisperX**, no faster-whisper.
+
+Extracto de dependencias críticas del YAML (no sustituye leer el archivo completo):
 
 ```
-# Nombre del entorno: Origen2-0
-# Python: 3.9.21
-
-# Dependencias críticas
 django==4.2.20
 mysql-connector-python==8.0.33
 python-dotenv==1.0.0
@@ -305,7 +313,7 @@ numpy==1.24.3
 pandas==2.0.2
 openpyxl==3.1.2
 google-genai>=1.0.0
-whisper==1.1.10
+whisperx  # ver versión en req-envsbot.yaml
 librosa==0.10.1
 pyannote.audio==2.1.1
 transformers==4.30.2
@@ -318,7 +326,10 @@ scikit-learn==1.2.2
 
 ## Librerías Python y Dependencias
 
-El proyecto depende de varias librerías Python, categorizadas por funcionalidad:
+- **`requirements.txt` (raíz):** Django, Gunicorn, `google-genai`, Excel, Redis — CI, Docker y demo web.
+- **`Docs--Readme/req-envsbot.yaml`:** WhisperX, PyTorch, PyAnnote, NLTK, etc. — **auditoría con audio en GPU**.
+
+Resumen por categoría (stack completo; ver YAML para versiones):
 
 ### Web y Backend
 - Django 4.2.20: Framework web principal
@@ -327,8 +338,7 @@ El proyecto depende de varias librerías Python, categorizadas por funcionalidad
 - Python-dotenv: Para gestión de variables de entorno
 
 ### Procesamiento de Audio
-- Whisper: Modelo base de reconocimiento de voz
-- WhisperX: Versión modificada con diarización
+- WhisperX: transcripción + diarización (producción)
 - PyAnnote Audio: Para diarización de hablantes
 - Librosa: Procesamiento de señales de audio
 - FFmpeg-Python: Manipulación de archivos de audio
@@ -350,8 +360,8 @@ El proyecto depende de varias librerías Python, categorizadas por funcionalidad
 - MySQL Connector Python: Conexión a base de datos MySQL
 
 ### Utilitarios
-- OpenpPyXL: Manipulación de archivos Excel
-- STR2BOOL: Conversión de strings a booleanos
+- OpenPyXL: Manipulación de archivos Excel
+- str2bool: Conversión de strings a booleanos (settings)
 - Requests: Para peticiones HTTP
 - Tqdm: Barras de progreso
 - Loguru: Logging avanzado
@@ -478,10 +488,10 @@ Para mejorar el rendimiento del sistema en servidores con recursos limitados:
    - 4GB RAM: 4 workers
    - 8GB RAM: 6-8 workers
 
-2. Optimice el modelo de IA:
-   - Use modelos más pequeños (e.j. Llama3:8b)
-   - Reduzca el tamaño del contexto (num_ctx)
-   - Implemente caché de resultados similares
+2. Optimice la auditoría LLM (Gemini):
+   - Ajuste `GEMINI_MODEL` y `max_output_tokens` en `llm_client` si hay latencia o coste
+   - Temperatura baja (0.1–0.3) para respuestas más estables
+   - Revise cuotas en Google AI Studio / Cloud
 
 ### Solución de Problemas Comunes
 
