@@ -68,6 +68,8 @@ Regresión con hasta 3 audios locales (no versionados):
 python scripts/stt_faster_whisper_regression.py audio1.mp3 audio2.gsm audio3.wav
 ```
 
+**Producción:** no sustituye multi-hablante (vendedor/cliente); solo `SPEAKER_00`. Auditoría con roles → `STT_PROVIDER=whisperx`. El modelo faster-whisper se cachea por proceso al transcribir lotes.
+
 Proveedor `google` aún no implementado; error explícito si se selecciona.
 
 ### Tareas sugeridas (Jira)

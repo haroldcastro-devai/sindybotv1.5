@@ -185,6 +185,8 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 
 `STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
 
+**Importante:** este backend asigna un único hablante (`SPEAKER_00`) — **no reemplaza** WhisperX + PyAnnote para distinguir vendedor y cliente. Use `STT_PROVIDER=whisperx` (GPU + `HF_TOKEN`) en **producción** cuando la auditoría dependa de roles por hablante; reserve `faster_whisper` para pruebas, VPS sin GPU o transcripción sin diarización real. El modelo se reutiliza en memoria dentro del mismo proceso al procesar varios archivos.
+
 ### 10. Producción y cookies (SCRUM-13)
 
 - **`DEBUG=False`** por defecto (`.env.example`). No active `DEBUG=True` en internet.

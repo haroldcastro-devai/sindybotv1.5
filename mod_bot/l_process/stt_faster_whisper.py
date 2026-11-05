@@ -4,7 +4,10 @@
 Transcripción STT con faster-whisper (CPU / VPS sin GPU).
 
 Diarización limitada: un solo hablante (SPEAKER_00) por segmento.
-Compatible con analizar_hablantes() y el formato de whisperx.
+No sustituye WhisperX+PyAnnote para separar vendedor/cliente en auditoría.
+
+El modelo WhisperModel se cachea en memoria por (model, device, compute_type)
+para lotes en diariza/unified_processing.
 """
 
 from __future__ import annotations
@@ -12,15 +15,56 @@ from __future__ import annotations
 import os
 from datetime import timedelta
 from pathlib import Path
+from threading import Lock
 
 from .logger_config import logger
 
 DEFAULT_SPEAKER = "SPEAKER_00"
 
+_model_cache: dict[tuple[str, str, str], object] = {}
+_model_lock = Lock()
+
 
 def _env_str(name: str, default: str) -> str:
     raw = os.environ.get(name, default).strip()
     return raw or default
+
+
+def _env_beam_size(name: str, default: int = 5) -> int:
+    raw = os.environ.get(name, str(default)).strip()
+    try:
+        value = int(raw)
+    except ValueError as exc:
+        raise ValueError(
+            f"{name} debe ser un entero, recibido: {raw!r}"
+        ) from exc
+    if value < 1 or value > 20:
+        raise ValueError(f"{name} debe estar entre 1 y 20, recibido: {value}")
+    return value
+
+
+def _get_whisper_model(model_name: str, device: str, compute_type: str):
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError as exc:
+        raise ImportError(
+            "faster-whisper no instalado. Ejecute: "
+            "pip install -r mod_bot/requirements-stt-cpu.txt"
+        ) from exc
+
+    key = (model_name, device, compute_type)
+    with _model_lock:
+        if key not in _model_cache:
+            logger.info(
+                "Cargando faster-whisper en cache: model=%s device=%s compute=%s",
+                model_name,
+                device,
+                compute_type,
+            )
+            _model_cache[key] = WhisperModel(
+                model_name, device=device, compute_type=compute_type
+            )
+        return _model_cache[key]
 
 
 def _segments_to_result(segments) -> dict:
@@ -62,31 +106,25 @@ def procesar_audio_faster_whisper(audio_file: str) -> tuple:
     if not audio_path.is_file():
         raise FileNotFoundError(f"Audio no encontrado: {audio_file}")
 
-    try:
-        from faster_whisper import WhisperModel
-    except ImportError as exc:
-        raise ImportError(
-            "faster-whisper no instalado. Ejecute: "
-            "pip install -r mod_bot/requirements-stt-cpu.txt"
-        ) from exc
-
     model_name = _env_str("FASTER_WHISPER_MODEL", "small")
     device = _env_str("FASTER_WHISPER_DEVICE", "cpu")
     compute_type = _env_str("FASTER_WHISPER_COMPUTE_TYPE", "int8")
-    beam_size = int(os.environ.get("FASTER_WHISPER_BEAM_SIZE", "5"))
+    beam_size = _env_beam_size("FASTER_WHISPER_BEAM_SIZE", 5)
+    language = _env_str("FASTER_WHISPER_LANGUAGE", "es")
 
     logger.info(
-        "faster-whisper: model=%s device=%s compute=%s file=%s",
+        "faster-whisper: model=%s device=%s compute=%s lang=%s file=%s",
         model_name,
         device,
         compute_type,
+        language,
         audio_file,
     )
 
-    model = WhisperModel(model_name, device=device, compute_type=compute_type)
+    model = _get_whisper_model(model_name, device, compute_type)
     segments_iter, info = model.transcribe(
         str(audio_path),
-        language="es",
+        language=language,
         beam_size=beam_size,
         vad_filter=True,
     )
