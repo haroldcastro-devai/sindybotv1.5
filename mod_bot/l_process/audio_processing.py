@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Backend WhisperX (GPU). API interna: invocar solo desde stt_provider.py.
+
+Desde diariza / unified_processing use:
+  from l_process.stt_provider import procesar_audio_via_provider
+"""
 
 import whisperx
 import os

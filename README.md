@@ -109,7 +109,7 @@ Cree un archivo `.env` copiando `.env.example` y complete los valores (SECRET_KE
 
 ### 5. Google Gemini (auditoría LLM)
 
-Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env` (mismos valores que `.env.example`, p. ej. `gemini-3.8-flash`). Ver `Docs--Readme/GEMINI-STT-MIGRATION.md`.
+Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env`. Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) y [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md). **STT default:** `STT_PROVIDER=whisperx` (Gemini no transcribe audio).
 
 ### 6. Creación de Usuario Administrador
 
@@ -192,6 +192,10 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 `STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
 
 **Privacidad y operación:** las grabaciones de ventas se procesan en **Google Cloud** (no on-prem). No use audios con datos personales sensibles sin acuerdo legal/DPA y política interna. Vigile **cuotas y costes** en la consola GCP; es un **prototipo** — no sustituye por defecto a WhisperX on-prem/GPU. `long_running_recognize` **bloquea** el worker hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` segundos (default 3600) por archivo; en lotes largos planifique timeouts o colas.
+
+### Unificación STT — stt_provider (SCRUM-36)
+
+Toda transcripción en el pipeline pasa por `mod_bot/l_process/stt_provider.py` → `procesar_audio_via_provider()` (`diariza.py`, `unified_processing.py`). No llamar `procesar_audio()` directamente. Comprobación: `python scripts/verify_stt_provider_wiring.py` (también en CI). Arquitectura LLM vs STT: [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md).
 
 ### 10. Producción y cookies (SCRUM-13)
 

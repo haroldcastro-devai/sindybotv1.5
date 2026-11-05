@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Abstracción STT — Fase B (implementación gradual).
+Abstracción STT — punto único de entrada para transcripción.
+
+Entradas de aplicación (usar solo `procesar_audio_via_provider`):
+  - mod_bot/diariza.py
+  - mod_bot/l_process/unified_processing.py
+
+No importar `procesar_audio` desde audio_processing fuera de este módulo.
 
 Variables de entorno:
   STT_PROVIDER   whisperx (default) | faster_whisper | google
@@ -16,6 +22,7 @@ google: Cloud Speech-to-Text vía mod_bot/l_process/stt_google.py (credenciales 
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 from .logger_config import logger
 
@@ -25,8 +32,13 @@ def get_stt_provider() -> str:
 
 
 def procesar_audio_via_provider(audio_file: str):
-    """Delega al backend STT configurado."""
+    """Delega al backend STT configurado (`STT_PROVIDER`)."""
     provider = get_stt_provider()
+    logger.info(
+        "STT provider=%s archivo=%s",
+        provider,
+        Path(audio_file).name,
+    )
     if provider == "whisperx":
         from .audio_processing import procesar_audio
 
