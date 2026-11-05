@@ -36,7 +36,8 @@ mod_bot/
 │   └── diccionary.txt
 │
 ├── l_process/               # Procesos lógicos centrales
-│   ├── audio_processing.py  # Procesamiento de audio con WhisperX
+│   ├── stt_provider.py      # Entrada STT (STT_PROVIDER); usar desde diariza/unified
+│   ├── audio_processing.py  # Backend WhisperX (solo vía stt_provider)
 │   ├── call_evaluation.py   # Evaluación de llamadas y criterios
 │   ├── detection.py         # Detección de aceptaciones y rechazos
 │   ├── file_utils.py        # Utilidades para manejo de archivos
@@ -65,13 +66,16 @@ mod_bot/
 
 ## Componentes Principales
 
-### 1. Procesamiento de Audio (`l_process/audio_processing.py`)
+### 1. STT y procesamiento de audio
 
-Este archivo es responsable del procesamiento de los archivos de audio utilizando la biblioteca WhisperX.
+**Entrada:** `l_process/stt_provider.py` → `procesar_audio_via_provider()` (variable `STT_PROVIDER`).
+
+**Backend WhisperX (default):** `l_process/audio_processing.py` — no importar `procesar_audio()` desde otros módulos.
 
 **Funcionalidades principales:**
-- `procesar_audio()`: Transcribe y diariza un archivo de audio para identificar a los diferentes hablantes.
-- `analizar_hablantes()`: Analiza los patrones de habla de cada participante en la llamada.
+- `procesar_audio_via_provider()`: transcribe según proveedor configurado.
+- `procesar_audio()`: implementación WhisperX (interna).
+- `analizar_hablantes()`: estadísticas por hablante a partir de `result["segments"]`.
 
 **Flujo de procesamiento:**
 1. Carga el modelo de WhisperX

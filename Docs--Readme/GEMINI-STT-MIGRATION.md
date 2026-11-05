@@ -1,5 +1,7 @@
 # Migración Gemini (IA) + STT sin GPU propia
 
+> Resumen LLM vs STT: [IA-STT-ARQUITECTURA.md](./IA-STT-ARQUITECTURA.md)
+
 ## Fase A — IA con Gemini (implementada)
 
 La evaluación de auditoría usa `mod_bot/l_process/llm_client.py` (**solo Google Gemini**, SDK oficial **`google-genai`**; no hay fallback Ollama).
@@ -39,7 +41,7 @@ Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: model
 
 ---
 
-## Fase B — STT sin WhisperX en GPU (plan)
+## Fase B — STT sin WhisperX en GPU
 
 | Proveedor | Coste | GPU propia | Diarización |
 |-----------|-------|------------|-------------|
@@ -49,58 +51,46 @@ Esperado: línea `Smoke Gemini: OK` (o respuesta breve). Errores típicos: model
 
 Variable: `STT_PROVIDER=whisperx|faster_whisper|google` (default: `whisperx`)
 
-Punto de extensión: `mod_bot/l_process/stt_provider.py` — usado por `diariza.py` y `unified_processing.py`.
+**Punto único de entrada:** `stt_provider.procesar_audio_via_provider` — `diariza.py` y `unified_processing.py` (SCRUM-36).  
+Verificación en CI/local: `python scripts/verify_stt_provider_wiring.py`.
 
 ### faster_whisper (SCRUM-34 — implementado)
 
 ```bash
 pip install -r mod_bot/requirements-stt-cpu.txt
-# .env
 STT_PROVIDER=faster_whisper
 FASTER_WHISPER_MODEL=small
 FASTER_WHISPER_DEVICE=cpu
 FASTER_WHISPER_COMPUTE_TYPE=int8
 ```
 
-Regresión con hasta 3 audios locales (no versionados):
-
 ```bash
 python scripts/stt_faster_whisper_regression.py audio1.mp3 audio2.gsm audio3.wav
 ```
 
-**Producción:** no sustituye multi-hablante (vendedor/cliente); solo `SPEAKER_00`. Auditoría con roles → `STT_PROVIDER=whisperx`. El modelo faster-whisper se cachea por proceso al transcribir lotes.
-
-### Google Cloud Speech-to-Text (SCRUM-35 — prototipo)
+### Google Cloud Speech-to-Text (SCRUM-35 — prototipo; no es Gemini)
 
 ```bash
 pip install -r mod_bot/requirements-stt-google.txt
-# Cuenta de servicio con rol Speech Client; API Speech-to-Text habilitada
 export GOOGLE_APPLICATION_CREDENTIALS=/ruta/sa.json
 STT_PROVIDER=google
 GOOGLE_SPEECH_LANGUAGE_CODE=es-CO
 GOOGLE_SPEECH_ENABLE_DIARIZATION=True
-GOOGLE_SPEECH_MIN_SPEAKERS=2
-GOOGLE_SPEECH_MAX_SPEAKERS=2
 GOOGLE_SPEECH_OPERATION_TIMEOUT=3600
 ```
 
-- **Coste:** facturación GCP por minuto de audio (diarización con recargo; ver [precios Speech-to-Text](https://cloud.google.com/speech-to-text/pricing)). `GOOGLE_SPEECH_ENABLE_DIARIZATION=False` reduce factura si solo necesita texto.
-- **Formatos:** todo audio (incl. `.wav`) se **normaliza con ffmpeg** a LINEAR16 16 kHz mono; límite **10 MB** inline (sin GCS en este prototipo).
-- **Timeout:** `GOOGLE_SPEECH_OPERATION_TIMEOUT` (60–7200 s, default 3600) bloquea el hilo hasta que GCP responda.
-- **Privacidad:** audio de ventas sale a Google; requiere DPA/política interna antes de producción.
-- **Smoke:** `python scripts/stt_google_smoke.py ruta/audio.gsm`
+Smoke: `python scripts/stt_google_smoke.py ruta/audio.gsm`
 
-### Tareas sugeridas (Jira)
+### Unificación stt_provider (SCRUM-36 — implementado)
 
-1. ~~Implementar `faster_whisper` para pruebas en VPS sin GPU.~~ (SCRUM-34)
-2. ~~Prototipo Google STT con diarización.~~ (SCRUM-35)
-3. Pruebas de regresión / unificación `stt_provider` (SCRUM-36).
+- No importar `procesar_audio` fuera de `stt_provider.py`.
+- `analizar_hablantes()` sigue en `audio_processing.py` (funciona con cualquier backend que devuelva `segments`).
 
 ---
 
 ## Desarrollo en PC bajo recursos
 
 - Editar Django y `llm_client` en local: **sin GPU**.
-- Probar auditoría completa: Gemini en cloud + STT whisperx en VM con GPU o Fase B.
+- STT producción: `whisperx` en VM GPU; alternativas Fase B para pruebas.
 
 # Desarrollado por: hcastro
