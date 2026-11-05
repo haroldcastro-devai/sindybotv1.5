@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Smoke test Gemini API (google-genai) — ver GEMINI-STT-MIGRATION.md."""
+"""Smoke test Gemini API (google-genai) — ver Docs--Readme/IA-STT-ARQUITECTURA.md (LLM)."""
 import sys
 from pathlib import Path
 

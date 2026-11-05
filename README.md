@@ -109,7 +109,9 @@ Cree un archivo `.env` copiando `.env.example` y complete los valores (SECRET_KE
 
 ### 5. Google Gemini (auditoría LLM)
 
-Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env` (mismos valores que `.env.example`, p. ej. `gemini-3.8-flash`). Ver `Docs--Readme/GEMINI-STT-MIGRATION.md`.
+Configure `GEMINI_API_KEY` y `GEMINI_MODEL` en `.env` (mismos valores que `.env.example`, p. ej. `gemini-3.8-flash`). Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) (sección LLM).
+
+**STT por defecto:** `STT_PROVIDER=whisperx` (GPU). Gemini solo audita **texto**, no transcribe audio.
 
 ### 6. Creación de Usuario Administrador
 
@@ -183,13 +185,13 @@ Sin `except:` bare en `manage.py`, `banner.py`, `start_server.py`, `core/server_
 
 ### STT CPU faster-whisper (SCRUM-34)
 
-`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+`STT_PROVIDER=faster_whisper` usa `mod_bot/l_process/stt_faster_whisper.py` (VPS sin GPU). Dependencia: `mod_bot/requirements-stt-cpu.txt`. Regresión: `python scripts/stt_faster_whisper_regression.py` con hasta 3 audios locales. Ver [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) (sección STT → faster_whisper).
 
 **Importante:** este backend asigna un único hablante (`SPEAKER_00`) — **no reemplaza** WhisperX + PyAnnote para distinguir vendedor y cliente. Use `STT_PROVIDER=whisperx` (GPU + `HF_TOKEN`) en **producción** cuando la auditoría dependa de roles por hablante; reserve `faster_whisper` para pruebas, VPS sin GPU o transcripción sin diarización real. El modelo se reutiliza en memoria dentro del mismo proceso al procesar varios archivos.
 
 ### Google Cloud STT (SCRUM-35)
 
-`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [GEMINI-STT-MIGRATION.md](Docs--Readme/GEMINI-STT-MIGRATION.md).
+`STT_PROVIDER=google` usa `mod_bot/l_process/stt_google.py` (credenciales GCP, **facturación por minuto**). Diarización configurable (`GOOGLE_SPEECH_*`). Todo el audio pasa por **ffmpeg** (WAV 16 kHz mono) antes de subir a Google. Smoke: `python scripts/stt_google_smoke.py <audio>`. Detalle en [IA-STT-ARQUITECTURA.md](Docs--Readme/IA-STT-ARQUITECTURA.md) (sección STT → Google Speech-to-Text; **no es Gemini**).
 
 **Privacidad y operación:** las grabaciones de ventas se procesan en **Google Cloud** (no on-prem). No use audios con datos personales sensibles sin acuerdo legal/DPA y política interna. Vigile **cuotas y costes** en la consola GCP; es un **prototipo** — no sustituye por defecto a WhisperX on-prem/GPU. `long_running_recognize` **bloquea** el worker hasta `GOOGLE_SPEECH_OPERATION_TIMEOUT` segundos (default 3600) por archivo; en lotes largos planifique timeouts o colas.
 
