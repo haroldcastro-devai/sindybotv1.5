@@ -541,4 +541,5 @@ El código se publica para que pueda ser revisado y evaluado. No está permitido
 
 No contiene datos reales de clientes: todos los datos y transcripciones incluidos son de prueba.
 
-Contacto: linkedin.com/in/harold-castro-860189377
+Contacto: [linkedin](https://linkedin.com/in/harold-castro-860189377)
+Email: hcastrocolombia@gmail.com
