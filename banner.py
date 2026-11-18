@@ -30,11 +30,11 @@ UNICODE_BANNER = f"""{GREEN}
 │   ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝                                        │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────┐         │
-│   │{RED}Versión: 1.5.8.0{GREEN}                                            │         │
-│   │{RED}Last Update: 2024-12-20{GREEN}                                     │         │
-│   │Environment: {RED}Production{GREEN}                                     │         │
+│   │{RED}Versión: 1.5.8.0{GREEN}                                │         │
+│   │{RED}Last Update: 2024-12-20{GREEN}                         │         │
+│   │Environment: {RED}Production{GREEN}                         │         │
 │   │Dev : Harold Castro                                         │         │
-│   │Cliente: XUMA                                               │         │
+│   │Cliente: DEMO_CLIENT                                        │         │
 │   └────────────────────────────────────────────────────────────┘         │
 │                                                                          │
 ╰──────────────────────────────────────────────────────────────────────────╯
