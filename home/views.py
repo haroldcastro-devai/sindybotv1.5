@@ -250,6 +250,8 @@ def config(request):
             data['mensaje_fecha'] = "Fecha según Comparativa"
     else:
         data = {'mensaje': "NO HAY REGISTROS ACTUALES"}
+    # Ruta elegida en el asistente (sesión): se muestra en la tarjeta del directorio
+    data['directorio_actual'] = request.session.get('sindybot_audio_dir') or ''
     return render(request, 'pages/bc_typography.html', data)
 
 def ejecutar_script():
@@ -288,6 +290,19 @@ def iniciar_auditoria_remota(request):
                 )
             usuario_actual = request.user.username
 
+            # Ruta de audios: sesión (paso 2 del asistente) o AUDIO_BASE_DIR del .env
+            audio_base_dir = request.session.get('sindybot_audio_dir') or os.environ.get('AUDIO_BASE_DIR') or ''
+            if not audio_base_dir:
+                return JsonResponse({
+                    'success': False,
+                    'error': 'No se ha seleccionado la carpeta de audios (paso 2 del asistente).'
+                }, status=400)
+            if not os.path.isdir(audio_base_dir):
+                return JsonResponse({
+                    'success': False,
+                    'error': f'La carpeta de audios no existe o no es accesible: {audio_base_dir}'
+                }, status=400)
+
             temp_dir = tempfile.mkdtemp()
             temp_file = os.path.join(temp_dir, f"{uuid.uuid4()}{file_ext}")
 
@@ -304,7 +319,8 @@ def iniciar_auditoria_remota(request):
                     from remote_auditor import iniciar_proceso_remoto
                     
                     resultado = iniciar_proceso_remoto(
-                        temp_file, usuario_actual, job_id=run_job_id
+                        temp_file, usuario_actual, job_id=run_job_id,
+                        audio_base_dir=audio_base_dir
                     )
                     
                     log_dir = os.path.join(settings.BASE_DIR, "Logica_Log_Err")
@@ -427,15 +443,127 @@ def cancelar_auditoria(request):
             'error': f"Error al cancelar el proceso: {str(e)}"
         }, status=500)
 
+def _resumen_estructura_audios(ruta: str) -> dict:
+    """
+    Resume la estructura del directorio de audios: carpetas por año (AAAA)
+    que indican el patrón <AÑO>/<MM MES>/<DD> esperado por remote_auditor.
+    """
+    anios = []
+    try:
+        for nombre in os.listdir(ruta):
+            if len(nombre) == 4 and nombre.isdigit() and os.path.isdir(os.path.join(ruta, nombre)):
+                anios.append(nombre)
+    except OSError:
+        return {"anios": [], "estructura": False}
+    return {"anios": sorted(anios), "estructura": bool(anios)}
+
+
 @login_required
 def seleccionar_directorio(request):
     """
-    Vista para seleccionar directorio
+    Abre el diálogo nativo de carpetas del SO para elegir el directorio de audios
+    (paso 2 del asistente de auditoría). Uso interno: el servidor corre en la
+    máquina del usuario, por lo que el diálogo se muestra en su escritorio.
+
+    POST → JSON {success, ruta} | {success, cancelado} | {success: False, error}
     """
-    if request.method == 'POST':
-        directorio_seleccionado = "/ruta/al/directorio"
-        return render(request, 'pages/bc_typography.html', {'directorio_seleccionado': directorio_seleccionado})
-    return HttpResponse("Método no permitido")
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'error': 'Se esperaba una solicitud POST.'}, status=405)
+
+    try:
+        import tkinter as tk
+        from tkinter import filedialog
+    except Exception as exc:
+        logger.warning("tkinter no disponible para seleccionar directorio: %s", exc)
+        return JsonResponse({
+            'success': False,
+            'dialogo': False,
+            'error': 'El servidor no soporta diálogos nativos; escriba la ruta manualmente y pulse "Validar".'
+        }, status=501)
+
+    ruta = ''
+    root = None
+    try:
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes('-topmost', True)
+        ruta = filedialog.askdirectory(title='Seleccione el directorio que contiene los audios')
+    except Exception as exc:
+        logger.error("Error al abrir el diálogo nativo de carpetas: %s", exc)
+        return JsonResponse({
+            'success': False,
+            'dialogo': False,
+            'error': f'No fue posible abrir el diálogo nativo ({exc}); escriba la ruta manualmente y pulse "Validar".'
+        }, status=500)
+    finally:
+        if root is not None:
+            try:
+                root.destroy()
+            except Exception:
+                logger.warning("No se pudo destruir la instancia Tk del diálogo de carpetas")
+
+    if not ruta:
+        return JsonResponse({'success': True, 'cancelado': True, 'ruta': ''})
+    return JsonResponse({'success': True, 'ruta': os.path.normpath(ruta)})
+
+
+@login_required
+def validar_directorio_audios(request):
+    """
+    Valida la carpeta de audios elegida por el usuario (paso 2 del asistente),
+    la guarda en sesión y devuelve un resumen de su estructura.
+
+    POST JSON {ruta: "..."}  → valida esa ruta y la guarda en sesión
+    POST JSON {ruta: ""}     → devuelve la ruta guardada en sesión o, en su
+                               defecto, AUDIO_BASE_DIR del .env (respaldo)
+    """
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'error': 'Se esperaba una solicitud POST.'}, status=405)
+
+    try:
+        payload = json.loads(request.body or b'{}')
+    except json.JSONDecodeError:
+        payload = {}
+
+    ruta = str(payload.get('ruta') or '').strip().strip('"')
+    fuente = 'entrada'
+    if not ruta:
+        ruta = str(request.session.get('sindybot_audio_dir') or '').strip()
+        fuente = 'sesion'
+        if not ruta:
+            ruta = str(os.environ.get('AUDIO_BASE_DIR') or '').strip()
+            fuente = 'env'
+
+    if not ruta:
+        return JsonResponse({
+            'success': True,
+            'ruta': '',
+            'source': '',
+            'valido': False,
+            'mensaje': 'Sin carpeta de audios: seleccione una con "Examinar…" o use la del .env.'
+        })
+
+    ruta = os.path.normpath(ruta)
+    if not os.path.isdir(ruta):
+        return JsonResponse({
+            'success': True,
+            'ruta': ruta,
+            'source': fuente,
+            'valido': False,
+            'error': f'La carpeta no existe o no es accesible: {ruta}'
+        })
+
+    # Guardar en sesión para que el hilo de auditoría la use (fuente única: sesión)
+    request.session['sindybot_audio_dir'] = ruta
+
+    info = _resumen_estructura_audios(ruta)
+    return JsonResponse({
+        'success': True,
+        'ruta': ruta,
+        'source': fuente,
+        'valido': True,
+        **info
+    })
 
 @login_required
 def guardar_ruta_directorio(request):

@@ -49,9 +49,193 @@ document.addEventListener('DOMContentLoaded', function() {
         iniciarSeguimientoProgreso();
     }
     
-    // Botón para abrir el modal
+    // ===== Asistente de 3 pasos del modal de auditoría =====
+    var wizard = { paso: 1, ruta: '', fuente: '', valido: false };
+
+    function mostrarPaso(n) {
+        wizard.paso = n;
+        for (var i = 1; i <= 3; i++) {
+            document.getElementById('wizardPane' + i).classList.toggle('d-none', i !== n);
+            var step = document.getElementById('wzStep' + i);
+            step.classList.toggle('active', i === n);
+            step.classList.toggle('done', i < n);
+            step.querySelector('.wz-circle').textContent = i < n ? '✓' : String(i);
+        }
+        document.getElementById('wzLine1').classList.toggle('done', n > 1);
+        document.getElementById('wzLine2').classList.toggle('done', n > 2);
+        document.getElementById('wizardAtras').classList.toggle('d-none', n === 1);
+        document.getElementById('wizardContinuar').classList.toggle('d-none', n === 3);
+        document.getElementById('btnIniciarAuditoria').classList.toggle('d-none', n !== 3);
+        if (n === 3) {
+            var file = document.getElementById('archivo_excel').files[0];
+            document.getElementById('resumenExcel').textContent = file ? file.name : '—';
+            document.getElementById('resumenRuta').textContent = wizard.ruta || '—';
+        }
+        if (n === 2 && !wizard.ruta) {
+            consultarEstadoRuta();
+        }
+    }
+
+    function postJSON(url, payload) {
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken'),
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload || {})
+        }).then(function (resp) {
+            return resp.json().catch(function () { return {}; }).then(function (data) {
+                if (!resp.ok && data.success === undefined) {
+                    data.success = false;
+                }
+                return data;
+            });
+        });
+    }
+
+    function pintarEstadoRuta(data) {
+        var el = document.getElementById('estadoRutaAudios');
+        var input = document.getElementById('rutaAudios');
+        el.className = 'form-text mb-1';
+        el.textContent = '';
+        if (data && data.success && data.ruta) {
+            wizard.ruta = data.ruta;
+            wizard.fuente = data.source || '';
+            wizard.valido = !!data.valido;
+            input.value = data.ruta;
+            var span = document.createElement('span');
+            if (data.valido) {
+                span.className = 'wz-ok';
+                span.textContent = '✓ Carpeta válida';
+                el.appendChild(span);
+                el.appendChild(document.createTextNode(
+                    data.estructura
+                        ? ' — estructura AÑO/MES/DÍA detectada'
+                        : ' — ⚠ sin carpetas por año: se esperaba <AÑO>/<MM MES>/<DD>'
+                ));
+            } else {
+                span.className = 'wz-warn';
+                span.textContent = '⚠ ' + (data.error || 'La carpeta no existe o no es accesible');
+                el.appendChild(span);
+                wizard.valido = false;
+            }
+            if (data.source === 'env') {
+                el.appendChild(document.createTextNode(' (ruta del .env)'));
+            }
+        } else {
+            wizard.ruta = '';
+            wizard.valido = false;
+            input.value = '';
+            el.textContent = (data && data.error)
+                ? data.error
+                : '— Sin seleccionar — Seleccione la carpeta de audios para continuar';
+            if (data && data.error) {
+                el.classList.add('wz-warn');
+            }
+        }
+    }
+
+    function consultarEstadoRuta() {
+        return postJSON('/validar_directorio_audios/', {})
+            .then(pintarEstadoRuta)
+            .catch(function () { /* sin red: se queda en "Sin seleccionar" */ });
+    }
+
+    document.getElementById('btnExaminarAudios').addEventListener('click', function () {
+        var btn = this;
+        var original = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Abriendo diálogo…';
+        postJSON('/seleccionar_directorio/', {})
+            .then(function (data) {
+                if (data.cancelado) {
+                    return;
+                }
+                if (!data.success || !data.ruta) {
+                    pintarEstadoRuta({
+                        success: false,
+                        error: data.error || 'No fue posible abrir el diálogo nativo. Escriba la ruta manualmente y pulse "Validar".'
+                    });
+                    return;
+                }
+                return postJSON('/validar_directorio_audios/', { ruta: data.ruta }).then(pintarEstadoRuta);
+            })
+            .catch(function (err) {
+                pintarEstadoRuta({ success: false, error: 'Error al seleccionar la carpeta: ' + err });
+            })
+            .finally(function () {
+                btn.disabled = false;
+                btn.textContent = original;
+            });
+    });
+
+    document.getElementById('btnValidarAudios').addEventListener('click', function () {
+        var ruta = document.getElementById('rutaAudios').value.trim();
+        if (!ruta) {
+            pintarEstadoRuta({ success: false, error: 'Escriba o seleccione la carpeta de audios' });
+            return;
+        }
+        postJSON('/validar_directorio_audios/', { ruta: ruta })
+            .then(pintarEstadoRuta)
+            .catch(function (err) {
+                pintarEstadoRuta({ success: false, error: 'Error al validar la ruta: ' + err });
+            });
+    });
+
+    document.getElementById('btnUsarRutaEnv').addEventListener('click', function () {
+        postJSON('/validar_directorio_audios/', { ruta: '' })
+            .then(pintarEstadoRuta)
+            .catch(function (err) {
+                pintarEstadoRuta({ success: false, error: 'Error al consultar la ruta del servidor: ' + err });
+            });
+    });
+
+    document.getElementById('wizardContinuar').addEventListener('click', function () {
+        if (wizard.paso === 1) {
+            var fileInput = document.getElementById('archivo_excel');
+            if (!fileInput.files.length) {
+                alert('Por favor, seleccione un archivo Excel');
+                return;
+            }
+            var ext = fileInput.files[0].name.split('.').pop().toLowerCase();
+            if (ext !== 'xlsx' && ext !== 'xls') {
+                alert('Solo se admiten archivos .xlsx o .xls');
+                return;
+            }
+            mostrarPaso(2);
+        } else if (wizard.paso === 2) {
+            if (!wizard.valido || !wizard.ruta) {
+                alert('Seleccione y valide la carpeta que contiene los audios antes de continuar.');
+                return;
+            }
+            mostrarPaso(3);
+        }
+    });
+
+    document.getElementById('wizardAtras').addEventListener('click', function () {
+        if (wizard.paso > 1) {
+            mostrarPaso(wizard.paso - 1);
+        }
+    });
+
+    // Botón para abrir el modal (reinicia el asistente, conserva la ruta en sesión)
     document.getElementById('btnAbrirModal').addEventListener('click', function() {
         var modalAuditoria = new bootstrap.Modal(document.getElementById('modalAuditoria'));
+        wizard.ruta = '';
+        wizard.valido = false;
+        wizard.fuente = '';
+        document.getElementById('rutaAudios').value = '';
+        document.getElementById('estadoRutaAudios').className = 'form-text mb-1';
+        document.getElementById('estadoRutaAudios').textContent = '— Sin seleccionar —';
+        document.getElementById('archivo_excel').value = '';
+        document.getElementById('processingInfo').classList.add('d-none');
+        document.getElementById('resumenOk').classList.remove('d-none');
+        document.getElementById('btnIniciarAuditoria').disabled = false;
+        document.getElementById('wizardContinuar').disabled = false;
+        document.getElementById('wizardAtras').disabled = false;
+        mostrarPaso(1);
+        consultarEstadoRuta();
         modalAuditoria.show();
     });
     
@@ -69,10 +253,13 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Mostrar spinner
+        // Mostrar spinner (paso 3) y ocultar el resumen
         document.getElementById('formAuditoriaRemota').classList.add('d-none');
+        document.getElementById('resumenOk').classList.add('d-none');
         document.getElementById('processingInfo').classList.remove('d-none');
         document.getElementById('btnIniciarAuditoria').disabled = true;
+        document.getElementById('wizardContinuar').disabled = true;
+        document.getElementById('wizardAtras').disabled = true;
         
         // Crear FormData y añadir el archivo
         const formData = new FormData();
@@ -146,11 +333,12 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Error al procesar la solicitud: ' + error);
         })
         .finally(() => {
-            // Restaurar formulario
+            // Restaurar el paso 3 (el Excel se limpia al reabrir el modal)
             document.getElementById('formAuditoriaRemota').classList.remove('d-none');
             document.getElementById('processingInfo').classList.add('d-none');
             document.getElementById('btnIniciarAuditoria').disabled = false;
-            fileInput.value = '';
+            document.getElementById('wizardContinuar').disabled = false;
+            document.getElementById('wizardAtras').disabled = false;
         });
     });
     
