@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function pintarEstadoRuta(data) {
         var el = document.getElementById('estadoRutaAudios');
         var input = document.getElementById('rutaAudios');
+        el.className = 'form-text mb-1';
         el.textContent = '';
         if (data && data.success && data.ruta) {
             wizard.ruta = data.ruta;
@@ -130,9 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ? data.error
                 : '— Sin seleccionar — Seleccione la carpeta de audios para continuar';
             if (data && data.error) {
-                el.className = 'form-text mb-1 wz-warn';
-            } else {
-                el.className = 'form-text mb-1';
+                el.classList.add('wz-warn');
             }
         }
     }

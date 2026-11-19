@@ -250,6 +250,8 @@ def config(request):
             data['mensaje_fecha'] = "Fecha según Comparativa"
     else:
         data = {'mensaje': "NO HAY REGISTROS ACTUALES"}
+    # Ruta elegida en el asistente (sesión): se muestra en la tarjeta del directorio
+    data['directorio_actual'] = request.session.get('sindybot_audio_dir') or ''
     return render(request, 'pages/bc_typography.html', data)
 
 def ejecutar_script():
@@ -480,12 +482,12 @@ def seleccionar_directorio(request):
         }, status=501)
 
     ruta = ''
+    root = None
     try:
         root = tk.Tk()
         root.withdraw()
         root.attributes('-topmost', True)
         ruta = filedialog.askdirectory(title='Seleccione el directorio que contiene los audios')
-        root.destroy()
     except Exception as exc:
         logger.error("Error al abrir el diálogo nativo de carpetas: %s", exc)
         return JsonResponse({
@@ -493,6 +495,12 @@ def seleccionar_directorio(request):
             'dialogo': False,
             'error': f'No fue posible abrir el diálogo nativo ({exc}); escriba la ruta manualmente y pulse "Validar".'
         }, status=500)
+    finally:
+        if root is not None:
+            try:
+                root.destroy()
+            except Exception:
+                logger.warning("No se pudo destruir la instancia Tk del diálogo de carpetas")
 
     if not ruta:
         return JsonResponse({'success': True, 'cancelado': True, 'ruta': ''})

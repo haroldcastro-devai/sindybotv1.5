@@ -214,13 +214,15 @@
                     <h4 class="text">Ultimo Directorio Seleccionado:</h4> 
                 </div>
                 <div style="text-align: left; padding-left: 14%">
-                    <tbody>
-                        {% if ultimo_registro %}
-                            {{ ultimo_registro.reg_tip_dir }} 
+                    <div>
+                        {% if directorio_actual %}
+                            <code class="d-block text-break">{{ directorio_actual }}</code>
+                        {% elif ultimo_registro %}
+                            <code class="d-block text-break">{{ ultimo_registro.reg_tip_dir }}</code>
                         {% else %}
-                            {{ mensaje }}
-                        {% endif %}						
-                    </tbody> Mostrar la ruta del directorio aquí
+                            <span class="text-muted">{{ mensaje }}</span>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div> 
