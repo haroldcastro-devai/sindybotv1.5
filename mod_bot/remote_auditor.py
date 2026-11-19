@@ -26,7 +26,18 @@ logger = logging.getLogger(__name__)
 
 # Constantes
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AUDIO_BASE_DIR = r"I:\Unidades compartidas\PV-AUDIOS-AUDITORIA\AUDIOS ESCUCHA\SERVIPROTECCION"
+
+
+def resolver_audio_base_dir(audio_base_dir=None):
+    """
+    Resuelve el directorio base de audios sin rutas hardcodeadas:
+    1) parámetro explícito (selección del usuario en el asistente, vía sesión),
+    2) variable de entorno AUDIO_BASE_DIR (.env).
+    Devuelve None si no hay ninguna definida.
+    """
+    if audio_base_dir:
+        return audio_base_dir
+    return os.environ.get("AUDIO_BASE_DIR") or None
 
 
 def _progreso_path():
@@ -205,12 +216,26 @@ def leer_excel_y_extraer_datos(archivo_excel):
         actualizar_progreso(mensaje=f"Error al leer el archivo Excel: {str(e)}")
         raise
 
-def construir_ruta_audio(fecha_str):
+def construir_ruta_audio(fecha_str, base_dir=None):
     """
     Construye la ruta del directorio donde se encuentran los archivos de audio
-    basado en la fecha en formato DD/MM/AAAA
+    basado en la fecha en formato DD/MM/AAAA.
+    ``base_dir`` es el directorio base elegido por el usuario (paso 2 del
+    asistente); si no se pasa, se resuelve desde AUDIO_BASE_DIR (.env).
     """
     try:
+        base = resolver_audio_base_dir(base_dir)
+        if not base:
+            msg = "No se ha definido el directorio base de audios (selección del usuario o AUDIO_BASE_DIR en .env)"
+            logger.error(msg)
+            actualizar_progreso(mensaje=msg)
+            return None
+        if not os.path.isdir(base):
+            msg = f"El directorio base de audios no existe o no es accesible: {base}"
+            logger.error(msg)
+            actualizar_progreso(mensaje=msg)
+            return None
+
         # Convertir fecha al formato necesario
         fecha_obj = datetime.strptime(fecha_str, "%d/%m/%Y")
         
@@ -228,7 +253,7 @@ def construir_ruta_audio(fecha_str):
         
         # Construir ruta
         ruta = os.path.join(
-            AUDIO_BASE_DIR,
+            base,
             str(anio),
             nombres_meses[mes],
             f"{dia:02d}"
@@ -242,7 +267,7 @@ def construir_ruta_audio(fecha_str):
             logger.warning(f"Ruta de audio no encontrada: {ruta}")
             actualizar_progreso(mensaje=f"Buscando rutas alternativas para fecha {fecha_str}")
             # Intenta buscar alternativas si la ruta exacta no existe
-            mes_dir = os.path.join(AUDIO_BASE_DIR, str(anio), nombres_meses[mes])
+            mes_dir = os.path.join(base, str(anio), nombres_meses[mes])
             if os.path.exists(mes_dir):
                 # Buscar directorios que puedan contener el día
                 for dir_name in os.listdir(mes_dir):
@@ -510,7 +535,7 @@ def comprobar_cancelacion():
         logger.error(f"Error al comprobar cancelación: {str(e)}")
         return False
 
-def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
+def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None, audio_base_dir=None):
     """
     Función principal que inicia el proceso de auditoría desde un cliente remoto.
 
@@ -521,6 +546,9 @@ def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
         archivo_excel: Ruta del archivo Excel
         usuario: Nombre de usuario que inicia el proceso
         job_id: UUID de la ejecución (se genera uno si no se pasa)
+        audio_base_dir: Directorio base de audios elegido por el usuario
+            (paso 2 del asistente); si no se pasa, se resuelve desde
+            AUDIO_BASE_DIR (.env)
     
     Returns:
         dict: Resultados del proceso con éxito/error
@@ -542,6 +570,21 @@ def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
         # Usamos 100 como valor inicial, luego se actualizará con el valor real
         inicializar_progreso(100)  
         actualizar_progreso(mensaje=f"Iniciando proceso remoto para usuario {usuario}")
+
+        # Validar el directorio base de audios (sin rutas hardcodeadas)
+        audio_base = resolver_audio_base_dir(audio_base_dir)
+        if not audio_base:
+            msg = ("No se ha definido la carpeta de audios: selecciónela en el paso 2 "
+                   "del asistente o configure AUDIO_BASE_DIR en .env")
+            logger.error(msg)
+            finalizar_progreso(exito=False, mensaje=msg)
+            return {"success": False, "error": msg}
+        if not os.path.isdir(audio_base):
+            msg = f"La carpeta de audios no existe o no es accesible: {audio_base}"
+            logger.error(msg)
+            finalizar_progreso(exito=False, mensaje=msg)
+            return {"success": False, "error": msg}
+        actualizar_progreso(mensaje=f"Usando carpeta de audios: {audio_base}")
         
         # Leer el archivo Excel y extraer los datos
         contratos, fechas_contratos, productos_por_contrato = leer_excel_y_extraer_datos(archivo_excel)
@@ -565,7 +608,7 @@ def iniciar_proceso_remoto(archivo_excel, usuario, job_id=None):
                 actualizar_progreso(mensaje=f"Buscando archivos para contrato {contrato} con fecha {fecha}")
                 
                 # Construir la ruta donde deberían estar los archivos de audio
-                ruta_audio = construir_ruta_audio(fecha)
+                ruta_audio = construir_ruta_audio(fecha, base_dir=audio_base)
                 
                 if ruta_audio and os.path.exists(ruta_audio):
                     directorios_procesados.add(ruta_audio)

@@ -7,6 +7,7 @@ urlpatterns = [
     # Vistas web tradicionales
     path('config/', login_required(views.config), name='config'),
     path('seleccionar_directorio/', login_required(views.seleccionar_directorio), name='seleccionar_directorio'),
+    path('validar_directorio_audios/', login_required(views.validar_directorio_audios), name='validar_directorio_audios'),
     path('guardar_ruta_directorio/', login_required(views.guardar_ruta_directorio), name='guardar_ruta_directorio'),
     path('abrir_ubicacion/', login_required(views.abrir_ubicacion), name='abrir_ubicacion'),
     path('iniciar_auditoria_remota/', login_required(views.iniciar_auditoria_remota), name='iniciar_auditoria_remota'),

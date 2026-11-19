@@ -1,37 +1,88 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
-<!-- Modal para cargar archivo Excel -->
+<!-- Modal asistente de 3 pasos: Excel → Ruta de audios → Confirmar e iniciar -->
 <div class="modal fade" id="modalAuditoria" tabindex="-1" aria-labelledby="modalAuditoriaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalAuditoriaLabel">Iniciar Auditoría Remota</h5>
+                <h5 class="modal-title" id="modalAuditoriaLabel">Nueva Auditoría Remota</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="alert alert-info">
-                    <i class="fas fa-info-circle"></i> Seleccione el archivo Excel (Gerencial) para iniciar el proceso de auditoría.
-                </div>
-                <form id="formAuditoriaRemota" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="archivo_excel" class="form-label">Archivo Excel (Gerencial)</label>
-                        <input type="file" class="form-control" id="archivo_excel" name="archivo_excel" accept=".xlsx,.xls" required>
-                        <div class="form-text">Solo se admiten archivos Excel (.xlsx, .xls)</div>
+                <!-- Stepper -->
+                <ul class="wz-steps mb-4">
+                    <li class="wz-step active" id="wzStep1"><span class="wz-circle">1</span><span class="wz-label">Archivo Excel</span></li>
+                    <li class="wz-line" id="wzLine1"></li>
+                    <li class="wz-step" id="wzStep2"><span class="wz-circle">2</span><span class="wz-label">Ruta de audios</span></li>
+                    <li class="wz-line" id="wzLine2"></li>
+                    <li class="wz-step" id="wzStep3"><span class="wz-circle">3</span><span class="wz-label">Confirmar e iniciar</span></li>
+                </ul>
+
+                <!-- Paso 1: Archivo Excel -->
+                <div id="wizardPane1" class="wz-pane">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> Seleccione el archivo Excel (Gerencial) para iniciar el proceso de auditoría.
                     </div>
-                </form>
-                <div id="processingInfo" class="d-none">
-                    <div class="text-center">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Procesando...</span>
+                    <form id="formAuditoriaRemota" enctype="multipart/form-data">
+                        <div class="mb-0">
+                            <label for="archivo_excel" class="form-label">Archivo Excel (Gerencial)</label>
+                            <input type="file" class="form-control" id="archivo_excel" name="archivo_excel" accept=".xlsx,.xls" required>
+                            <div class="form-text">Solo se admiten archivos Excel (.xlsx, .xls) · Hoja1: contratos, fechas y productos</div>
                         </div>
-                        <p class="mt-2">Procesando archivo y buscando audios...<br>Este proceso puede tardar unos minutos.</p>
+                    </form>
+                </div>
+
+                <!-- Paso 2: Ruta del directorio de audios -->
+                <div id="wizardPane2" class="wz-pane d-none">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> Seleccione la carpeta que contiene los audios (reemplaza la ruta fija del servidor).
+                    </div>
+                    <label for="rutaAudios" class="form-label">Carpeta que contiene los audios</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="rutaAudios" placeholder="— Sin seleccionar —" autocomplete="off">
+                        <button class="btn btn-outline-secondary" type="button" id="btnExaminarAudios">Examinar…</button>
+                        <button class="btn btn-outline-secondary" type="button" id="btnValidarAudios">Validar</button>
+                    </div>
+                    <div class="mb-2">
+                        <button class="btn btn-link btn-sm p-0" type="button" id="btnUsarRutaEnv">Usar la ruta configurada en el servidor (.env)</button>
+                    </div>
+                    <div id="estadoRutaAudios" class="form-text mb-1">— Sin seleccionar —</div>
+                    <div class="form-text">Estructura esperada: &lt;AÑO&gt;/&lt;MM MES&gt;/&lt;DD&gt; · la ruta se recordará en esta sesión</div>
+                </div>
+
+                <!-- Paso 3: Confirmación -->
+                <div id="wizardPane3" class="wz-pane d-none">
+                    <div class="list-group mb-3">
+                        <div class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                            <span><i class="fas fa-file-excel me-1"></i> Excel gerencial</span>
+                            <b id="resumenExcel" class="text-end text-truncate">—</b>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center gap-3">
+                            <span><i class="fas fa-folder-open me-1"></i> Carpeta de audios</span>
+                            <code id="resumenRuta" class="text-end text-truncate" style="max-width: 60%;">—</code>
+                        </div>
+                    </div>
+                    <div class="alert alert-success py-2" id="resumenOk">
+                        <i class="fas fa-check-circle"></i> Listo para iniciar. El progreso se mostrará en pantalla una vez lanzado.
+                    </div>
+                    <div id="processingInfo" class="d-none">
+                        <div class="text-center">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Procesando...</span>
+                            </div>
+                            <p class="mt-2">Procesando archivo y buscando audios...<br>Este proceso puede tardar unos minutos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" id="btnIniciarAuditoria">Iniciar Auditoría</button>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-secondary" id="wizardAtras">← Atrás</button>
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="wizardContinuar">Continuar →</button>
+                    <button type="button" class="btn btn-primary d-none" id="btnIniciarAuditoria"><i class="fas fa-play me-1"></i> Iniciar Auditoría</button>
+                </div>
             </div>
         </div>
     </div>
@@ -383,6 +434,72 @@
 /* Arreglar el problema de la sombra del modal */
 .modal-backdrop {
     z-index: 1050 !important; /* Asegurar que esté debajo del modal */
+}
+
+/* ===== Asistente de 3 pasos (modalAuditoria) ===== */
+.wz-steps {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wz-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c757d;
+}
+.wz-step .wz-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex: none;
+}
+.wz-step.active .wz-circle {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, .15);
+}
+.wz-step.active {
+    color: #212529;
+}
+.wz-step.done .wz-circle {
+    background: #198754;
+    color: #fff;
+}
+.wz-step.done {
+    color: #198754;
+}
+.wz-line {
+    flex: 1;
+    height: 2px;
+    background: #e9ecef;
+    margin: 0 12px;
+    min-width: 24px;
+}
+.wz-line.done {
+    background: #a3d9b1;
+}
+.wz-ok {
+    color: #198754;
+    font-weight: 600;
+}
+.wz-warn {
+    color: #b02a37;
+    font-weight: 600;
+}
+@media (max-width: 576px) {
+    .wz-label { display: none; }
 }
 </style>
 <script src="{% static 'assets/js/mod-track.js' %}"></script>
